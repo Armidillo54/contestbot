@@ -1,13 +1,7 @@
 {
   "user": {
-    "first_name": "CHANGE_ME",
-    "last_name": "CHANGE_ME",
-    "email": "CHANGE_ME@gmail.com",
-    "phone": "CHANGE_ME",
-    "postal_code": "CHANGE_ME",
     "province": "Ontario",
     "city": "Orillia",
-    "date_of_birth": "CHANGE_ME",
     "age_over_18": true,
     "consent_marketing": false,
     "consent_rules": true
