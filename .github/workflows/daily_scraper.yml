@@ -17,6 +17,12 @@ jobs:
       SMTP_USER: ${{ secrets.SMTP_USER }}
       SMTP_PASS: ${{ secrets.SMTP_PASS }}
       NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+      USER_FIRST_NAME: ${{ secrets.USER_FIRST_NAME }}
+      USER_LAST_NAME: ${{ secrets.USER_LAST_NAME }}
+      USER_EMAIL: ${{ secrets.USER_EMAIL }}
+      USER_PHONE: ${{ secrets.USER_PHONE }}
+      USER_POSTAL_CODE: ${{ secrets.USER_POSTAL_CODE }}
+      USER_DOB: ${{ secrets.USER_DOB }}
 
     steps:
       - name: Checkout repo
