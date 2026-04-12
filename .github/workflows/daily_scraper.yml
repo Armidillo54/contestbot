@@ -13,16 +13,6 @@ permissions:
 jobs:
   scrape-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      SMTP_USER: ${{ secrets.SMTP_USER }}
-      SMTP_PASS: ${{ secrets.SMTP_PASS }}
-      NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
-      USER_FIRST_NAME: ${{ secrets.USER_FIRST_NAME }}
-      USER_LAST_NAME: ${{ secrets.USER_LAST_NAME }}
-      USER_EMAIL: ${{ secrets.USER_EMAIL }}
-      USER_PHONE: ${{ secrets.USER_PHONE }}
-      USER_POSTAL_CODE: ${{ secrets.USER_POSTAL_CODE }}
-      USER_DOB: ${{ secrets.USER_DOB }}
 
     steps:
       - name: Checkout repo
@@ -38,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run pipeline
+      - name: Run scraper pipeline
         run: python run_all.py
 
       - name: Commit updated database
@@ -46,7 +36,7 @@ jobs:
           git config user.name 'ContestBot'
           git config user.email 'contestbot@users.noreply.github.com'
           git add -A
-          git diff --staged --quiet || git commit -m "Auto-update: $(date +%Y-%m-%d) pipeline results"
+          git diff --staged --quiet || git commit -m "Auto-update: $(date +%Y-%m-%d) contest scan"
           git push
 
       - name: Setup Pages
