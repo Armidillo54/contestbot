@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""ContestBot Master Orchestrator - Runs the full daily pipeline."""
-
+"""ContestBot Master Orchestrator - Free daily pipeline with dashboard generation."""
 import logging
 import sys
+import json
+import os
+import shutil
 from datetime import datetime
 
 logging.basicConfig(
@@ -16,15 +18,54 @@ logging.basicConfig(
 logger = logging.getLogger('ContestBot')
 
 
+def generate_dashboard():
+    """Copy dashboard.html and contests_database.json into docs/ for GitHub Pages."""
+    os.makedirs('docs', exist_ok=True)
+    shutil.copy('dashboard.html', 'docs/index.html')
+    shutil.copy('contests_database.json', 'docs/contests_database.json')
+    if os.path.exists('compliance_report.json'):
+        shutil.copy('compliance_report.json', 'docs/compliance_report.json')
+    if os.path.exists('entry_log.json'):
+        shutil.copy('entry_log.json', 'docs/entry_log.json')
+    logger.info("Dashboard generated in docs/ folder")
+
+
+def clean_junk_contests():
+    """Remove junk entries from contests_database.json."""
+    try:
+        with open('contests_database.json', 'r') as f:
+            db = json.load(f)
+        original_count = len(db.get('contests', []))
+        db['contests'] = [
+            c for c in db.get('contests', [])
+            if c.get('id') and c.get('name') and
+            c['name'].lower() not in ['contestgirl', 'single entry sweeps'] and
+            len(c.get('name', '')) > 3 and
+            c.get('url', '').startswith('http')
+        ]
+        cleaned = original_count - len(db['contests'])
+        if cleaned > 0:
+            active = [c for c in db['contests'] if c.get('status') == 'active']
+            db['total_prize_value'] = sum(c.get('prize_value', 0) for c in active)
+            db['active_count'] = len(active)
+            with open('contests_database.json', 'w') as f:
+                json.dump(db, f, indent=2)
+            logger.info(f"Cleaned {cleaned} junk entries from database")
+        else:
+            logger.info("No junk entries found")
+    except Exception as e:
+        logger.error(f"Database cleaning failed: {e}")
+
+
 def main():
     start = datetime.now()
     logger.info("="*60)
-    logger.info("CONTESTBOT DAILY PIPELINE STARTING")
+    logger.info("CONTESTBOT DAILY PIPELINE STARTING (FREE MODE)")
     logger.info(f"Date: {start.strftime('%Y-%m-%d %H:%M:%S %Z')}")
     logger.info("="*60)
 
-    # Step 1: Scrape aggregator sites
-    logger.info("\n[1/5] SCRAPING CONTEST AGGREGATORS...")
+    # Step 1: Scrape free aggregator sites
+    logger.info("\n[1/4] SCRAPING CONTEST AGGREGATORS...")
     try:
         from contest_scraper import run_scraper
         db = run_scraper()
@@ -33,19 +74,13 @@ def main():
         logger.error(f"Scraper failed: {e}")
         db = None
 
-    # Step 2: Perplexity AI Scout
-    logger.info("\n[2/5] RUNNING PERPLEXITY AI SCOUT...")
-    try:
-        from perplexity_scout import run_scout
-        run_scout()
-        logger.info("AI Scout completed")
-    except Exception as e:
-        logger.error(f"AI Scout failed: {e}")
+    # Step 2: Clean junk entries
+    logger.info("\n[2/4] CLEANING DATABASE...")
+    clean_junk_contests()
 
     # Step 3: Compliance check
-    logger.info("\n[3/5] RUNNING COMPLIANCE CHECK...")
+    logger.info("\n[3/4] RUNNING COMPLIANCE CHECK...")
     try:
-        import json
         from legal_compliance import generate_compliance_report
         from contest_scraper import load_database, load_config
         db = load_database()
@@ -57,29 +92,10 @@ def main():
         logger.info(f"Total prize value: ${report['total_eligible_value']:,}")
     except Exception as e:
         logger.error(f"Compliance check failed: {e}")
-        report = {}
 
-    # Step 4: Entry bot (only if running locally with Chrome)
-    logger.info("\n[4/5] ENTRY BOT...")
-    try:
-        import os
-        if os.environ.get('RUN_ENTRY_BOT', 'false').lower() == 'true':
-            from entry_bot import run_entry_bot
-            results = run_entry_bot()
-            logger.info(f"Entry bot completed: {len(results or [])} attempts")
-        else:
-            logger.info("Entry bot skipped (set RUN_ENTRY_BOT=true to enable)")
-    except Exception as e:
-        logger.error(f"Entry bot failed: {e}")
-
-    # Step 5: Send notifications
-    logger.info("\n[5/5] SENDING NOTIFICATIONS...")
-    try:
-        from notifier import send_daily_report
-        send_daily_report()
-        logger.info("Notifications sent")
-    except Exception as e:
-        logger.error(f"Notifications failed: {e}")
+    # Step 4: Generate dashboard for GitHub Pages
+    logger.info("\n[4/4] GENERATING DASHBOARD...")
+    generate_dashboard()
 
     elapsed = (datetime.now() - start).total_seconds()
     logger.info("\n" + "="*60)
