@@ -20,6 +20,7 @@ def generate_dashboard():
     os.makedirs('docs', exist_ok=True)
     shutil.copy('dashboard.html', 'docs/index.html')
     shutil.copy('contests_database.json', 'docs/contests_database.json')
+        shutil.copy('freebies_database.json', 'docs/freebies_database.json')
     logger.info("Dashboard generated in docs/")
 
 
