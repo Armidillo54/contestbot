@@ -1,0 +1,60 @@
+{
+  "date": "2026-04-12",
+  "total_contests": 10,
+  "active": 10,
+  "expired": 0,
+  "eligible_today": 10,
+  "total_eligible_value": 109420,
+  "contests": [
+    {
+      "name": "G Adventures Travel Voucher Giveaway",
+      "prize_value": 43000,
+      "end_date": "2026-05-06"
+    },
+    {
+      "name": "J.D. Power 2026 Canada Voice of the Customer Sweepstakes",
+      "prize_value": 20000,
+      "end_date": "2026-12-31"
+    },
+    {
+      "name": "Excel Q1 2026 Concert Experience Contest",
+      "prize_value": 15000,
+      "end_date": "2026-05-31"
+    },
+    {
+      "name": "Coca-Cola Most Valuable Fan 2026 Canada Contest",
+      "prize_value": 8820,
+      "end_date": "2026-06-30"
+    },
+    {
+      "name": "7-Eleven Doritos Formula 1 Contest",
+      "prize_value": 8300,
+      "end_date": "2026-04-28"
+    },
+    {
+      "name": "Best Buy 25th Anniversary Sweepstakes",
+      "prize_value": 5000,
+      "end_date": "2026-04-24"
+    },
+    {
+      "name": "Avocados from Mexico - The Fiesta Kicks Off Contest",
+      "prize_value": 3100,
+      "end_date": "2026-05-13"
+    },
+    {
+      "name": "Contestgirl",
+      "prize_value": 3100,
+      "end_date": "2026-05-13"
+    },
+    {
+      "name": "Single Entry Sweeps",
+      "prize_value": 3100,
+      "end_date": "2026-05-13"
+    },
+    {
+      "name": "",
+      "prize_value": 0,
+      "end_date": "2026-04-16"
+    }
+  ]
+}

@@ -11,7 +11,13 @@
       "npn": true,
       "npn_note": "No-purchase entry button at bottom of page",
       "restrictions": "21+, BC/AB/SK/MB/ON only, 7-Eleven Rewards member",
-      "provinces": ["BC", "AB", "SK", "MB", "ON"],
+      "provinces": [
+        "BC",
+        "AB",
+        "SK",
+        "MB",
+        "ON"
+      ],
       "end_date": "2026-04-28",
       "source": "contestgirl.com",
       "status": "active",
@@ -28,7 +34,9 @@
       "npn": true,
       "npn_note": "Request NPE PIN at excelcontest.ca/npn-entry then mail in",
       "restrictions": "Age of majority, resident of Canada",
-      "provinces": ["All Canada"],
+      "provinces": [
+        "All Canada"
+      ],
       "end_date": "2026-05-31",
       "source": "excelcontest.ca",
       "status": "active",
@@ -45,7 +53,9 @@
       "npn": true,
       "npn_note": "No purchase necessary",
       "restrictions": "18+",
-      "provinces": ["All Canada"],
+      "provinces": [
+        "All Canada"
+      ],
       "end_date": "2026-05-06",
       "source": "contestgirl.com",
       "status": "active",
@@ -62,7 +72,9 @@
       "npn": true,
       "npn_note": "Postcard entry method available",
       "restrictions": "Legal residents of Canada, age of majority",
-      "provinces": ["All Canada"],
+      "provinces": [
+        "All Canada"
+      ],
       "end_date": "2026-12-31",
       "source": "jdpower.com",
       "status": "active",
@@ -79,7 +91,9 @@
       "npn": true,
       "npn_note": "No purchase necessary",
       "restrictions": "18+",
-      "provinces": ["All Canada"],
+      "provinces": [
+        "All Canada"
+      ],
       "end_date": "2026-05-13",
       "source": "contestgirl.com",
       "status": "active",
@@ -96,7 +110,9 @@
       "npn": true,
       "npn_note": "No purchase necessary - sign up to enter",
       "restrictions": "Canadian residents",
-      "provinces": ["All Canada"],
+      "provinces": [
+        "All Canada"
+      ],
       "end_date": "2026-04-24",
       "source": "bestbuy.ca",
       "status": "active",
@@ -113,14 +129,73 @@
       "npn": true,
       "npn_note": "Mobile entry available",
       "restrictions": "18+",
-      "provinces": ["All Canada"],
+      "provinces": [
+        "All Canada"
+      ],
       "end_date": "2026-06-30",
+      "source": "contestgirl.com",
+      "status": "active",
+      "last_entered": null
+    },
+    {
+      "id": "",
+      "name": "",
+      "url": "https://www.contestgirl.com/contests/sweepstakesDetail.pl?index=585991",
+      "prize": "Mambasnake--1st Anniversary Giveaway Round 1 Added less than 24 hours ago Enter for a chance to win a mouse or a keyboard. Restrictions: open worldwide End Date: April 16, 2026 posted on April 12, 202",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "daily",
+      "npn": true,
+      "npn_note": "Scraped from ContestGirl",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "2026-04-16",
+      "source": "contestgirl.com",
+      "status": "active",
+      "last_entered": null
+    },
+    {
+      "id": "contestgirl",
+      "name": "Contestgirl",
+      "url": "https://www.contestgirl.com/",
+      "prize": "Contestgirl Contestgirl United States Single Entry Sweeps Daily Sweepstakes Weekly Sweepstakes Monthly Sweepstakes Odd Entry Sweeps Blog Giveaways Free Samples & More Canadian Contests Single Entry Co",
+      "prize_value": 3100,
+      "entry_method": "online_form",
+      "entry_frequency": "weekly",
+      "npn": true,
+      "npn_note": "Scraped from ContestGirl",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "2026-05-13",
+      "source": "contestgirl.com",
+      "status": "active",
+      "last_entered": null
+    },
+    {
+      "id": "single-entry-sweeps",
+      "name": "Single Entry Sweeps",
+      "url": "https://www.contestgirl.com/contests/contests.pl?f=s&c=us&b=nb&sort=p&ar=na&s=_",
+      "prize": "United States Single Entry Sweeps Daily Sweepstakes Weekly Sweepstakes Monthly Sweepstakes Odd Entry Sweeps Blog Giveaways Free Samples & More Canadian Contests Single Entry Contests Daily Entry Conte",
+      "prize_value": 3100,
+      "entry_method": "online_form",
+      "entry_frequency": "weekly",
+      "npn": true,
+      "npn_note": "Scraped from ContestGirl",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "2026-05-13",
       "source": "contestgirl.com",
       "status": "active",
       "last_entered": null
     }
   ],
   "last_updated": "2026-04-12",
-  "total_active": 7,
-  "total_prize_value": 103220
+  "total_active": 10,
+  "total_prize_value": 109420
 }
