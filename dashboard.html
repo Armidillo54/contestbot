@@ -3,151 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ContestBot Dashboard</title>
+<title>ContestBot - Daily Contests & Freebies</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0f;color:#e0e0e0;padding:20px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0f;color:#e0e0e0;padding:20px;max-width:1200px;margin:0 auto}
 .header{text-align:center;padding:30px 0;border-bottom:1px solid #1a1a2e}
 .header h1{font-size:2.5em;background:linear-gradient(135deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .header p{color:#888;margin-top:8px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin:30px 0}
-.stat-card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:24px;text-align:center}
-.stat-card .number{font-size:2.5em;font-weight:700;color:#00d4ff}
-.stat-card .label{color:#888;margin-top:4px;font-size:0.9em}
+.header .updated{color:#555;font-size:0.8em;margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:24px 0}
+.stat-card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:20px;text-align:center}
+.stat-card .number{font-size:2.2em;font-weight:700;color:#00d4ff}
+.stat-card .label{color:#888;margin-top:4px;font-size:0.85em}
 .stat-card.prize .number{color:#00ff88}
-.stat-card.entered .number{color:#ff6b6b}
-.stat-card.scout .number{color:#7b2ff7}
+.stat-card.new .number{color:#ffaa00}
+.stat-card.daily .number{color:#7b2ff7}
 .section{margin:30px 0}
-.section h2{font-size:1.4em;margin-bottom:15px;color:#fff;display:flex;align-items:center;gap:8px}
+.section h2{font-size:1.3em;margin-bottom:12px;color:#fff;display:flex;align-items:center;gap:8px}
 .contest-table{width:100%;border-collapse:collapse;background:#12121f;border-radius:12px;overflow:hidden}
-.contest-table th{background:#1a1a2e;padding:14px 16px;text-align:left;font-weight:600;color:#00d4ff;font-size:0.85em;text-transform:uppercase}
-.contest-table td{padding:12px 16px;border-bottom:1px solid #1a1a2e}
+.contest-table th{background:#1a1a2e;padding:12px 14px;text-align:left;font-weight:600;color:#00d4ff;font-size:0.8em;text-transform:uppercase}
+.contest-table td{padding:10px 14px;border-bottom:1px solid #1a1a2e;font-size:0.9em}
 .contest-table tr:hover{background:#1a1a2e}
 .contest-table a{color:#00d4ff;text-decoration:none}
 .contest-table a:hover{text-decoration:underline}
-.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:0.75em;font-weight:600}
+.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:0.7em;font-weight:600}
 .badge-active{background:#00ff8820;color:#00ff88;border:1px solid #00ff8840}
 .badge-expired{background:#ff6b6b20;color:#ff6b6b;border:1px solid #ff6b6b40}
-.badge-unverified{background:#ffaa0020;color:#ffaa00;border:1px solid #ffaa0040}
-.badge-daily{background:#00d4ff20;color:#00d4ff}
-.badge-weekly{background:#7b2ff720;color:#7b2ff7}
+.badge-daily{background:#7b2ff720;color:#7b2ff7}
+.badge-weekly{background:#00d4ff20;color:#00d4ff}
 .badge-single{background:#88888820;color:#aaa}
 .prize-val{color:#00ff88;font-weight:700}
-.log-box{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:20px;max-height:300px;overflow-y:auto;font-family:'SF Mono',monospace;font-size:0.85em;line-height:1.8;color:#888}
-.log-box .success{color:#00ff88}
-.log-box .fail{color:#ff6b6b}
-.log-box .info{color:#00d4ff}
-.controls{display:flex;gap:12px;margin:20px 0}
-.btn{padding:10px 24px;border:none;border-radius:8px;font-size:0.9em;cursor:pointer;font-weight:600;transition:all 0.2s}
-.btn-primary{background:linear-gradient(135deg,#00d4ff,#7b2ff7);color:#fff}
-.btn-primary:hover{opacity:0.85}
-.btn-secondary{background:#1a1a2e;color:#e0e0e0;border:1px solid #333}
-.btn-secondary:hover{background:#252540}
-#status{margin:10px 0;padding:10px;border-radius:8px;display:none}
-footer{text-align:center;padding:30px;color:#555;font-size:0.85em;border-top:1px solid #1a1a2e;margin-top:40px}
+.tab-bar{display:flex;gap:8px;margin-bottom:16px}
+.tab-btn{padding:8px 20px;border:1px solid #333;border-radius:8px;background:#12121f;color:#888;cursor:pointer;font-size:0.85em;font-weight:600;transition:all 0.2s}
+.tab-btn.active{background:linear-gradient(135deg,#00d4ff,#7b2ff7);color:#fff;border-color:transparent}
+.tab-btn:hover{background:#1a1a2e;color:#fff}
+.tab-btn.active:hover{background:linear-gradient(135deg,#00d4ff,#7b2ff7)}
+.empty{text-align:center;padding:40px;color:#555;font-style:italic}
+footer{text-align:center;padding:24px;color:#555;font-size:0.8em;border-top:1px solid #1a1a2e;margin-top:40px}
+@media(max-width:600px){.contest-table{font-size:0.8em}.contest-table th,.contest-table td{padding:8px 6px}.header h1{font-size:1.8em}}
 </style>
 </head>
 <body>
 <div class="header">
   <h1>ContestBot</h1>
-  <p>Automated Canadian NPN Contest Entry System</p>
+  <p>Daily Canadian Contests & Freebies Dashboard</p>
+  <div class="updated" id="lastUpdated">Loading...</div>
 </div>
-
 <div class="stats" id="stats">
   <div class="stat-card"><div class="number" id="totalActive">--</div><div class="label">Active Contests</div></div>
   <div class="stat-card prize"><div class="number" id="totalPrize">--</div><div class="label">Total Prize Value</div></div>
-  <div class="stat-card entered"><div class="number" id="totalEntered">--</div><div class="label">Entered Today</div></div>
-  <div class="stat-card scout"><div class="number" id="totalScout">--</div><div class="label">AI Discovered</div></div>
+  <div class="stat-card new"><div class="number" id="totalNew">--</div><div class="label">New Today</div></div>
+  <div class="stat-card daily"><div class="number" id="totalDaily">--</div><div class="label">Daily Entry</div></div>
 </div>
-
-<div class="controls">
-  <button class="btn btn-primary" onclick="loadData()">Refresh Data</button>
-  <button class="btn btn-secondary" onclick="filterTable('active')">Active Only</button>
-  <button class="btn btn-secondary" onclick="filterTable('all')">Show All</button>
-</div>
-<div id="status"></div>
-
 <div class="section">
-  <h2>Contest Database</h2>
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="showTab('all')">All Contests</button>
+    <button class="tab-btn" onclick="showTab('new')">New Today</button>
+    <button class="tab-btn" onclick="showTab('daily')">Daily Entry</button>
+    <button class="tab-btn" onclick="showTab('highvalue')">High Value</button>
+  </div>
   <table class="contest-table" id="contestTable">
     <thead><tr><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th>Status</th></tr></thead>
     <tbody id="contestBody"></tbody>
   </table>
+  <div class="empty" id="emptyMsg" style="display:none">No contests in this category yet.</div>
 </div>
-
-<div class="section">
-  <h2>Activity Log</h2>
-  <div class="log-box" id="logBox">Loading...</div>
-</div>
-
-<footer>ContestBot v1.0 | Orillia, Ontario | NPN Only</footer>
-
+<footer>ContestBot v2.0 | Orillia, Ontario | Free & NPN Only | Updated daily at 8 AM ET</footer>
 <script>
-let allContests = [];
-
-async function loadData() {
-  try {
-    // Load from local files (when running locally) or from GitHub raw
-    const dbResp = await fetch('contests_database.json');
-    const db = await dbResp.json();
-    allContests = db.contests || [];
-    
-    const active = allContests.filter(c => c.status === 'active');
-    const entered = allContests.filter(c => c.last_entered === new Date().toISOString().split('T')[0]);
-    const scout = allContests.filter(c => c.source === 'perplexity_ai');
-    
-    document.getElementById('totalActive').textContent = active.length;
-    document.getElementById('totalPrize').textContent = '$' + (db.total_prize_value || 0).toLocaleString();
-    document.getElementById('totalEntered').textContent = entered.length;
-    document.getElementById('totalScout').textContent = scout.length;
-    
-    renderTable(allContests);
-    
-    // Try loading entry log
-    try {
-      const logResp = await fetch('entry_log.json');
-      const log = await logResp.json();
-      renderLog(log);
-    } catch(e) {
-      document.getElementById('logBox').innerHTML = '<span class="info">No entry log yet. Run entry_bot.py to start.</span>';
-    }
-  } catch(e) {
-    document.getElementById('status').style.display = 'block';
-    document.getElementById('status').style.background = '#ff6b6b20';
-    document.getElementById('status').textContent = 'Error loading data: ' + e.message;
+let allContests=[];
+const today=new Date().toISOString().split('T')[0];
+async function loadData(){
+  try{
+    const r=await fetch('contests_database.json');
+    const db=await r.json();
+    allContests=(db.contests||[]).filter(c=>c.name&&c.name.length>3&&c.url);
+    const active=allContests.filter(c=>c.status==='active');
+    const daily=active.filter(c=>c.entry_frequency==='daily');
+    const newToday=active.filter(c=>c.discovered_date===today||c.added_date===today);
+    document.getElementById('totalActive').textContent=active.length;
+    document.getElementById('totalPrize').textContent='$'+(db.total_prize_value||0).toLocaleString();
+    document.getElementById('totalNew').textContent=newToday.length;
+    document.getElementById('totalDaily').textContent=daily.length;
+    document.getElementById('lastUpdated').textContent='Last updated: '+(db.last_updated||today);
+    renderTable(active);
+  }catch(e){
+    document.getElementById('lastUpdated').textContent='Error loading data: '+e.message;
   }
 }
-
-function renderTable(contests) {
-  const tbody = document.getElementById('contestBody');
-  tbody.innerHTML = contests.sort((a,b) => (b.prize_value||0) - (a.prize_value||0)).map(c => {
-    const statusClass = c.status === 'active' ? 'badge-active' : c.status === 'expired' ? 'badge-expired' : 'badge-unverified';
-    const freqClass = c.entry_frequency === 'daily' ? 'badge-daily' : c.entry_frequency === 'weekly' ? 'badge-weekly' : 'badge-single';
-    return `<tr>
-      <td><a href="${c.url}" target="_blank">${c.name}</a></td>
-      <td>${c.prize || '--'}</td>
-      <td class="prize-val">$${(c.prize_value||0).toLocaleString()}</td>
-      <td><span class="badge ${freqClass}">${c.entry_frequency||'--'}</span></td>
-      <td>${c.end_date||'--'}</td>
-      <td>${c.source||'--'}</td>
-      <td><span class="badge ${statusClass}">${c.status}</span></td>
-    </tr>`;
+function renderTable(contests){
+  const tbody=document.getElementById('contestBody');
+  const empty=document.getElementById('emptyMsg');
+  if(!contests.length){tbody.innerHTML='';empty.style.display='block';return;}
+  empty.style.display='none';
+  tbody.innerHTML=contests.sort((a,b)=>(b.prize_value||0)-(a.prize_value||0)).map(c=>{
+    const sc=c.status==='active'?'badge-active':'badge-expired';
+    const fc=c.entry_frequency==='daily'?'badge-daily':c.entry_frequency==='weekly'?'badge-weekly':'badge-single';
+    return '<tr>'+
+      '<td><a href="'+c.url+'" target="_blank">'+(c.name||'--')+'</a></td>'+
+      '<td>'+(c.prize||'--')+'</td>'+
+      '<td class="prize-val">$'+(c.prize_value||0).toLocaleString()+'</td>'+
+      '<td><span class="badge '+fc+'">'+(c.entry_frequency||'--')+'</span></td>'+
+      '<td>'+(c.end_date||'--')+'</td>'+
+      '<td>'+(c.source||'--')+'</td>'+
+      '<td><span class="badge '+sc+'">'+(c.status||'--')+'</span></td>'+
+      '</tr>';
   }).join('');
 }
-
-function renderLog(log) {
-  const box = document.getElementById('logBox');
-  box.innerHTML = log.slice(-20).reverse().map(e => {
-    const cls = e.status === 'submitted' ? 'success' : 'fail';
-    return `<div class="${cls}">[${e.timestamp}] ${e.contest_name} - ${e.status} (${e.fields_filled} fields)</div>`;
-  }).join('');
+function showTab(t){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+  const active=allContests.filter(c=>c.status==='active');
+  if(t==='all')renderTable(active);
+  else if(t==='new')renderTable(active.filter(c=>c.discovered_date===today||c.added_date===today));
+  else if(t==='daily')renderTable(active.filter(c=>c.entry_frequency==='daily'));
+  else if(t==='highvalue')renderTable(active.filter(c=>(c.prize_value||0)>=5000));
 }
-
-function filterTable(type) {
-  if (type === 'active') renderTable(allContests.filter(c => c.status === 'active'));
-  else renderTable(allContests);
-}
-
 loadData();
 </script>
 </body>
