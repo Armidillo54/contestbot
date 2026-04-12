@@ -3,6 +3,7 @@
 
 import json
 import logging
+import os
 import re
 from datetime import datetime, date
 from pathlib import Path
@@ -18,8 +19,23 @@ CONFIG_PATH = Path('config.json')
 
 
 def load_config():
+    """Load config from file, then overlay any env vars for personal fields."""
     with open(CONFIG_PATH) as f:
-        return json.load(f)
+        config = json.load(f)
+    # Overlay environment variables for sensitive personal info
+    env_map = {
+        'USER_FIRST_NAME': 'first_name',
+        'USER_LAST_NAME': 'last_name',
+        'USER_EMAIL': 'email',
+        'USER_PHONE': 'phone',
+        'USER_POSTAL_CODE': 'postal_code',
+        'USER_DOB': 'date_of_birth',
+    }
+    for env_key, config_key in env_map.items():
+        val = os.environ.get(env_key)
+        if val:
+            config.setdefault('user', {})[config_key] = val
+    return config
 
 
 def load_database():
@@ -47,34 +63,27 @@ def scrape_contestgirl(config):
         'https://www.contestgirl.com/contests/contests.pl?f=s&c=ca&b=nb&sort=p&ar=na&s=_',
     ]
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
-
     for url in urls:
         try:
             resp = requests.get(url, headers=headers, timeout=30)
             resp.raise_for_status()
             soup = BeautifulSoup(resp.text, 'html.parser')
-
             for row in soup.select('tr'):
                 text = row.get_text(separator=' ', strip=True)
                 link = row.find('a', href=True)
                 if not link:
                     continue
-
                 end_match = re.search(r'End Date:\s*(\w+ \d+,\s*\d{4})', text)
                 if not end_match:
                     continue
-
                 try:
                     end_date = datetime.strptime(end_match.group(1).strip(), '%B %d, %Y').date()
                 except ValueError:
                     continue
-
                 if end_date < date.today():
                     continue
-
                 prize_match = re.search(r'\$([\d,]+)', text)
                 prize_value = int(prize_match.group(1).replace(',', '')) if prize_match else 0
-
                 provinces_ok = True
                 province_filters = config.get('filters', {}).get('provinces', ['Ontario', 'All Canada'])
                 exclude_kw = config.get('filters', {}).get('exclude_keywords', [])
@@ -82,10 +91,8 @@ def scrape_contestgirl(config):
                     if kw.lower() in text.lower():
                         provinces_ok = False
                         break
-
                 if not provinces_ok:
                     continue
-
                 freq = 'daily'
                 if 'f=w' in url:
                     freq = 'weekly'
@@ -93,9 +100,7 @@ def scrape_contestgirl(config):
                     freq = 'single'
                 elif 'f=m' in url:
                     freq = 'monthly'
-
                 contest_id = re.sub(r'[^a-z0-9]', '-', link.text.lower().strip())[:50]
-
                 contests.append({
                     'id': contest_id,
                     'name': link.text.strip(),
@@ -113,12 +118,9 @@ def scrape_contestgirl(config):
                     'status': 'active',
                     'last_entered': None
                 })
-
             logger.info(f"Scraped {len(contests)} contests from {url}")
-
         except Exception as e:
             logger.error(f"Error scraping {url}: {e}")
-
     return contests
 
 
@@ -127,12 +129,10 @@ def scrape_redflagdeals():
     contests = []
     url = 'https://www.redflagdeals.com/deals/category/contests/'
     headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'}
-
     try:
         resp = requests.get(url, headers=headers, timeout=30)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, 'html.parser')
-
         for item in soup.select('.list_item, .deal_container, article'):
             link = item.find('a', href=True)
             if not link:
@@ -140,12 +140,10 @@ def scrape_redflagdeals():
             title = link.get_text(strip=True)
             if not title or len(title) < 10:
                 continue
-
             contest_id = re.sub(r'[^a-z0-9]', '-', title.lower())[:50]
             href = link['href']
             if not href.startswith('http'):
                 href = f"https://www.redflagdeals.com{href}"
-
             contests.append({
                 'id': f"rfd-{contest_id}",
                 'name': title,
@@ -163,12 +161,9 @@ def scrape_redflagdeals():
                 'status': 'unverified',
                 'last_entered': None
             })
-
         logger.info(f"Scraped {len(contests)} from RedFlagDeals")
-
     except Exception as e:
         logger.error(f"Error scraping RFD: {e}")
-
     return contests
 
 
@@ -202,14 +197,11 @@ def run_scraper():
     logger.info("=== ContestBot Scraper Starting ===")
     config = load_config()
     db = load_database()
-
     cg_contests = scrape_contestgirl(config)
     rfd_contests = scrape_redflagdeals()
-
     all_new = cg_contests + rfd_contests
     added = merge_contests(db, all_new)
     expired = expire_old_contests(db)
-
     save_database(db)
     logger.info(f"=== Scraper Done: {added} new, {expired} expired ===")
     return db
