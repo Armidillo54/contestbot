@@ -7,12 +7,13 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  scrape-contests:
+  scrape-and-deploy:
     runs-on: ubuntu-latest
     env:
-      PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
       SMTP_USER: ${{ secrets.SMTP_USER }}
       SMTP_PASS: ${{ secrets.SMTP_PASS }}
       NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
@@ -31,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run full pipeline
+      - name: Run pipeline
         run: python run_all.py
 
       - name: Commit updated database
@@ -41,3 +42,15 @@ jobs:
           git add -A
           git diff --staged --quiet || git commit -m "Auto-update: $(date +%Y-%m-%d) pipeline results"
           git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
