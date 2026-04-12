@@ -1,0 +1,37 @@
+{
+  "user": {
+    "first_name": "CHANGE_ME",
+    "last_name": "CHANGE_ME",
+    "email": "CHANGE_ME@gmail.com",
+    "phone": "CHANGE_ME",
+    "postal_code": "CHANGE_ME",
+    "province": "Ontario",
+    "city": "Orillia",
+    "date_of_birth": "CHANGE_ME",
+    "age_over_18": true,
+    "consent_marketing": false,
+    "consent_rules": true
+  },
+  "settings": {
+    "scrape_hour": 8,
+    "entry_hour": 9,
+    "timezone": "America/Toronto",
+    "max_entries_per_day": 50,
+    "headless_browser": true,
+    "log_level": "INFO",
+    "retry_failed": true,
+    "retry_max": 3
+  },
+  "sources": [
+    "https://www.contestgirl.com/canada.php",
+    "https://www.redflagdeals.com/deals/category/contests/",
+    "https://www.canadianfreestuff.com/contests/"
+  ],
+  "filters": {
+    "provinces": ["Ontario", "All Canada"],
+    "entry_methods": ["online_form", "email", "social_media"],
+    "min_prize_value": 25,
+    "exclude_keywords": ["Quebec only", "BC only", "purchase required"],
+    "npn_only": true
+  }
+}
