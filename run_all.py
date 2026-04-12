@@ -20,7 +20,7 @@ def generate_dashboard():
     os.makedirs('docs', exist_ok=True)
     shutil.copy('dashboard.html', 'docs/index.html')
     shutil.copy('contests_database.json', 'docs/contests_database.json')
-        shutil.copy('freebies_database.json', 'docs/freebies_database.json')
+    shutil.copy('freebies_database.json', 'docs/freebies_database.json')
     logger.info("Dashboard generated in docs/")
 
 
@@ -51,10 +51,10 @@ def clean_junk_contests():
 
 def main():
     start = datetime.now()
-    logger.info("="*50)
+    logger.info("=" * 50)
     logger.info("CONTESTBOT DAILY SCAN")
     logger.info(f"Date: {start.strftime('%Y-%m-%d %H:%M')}")
-    logger.info("="*50)
+    logger.info("=" * 50)
 
     # Step 1: Scrape free contest sources
     logger.info("[1/3] Scraping contests...")
