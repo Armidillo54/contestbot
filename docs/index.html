@@ -1,1 +1,182 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>ContestBot v3.0 - Contests, Freebies & Link Checker</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0f;color:#e0e0e0;padding:20px;max-width:1200px;margin:0 auto}.header{text-align:center;padding:30px 0;border-bottom:1px solid #1a1a2e}.header h1{font-size:2.5em;background:linear-gradient(135deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.header p{color:#888;margin-top:8px}.header .updated{color:#555;font-size:0.8em;margin-top:4px}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin:24px 0}.stat-card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:20px;text-align:center}.stat-card .number{font-size:2.2em;font-weight:700;color:#00d4ff}.stat-card .label{color:#888;margin-top:4px;font-size:0.85em}.stat-card.prize .number{color:#00ff88}.stat-card.new .number{color:#ffaa00}.stat-card.daily .number{color:#7b2ff7}.stat-card.freebies .number{color:#ff69b4}.section{margin:30px 0}.section h2{font-size:1.3em;margin-bottom:12px;color:#fff;display:flex;align-items:center;gap:8px}.contest-table{width:100%;border-collapse:collapse;background:#12121f;border-radius:12px;overflow:hidden}.contest-table th{background:#1a1a2e;padding:12px 14px;text-align:left;font-weight:600;color:#00d4ff;font-size:0.8em;text-transform:uppercase}.contest-table td{padding:10px 14px;border-bottom:1px solid #1a1a2e;font-size:0.9em}.contest-table tr:hover{background:#1a1a2e}.contest-table a{color:#00d4ff;text-decoration:none}.contest-table a:hover{text-decoration:underline}.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:0.7em;font-weight:600}.badge-active{background:#00ff8820;color:#00ff88;border:1px solid #00ff8840}.badge-expired{background:#ff6b6b20;color:#ff6b6b;border:1px solid #ff6b6b40}.badge-daily{background:#7b2ff720;color:#7b2ff7}.badge-weekly{background:#00d4ff20;color:#00d4ff}.badge-single{background:#88888820;color:#aaa}.badge-dead{background:#ff6b6b20;color:#ff6b6b;border:1px solid #ff6b6b40}.badge-ok{background:#00ff8820;color:#00ff88;border:1px solid #00ff8840}.badge-checking{background:#ffaa0020;color:#ffaa00;border:1px solid #ffaa0040}.prize-val{color:#00ff88;font-weight:700}.tab-bar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}.tab-btn{padding:8px 20px;border:1px solid #333;border-radius:8px;background:#12121f;color:#888;cursor:pointer;font-size:0.85em;font-weight:600;transition:all 0.2s}.tab-btn.active{background:linear-gradient(135deg,#00d4ff,#7b2ff7);color:#fff;border-color:transparent}.tab-btn:hover{background:#1a1a2e;color:#fff}.tab-btn.active:hover{background:linear-gradient(135deg,#00d4ff,#7b2ff7)}.tab-btn.freebie-tab.active{background:linear-gradient(135deg,#ff69b4,#ff1493)}.tab-btn.freebie-tab.active:hover{background:linear-gradient(135deg,#ff69b4,#ff1493)}.tab-btn.cat-btn.active{background:linear-gradient(135deg,#ff69b4,#ff1493)}.empty{text-align:center;padding:40px;color:#555;font-style:italic}.check-btn{padding:6px 16px;border:1px solid #ffaa00;border-radius:8px;background:#ffaa0015;color:#ffaa00;cursor:pointer;font-size:0.8em;font-weight:600;margin-left:auto}.check-btn:hover{background:#ffaa0030}.check-btn:disabled{opacity:0.5;cursor:not-allowed}.link-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.dot-ok{background:#00ff88}.dot-dead{background:#ff6b6b}.dot-checking{background:#ffaa00;animation:pulse 1s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}footer{text-align:center;padding:24px;color:#555;font-size:0.8em;border-top:1px solid #1a1a2e;margin-top:40px}@media(max-width:600px){.contest-table{font-size:0.8em}.contest-table th,.contest-table td{padding:8px 6px}.header h1{font-size:1.8em}.stats{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}}</style></head><body><div class="header"><h1>ContestBot</h1><p>Daily Canadian Contests & Freebies Dashboard</p><p class="updated" id="lastUpdated">Loading...</p></div><div class="stats" id="stats"><div class="stat-card"><div class="number" id="totalActive">--</div><div class="label">Active Contests</div></div><div class="stat-card prize"><div class="number" id="totalPrize">--</div><div class="label">Total Prize Value</div></div><div class="stat-card new"><div class="number" id="totalNew">--</div><div class="label">New Today</div></div><div class="stat-card daily"><div class="number" id="totalDaily">--</div><div class="label">Daily Entry</div></div><div class="stat-card freebies"><div class="number" id="totalFreebies">--</div><div class="label">Active Freebies</div></div></div><div class="section"><div class="tab-bar"><button class="tab-btn active" onclick="showTab('all',this)">All Contests</button><button class="tab-btn" onclick="showTab('new',this)">New Today</button><button class="tab-btn" onclick="showTab('daily',this)">Daily Entry</button><button class="tab-btn" onclick="showTab('highvalue',this)">High Value</button><button class="tab-btn freebie-tab" onclick="showTab('freebies',this)">Freebies</button><button class="check-btn" id="checkBtn" onclick="checkLinks()">Check Links</button></div><div id="categoryBar" class="tab-bar" style="display:none;margin-top:-8px"><button class="tab-btn cat-btn active" onclick="filterCat('all',this)">All</button><button class="tab-btn cat-btn" onclick="filterCat('groceries',this)">Groceries</button><button class="tab-btn cat-btn" onclick="filterCat('kids-clothing',this)">Kids Clothing</button><button class="tab-btn cat-btn" onclick="filterCat('adult-clothing',this)">Adult Clothing</button><button class="tab-btn cat-btn" onclick="filterCat('toiletries',this)">Toiletries</button><button class="tab-btn cat-btn" onclick="filterCat('household',this)">Household</button><button class="tab-btn cat-btn" onclick="filterCat('restaurant-coupons',this)">Restaurant Coupons</button><button class="tab-btn cat-btn" onclick="filterCat('streaming',this)">Streaming</button></div><div id="checkProgress" style="color:#ffaa00;font-size:0.8em;margin-bottom:8px;display:none"></div><table class="contest-table" id="contestTable"><thead id="tableHead"><tr><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th>Status</th></tr></thead><tbody id="contestBody"></tbody></table><div class="empty" id="emptyMsg" style="display:none">No items in this category yet.</div></div><footer>ContestBot v3.0 | Orillia, Ontario | Free & NPN Only | Updated daily at 8 AM ET</footer><script>let allContests=[],allFreebies=[],currentTab='all',currentCat='all',linkStatus={};const today=new Date().toISOString().split('T')[0];async function loadData(){try{const[cr,fr]=await Promise.all([fetch('contests_database.json').then(r=>r.json()).catch(()=>({contests:[]})),fetch('freebies_database.json').then(r=>r.json()).catch(()=>({freebies:[]}))]);allContests=(cr.contests||[]).filter(c=>c.name&&c.name.length>3&&c.url);allFreebies=(fr.freebies||[]).filter(f=>f.name&&f.url);const active=allContests.filter(c=>c.status==='active');const daily=active.filter(c=>c.entry_frequency==='daily');const newToday=active.filter(c=>c.discovered_date===today||c.added_date===today);const activeFreebies=allFreebies.filter(f=>f.status==='active');document.getElementById('totalActive').textContent=active.length;document.getElementById('totalPrize').textContent='$'+(cr.total_prize_value||0).toLocaleString();document.getElementById('totalNew').textContent=newToday.length;document.getElementById('totalDaily').textContent=daily.length;document.getElementById('totalFreebies').textContent=activeFreebies.length;document.getElementById('lastUpdated').textContent='Last updated: '+(cr.last_updated||today);renderContests(active);}catch(e){document.getElementById('lastUpdated').textContent='Error: '+e.message;}}function renderContests(contests){const thead=document.getElementById('tableHead');thead.innerHTML='<tr><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th>Status</th></tr>';const tbody=document.getElementById('contestBody');const empty=document.getElementById('emptyMsg');if(!contests.length){tbody.innerHTML='';empty.style.display='block';return;}empty.style.display='none';tbody.innerHTML=contests.sort((a,b)=>(b.prize_value||0)-(a.prize_value||0)).map(c=>{const ls=linkStatus[c.url];const dot=ls?'<span class="link-dot '+(ls==='ok'?'dot-ok':ls==='dead'?'dot-dead':'dot-checking')+'"></span>':'';const sc=c.status==='active'?'badge-active':'badge-expired';const statusBadge=ls==='dead'?'<span class="badge badge-dead">404</span>':'<span class="badge '+sc+'">'+(c.status||'--')+'</span>';const fc=c.entry_frequency==='daily'?'badge-daily':c.entry_frequency==='weekly'?'badge-weekly':'badge-single';return '<tr><td>'+dot+'<a href="'+c.url+'" target="_blank">'+(c.name||'--')+'</a></td><td>'+(c.prize||'--')+'</td><td class="prize-val">$'+(c.prize_value||0).toLocaleString()+'</td><td><span class="badge '+fc+'">'+(c.entry_frequency||'--')+'</span></td><td>'+(c.end_date||'--')+'</td><td>'+(c.source||'--')+'</td><td>'+statusBadge+'</td></tr>';}).join('');}function renderFreebies(freebies){const thead=document.getElementById('tableHead');thead.innerHTML='<tr><th>Freebie</th><th>Description</th><th>Category</th><th>Expires</th><th>Source</th><th>Status</th></tr>';const tbody=document.getElementById('contestBody');const empty=document.getElementById('emptyMsg');if(!freebies.length){tbody.innerHTML='';empty.style.display='block';return;}empty.style.display='none';tbody.innerHTML=freebies.sort((a,b)=>new Date(a.expiry)-new Date(b.expiry)).map(f=>{const ls=linkStatus[f.url];const dot=ls?'<span class="link-dot '+(ls==='ok'?'dot-ok':ls==='dead'?'dot-dead':'dot-checking')+'"></span>':'';const statusBadge=ls==='dead'?'<span class="badge badge-dead">404</span>':'<span class="badge badge-active">'+(f.status||'active')+'</span>';const catLabel=(f.category||'--').replace(/-/g,' ');return '<tr><td>'+dot+'<a href="'+f.url+'" target="_blank">'+(f.name||'--')+'</a></td><td>'+(f.description||'--')+'</td><td><span class="badge badge-weekly">'+catLabel+'</span></td><td>'+(f.expiry||'--')+'</td><td>'+(f.source||'--')+'</td><td>'+statusBadge+'</td></tr>';}).join('');}function showTab(t,btn){document.querySelectorAll('.tab-bar:first-of-type .tab-btn').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');currentTab=t;currentCat='all';const catBar=document.getElementById('categoryBar');if(t==='freebies'){catBar.style.display='flex';catBar.querySelectorAll('.cat-btn').forEach((b,i)=>{b.classList.remove('active');if(i===0)b.classList.add('active');});}else{catBar.style.display='none';}const active=allContests.filter(c=>c.status==='active');if(t==='all')renderContests(active);else if(t==='new')renderContests(active.filter(c=>c.discovered_date===today||c.added_date===today));else if(t==='daily')renderContests(active.filter(c=>c.entry_frequency==='daily'));else if(t==='highvalue')renderContests(active.filter(c=>(c.prize_value||0)>=5000));else if(t==='freebies')renderFreebies(allFreebies.filter(f=>f.status==='active'));}function filterCat(cat,btn){document.querySelectorAll('#categoryBar .cat-btn').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');currentCat=cat;const active=allFreebies.filter(f=>f.status==='active');if(cat==='all')renderFreebies(active);else renderFreebies(active.filter(f=>f.category===cat));}async function checkLinks(){const btn=document.getElementById('checkBtn');const prog=document.getElementById('checkProgress');btn.disabled=true;btn.textContent='Checking...';prog.style.display='block';const urls=[...allContests.filter(c=>c.status==='active').map(c=>c.url),...allFreebies.filter(f=>f.status==='active').map(f=>f.url)];let checked=0;for(const url of urls){linkStatus[url]='checking';refreshCurrentTab();try{await fetch(url,{method:'HEAD',mode:'no-cors',signal:AbortSignal.timeout(5000)});linkStatus[url]='ok';}catch(e){linkStatus[url]='dead';}checked++;prog.textContent='Checked '+checked+'/'+urls.length+' links';refreshCurrentTab();}btn.disabled=false;btn.textContent='Check Links';prog.textContent='Done! '+urls.filter(u=>linkStatus[u]==='dead').length+' dead links found.';}function refreshCurrentTab(){const active=allContests.filter(c=>c.status==='active');if(currentTab==='all')renderContests(active);else if(currentTab==='new')renderContests(active.filter(c=>c.discovered_date===today||c.added_date===today));else if(currentTab==='daily')renderContests(active.filter(c=>c.entry_frequency==='daily'));else if(currentTab==='highvalue')renderContests(active.filter(c=>(c.prize_value||0)>=5000));else if(currentTab==='freebies'){const af=allFreebies.filter(f=>f.status==='active');if(currentCat==='all')renderFreebies(af);else renderFreebies(af.filter(f=>f.category===currentCat));}}loadData();</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContestBot v3.0 - Contests, Freebies & Link Checker</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0f;color:#e0e0e0;padding:20px;max-width:1200px;margin:0 auto}
+.header{text-align:center;padding:30px 0;border-bottom:1px solid #1a1a2e}
+.header h1{font-size:2.5em;background:linear-gradient(135deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{color:#888;margin-top:8px}
+.header .updated{color:#555;font-size:0.8em;margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin:24px 0}
+.stat-card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:20px;text-align:center}
+.stat-card .number{font-size:2.2em;font-weight:700;color:#00d4ff}
+.stat-card .label{color:#888;margin-top:4px;font-size:0.85em}
+.stat-card.prize .number{color:#00ff88}
+.stat-card.new .number{color:#ffaa00}
+.stat-card.daily .number{color:#7b2ff7}
+.stat-card.freebies .number{color:#ff69b4}
+.section{margin:30px 0}
+.section h2{font-size:1.3em;margin-bottom:12px;color:#fff;display:flex;align-items:center;gap:8px}
+.contest-table{width:100%;border-collapse:collapse;background:#12121f;border-radius:12px;overflow:hidden}
+.contest-table th{background:#1a1a2e;padding:12px 14px;text-align:left;font-weight:600;color:#00d4ff;font-size:0.8em;text-transform:uppercase}
+.contest-table td{padding:10px 14px;border-bottom:1px solid #1a1a2e;font-size:0.9em}
+.contest-table tr:hover{background:#1a1a2e}
+.contest-table a{color:#00d4ff;text-decoration:none}
+.contest-table a:hover{text-decoration:underline}
+.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:0.7em;font-weight:600}
+.badge-active{background:#00ff8820;color:#00ff88;border:1px solid #00ff8840}
+.badge-expired{background:#ff6b6b20;color:#ff6b6b;border:1px solid #ff6b6b40}
+.badge-daily{background:#7b2ff720;color:#7b2ff7}
+.badge-weekly{background:#00d4ff20;color:#00d4ff}
+.badge-single{background:#88888820;color:#aaa}
+.badge-dead{background:#ff6b6b20;color:#ff6b6b;border:1px solid #ff6b6b40}
+.badge-ok{background:#00ff8820;color:#00ff88;border:1px solid #00ff8840}
+.badge-checking{background:#ffaa0020;color:#ffaa00;border:1px solid #ffaa0040}
+.prize-val{color:#00ff88;font-weight:700}
+.tab-bar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.tab-btn{padding:8px 20px;border:1px solid #333;border-radius:8px;background:#12121f;color:#888;cursor:pointer;font-size:0.85em;font-weight:600;transition:all 0.2s}
+.tab-btn.active{background:linear-gradient(135deg,#00d4ff,#7b2ff7);color:#fff;border-color:transparent}
+.tab-btn:hover{background:#1a1a2e;color:#fff}
+.tab-btn.active:hover{background:linear-gradient(135deg,#00d4ff,#7b2ff7)}
+.tab-btn.freebie-tab.active{background:linear-gradient(135deg,#ff69b4,#ff1493)}
+.tab-btn.freebie-tab.active:hover{background:linear-gradient(135deg,#ff69b4,#ff1493)}
+.empty{text-align:center;padding:40px;color:#555;font-style:italic}
+.check-btn{padding:6px 16px;border:1px solid #ffaa00;border-radius:8px;background:#ffaa0015;color:#ffaa00;cursor:pointer;font-size:0.8em;font-weight:600;margin-left:auto}
+.check-btn:hover{background:#ffaa0030}
+.check-btn:disabled{opacity:0.5;cursor:not-allowed}
+.link-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.dot-ok{background:#00ff88}
+.dot-dead{background:#ff6b6b}
+.dot-checking{background:#ffaa00;animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+footer{text-align:center;padding:24px;color:#555;font-size:0.8em;border-top:1px solid #1a1a2e;margin-top:40px}
+@media(max-width:600px){.contest-table{font-size:0.8em}.contest-table th,.contest-table td{padding:8px 6px}.header h1{font-size:1.8em}.stats{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}}
+</style>
+</head>
+<body>
+<div class="header">
+ <h1>ContestBot</h1>
+ <p>Daily Canadian Contests & Freebies Dashboard</p>
+ <div class="updated" id="lastUpdated">Loading...</div>
+</div>
+<div class="stats" id="stats">
+ <div class="stat-card"><div class="number" id="totalActive">--</div><div class="label">Active Contests</div></div>
+ <div class="stat-card prize"><div class="number" id="totalPrize">--</div><div class="label">Total Prize Value</div></div>
+ <div class="stat-card new"><div class="number" id="totalNew">--</div><div class="label">New Today</div></div>
+ <div class="stat-card daily"><div class="number" id="totalDaily">--</div><div class="label">Daily Entry</div></div>
+ <div class="stat-card freebies"><div class="number" id="totalFreebies">--</div><div class="label">Active Freebies</div></div>
+</div>
+<div class="section">
+ <div class="tab-bar">
+ <button class="tab-btn active" onclick="showTab('all',this)">All Contests</button>
+ <button class="tab-btn" onclick="showTab('new',this)">New Today</button>
+ <button class="tab-btn" onclick="showTab('daily',this)">Daily Entry</button>
+ <button class="tab-btn" onclick="showTab('highvalue',this)">High Value</button>
+ <button class="tab-btn freebie-tab" onclick="showTab('freebies',this)">Freebies</button>
+ <button class="check-btn" id="checkBtn" onclick="checkLinks()">Check Links</button>
+ </div>
+ <div id="checkProgress" style="color:#ffaa00;font-size:0.8em;margin-bottom:8px;display:none"></div>
+ <table class="contest-table" id="contestTable">
+ <thead id="tableHead"><tr><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th>Status</th></tr></thead>
+ <tbody id="contestBody"></tbody>
+ </table>
+ <div class="empty" id="emptyMsg" style="display:none">No items in this category yet.</div>
+</div>
+<footer>ContestBot v3.0 | Orillia, Ontario | Free & NPN Only | Updated daily at 8 AM ET</footer>
+<script>
+let allContests=[],allFreebies=[],currentTab='all',linkStatus={};
+const today=new Date().toISOString().split('T')[0];
+async function loadData(){
+ try{
+  const[cr,fr]=await Promise.all([fetch('contests_database.json').then(r=>r.json()).catch(()=>({contests:[]})),fetch('freebies_database.json').then(r=>r.json()).catch(()=>({freebies:[]}))]);
+  allContests=(cr.contests||[]).filter(c=>c.name&&c.name.length>3&&c.url);
+  allFreebies=(fr.freebies||[]).filter(f=>f.name&&f.url);
+  const active=allContests.filter(c=>c.status==='active');
+  const daily=active.filter(c=>c.entry_frequency==='daily');
+  const newToday=active.filter(c=>c.discovered_date===today||c.added_date===today);
+  const activeFreebies=allFreebies.filter(f=>f.status==='active');
+  document.getElementById('totalActive').textContent=active.length;
+  document.getElementById('totalPrize').textContent='$'+(cr.total_prize_value||0).toLocaleString();
+  document.getElementById('totalNew').textContent=newToday.length;
+  document.getElementById('totalDaily').textContent=daily.length;
+  document.getElementById('totalFreebies').textContent=activeFreebies.length;
+  document.getElementById('lastUpdated').textContent='Last updated: '+(cr.last_updated||today);
+  renderContests(active);
+ }catch(e){document.getElementById('lastUpdated').textContent='Error: '+e.message;}
+}
+function renderContests(contests){
+ const thead=document.getElementById('tableHead');
+ thead.innerHTML='<tr><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th>Status</th></tr>';
+ const tbody=document.getElementById('contestBody');
+ const empty=document.getElementById('emptyMsg');
+ if(!contests.length){tbody.innerHTML='';empty.style.display='block';return;}
+ empty.style.display='none';
+ tbody.innerHTML=contests.sort((a,b)=>(b.prize_value||0)-(a.prize_value||0)).map(c=>{
+  const ls=linkStatus[c.url];
+  const dot=ls?'<span class="link-dot '+(ls==='ok'?'dot-ok':ls==='dead'?'dot-dead':'dot-checking')+'"></span>':'';
+  const sc=c.status==='active'?'badge-active':'badge-expired';
+  const statusBadge=ls==='dead'?'<span class="badge badge-dead">404</span>':'<span class="badge '+sc+'">'+(c.status||'--')+'</span>';
+  const fc=c.entry_frequency==='daily'?'badge-daily':c.entry_frequency==='weekly'?'badge-weekly':'badge-single';
+  return '<tr><td>'+dot+'<a href="'+c.url+'" target="_blank">'+(c.name||'--')+'</a></td><td>'+(c.prize||'--')+'</td><td class="prize-val">$'+(c.prize_value||0).toLocaleString()+'</td><td><span class="badge '+fc+'">'+(c.entry_frequency||'--')+'</span></td><td>'+(c.end_date||'--')+'</td><td>'+(c.source||'--')+'</td><td>'+statusBadge+'</td></tr>';
+ }).join('');
+}
+function renderFreebies(freebies){
+ const thead=document.getElementById('tableHead');
+ thead.innerHTML='<tr><th>Freebie</th><th>Description</th><th>Category</th><th>Expires</th><th>Source</th><th>Status</th></tr>';
+ const tbody=document.getElementById('contestBody');
+ const empty=document.getElementById('emptyMsg');
+ if(!freebies.length){tbody.innerHTML='';empty.style.display='block';return;}
+ empty.style.display='none';
+ tbody.innerHTML=freebies.sort((a,b)=>new Date(a.expiry)-new Date(b.expiry)).map(f=>{
+  const ls=linkStatus[f.url];
+  const dot=ls?'<span class="link-dot '+(ls==='ok'?'dot-ok':ls==='dead'?'dot-dead':'dot-checking')+'"></span>':'';
+  const statusBadge=ls==='dead'?'<span class="badge badge-dead">404</span>':'<span class="badge badge-active">'+(f.status||'active')+'</span>';
+  return '<tr><td>'+dot+'<a href="'+f.url+'" target="_blank">'+(f.name||'--')+'</a></td><td>'+(f.description||'--')+'</td><td><span class="badge badge-weekly">'+(f.category||'--')+'</span></td><td>'+(f.expiry||'--')+'</td><td>'+(f.source||'--')+'</td><td>'+statusBadge+'</td></tr>';
+ }).join('');
+}
+function showTab(t,btn){
+ document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+ if(btn)btn.classList.add('active');
+ currentTab=t;
+ const active=allContests.filter(c=>c.status==='active');
+ if(t==='all')renderContests(active);
+ else if(t==='new')renderContests(active.filter(c=>c.discovered_date===today||c.added_date===today));
+ else if(t==='daily')renderContests(active.filter(c=>c.entry_frequency==='daily'));
+ else if(t==='highvalue')renderContests(active.filter(c=>(c.prize_value||0)>=5000));
+ else if(t==='freebies')renderFreebies(allFreebies.filter(f=>f.status==='active'));
+}
+async function checkLinks(){
+ const btn=document.getElementById('checkBtn');
+ const prog=document.getElementById('checkProgress');
+ btn.disabled=true;btn.textContent='Checking...';
+ prog.style.display='block';
+ const urls=[...allContests.filter(c=>c.status==='active').map(c=>c.url),...allFreebies.filter(f=>f.status==='active').map(f=>f.url)];
+ let checked=0;
+ for(const url of urls){
+  linkStatus[url]='checking';refreshCurrentTab();
+  try{
+   const r=await fetch(url,{method:'HEAD',mode:'no-cors',signal:AbortSignal.timeout(5000)});
+   linkStatus[url]='ok';
+  }catch(e){linkStatus[url]='dead';}
+  checked++;prog.textContent='Checked '+checked+'/'+urls.length+' links';
+  refreshCurrentTab();
+ }
+ btn.disabled=false;btn.textContent='Check Links';
+ prog.textContent='Done! '+urls.filter(u=>linkStatus[u]==='dead').length+' dead links found.';
+}
+function refreshCurrentTab(){
+ const active=allContests.filter(c=>c.status==='active');
+ if(currentTab==='all')renderContests(active);
+ else if(currentTab==='new')renderContests(active.filter(c=>c.discovered_date===today||c.added_date===today));
+ else if(currentTab==='daily')renderContests(active.filter(c=>c.entry_frequency==='daily'));
+ else if(currentTab==='highvalue')renderContests(active.filter(c=>(c.prize_value||0)>=5000));
+ else if(currentTab==='freebies')renderFreebies(allFreebies.filter(f=>f.status==='active'));
+}
+loadData();
+</script>
+</body>
+</html>

@@ -1,357 +1,102 @@
 {
   "last_updated": "2026-04-12",
-  "total_freebies": 24,
-  "categories": [
-    "groceries",
-    "kids-clothing",
-    "adult-clothing",
-    "toiletries",
-    "household",
-    "restaurant-coupons",
-    "streaming"
-  ],
+  "total_freebies": 8,
   "freebies": [
-    {
-      "id": "walmart-free-sample-pickup",
-      "name": "Walmart Free Grocery Sample Program",
-      "description": "Spend $35+ and pick a free grocery sample with promo code at checkout",
-      "url": "https://www.walmart.ca/en/cp/grocery/pick-your-free-sample/6000207084863",
-      "category": "groceries",
-      "source": "walmart.ca",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "flashfood-grocery-deals",
-      "name": "Flashfood - Discounted Grocery Items",
-      "description": "Get groceries up to 50% off near expiry at Loblaws, No Frills, and more",
-      "url": "https://www.flashfood.com",
-      "category": "groceries",
-      "source": "flashfood.com",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "pg-good-everyday-samples",
-      "name": "P&G Good Everyday Free Samples",
-      "description": "Free Mr. Clean Magic Eraser and other P&G product samples by mail",
-      "url": "https://www.pgeveryday.ca/good-everyday",
-      "category": "household",
-      "source": "pgeveryday.ca",
-      "expiry": "2026-06-30",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "samplesource-spring-2026",
-      "name": "SampleSource Spring Sample Box",
-      "description": "Free multi-product sample box including household, food, and personal care items",
-      "url": "https://www.samplesource.com",
-      "category": "household",
-      "source": "samplesource.com",
-      "expiry": "2026-06-30",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
     {
       "id": "dove-body-wash-sample",
       "name": "Dove Body Wash Free Sample",
       "description": "Free full-size Dove Body Wash sample delivered to your door",
       "url": "https://www.dove.com/ca/en/offers.html",
-      "category": "toiletries",
+      "category": "beauty",
       "source": "dove.com",
       "expiry": "2026-05-31",
       "status": "active",
       "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "garnier-micellar-water",
-      "name": "Garnier SkinActive Micellar Water Sample",
-      "description": "Free micellar water cleansing sample delivered by mail",
-      "url": "https://www.garnier.ca/en-ca/offers",
-      "category": "toiletries",
-      "source": "garnier.ca",
-      "expiry": "2026-05-31",
-      "status": "active",
-      "added_date": "2026-04-09",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "loreal-elvive-sample",
-      "name": "L'Oreal Elvive Dream Lengths Sample",
-      "description": "Free shampoo and conditioner sample pack",
-      "url": "https://www.lorealparis.ca/en-ca/offers",
-      "category": "toiletries",
-      "source": "lorealparis.ca",
-      "expiry": "2026-05-15",
-      "status": "active",
-      "added_date": "2026-04-11",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "depend-free-sample",
-      "name": "Depend Free Adult Diaper Sample",
-      "description": "Free sample pack of Depend adult diapers shipped to your home",
-      "url": "https://www.depend.com/en-ca/free-sample",
-      "category": "toiletries",
-      "source": "depend.com",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "mcdonalds-app-deals",
-      "name": "McDonalds App - Free Fries Fridays and $1 Coffee",
-      "description": "Free fries every Friday, $1 any size coffee, and BOGO deals via app",
-      "url": "https://www4.mcdonalds.ca/coupons/",
-      "category": "restaurant-coupons",
-      "source": "mcdonalds.ca",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "swiss-chalet-free-appetizer",
-      "name": "Swiss Chalet - Free Appetizer with Signup",
-      "description": "Free appetizer with adult entree purchase when you join Rotisserie Mail",
-      "url": "https://www.swisschalet.com/en/coupons.html",
-      "category": "restaurant-coupons",
-      "source": "swisschalet.com",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "tims-rewards",
-      "name": "Tim Hortons Rewards - Free Drinks and Food",
-      "description": "Earn points on every purchase and redeem for free coffee, donuts, and meals",
-      "url": "https://www.timhortons.ca/tims-rewards",
-      "category": "restaurant-coupons",
-      "source": "timhortons.ca",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "pizza-pizza-free-slice",
-      "name": "Pizza Pizza - Free Slice Day April 18",
-      "description": "Free slice at participating Pizza Pizza locations on April 18",
-      "url": "https://www.pizzapizza.ca/promotions",
-      "category": "restaurant-coupons",
-      "source": "pizzapizza.ca",
-      "expiry": "2026-04-18",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ON",
-        "AB",
-        "BC",
-        "MB",
-        "SK",
-        "NS",
-        "NB"
-      ]
-    },
-    {
-      "id": "amazon-prime-video-trial",
-      "name": "Amazon Prime Video - 30-Day Free Trial",
-      "description": "Stream thousands of movies and TV shows free for 30 days",
-      "url": "https://www.amazon.ca/gp/video/offers",
-      "category": "streaming",
-      "source": "amazon.ca",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "apple-tv-plus-trial",
-      "name": "Apple TV+ - 7-Day Free Trial",
-      "description": "Free 7-day trial for Apple TV+ streaming with original content",
-      "url": "https://tv.apple.com",
-      "category": "streaming",
-      "source": "apple.com",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "citytv-plus-trial",
-      "name": "Citytv+ - 7-Day Free Trial",
-      "description": "Free trial with access to Citytv, HGTV, Food Network, Discovery, FX and more",
-      "url": "https://subscriptions.citytvplus.ca",
-      "category": "streaming",
-      "source": "citytvplus.ca",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "crave-trial",
-      "name": "Crave TV - 7-Day Free Trial",
-      "description": "Stream HBO, Showtime, and Canadian originals free for 7 days",
-      "url": "https://www.crave.ca",
-      "category": "streaming",
-      "source": "crave.ca",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "huggies-welcome-box",
-      "name": "Huggies Free Diaper and Wipes Sample Box",
-      "description": "Register for the Huggies Hug Box and get free diapers and wipes",
-      "url": "https://www.huggies.com/en-ca/offers",
-      "category": "kids-clothing",
-      "source": "huggies.com",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "babies-r-us-registry",
-      "name": "Babies R Us Free Swag Bag with Registry",
-      "description": "Free goodie bag with baby samples when you create an in-store registry",
-      "url": "https://www.babiesrus.ca/en/baby-registry",
-      "category": "kids-clothing",
-      "source": "babiesrus.ca",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "baby-box-canada",
-      "name": "Baby Box Canada - Free Baby Products",
-      "description": "Free baby product samples, formula, and coupons for new parents",
-      "url": "https://babyboxcanada.org",
-      "category": "kids-clothing",
-      "source": "babyboxcanada.org",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "giant-tiger-clearance",
-      "name": "Giant Tiger - 50%+ Off Clothing Clearance",
-      "description": "Major clearance deals on adult and kids clothing, updated weekly",
-      "url": "https://www.gianttiger.com/collections/clearance",
-      "category": "adult-clothing",
-      "source": "gianttiger.com",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "levis-canada-deals",
-      "name": "Levis Canada - 30% Off Sitewide Sales",
-      "description": "Recurring sitewide sales with jeans starting from $24.99",
-      "url": "https://www.levi.com/CA/en_CA/deals",
-      "category": "adult-clothing",
-      "source": "levi.com",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
-    },
-    {
-      "id": "reitmans-sale",
-      "name": "Reitmans - 30% Off Almost Everything",
-      "description": "Recurring sales on womens clothing and accessories",
-      "url": "https://www.reitmans.com/en/sale",
-      "category": "adult-clothing",
-      "source": "reitmans.com",
-      "expiry": "2026-12-31",
-      "status": "active",
-      "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
+      "provinces": ["ALL"]
     },
     {
       "id": "costco-free-samples",
-      "name": "Costco In-Store Free Food Samples",
+      "name": "Costco In-Store Free Samples",
       "description": "Weekend free sample stations at all Canadian Costco locations",
       "url": "https://www.costco.ca/warehouse-locations",
-      "category": "groceries",
+      "category": "food",
       "source": "costco.ca",
       "expiry": "2026-12-31",
       "status": "active",
       "added_date": "2026-04-12",
-      "provinces": [
-        "ALL"
-      ]
+      "provinces": ["ALL"]
+    },
+    {
+      "id": "tims-free-coffee",
+      "name": "Tim Hortons Free Coffee - Earth Day",
+      "description": "Free medium coffee with reusable cup on Earth Day, April 22",
+      "url": "https://www.timhortons.ca/earth-day",
+      "category": "food",
+      "source": "timhortons.ca",
+      "expiry": "2026-04-22",
+      "status": "active",
+      "added_date": "2026-04-12",
+      "provinces": ["ALL"]
+    },
+    {
+      "id": "purina-pet-food",
+      "name": "Purina Free Pet Food Sample Kit",
+      "description": "Free sample pack of Purina ONE dog or cat food",
+      "url": "https://www.purina.ca/offers",
+      "category": "pets",
+      "source": "purina.ca",
+      "expiry": "2026-06-30",
+      "status": "active",
+      "added_date": "2026-04-10",
+      "provinces": ["ALL"]
     },
     {
       "id": "canada-flag-sticker",
-      "name": "Free Canadian Flag and Stickers from Government",
-      "description": "Order free Canadian flag, pins, and stickers from Heritage Canada",
+      "name": "Free Canadian Flag & Stickers",
+      "description": "Order free Canadian flag, pins, and stickers from the Government of Canada",
       "url": "https://www.canada.ca/en/canadian-heritage/services/flag-canada/order.html",
-      "category": "household",
+      "category": "government",
       "source": "canada.ca",
       "expiry": "2026-12-31",
       "status": "active",
       "added_date": "2026-04-08",
-      "provinces": [
-        "ALL"
-      ]
+      "provinces": ["ALL"]
+    },
+    {
+      "id": "loreal-hair-sample",
+      "name": "L'Oreal Elvive Dream Lengths Sample",
+      "description": "Free shampoo and conditioner sample pack",
+      "url": "https://www.lorealparisusa.com/sample",
+      "category": "beauty",
+      "source": "loreal.ca",
+      "expiry": "2026-05-15",
+      "status": "active",
+      "added_date": "2026-04-11",
+      "provinces": ["ALL"]
+    },
+    {
+      "id": "rfd-free-pizza",
+      "name": "Pizza Pizza - Free Slice Day",
+      "description": "Free slice at participating Pizza Pizza locations on April 18",
+      "url": "https://www.pizzapizza.ca/promotions",
+      "category": "food",
+      "source": "redflagdeals.com",
+      "expiry": "2026-04-18",
+      "status": "active",
+      "added_date": "2026-04-12",
+      "provinces": ["ON", "AB", "BC", "MB", "SK", "NS", "NB"]
+    },
+    {
+      "id": "garnier-skincare",
+      "name": "Garnier SkinActive Micellar Water Sample",
+      "description": "Free micellar water cleansing sample delivered by mail",
+      "url": "https://www.garnier.ca/en-ca/offers",
+      "category": "beauty",
+      "source": "garnier.ca",
+      "expiry": "2026-05-31",
+      "status": "active",
+      "added_date": "2026-04-09",
+      "provinces": ["ALL"]
     }
   ]
 }
