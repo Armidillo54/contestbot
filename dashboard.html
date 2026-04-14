@@ -102,6 +102,44 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .show-hidden-btn{padding:5px 12px;border:1px solid #2a2a3e;border-radius:20px;background:#12121f;color:#555;cursor:pointer;font-size:0.78em;font-weight:600;margin-left:auto}
 .show-hidden-btn.on{color:#ffaa00;border-color:#ffaa0040}
 footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px solid #1a1a2e;margin-top:36px}
+/* Theme toggle + backup buttons */
+.header-controls{display:flex;justify-content:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+.hdr-btn{padding:6px 14px;border:1px solid #2a2a3e;border-radius:20px;background:none;color:#888;cursor:pointer;font-size:0.78em;font-weight:600;transition:all 0.2s}
+.hdr-btn:hover{background:#1a1a2e;color:#fff}
+/* Light mode overrides */
+body.light{background:#f0f4f8;color:#1a1a2a}
+body.light #loginScreen{background:#f0f4f8}
+body.light .login-box{background:#fff;border-color:#dde3ec}
+body.light .login-box input{background:#f4f6fb;color:#1a1a2a;border-color:#dde3ec}
+body.light .login-box p{color:#888}
+body.light .header{border-color:#dde3ec}
+body.light .header p{color:#666}
+body.light .header .updated{color:#aaa}
+body.light .hdr-btn{border-color:#dde3ec;color:#666}
+body.light .hdr-btn:hover{background:#e8ecf4;color:#1a1a2a}
+body.light .stat-card{background:#fff;border-color:#dde3ec}
+body.light .stat-card .label{color:#666}
+body.light .tab-btn{background:#fff;border-color:#dde3ec;color:#555}
+body.light .tab-btn:hover:not(.active){background:#edf1f8;color:#1a1a2a}
+body.light .show-hidden-btn{background:#fff;border-color:#dde3ec;color:#777}
+body.light .contest-table{background:#fff}
+body.light .contest-table th{background:#edf1f8;color:#1a1a2a}
+body.light .contest-table td{border-color:#edf1f8;color:#1a1a2a}
+body.light .contest-table tr:hover td{background:#f4f6fb}
+body.light .contest-table a{color:#0066cc}
+body.light .source-tag{color:#aaa}
+body.light .dot-unknown{background:#bbb}
+body.light .empty{color:#aaa}
+body.light .cat-btn,.week-btn{background:#fff;border-color:#dde3ec;color:#555}
+body.light .cat-btn:hover:not(.active),body.light .week-btn:hover:not(.active){background:#edf1f8;color:#1a1a2a}
+body.light .sale-card,body.light .event-card{background:#fff;border-color:#dde3ec}
+body.light .sale-card .sale-desc{color:#333}
+body.light .event-card .event-title{color:#1a1a2a}
+body.light .event-card .event-venue{color:#777}
+body.light .event-card .event-date-box .day{color:#1a1a2a}
+body.light .week-btn{background:#fff;border-color:#dde3ec;color:#555}
+body.light footer{border-color:#dde3ec;color:#aaa}
+body.light .dismiss-btn{color:#bbb}
 @media(max-width:700px){
   body{padding:10px}
   .header{padding:18px 0}
@@ -153,6 +191,11 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
   <h1>ContestBot</h1>
   <p>Ontario Contests &amp; Canadian Freebies — Updated Daily</p>
   <div class="updated" id="lastUpdated">Loading...</div>
+  <div class="header-controls">
+    <button class="hdr-btn" id="themeBtn" onclick="toggleTheme()">☀️ Light Mode</button>
+    <button class="hdr-btn" onclick="backupData()" title="Copy your entered/dismissed list to clipboard">💾 Backup Progress</button>
+    <button class="hdr-btn" onclick="restoreData()" title="Paste backup code to restore your progress">📥 Restore Progress</button>
+  </div>
 </div>
 
 <div class="stats" id="stats">
@@ -605,6 +648,51 @@ function showTab(t, btn){
     document.querySelectorAll('#eventCatBar .cat-btn').forEach((b,i)=>b.classList.toggle('active',i===0));
     renderEvents(activeEvents()); }
   else if(t === 'submitted') renderSubmitted(submittedContests());
+}
+
+// --- Theme toggle ---
+function applyTheme(mode){
+  document.body.classList.toggle('light', mode === 'light');
+  document.getElementById('themeBtn').textContent = mode === 'light' ? '🌙 Dark Mode' : '☀️ Light Mode';
+}
+function toggleTheme(){
+  const next = document.body.classList.contains('light') ? 'dark' : 'light';
+  localStorage.setItem('cb_theme', next);
+  applyTheme(next);
+}
+// Apply saved theme immediately
+(function(){ applyTheme(localStorage.getItem('cb_theme') || 'dark'); })();
+
+// --- Backup / Restore submitted + dismissed ---
+function backupData(){
+  const payload = {
+    s: [...submitted],
+    d: [...dismissed],
+    v: 1
+  };
+  const code = btoa(JSON.stringify(payload));
+  navigator.clipboard.writeText(code).then(()=>{
+    alert('✅ Backup code copied to clipboard!\n\nPaste it on another device using "Restore Progress" to sync your entries.');
+  }).catch(()=>{
+    prompt('Copy this backup code:', code);
+  });
+}
+
+function restoreData(){
+  const code = prompt('Paste your backup code:');
+  if(!code) return;
+  try{
+    const payload = JSON.parse(atob(code.trim()));
+    if(payload.v !== 1) throw new Error('Invalid');
+    (payload.s||[]).forEach(id => submitted.add(id));
+    (payload.d||[]).forEach(id => dismissed.add(id));
+    saveSubmitted();
+    saveDismissed();
+    refreshTab();
+    alert(`✅ Restored! ${(payload.s||[]).length} entered contests and ${(payload.d||[]).length} hidden items loaded.`);
+  } catch(e){
+    alert('❌ Invalid backup code. Please try again.');
+  }
 }
 
 async function loadData(){
