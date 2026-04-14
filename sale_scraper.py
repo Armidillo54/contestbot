@@ -103,6 +103,33 @@ STORES = [
         ],
         'category': 'Clothing',
     },
+    {
+        'store': "Carter's",
+        'short': 'carters',
+        'urls': [
+            'https://www.carters.com/c/clearance',
+            'https://www.carters.com/c/deals',
+        ],
+        'category': "Kids' Clothing",
+    },
+    {
+        'store': "Three Ships Beauty",
+        'short': 'threeships',
+        'urls': [
+            'https://www.threeshipsbeauty.com/collections/shop-the-sale',
+            'https://www.threeshipsbeauty.com/collections/discounts-allowed',
+        ],
+        'category': 'Beauty',
+    },
+    {
+        'store': "Thrive Causemetics",
+        'short': 'thrive',
+        'urls': [
+            'https://thrivecausemetics.ca/collections/save-on-select-products',
+            'https://thrivecausemetics.ca/collections/sets-price-drop',
+        ],
+        'category': 'Beauty',
+    },
 ]
 
 
