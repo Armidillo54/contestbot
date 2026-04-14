@@ -80,12 +80,27 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .show-hidden-btn.on{color:#ffaa00;border-color:#ffaa0040}
 footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px solid #1a1a2e;margin-top:36px}
 @media(max-width:700px){
-  .contest-table{font-size:0.82em}
-  .contest-table th,.contest-table td{padding:7px 8px}
-  .header h1{font-size:1.8em}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .tab-bar{gap:6px}
-  .tab-btn{padding:7px 12px;font-size:0.78em}
+  body{padding:10px}
+  .header{padding:18px 0}
+  .header h1{font-size:1.5em}
+  .header p{font-size:0.8em}
+  .stats{grid-template-columns:repeat(2,1fr);gap:8px}
+  .stat-card{padding:12px 10px}
+  .stat-card .number{font-size:1.5em}
+  .tab-bar{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px;scrollbar-width:none;gap:6px;margin-bottom:10px}
+  .tab-bar::-webkit-scrollbar{display:none}
+  .tab-btn{padding:10px 14px;font-size:0.8em;white-space:nowrap;min-height:44px;flex-shrink:0}
+  .show-hidden-btn{flex-shrink:0;white-space:nowrap;min-height:44px;padding:8px 14px}
+  .cat-bar{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:none}
+  .cat-bar::-webkit-scrollbar{display:none}
+  .cat-btn{white-space:nowrap;flex-shrink:0;padding:9px 14px;min-height:40px}
+  .contest-table{font-size:0.84em}
+  .contest-table th,.contest-table td{padding:8px 7px}
+  .col-hide-sm{display:none}
+  .sale-grid{grid-template-columns:1fr}
+  .dismiss-btn{font-size:1.1em;padding:5px 8px;min-height:36px}
+  .sale-card{padding:14px}
+  footer{padding:16px;font-size:0.75em}
 }
 </style>
 </head>
@@ -145,10 +160,12 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
   </div>
 
   <!-- Contest / freebie table -->
-  <table class="contest-table" id="contestTable">
-    <thead id="tableHead"></thead>
-    <tbody id="contestBody"></tbody>
-  </table>
+  <div id="tableWrapper" style="overflow-x:auto;-webkit-overflow-scrolling:touch">
+    <table class="contest-table" id="contestTable">
+      <thead id="tableHead"></thead>
+      <tbody id="contestBody"></tbody>
+    </table>
+  </div>
   <div class="empty" id="emptyMsg" style="display:none">No items in this category yet.</div>
 
   <!-- Sales grid (shown only on Sales tab) -->
@@ -251,7 +268,7 @@ function renderContests(list){
   showTable();
   document.getElementById('catBar').style.display = 'none';
   document.getElementById('tableHead').innerHTML =
-    '<tr><th></th><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th></th></tr>';
+    '<tr><th></th><th>Contest</th><th class="col-hide-sm">Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th class="col-hide-sm">Source</th><th></th></tr>';
   const tbody = document.getElementById('contestBody');
   const empty = document.getElementById('emptyMsg');
   if(!list.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
@@ -264,11 +281,11 @@ function renderContests(list){
       return `<tr style="${dimStyle}">
         <td style="width:14px">${linkDot(c)}</td>
         <td><a href="${c.url}" target="_blank" rel="noopener">${c.name||'--'}</a>${newBadge}</td>
-        <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.prize||'--'}</td>
+        <td class="col-hide-sm" style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.prize||'--'}</td>
         <td class="prize-val">${fmt(c.prize_value)}</td>
         <td>${freqBadge(c.entry_frequency)}</td>
         <td>${c.end_date||'--'}</td>
-        <td class="source-tag">${c.source||'--'}</td>
+        <td class="col-hide-sm source-tag">${c.source||'--'}</td>
         <td style="white-space:nowrap">
           ${submitted.has(c.id) ? '<span style="color:#00ff88;font-size:0.8em">✓ Entered</span>' : `<button onclick="markSubmitted('${c.id}')" style="padding:3px 10px;border:1px solid #00ff8840;border-radius:6px;background:#00ff8810;color:#00ff88;cursor:pointer;font-size:0.78em;font-weight:600">Entered</button>`}
           <button class="dismiss-btn" onclick="dismiss('${c.id}')" title="Hide this">✕</button>
@@ -281,7 +298,7 @@ function renderSubmitted(list){
   showTable();
   document.getElementById('catBar').style.display = 'none';
   document.getElementById('tableHead').innerHTML =
-    '<tr><th></th><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th></th></tr>';
+    '<tr><th></th><th>Contest</th><th class="col-hide-sm">Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th class="col-hide-sm">Source</th><th></th></tr>';
   const tbody = document.getElementById('contestBody');
   const empty = document.getElementById('emptyMsg');
   if(!list.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
@@ -291,11 +308,11 @@ function renderSubmitted(list){
     .map(c => `<tr>
         <td style="width:14px">${linkDot(c)}</td>
         <td><a href="${c.url}" target="_blank" rel="noopener">${c.name||'--'}</a></td>
-        <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.prize||'--'}</td>
+        <td class="col-hide-sm" style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.prize||'--'}</td>
         <td class="prize-val">${fmt(c.prize_value)}</td>
         <td>${freqBadge(c.entry_frequency)}</td>
         <td>${c.end_date||'--'}</td>
-        <td class="source-tag">${c.source||'--'}</td>
+        <td class="col-hide-sm source-tag">${c.source||'--'}</td>
         <td><button onclick="unsubmit('${c.id}')" style="padding:3px 8px;border:1px solid #ff6b6b40;border-radius:6px;background:#ff6b6b10;color:#ff6b6b;cursor:pointer;font-size:0.75em">Undo</button></td>
       </tr>`).join('');
 }
@@ -312,7 +329,7 @@ function renderFreebies(list){
   showTable();
   document.getElementById('catBar').style.display = 'flex';
   document.getElementById('tableHead').innerHTML =
-    '<tr><th></th><th>Freebie</th><th>Description</th><th>Category</th><th>Expires</th><th>Source</th><th></th></tr>';
+    '<tr><th></th><th>Freebie</th><th class="col-hide-sm">Description</th><th>Category</th><th>Expires</th><th class="col-hide-sm">Source</th><th></th></tr>';
   const tbody = document.getElementById('contestBody');
   const empty = document.getElementById('emptyMsg');
   if(!list.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
@@ -326,10 +343,10 @@ function renderFreebies(list){
       return `<tr style="${dimStyle}">
         <td style="width:14px">${linkDot(f)}</td>
         <td><a href="${f.url}" target="_blank" rel="noopener">${f.name||'--'}</a>${newBadge}</td>
-        <td style="max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${f.description||'--'}</td>
+        <td class="col-hide-sm" style="max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${f.description||'--'}</td>
         <td><span class="badge badge-weekly">${cap(f.category)}</span></td>
         <td>${f.expiry||'ongoing'}</td>
-        <td class="source-tag">${f.source||'--'}</td>
+        <td class="col-hide-sm source-tag">${f.source||'--'}</td>
         <td><button class="dismiss-btn" onclick="dismiss('${f.id}')" title="Hide this">✕</button></td>
       </tr>`;
     }).join('');

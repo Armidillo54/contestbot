@@ -19,6 +19,9 @@ HEADERS = {
                   '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
+# Category names produced by the old scraper before categorize() was added
+LEGACY_CATS = {'free-sample', 'free-product', 'freebie', 'deal'}
+
 # Keyword-based category detection
 CATEGORY_KEYWORDS = {
     'food':      ['food', 'grocery', 'snack', 'drink', 'coffee', 'tea', 'meal', 'juice',
@@ -222,6 +225,20 @@ def expire_old_freebies(db):
     return expired
 
 
+def recategorize_existing(db):
+    """Re-apply keyword categorization to entries that still have legacy category names."""
+    updated = 0
+    for freebie in db.get('freebies', []):
+        if freebie.get('category') in LEGACY_CATS:
+            freebie['category'] = categorize(
+                freebie.get('name', ''), freebie.get('description', '')
+            )
+            updated += 1
+    if updated:
+        logger.info(f"Recategorized {updated} freebies with legacy category names")
+    return updated
+
+
 def merge_freebies(db, new_freebies):
     """Merge new freebies into database without duplicates."""
     existing_ids = {f['id'] for f in db['freebies']}
@@ -239,6 +256,8 @@ def run_freebie_scraper():
     """Main freebie scraper entry point."""
     logger.info("=== Freebie Scraper Starting ===")
     db = load_freebies_db()
+
+    recategorize_existing(db)  # Fix legacy category names from old scraper runs
 
     cfs = scrape_canadianfreestuff()
     sc = scrape_smartcanucks()
