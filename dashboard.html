@@ -58,6 +58,21 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .dot-unknown{background:#555}
 .empty{text-align:center;padding:40px;color:#555;font-style:italic}
 .source-tag{font-size:0.75em;color:#555}
+.stat-card.sales .number{color:#ffd700}
+/* Sale cards */
+.sale-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:4px}
+.sale-card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.sale-card .store-name{font-weight:700;font-size:0.95em;color:#ffd700}
+.sale-card .sale-desc{font-size:0.9em;color:#e0e0e0;line-height:1.4}
+.sale-card .sale-meta{display:flex;align-items:center;justify-content:space-between;margin-top:4px}
+.sale-card .cat-badge{font-size:0.72em;background:#ffd70020;color:#ffd700;border:1px solid #ffd70040;padding:2px 8px;border-radius:20px}
+.sale-card .shop-btn{padding:6px 14px;background:linear-gradient(135deg,#ffd700,#ff8c00);border:none;border-radius:8px;color:#000;font-size:0.78em;font-weight:700;cursor:pointer;text-decoration:none;white-space:nowrap}
+.sale-card .shop-btn:hover{opacity:0.85}
+/* Freebie category filters */
+.cat-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.cat-btn{padding:5px 13px;border:1px solid #2a2a3e;border-radius:20px;background:#12121f;color:#888;cursor:pointer;font-size:0.78em;font-weight:600;transition:all 0.2s}
+.cat-btn.active{background:#ff69b420;color:#ff69b4;border-color:#ff69b440}
+.cat-btn:hover:not(.active){background:#1a1a2e;color:#ccc}
 footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px solid #1a1a2e;margin-top:36px}
 @media(max-width:700px){
   .contest-table{font-size:0.82em}
@@ -97,6 +112,7 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
   <div class="stat-card new"><div class="number" id="totalNew">--</div><div class="label">New Today</div></div>
   <div class="stat-card daily"><div class="number" id="totalDaily">--</div><div class="label">Daily Entry</div></div>
   <div class="stat-card freebies"><div class="number" id="totalFreebies">--</div><div class="label">Active Freebies</div></div>
+  <div class="stat-card sales"><div class="number" id="totalSales">--</div><div class="label">Store Sales</div></div>
 </div>
 
 <div class="section">
@@ -106,12 +122,33 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
     <button class="tab-btn" onclick="showTab('daily',this)">Daily Entry</button>
     <button class="tab-btn" onclick="showTab('highvalue',this)">High Value ($5k+)</button>
     <button class="tab-btn freebie-tab" onclick="showTab('freebies',this)">Freebies</button>
+    <button class="tab-btn" style="border-color:#ffd70040;color:#ffd700" onclick="showTab('sales',this)">Sales</button>
   </div>
+
+  <!-- Freebie category filter bar (shown only on Freebies tab) -->
+  <div class="cat-bar" id="catBar" style="display:none">
+    <button class="cat-btn active" onclick="filterFreebies('all',this)">All</button>
+    <button class="cat-btn" onclick="filterFreebies('food',this)">Food</button>
+    <button class="cat-btn" onclick="filterFreebies('restaurant',this)">Restaurant</button>
+    <button class="cat-btn" onclick="filterFreebies('beauty',this)">Beauty</button>
+    <button class="cat-btn" onclick="filterFreebies('household',this)">Household</button>
+    <button class="cat-btn" onclick="filterFreebies('clothing',this)">Clothing</button>
+    <button class="cat-btn" onclick="filterFreebies('pets',this)">Pets</button>
+    <button class="cat-btn" onclick="filterFreebies('baby',this)">Baby</button>
+    <button class="cat-btn" onclick="filterFreebies('health',this)">Health</button>
+    <button class="cat-btn" onclick="filterFreebies('government',this)">Gov't</button>
+    <button class="cat-btn" onclick="filterFreebies('other',this)">Other</button>
+  </div>
+
+  <!-- Contest / freebie table -->
   <table class="contest-table" id="contestTable">
     <thead id="tableHead"></thead>
     <tbody id="contestBody"></tbody>
   </table>
   <div class="empty" id="emptyMsg" style="display:none">No items in this category yet.</div>
+
+  <!-- Sales grid (shown only on Sales tab) -->
+  <div class="sale-grid" id="saleGrid" style="display:none"></div>
 </div>
 
 <footer>ContestBot | Orillia, Ontario | Ontario-eligible NPN contests only | Updated daily at 8 AM ET</footer>
@@ -157,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // --- End Auth ---
 
-let allContests = [], allFreebies = [], currentTab = 'all';
+let allContests = [], allFreebies = [], allSales = [], currentTab = 'all', currentCat = 'all';
 const today = new Date().toISOString().split('T')[0];
 
 function fmt(n){ return '$' + (n||0).toLocaleString(); }
@@ -177,7 +214,12 @@ function isNew(entry){
   return entry.added_date === today || entry.discovered_date === today;
 }
 
+function showTable(){ document.getElementById('contestTable').style.display=''; document.getElementById('saleGrid').style.display='none'; }
+function showGrid(){  document.getElementById('contestTable').style.display='none'; document.getElementById('saleGrid').style.display=''; }
+
 function renderContests(list){
+  showTable();
+  document.getElementById('catBar').style.display = 'none';
   document.getElementById('tableHead').innerHTML =
     '<tr><th></th><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th></tr>';
   const tbody = document.getElementById('contestBody');
@@ -201,6 +243,8 @@ function renderContests(list){
 }
 
 function renderFreebies(list){
+  showTable();
+  document.getElementById('catBar').style.display = 'flex';
   document.getElementById('tableHead').innerHTML =
     '<tr><th></th><th>Freebie</th><th>Description</th><th>Category</th><th>Expires</th><th>Source</th></tr>';
   const tbody = document.getElementById('contestBody');
@@ -211,20 +255,42 @@ function renderFreebies(list){
     .sort((a,b)=>{ if(!a.expiry) return 1; if(!b.expiry) return -1; return a.expiry.localeCompare(b.expiry); })
     .map(f => {
       const newBadge = isNew(f) ? '<span class="badge badge-new">NEW</span>' : '';
+      const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : '--';
       return `<tr>
         <td style="width:14px">${linkDot(f)}</td>
         <td><a href="${f.url}" target="_blank" rel="noopener">${f.name||'--'}</a>${newBadge}</td>
         <td style="max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${f.description||'--'}</td>
-        <td><span class="badge badge-weekly">${f.category||'--'}</span></td>
+        <td><span class="badge badge-weekly">${cap(f.category)}</span></td>
         <td>${f.expiry||'ongoing'}</td>
         <td class="source-tag">${f.source||'--'}</td>
       </tr>`;
     }).join('');
 }
 
+function renderSales(list){
+  showGrid();
+  document.getElementById('catBar').style.display = 'none';
+  document.getElementById('emptyMsg').style.display = list.length ? 'none' : 'block';
+  document.getElementById('saleGrid').innerHTML = list.map(s => `
+    <div class="sale-card">
+      <div class="store-name">${s.store}</div>
+      <div class="sale-desc">${s.description}</div>
+      <div class="sale-meta">
+        <span class="cat-badge">${s.category||''}</span>
+        <a class="shop-btn" href="${s.url}" target="_blank" rel="noopener">Shop Sale →</a>
+      </div>
+    </div>`).join('');
+}
+
+function filterFreebies(cat, btn){
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  currentCat = cat;
+  const af = activeFreebies();
+  renderFreebies(cat === 'all' ? af : af.filter(f => f.category === cat));
+}
+
 function activeContests(){
-  // Exclude dead links, expired, and entries whose URL hasn't been resolved yet
-  // (url_resolved===false means the resolver tried but couldn't find a direct link)
   return allContests.filter(c =>
     c.status === 'active' &&
     c.link_valid !== false &&
@@ -244,34 +310,40 @@ function showTab(t, btn){
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   if(btn) btn.classList.add('active');
   currentTab = t;
+  currentCat = 'all';
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.cat-btn')?.classList.add('active');
   const ac = activeContests();
-  if(t === 'all')       renderContests(ac);
-  else if(t === 'new')  renderContests(ac.filter(isNew));
+  if(t === 'all')        renderContests(ac);
+  else if(t === 'new')   renderContests(ac.filter(isNew));
   else if(t === 'daily') renderContests(ac.filter(c => c.entry_frequency === 'daily'));
   else if(t === 'highvalue') renderContests(ac.filter(c => (c.prize_value||0) >= 5000));
-  else if(t === 'freebies') renderFreebies(activeFreebies());
+  else if(t === 'freebies')  renderFreebies(activeFreebies());
+  else if(t === 'sales')     renderSales(allSales.filter(s => s.status === 'active'));
 }
 
 async function loadData(){
   try{
-    const [cr, fr] = await Promise.all([
+    const [cr, fr, sr] = await Promise.all([
       fetch('contests_database.json').then(r=>r.json()).catch(()=>({contests:[]})),
-      fetch('freebies_database.json').then(r=>r.json()).catch(()=>({freebies:[]}))
+      fetch('freebies_database.json').then(r=>r.json()).catch(()=>({freebies:[]})),
+      fetch('sales_database.json').then(r=>r.json()).catch(()=>({sales:[]})),
     ]);
     allContests = (cr.contests||[]).filter(c => c.name && c.name.length > 3 && c.url);
     allFreebies = (fr.freebies||[]).filter(f => f.name && f.url);
+    allSales    = (sr.sales||[]);
 
     const ac = activeContests();
     const af = activeFreebies();
-    const newContests = ac.filter(isNew);
-    const daily = ac.filter(c => c.entry_frequency === 'daily');
+    const activeSales = allSales.filter(s => s.status === 'active');
 
-    document.getElementById('totalActive').textContent = ac.length;
-    document.getElementById('totalPrize').textContent = fmt(ac.reduce((s,c)=>s+(c.prize_value||0),0));
-    document.getElementById('totalNew').textContent = newContests.length + af.filter(isNew).length;
-    document.getElementById('totalDaily').textContent = daily.length;
+    document.getElementById('totalActive').textContent  = ac.length;
+    document.getElementById('totalPrize').textContent   = fmt(ac.reduce((s,c)=>s+(c.prize_value||0),0));
+    document.getElementById('totalNew').textContent     = ac.filter(isNew).length + af.filter(isNew).length;
+    document.getElementById('totalDaily').textContent   = ac.filter(c=>c.entry_frequency==='daily').length;
     document.getElementById('totalFreebies').textContent = af.length;
-    document.getElementById('lastUpdated').textContent = 'Last updated: ' + (cr.last_updated || today);
+    document.getElementById('totalSales').textContent   = activeSales.length;
+    document.getElementById('lastUpdated').textContent  = 'Last updated: ' + (cr.last_updated || today);
 
     renderContests(ac);
   } catch(e){

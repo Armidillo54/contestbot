@@ -19,6 +19,37 @@ HEADERS = {
                   '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
+# Keyword-based category detection
+CATEGORY_KEYWORDS = {
+    'food':      ['food', 'grocery', 'snack', 'drink', 'coffee', 'tea', 'meal', 'juice',
+                  'fruit', 'vegetable', 'chips', 'protein', 'bar', 'cereal', 'sauce', 'spice'],
+    'restaurant':['restaurant', 'pizza', 'burger', 'cafe', 'tim horton', 'mcdonald', 'subway',
+                  'wendy', 'a&w', 'kfc', 'dairy queen', 'starbucks', 'taco', 'sushi', 'dine'],
+    'beauty':    ['shampoo', 'conditioner', 'skincare', 'skin care', 'makeup', 'beauty',
+                  'cosmetic', 'lotion', 'soap', 'deodorant', 'perfume', 'cream', 'serum',
+                  'moisturizer', 'mascara', 'foundation', 'lipstick', 'hair care', 'haircare'],
+    'household': ['household', 'cleaning', 'detergent', 'cleaner', 'laundry', 'dish',
+                  'toilet', 'paper towel', 'garbage bag', 'storage', 'air freshener'],
+    'clothing':  ['clothing', 'shirt', 'pants', 'dress', 'jacket', 'fashion', 'apparel',
+                  'shoes', 'boots', 'socks', 'underwear', 'jeans', 'sweater', 'coat'],
+    'pets':      ['pet', 'dog', 'cat', 'animal', 'paw', 'treat', 'kibble', 'litter', 'purina',
+                  'pedigree', 'whiskas', 'iams'],
+    'baby':      ['baby', 'infant', 'toddler', 'diaper', 'formula', 'pampers', 'huggies',
+                  'enfamil', 'similac', 'nursery', 'newborn'],
+    'health':    ['vitamin', 'supplement', 'health', 'medical', 'pharmacy', 'medicine',
+                  'probiotic', 'omega', 'mineral', 'wellness', 'first aid'],
+    'government':['government', 'canada.ca', 'service canada', 'cra', 'flag', 'heritage'],
+}
+
+
+def categorize(name, description=''):
+    """Return the best-fit category based on keywords in name + description."""
+    text = (name + ' ' + description).lower()
+    for cat, keywords in CATEGORY_KEYWORDS.items():
+        if any(k in text for k in keywords):
+            return cat
+    return 'other'
+
 
 def load_freebies_db():
     if FREEBIES_DB_PATH.exists():
@@ -78,7 +109,7 @@ def scrape_canadianfreestuff():
                     'name': title,
                     'description': desc,
                     'url': href,
-                    'category': category,
+                    'category': categorize(title, desc),
                     'source': 'canadianfreestuff.com',
                     'expiry': '',
                     'status': 'active',
@@ -126,7 +157,7 @@ def scrape_smartcanucks():
                     'name': title,
                     'description': desc,
                     'url': href,
-                    'category': 'free-sample',
+                    'category': categorize(title, desc),
                     'source': 'smartcanucks.ca',
                     'expiry': '',
                     'status': 'active',
@@ -165,7 +196,7 @@ def scrape_rfd_freebies():
                 'name': title,
                 'description': title,
                 'url': href,
-                'category': 'deal',
+                'category': categorize(title),
                 'source': 'redflagdeals.com',
                 'expiry': '',
                 'status': 'active',
