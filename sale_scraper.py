@@ -130,6 +130,42 @@ STORES = [
         ],
         'category': 'Beauty',
     },
+    {
+        'store': "SoftMoc",
+        'short': 'softmoc',
+        'urls': [
+            'https://www.softmoc.com/ca/clearance',
+            'https://www.softmoc.com/ca/sale/womens/shoes',
+        ],
+        'category': 'Footwear',
+    },
+    {
+        'store': "Knix",
+        'short': 'knix',
+        'urls': [
+            'https://knix.ca/collections/knix-sale',
+            'https://knix.ca/pages/shop-all-sale',
+        ],
+        'category': "Women's Clothing",
+    },
+    {
+        'store': "Call It Spring",
+        'short': 'callitspring',
+        'urls': [
+            'https://www.callitspring.com/ca/en/sale/',
+            'https://www.callitspring.com/collections/women-final-sale',
+        ],
+        'category': 'Footwear',
+    },
+    {
+        'store': "Moores Clothing",
+        'short': 'moores',
+        'urls': [
+            'https://www.mooresclothing.ca/c/sale/all-clearance',
+            'https://www.mooresclothing.com/c/sale/all-clearance',
+        ],
+        'category': 'Menswear',
+    },
 ]
 
 
