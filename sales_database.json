@@ -6,7 +6,7 @@
       "description": "Visit Tip Top Tailor for current sales",
       "detail": "",
       "category": "Menswear",
-      "url": "https://www.tiptop.ca/en/collections/sale",
+      "url": "https://www.tiptop.ca/collections/sale",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -16,7 +16,7 @@
       "description": "Visit Mark's for current sales",
       "detail": "",
       "category": "Clothing & Workwear",
-      "url": "https://www.marks.com/en/sale",
+      "url": "https://www.marks.com/en/sale-clearance.html",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -26,7 +26,7 @@
       "description": "Visit Sport Chek for current sales",
       "detail": "",
       "category": "Sports & Outdoors",
-      "url": "https://www.sportchek.ca/en/sale",
+      "url": "https://www.sportchek.ca/en/sale-clearance.html",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -36,7 +36,7 @@
       "description": "Save up to 25% off Rainwear",
       "detail": "",
       "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/Sale",
+      "url": "https://www.joefresh.com/ca/collections/c/clearance",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -46,7 +46,7 @@
       "description": "ewsletter and enjoy 20% off your next online purchase (regular-priced items only).",
       "detail": "",
       "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/Sale",
+      "url": "https://www.joefresh.com/ca/collections/c/clearance",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -56,7 +56,7 @@
       "description": "ewsletter and enjoy 20% off your next online purchase (regular-pric",
       "detail": "",
       "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/Sale",
+      "url": "https://www.joefresh.com/ca/collections/c/clearance",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -66,7 +66,7 @@
       "description": "promotions and get 20% off your next online purchase (regular priced only). You may unsubscri",
       "detail": "",
       "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/Sale",
+      "url": "https://www.joefresh.com/ca/collections/c/clearance",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -76,7 +76,7 @@
       "description": "promotions and get 20% off your next online purchase (regular pric",
       "detail": "",
       "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/Sale",
+      "url": "https://www.joefresh.com/ca/collections/c/clearance",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -86,7 +86,7 @@
       "description": "Visit H&M Kids for current sales",
       "detail": "",
       "category": "Kids' Clothing",
-      "url": "https://www2.hm.com/en_ca/kids/sale.html",
+      "url": "https://www2.hm.com/en_ca/kids/sale/2-8/view-all.html",
       "scraped_date": "2026-04-14",
       "status": "active"
     },
@@ -156,7 +156,7 @@
       "description": "Sale on now at RW&CO",
       "detail": "",
       "category": "Clothing",
-      "url": "https://www.rwandco.com/en/promotions",
+      "url": "https://www.rw-co.com/en/promotions-sales/man-and-women-clothing-accessories",
       "scraped_date": "2026-04-14",
       "status": "active"
     }
