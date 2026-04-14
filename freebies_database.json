@@ -2123,8 +2123,116 @@
       "link_checked": "2026-04-14",
       "source_url": "https://www.canadianfreestuff.com/salvation-army-coupon-canada/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-ben-jerry-s-free-cone-day-today-april-14",
+      "name": "Ben & Jerry\u2019s FREE Cone Day \u2013 TODAY APRIL 14!",
+      "description": "Ben & Jerry\u2019s FREE Cone Day \u2013 TODAY APRIL 14!",
+      "url": "https://www.benjerry.com/scoop-shops/free-cone-day",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/ben-and-jerrys-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-say-it-ain",
+      "name": "Butterly Canada Free Opportunities- FREE Say it Ain\u2019t Soda/ Brightside Organics Natura Fibre/ Otelia Protein Pasta",
+      "description": "Butterly Canada Free Opportunities- FREE Say it Ain\u2019t Soda/ Brightside Organics Natura Fibre/ Otelia Protein Pasta",
+      "url": "https://butterly.com/en/sayitaintsoda/survey/83iBA0",
+      "category": "food",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-pei-burger-love-contests-win-free-fries-for-a-year",
+      "name": "PEI Burger Love Contests: Win FREE Fries for a Year, Weekly Prize Packs and More!",
+      "description": "PEI Burger Love Contests: Win FREE Fries for a Year, Weekly Prize Packs and More!",
+      "url": "https://www.canadianfreestuff.com/pei-potato-canada-contest/",
+      "category": "restaurant",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/pei-potato-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-no-frills-earth-month-giveaway-win-a-100-gift-card",
+      "name": "No Frills Earth Month Giveaway -Win a $100 Gift Card + a Spring Gift Basket!",
+      "description": "No Frills Earth Month Giveaway -Win a $100 Gift Card + a Spring Gift Basket!",
+      "url": "https://www.canadianfreestuff.com/no-frills-contest/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/no-frills-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-clearly-canadian-contest-win-a-costco-membership-a",
+      "name": "Clearly Canadian Contest: Win a Costco Membership and a Variety pack of Clearly",
+      "description": "Clearly Canadian Contest: Win a Costco Membership and a Variety pack of Clearly",
+      "url": "https://clearlycanadian.com/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/clearly-canadian-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-nba-canada-contest-win-a-trip-to-toronto-to-watch-",
+      "name": "NBA Canada Contest: Win a Trip to Toronto to watch the Raptors",
+      "description": "NBA Canada Contest: Win a Trip to Toronto to watch the Raptors",
+      "url": "https://nbacontest.com/playoffs2026",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/nba-contests/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-04-14",
-  "total_freebies": 110
+  "total_freebies": 116
 }
