@@ -73,6 +73,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .cat-btn{padding:5px 13px;border:1px solid #2a2a3e;border-radius:20px;background:#12121f;color:#888;cursor:pointer;font-size:0.78em;font-weight:600;transition:all 0.2s}
 .cat-btn.active{background:#ff69b420;color:#ff69b4;border-color:#ff69b440}
 .cat-btn:hover:not(.active){background:#1a1a2e;color:#ccc}
+/* Dismiss button */
+.dismiss-btn{background:none;border:none;color:#444;cursor:pointer;font-size:1em;padding:2px 6px;border-radius:4px;line-height:1;float:right}
+.dismiss-btn:hover{color:#ff6b6b;background:#ff6b6b15}
+.show-hidden-btn{padding:5px 12px;border:1px solid #2a2a3e;border-radius:20px;background:#12121f;color:#555;cursor:pointer;font-size:0.78em;font-weight:600;margin-left:auto}
+.show-hidden-btn.on{color:#ffaa00;border-color:#ffaa0040}
 footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px solid #1a1a2e;margin-top:36px}
 @media(max-width:700px){
   .contest-table{font-size:0.82em}
@@ -123,6 +128,8 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
     <button class="tab-btn" onclick="showTab('highvalue',this)">High Value ($5k+)</button>
     <button class="tab-btn freebie-tab" onclick="showTab('freebies',this)">Freebies</button>
     <button class="tab-btn" style="border-color:#ffd70040;color:#ffd700" onclick="showTab('sales',this)">Sales</button>
+    <button class="tab-btn" style="border-color:#00ff8840;color:#00ff88" onclick="showTab('submitted',this)">Submitted</button>
+    <button class="show-hidden-btn" id="showHiddenBtn" onclick="toggleHidden(this)">Show hidden</button>
   </div>
 
   <!-- Freebie category filter bar (shown only on Freebies tab) -->
@@ -133,10 +140,7 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
     <button class="cat-btn" onclick="filterFreebies('beauty',this)">Beauty</button>
     <button class="cat-btn" onclick="filterFreebies('household',this)">Household</button>
     <button class="cat-btn" onclick="filterFreebies('clothing',this)">Clothing</button>
-    <button class="cat-btn" onclick="filterFreebies('pets',this)">Pets</button>
-    <button class="cat-btn" onclick="filterFreebies('baby',this)">Baby</button>
     <button class="cat-btn" onclick="filterFreebies('health',this)">Health</button>
-    <button class="cat-btn" onclick="filterFreebies('government',this)">Gov't</button>
     <button class="cat-btn" onclick="filterFreebies('other',this)">Other</button>
   </div>
 
@@ -197,6 +201,32 @@ document.addEventListener('DOMContentLoaded', () => {
 let allContests = [], allFreebies = [], allSales = [], currentTab = 'all', currentCat = 'all';
 const today = new Date().toISOString().split('T')[0];
 
+// --- Dismissed items (persisted in localStorage) ---
+let dismissed = new Set(JSON.parse(localStorage.getItem('cb_dismissed') || '[]'));
+let showHidden = false;
+
+function saveDismissed(){ localStorage.setItem('cb_dismissed', JSON.stringify([...dismissed])); }
+
+function dismiss(id){
+  dismissed.add(id);
+  saveDismissed();
+  refreshTab();
+}
+
+function toggleHidden(btn){
+  showHidden = !showHidden;
+  btn.classList.toggle('on', showHidden);
+  btn.textContent = showHidden ? 'Hide hidden' : 'Show hidden';
+  refreshTab();
+}
+
+function refreshTab(){
+  showTab(currentTab, null);
+}
+
+// Categories never shown (no kids, no pets)
+const EXCLUDED_CATS = new Set(['baby', 'pets']);
+
 function fmt(n){ return '$' + (n||0).toLocaleString(); }
 
 function linkDot(entry){
@@ -221,7 +251,7 @@ function renderContests(list){
   showTable();
   document.getElementById('catBar').style.display = 'none';
   document.getElementById('tableHead').innerHTML =
-    '<tr><th></th><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th></tr>';
+    '<tr><th></th><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th></th></tr>';
   const tbody = document.getElementById('contestBody');
   const empty = document.getElementById('emptyMsg');
   if(!list.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
@@ -230,7 +260,8 @@ function renderContests(list){
     .sort((a,b)=>(b.prize_value||0)-(a.prize_value||0))
     .map(c => {
       const newBadge = isNew(c) ? '<span class="badge badge-new">NEW</span>' : '';
-      return `<tr>
+      const dimStyle = dismissed.has(c.id) ? 'opacity:0.35' : '';
+      return `<tr style="${dimStyle}">
         <td style="width:14px">${linkDot(c)}</td>
         <td><a href="${c.url}" target="_blank" rel="noopener">${c.name||'--'}</a>${newBadge}</td>
         <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.prize||'--'}</td>
@@ -238,15 +269,50 @@ function renderContests(list){
         <td>${freqBadge(c.entry_frequency)}</td>
         <td>${c.end_date||'--'}</td>
         <td class="source-tag">${c.source||'--'}</td>
+        <td style="white-space:nowrap">
+          ${submitted.has(c.id) ? '<span style="color:#00ff88;font-size:0.8em">✓ Entered</span>' : `<button onclick="markSubmitted('${c.id}')" style="padding:3px 10px;border:1px solid #00ff8840;border-radius:6px;background:#00ff8810;color:#00ff88;cursor:pointer;font-size:0.78em;font-weight:600">Entered</button>`}
+          <button class="dismiss-btn" onclick="dismiss('${c.id}')" title="Hide this">✕</button>
+        </td>
       </tr>`;
     }).join('');
+}
+
+function renderSubmitted(list){
+  showTable();
+  document.getElementById('catBar').style.display = 'none';
+  document.getElementById('tableHead').innerHTML =
+    '<tr><th></th><th>Contest</th><th>Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th>Source</th><th></th></tr>';
+  const tbody = document.getElementById('contestBody');
+  const empty = document.getElementById('emptyMsg');
+  if(!list.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display='none';
+  tbody.innerHTML = list
+    .sort((a,b)=>(b.prize_value||0)-(a.prize_value||0))
+    .map(c => `<tr>
+        <td style="width:14px">${linkDot(c)}</td>
+        <td><a href="${c.url}" target="_blank" rel="noopener">${c.name||'--'}</a></td>
+        <td style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.prize||'--'}</td>
+        <td class="prize-val">${fmt(c.prize_value)}</td>
+        <td>${freqBadge(c.entry_frequency)}</td>
+        <td>${c.end_date||'--'}</td>
+        <td class="source-tag">${c.source||'--'}</td>
+        <td><button onclick="unsubmit('${c.id}')" style="padding:3px 8px;border:1px solid #ff6b6b40;border-radius:6px;background:#ff6b6b10;color:#ff6b6b;cursor:pointer;font-size:0.75em">Undo</button></td>
+      </tr>`).join('');
+}
+
+function unsubmit(id){
+  submitted.delete(id);
+  dismissed.delete(id);
+  saveSubmitted();
+  saveDismissed();
+  refreshTab();
 }
 
 function renderFreebies(list){
   showTable();
   document.getElementById('catBar').style.display = 'flex';
   document.getElementById('tableHead').innerHTML =
-    '<tr><th></th><th>Freebie</th><th>Description</th><th>Category</th><th>Expires</th><th>Source</th></tr>';
+    '<tr><th></th><th>Freebie</th><th>Description</th><th>Category</th><th>Expires</th><th>Source</th><th></th></tr>';
   const tbody = document.getElementById('contestBody');
   const empty = document.getElementById('emptyMsg');
   if(!list.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
@@ -256,13 +322,15 @@ function renderFreebies(list){
     .map(f => {
       const newBadge = isNew(f) ? '<span class="badge badge-new">NEW</span>' : '';
       const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : '--';
-      return `<tr>
+      const dimStyle = dismissed.has(f.id) ? 'opacity:0.35' : '';
+      return `<tr style="${dimStyle}">
         <td style="width:14px">${linkDot(f)}</td>
         <td><a href="${f.url}" target="_blank" rel="noopener">${f.name||'--'}</a>${newBadge}</td>
         <td style="max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${f.description||'--'}</td>
         <td><span class="badge badge-weekly">${cap(f.category)}</span></td>
         <td>${f.expiry||'ongoing'}</td>
         <td class="source-tag">${f.source||'--'}</td>
+        <td><button class="dismiss-btn" onclick="dismiss('${f.id}')" title="Hide this">✕</button></td>
       </tr>`;
     }).join('');
 }
@@ -271,15 +339,18 @@ function renderSales(list){
   showGrid();
   document.getElementById('catBar').style.display = 'none';
   document.getElementById('emptyMsg').style.display = list.length ? 'none' : 'block';
-  document.getElementById('saleGrid').innerHTML = list.map(s => `
-    <div class="sale-card">
+  document.getElementById('saleGrid').innerHTML = list.map(s => {
+    const dimStyle = dismissed.has(s.id) ? 'opacity:0.35' : '';
+    return `<div class="sale-card" style="${dimStyle}">
+      <button class="dismiss-btn" onclick="dismiss('${s.id}')" title="Hide this" style="float:right;margin:-4px -6px 0 0">✕</button>
       <div class="store-name">${s.store}</div>
       <div class="sale-desc">${s.description}</div>
       <div class="sale-meta">
         <span class="cat-badge">${s.category||''}</span>
         <a class="shop-btn" href="${s.url}" target="_blank" rel="noopener">Shop Sale →</a>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
 function filterFreebies(cat, btn){
@@ -290,25 +361,45 @@ function filterFreebies(cat, btn){
   renderFreebies(cat === 'all' ? af : af.filter(f => f.category === cat));
 }
 
+// --- Submitted tracking (persisted in localStorage) ---
+let submitted = new Set(JSON.parse(localStorage.getItem('cb_submitted') || '[]'));
+function saveSubmitted(){ localStorage.setItem('cb_submitted', JSON.stringify([...submitted])); }
+
+function markSubmitted(id){
+  submitted.add(id);
+  dismissed.add(id);   // also hides from main list
+  saveSubmitted();
+  saveDismissed();
+  refreshTab();
+}
+
 function activeContests(){
-  return allContests.filter(c =>
+  const base = allContests.filter(c =>
     c.status === 'active' &&
     c.link_valid !== false &&
     c.url_resolved !== false
   );
+  if(showHidden) return base;
+  return base.filter(c => !dismissed.has(c.id));
 }
 
 function activeFreebies(){
-  return allFreebies.filter(f =>
+  const base = allFreebies.filter(f =>
     f.status === 'active' &&
     f.link_valid !== false &&
-    f.url_resolved !== false
+    f.url_resolved !== false &&
+    !EXCLUDED_CATS.has(f.category)
   );
+  if(showHidden) return base;
+  return base.filter(f => !dismissed.has(f.id));
+}
+
+function submittedContests(){
+  return allContests.filter(c => submitted.has(c.id));
 }
 
 function showTab(t, btn){
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  if(btn) btn.classList.add('active');
+  if(btn){ document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); }
   currentTab = t;
   currentCat = 'all';
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
@@ -319,7 +410,8 @@ function showTab(t, btn){
   else if(t === 'daily') renderContests(ac.filter(c => c.entry_frequency === 'daily'));
   else if(t === 'highvalue') renderContests(ac.filter(c => (c.prize_value||0) >= 5000));
   else if(t === 'freebies')  renderFreebies(activeFreebies());
-  else if(t === 'sales')     renderSales(allSales.filter(s => s.status === 'active'));
+  else if(t === 'sales')     renderSales(allSales.filter(s => s.status === 'active' && (showHidden || !dismissed.has(s.id))));
+  else if(t === 'submitted') renderSubmitted(submittedContests());
 }
 
 async function loadData(){

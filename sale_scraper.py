@@ -107,13 +107,15 @@ STORES = [
 
 
 def fetch_page(url):
+    """Fetch a URL, return (html, final_url) or (None, None) on failure."""
     try:
         resp = requests.get(url, headers=HEADERS, timeout=20, allow_redirects=True)
         if resp.status_code == 200:
-            return resp.text
+            return resp.text, resp.url   # use final URL after any redirects
+        logger.debug(f"HTTP {resp.status_code} for {url}")
     except Exception as e:
         logger.debug(f"Fetch failed {url}: {e}")
-    return None
+    return None, None
 
 
 def extract_sale_text(html, store_name):
@@ -188,27 +190,19 @@ def build_sale_entries(store_cfg, descriptions, url):
 
 
 def scrape_store(store_cfg):
-    """Try each URL for a store until one returns useful content."""
+    """Try each URL for a store until one returns a live 200 page."""
     for url in store_cfg['urls']:
-        html = fetch_page(url)
+        html, final_url = fetch_page(url)
         if not html:
             continue
         descriptions = extract_sale_text(html, store_cfg['store'])
-        entries = build_sale_entries(store_cfg, descriptions, url)
-        logger.info(f"{store_cfg['store']}: {len(entries)} sale entries from {url}")
+        # Use the final URL (after redirects) so the dashboard link actually works
+        entries = build_sale_entries(store_cfg, descriptions, final_url)
+        logger.info(f"{store_cfg['store']}: {len(entries)} entries → {final_url}")
         return entries
-    logger.warning(f"{store_cfg['store']}: all URLs failed")
-    # Return a placeholder so the store still shows in dashboard
-    return [{
-        'id': f"{store_cfg['short']}-sale-unavailable",
-        'store': store_cfg['store'],
-        'description': f"Visit {store_cfg['store']} for current sales",
-        'detail': '',
-        'category': store_cfg['category'],
-        'url': store_cfg['urls'][0],
-        'scraped_date': date.today().isoformat(),
-        'status': 'active',
-    }]
+    # All URLs failed — omit this store entirely rather than show a dead link
+    logger.warning(f"{store_cfg['store']}: all URLs returned non-200, skipping")
+    return []
 
 
 def run_sale_scraper():

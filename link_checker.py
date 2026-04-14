@@ -120,9 +120,28 @@ def validate_freebies():
         checked += 1
         time.sleep(0.3)
 
+    # Auto-expire freebies with no expiry date that are older than 30 days
+    auto_expired = 0
+    for freebie in db.get('freebies', []):
+        if freebie.get('status') != 'active':
+            continue
+        if freebie.get('expiry'):
+            continue  # Has explicit expiry date — handled by expire_old_freebies()
+        added = freebie.get('added_date', '')
+        if not added:
+            continue
+        try:
+            age_days = (date.today() - date.fromisoformat(added)).days
+            if age_days >= 30:
+                freebie['status'] = 'expired'
+                auto_expired += 1
+                logger.info(f"AUTO-EXPIRED freebie (30 days old): {freebie['name']}")
+        except ValueError:
+            pass
+
     with open(path, 'w') as f:
         json.dump(db, f, indent=2)
-    logger.info(f"Freebies: checked {checked} links, marked {marked_dead} dead")
+    logger.info(f"Freebies: checked {checked} links, {marked_dead} dead, {auto_expired} auto-expired")
 
 
 def run_link_checker():
