@@ -59,6 +59,29 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .empty{text-align:center;padding:40px;color:#555;font-style:italic}
 .source-tag{font-size:0.75em;color:#555}
 .stat-card.sales .number{color:#ffd700}
+.stat-card.events .number{color:#00e5ff}
+/* Event cards */
+.event-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:4px}
+.event-card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px;position:relative}
+.event-card .event-date-box{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#00e5ff15;border:1px solid #00e5ff30;border-radius:10px;padding:8px 14px;min-width:56px;text-align:center;flex-shrink:0}
+.event-card .event-date-box .month{font-size:0.65em;font-weight:700;color:#00e5ff;text-transform:uppercase;letter-spacing:1px}
+.event-card .event-date-box .day{font-size:1.7em;font-weight:800;color:#fff;line-height:1}
+.event-card .event-header{display:flex;gap:12px;align-items:flex-start}
+.event-card .event-title{font-weight:700;font-size:0.95em;color:#e0e0e0;line-height:1.3;flex:1}
+.event-card .event-venue{font-size:0.8em;color:#666;margin-top:2px}
+.event-card .event-footer{display:flex;align-items:center;justify-content:space-between;margin-top:4px;flex-wrap:wrap;gap:6px}
+.event-card .price-badge{font-size:0.72em;padding:2px 8px;border-radius:20px;font-weight:600}
+.price-free{background:#00ff8820;color:#00ff88;border:1px solid #00ff8840}
+.price-ticketed{background:#ffd70020;color:#ffd700;border:1px solid #ffd70040}
+.price-see{background:#88888820;color:#888;border:1px solid #88888840}
+.event-card .event-btn{padding:6px 14px;background:linear-gradient(135deg,#00e5ff,#0077ff);border:none;border-radius:8px;color:#000;font-size:0.78em;font-weight:700;cursor:pointer;text-decoration:none;white-space:nowrap}
+.event-card .event-btn:hover{opacity:0.85}
+.event-cat-badge{font-size:0.72em;background:#00e5ff15;color:#00e5ff;border:1px solid #00e5ff30;padding:2px 8px;border-radius:20px}
+/* Event week filter bar */
+.week-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.week-btn{padding:5px 13px;border:1px solid #2a2a3e;border-radius:20px;background:#12121f;color:#888;cursor:pointer;font-size:0.78em;font-weight:600;transition:all 0.2s}
+.week-btn.active{background:#00e5ff20;color:#00e5ff;border-color:#00e5ff40}
+.week-btn:hover:not(.active){background:#1a1a2e;color:#ccc}
 /* Sale cards */
 .sale-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:4px}
 .sale-card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
@@ -98,6 +121,12 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
   .contest-table th,.contest-table td{padding:8px 7px}
   .col-hide-sm{display:none}
   .sale-grid{grid-template-columns:1fr}
+  .event-grid{grid-template-columns:1fr}
+  .week-bar{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:none}
+  .week-bar::-webkit-scrollbar{display:none}
+  .week-btn{white-space:nowrap;flex-shrink:0;padding:9px 14px;min-height:40px}
+  #eventCatBar{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;scrollbar-width:none}
+  #eventCatBar::-webkit-scrollbar{display:none}
   .dismiss-btn{font-size:1.1em;padding:5px 8px;min-height:36px}
   .sale-card{padding:14px}
   footer{padding:16px;font-size:0.75em}
@@ -133,6 +162,7 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
   <div class="stat-card daily"><div class="number" id="totalDaily">--</div><div class="label">Daily Entry</div></div>
   <div class="stat-card freebies"><div class="number" id="totalFreebies">--</div><div class="label">Active Freebies</div></div>
   <div class="stat-card sales"><div class="number" id="totalSales">--</div><div class="label">Store Sales</div></div>
+  <div class="stat-card events"><div class="number" id="totalEvents">--</div><div class="label">Local Events</div></div>
 </div>
 
 <div class="section">
@@ -143,6 +173,7 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
     <button class="tab-btn" onclick="showTab('highvalue',this)">High Value ($5k+)</button>
     <button class="tab-btn freebie-tab" onclick="showTab('freebies',this)">Freebies</button>
     <button class="tab-btn" style="border-color:#ffd70040;color:#ffd700" onclick="showTab('sales',this)">Sales</button>
+    <button class="tab-btn" style="border-color:#00e5ff40;color:#00e5ff" onclick="showTab('events',this)">Events</button>
     <button class="tab-btn" style="border-color:#00ff8840;color:#00ff88" onclick="showTab('submitted',this)">Submitted</button>
     <button class="show-hidden-btn" id="showHiddenBtn" onclick="toggleHidden(this)">Show hidden</button>
   </div>
@@ -170,6 +201,31 @@ footer{text-align:center;padding:22px;color:#444;font-size:0.78em;border-top:1px
 
   <!-- Sales grid (shown only on Sales tab) -->
   <div class="sale-grid" id="saleGrid" style="display:none"></div>
+
+  <!-- Events section (shown only on Events tab) -->
+  <div id="eventsSection" style="display:none">
+    <div class="week-bar" id="weekBar">
+      <button class="week-btn active" onclick="filterEventWeek('upcoming',this)">All Upcoming</button>
+      <button class="week-btn" onclick="filterEventWeek('thisweek',this)">This Week</button>
+      <button class="week-btn" onclick="filterEventWeek('nextweek',this)">Next Week</button>
+      <button class="week-btn" onclick="filterEventWeek('thismonth',this)">This Month</button>
+    </div>
+    <div class="cat-bar" id="eventCatBar">
+      <button class="cat-btn active" onclick="filterEventCat('all',this)">All</button>
+      <button class="cat-btn" onclick="filterEventCat('music',this)">🎵 Music</button>
+      <button class="cat-btn" onclick="filterEventCat('kids',this)">👨‍👩‍👧 Family</button>
+      <button class="cat-btn" onclick="filterEventCat('festival',this)">🎪 Festival</button>
+      <button class="cat-btn" onclick="filterEventCat('theatre',this)">🎭 Theatre</button>
+      <button class="cat-btn" onclick="filterEventCat('sports',this)">🏆 Sports</button>
+      <button class="cat-btn" onclick="filterEventCat('food',this)">🍴 Food</button>
+      <button class="cat-btn" onclick="filterEventCat('arts',this)">🎨 Arts</button>
+      <button class="cat-btn" onclick="filterEventCat('outdoor',this)">🌲 Outdoor</button>
+      <button class="cat-btn" onclick="filterEventCat('community',this)">🤝 Community</button>
+      <button class="cat-btn" onclick="filterEventCat('other',this)">Other</button>
+    </div>
+    <div class="event-grid" id="eventGrid"></div>
+    <div class="empty" id="eventEmpty" style="display:none">No events found for this filter.</div>
+  </div>
 </div>
 
 <footer>ContestBot | Orillia, Ontario | Ontario-eligible NPN contests only | Updated daily at 8 AM ET</footer>
@@ -215,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // --- End Auth ---
 
-let allContests = [], allFreebies = [], allSales = [], currentTab = 'all', currentCat = 'all';
+let allContests = [], allFreebies = [], allSales = [], allEvents = [], currentTab = 'all', currentCat = 'all', currentEventWeek = 'upcoming', currentEventCat = 'all';
 const today = new Date().toISOString().split('T')[0];
 
 // --- Dismissed items (persisted in localStorage) ---
@@ -261,8 +317,21 @@ function isNew(entry){
   return entry.added_date === today || entry.discovered_date === today;
 }
 
-function showTable(){ document.getElementById('contestTable').style.display=''; document.getElementById('saleGrid').style.display='none'; }
-function showGrid(){  document.getElementById('contestTable').style.display='none'; document.getElementById('saleGrid').style.display=''; }
+function showTable(){
+  document.getElementById('tableWrapper').style.display='';
+  document.getElementById('saleGrid').style.display='none';
+  document.getElementById('eventsSection').style.display='none';
+}
+function showGrid(){
+  document.getElementById('tableWrapper').style.display='none';
+  document.getElementById('saleGrid').style.display='';
+  document.getElementById('eventsSection').style.display='none';
+}
+function showEvents(){
+  document.getElementById('tableWrapper').style.display='none';
+  document.getElementById('saleGrid').style.display='none';
+  document.getElementById('eventsSection').style.display='';
+}
 
 function renderContests(list){
   showTable();
@@ -370,6 +439,109 @@ function renderSales(list){
   }).join('');
 }
 
+// --- Event helpers ---
+function eventWeekRange(filter){
+  const now = new Date();
+  const todayStr = now.toISOString().split('T')[0];
+  const dayOfWeek = now.getDay(); // 0=Sun
+  // This week: Mon–Sun
+  const monday = new Date(now); monday.setDate(now.getDate() - ((dayOfWeek+6)%7));
+  const sunday = new Date(monday); sunday.setDate(monday.getDate() + 6);
+  const nextMonday = new Date(monday); nextMonday.setDate(monday.getDate() + 7);
+  const nextSunday = new Date(sunday); nextSunday.setDate(sunday.getDate() + 7);
+  const monthEnd = new Date(now.getFullYear(), now.getMonth()+1, 0);
+  const fmt = d => d.toISOString().split('T')[0];
+  if(filter === 'thisweek')  return [fmt(monday), fmt(sunday)];
+  if(filter === 'nextweek')  return [fmt(nextMonday), fmt(nextSunday)];
+  if(filter === 'thismonth') return [todayStr, fmt(monthEnd)];
+  return [todayStr, '9999-12-31']; // upcoming = all future
+}
+
+function fmtEventDate(dateStr){
+  if(!dateStr) return {month:'', day:'?'};
+  try{
+    const [y,m,d] = dateStr.split('-').map(Number);
+    const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    return {month: months[m-1]||'', day: d, year: y};
+  } catch(e){ return {month:'', day:'?'}; }
+}
+
+function priceBadge(price){
+  if(!price) return '';
+  const p = price.toLowerCase();
+  if(p === 'free') return `<span class="price-badge price-free">Free</span>`;
+  if(p === 'ticketed' || p.startsWith('$')) return `<span class="price-badge price-ticketed">${price}</span>`;
+  return `<span class="price-badge price-see">${price}</span>`;
+}
+
+function renderEvents(list){
+  showEvents();
+  document.getElementById('catBar').style.display = 'none';
+  const grid = document.getElementById('eventGrid');
+  const empty = document.getElementById('eventEmpty');
+  if(!list.length){ grid.innerHTML=''; empty.style.display='block'; return; }
+  empty.style.display='none';
+  // Sort by date ascending
+  list = [...list].sort((a,b)=>{
+    if(!a.date) return 1; if(!b.date) return -1;
+    return a.date.localeCompare(b.date);
+  });
+  grid.innerHTML = list.map(ev => {
+    const {month,day,year} = fmtEventDate(ev.date);
+    const catLabel = ev.category ? ev.category.charAt(0).toUpperCase()+ev.category.slice(1) : '';
+    const dimStyle = dismissed.has(ev.id) ? 'opacity:0.35' : '';
+    const venue = ev.venue || 'Orillia area';
+    const endDate = ev.end_date && ev.end_date !== ev.date ? ` – ${ev.end_date}` : '';
+    return `<div class="event-card" style="${dimStyle}">
+      <button class="dismiss-btn" onclick="dismiss('${ev.id}')" title="Hide this" style="position:absolute;top:10px;right:10px">✕</button>
+      <div class="event-header">
+        <div class="event-date-box">
+          <div class="month">${month}</div>
+          <div class="day">${day}</div>
+        </div>
+        <div style="flex:1;min-width:0">
+          <div class="event-title">${ev.name}</div>
+          <div class="event-venue">📍 ${venue}</div>
+          ${ev.time ? `<div class="event-venue">🕐 ${ev.time}${endDate}</div>` : (endDate ? `<div class="event-venue">📅 Through${endDate}</div>` : '')}
+        </div>
+      </div>
+      <div class="event-footer">
+        <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+          ${catLabel ? `<span class="event-cat-badge">${catLabel}</span>` : ''}
+          ${priceBadge(ev.price)}
+        </div>
+        <a class="event-btn" href="${ev.url}" target="_blank" rel="noopener">Details →</a>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function activeEvents(){
+  const [from, to] = eventWeekRange(currentEventWeek);
+  return allEvents.filter(ev => {
+    if(ev.status !== 'active') return false;
+    if(dismissed.has(ev.id) && !showHidden) return false;
+    const d = ev.date || '';
+    if(d && (d < from || d > to)) return false;
+    if(currentEventCat !== 'all' && ev.category !== currentEventCat) return false;
+    return true;
+  });
+}
+
+function filterEventWeek(filter, btn){
+  document.querySelectorAll('.week-btn').forEach(b => b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  currentEventWeek = filter;
+  renderEvents(activeEvents());
+}
+
+function filterEventCat(cat, btn){
+  document.querySelectorAll('#eventCatBar .cat-btn').forEach(b => b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  currentEventCat = cat;
+  renderEvents(activeEvents());
+}
+
 function filterFreebies(cat, btn){
   document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
   if(btn) btn.classList.add('active');
@@ -428,23 +600,30 @@ function showTab(t, btn){
   else if(t === 'highvalue') renderContests(ac.filter(c => (c.prize_value||0) >= 5000));
   else if(t === 'freebies')  renderFreebies(activeFreebies());
   else if(t === 'sales')     renderSales(allSales.filter(s => s.status === 'active' && (showHidden || !dismissed.has(s.id))));
+  else if(t === 'events'){   currentEventWeek='upcoming'; currentEventCat='all';
+    document.querySelectorAll('.week-btn').forEach((b,i)=>b.classList.toggle('active',i===0));
+    document.querySelectorAll('#eventCatBar .cat-btn').forEach((b,i)=>b.classList.toggle('active',i===0));
+    renderEvents(activeEvents()); }
   else if(t === 'submitted') renderSubmitted(submittedContests());
 }
 
 async function loadData(){
   try{
-    const [cr, fr, sr] = await Promise.all([
+    const [cr, fr, sr, er] = await Promise.all([
       fetch('contests_database.json').then(r=>r.json()).catch(()=>({contests:[]})),
       fetch('freebies_database.json').then(r=>r.json()).catch(()=>({freebies:[]})),
       fetch('sales_database.json').then(r=>r.json()).catch(()=>({sales:[]})),
+      fetch('events_database.json').then(r=>r.json()).catch(()=>({events:[]})),
     ]);
     allContests = (cr.contests||[]).filter(c => c.name && c.name.length > 3 && c.url);
     allFreebies = (fr.freebies||[]).filter(f => f.name && f.url);
     allSales    = (sr.sales||[]);
+    allEvents   = (er.events||[]).filter(e => e.name && e.url);
 
     const ac = activeContests();
     const af = activeFreebies();
     const activeSales = allSales.filter(s => s.status === 'active');
+    const activeEvt = allEvents.filter(e => e.status === 'active');
 
     document.getElementById('totalActive').textContent  = ac.length;
     document.getElementById('totalPrize').textContent   = fmt(ac.reduce((s,c)=>s+(c.prize_value||0),0));
@@ -452,6 +631,7 @@ async function loadData(){
     document.getElementById('totalDaily').textContent   = ac.filter(c=>c.entry_frequency==='daily').length;
     document.getElementById('totalFreebies').textContent = af.length;
     document.getElementById('totalSales').textContent   = activeSales.length;
+    document.getElementById('totalEvents').textContent  = activeEvt.length;
     document.getElementById('lastUpdated').textContent  = 'Last updated: ' + (cr.last_updated || today);
 
     renderContests(ac);

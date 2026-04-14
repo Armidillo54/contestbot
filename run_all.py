@@ -22,6 +22,8 @@ def generate_dashboard():
     shutil.copy('contests_database.json', 'docs/contests_database.json')
     shutil.copy('freebies_database.json', 'docs/freebies_database.json')
     shutil.copy('sales_database.json', 'docs/sales_database.json')
+    if os.path.exists('events_database.json'):
+        shutil.copy('events_database.json', 'docs/events_database.json')
     logger.info("Dashboard generated in docs/")
 
 
@@ -98,36 +100,44 @@ def main():
         logger.error(f"Freebie scraper failed: {e}")
 
     # Step 3: Scrape store sales
-    logger.info("[3/7] Scraping store sales...")
+    logger.info("[3/8] Scraping store sales...")
     try:
         from sale_scraper import run_sale_scraper
         run_sale_scraper()
     except Exception as e:
         logger.error(f"Sale scraper failed: {e}")
 
-    # Step 4: Resolve aggregator links → direct entry URLs
-    logger.info("[4/7] Resolving entry URLs...")
+    # Step 4: Scrape local Orillia events
+    logger.info("[4/8] Scraping local events...")
+    try:
+        from event_scraper import run_event_scraper
+        run_event_scraper()
+    except Exception as e:
+        logger.error(f"Event scraper failed: {e}")
+
+    # Step 5: Resolve aggregator links → direct entry URLs
+    logger.info("[5/8] Resolving entry URLs...")
     try:
         from url_resolver import run_url_resolver
         run_url_resolver()
     except Exception as e:
         logger.error(f"URL resolver failed: {e}")
 
-    # Step 5: Validate links (mark 404s as dead_link)
-    logger.info("[5/7] Validating links...")
+    # Step 6: Validate links (mark 404s as dead_link)
+    logger.info("[6/8] Validating links...")
     try:
         from link_checker import run_link_checker
         run_link_checker()
     except Exception as e:
         logger.error(f"Link checker failed: {e}")
 
-    # Step 6: Clean junk entries
-    logger.info("[6/7] Cleaning databases...")
+    # Step 7: Clean junk entries
+    logger.info("[7/8] Cleaning databases...")
     clean_junk_contests()
     clean_junk_freebies()
 
-    # Step 7: Generate dashboard
-    logger.info("[7/7] Generating dashboard...")
+    # Step 8: Generate dashboard
+    logger.info("[8/8] Generating dashboard...")
     generate_dashboard()
 
     elapsed = (datetime.now() - start).total_seconds()
