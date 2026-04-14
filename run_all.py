@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ContestBot - Daily contest and freebie scanner, link validator, and dashboard generator."""
+"""ContestBot — Daily pipeline: scrape → resolve URLs → validate links → clean → deploy."""
 import logging
 import sys
 import json
@@ -81,7 +81,7 @@ def main():
     logger.info("=" * 50)
 
     # Step 1: Scrape contests
-    logger.info("[1/5] Scraping contests...")
+    logger.info("[1/6] Scraping contests...")
     try:
         from contest_scraper import run_scraper
         run_scraper()
@@ -89,28 +89,36 @@ def main():
         logger.error(f"Contest scraper failed: {e}")
 
     # Step 2: Scrape freebies
-    logger.info("[2/5] Scraping freebies...")
+    logger.info("[2/6] Scraping freebies...")
     try:
         from freebie_scraper import run_freebie_scraper
         run_freebie_scraper()
     except Exception as e:
         logger.error(f"Freebie scraper failed: {e}")
 
-    # Step 3: Validate links (removes 404s)
-    logger.info("[3/5] Validating links...")
+    # Step 3: Resolve aggregator links → direct entry URLs
+    logger.info("[3/6] Resolving entry URLs...")
+    try:
+        from url_resolver import run_url_resolver
+        run_url_resolver()
+    except Exception as e:
+        logger.error(f"URL resolver failed: {e}")
+
+    # Step 4: Validate links (mark 404s as dead_link)
+    logger.info("[4/6] Validating links...")
     try:
         from link_checker import run_link_checker
         run_link_checker()
     except Exception as e:
         logger.error(f"Link checker failed: {e}")
 
-    # Step 4: Clean junk entries
-    logger.info("[4/5] Cleaning databases...")
+    # Step 5: Clean junk entries
+    logger.info("[5/6] Cleaning databases...")
     clean_junk_contests()
     clean_junk_freebies()
 
-    # Step 5: Generate dashboard
-    logger.info("[5/5] Generating dashboard...")
+    # Step 6: Generate dashboard
+    logger.info("[6/6] Generating dashboard...")
     generate_dashboard()
 
     elapsed = (datetime.now() - start).total_seconds()

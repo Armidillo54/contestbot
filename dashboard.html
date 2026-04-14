@@ -158,12 +158,21 @@ function renderFreebies(list){
 }
 
 function activeContests(){
-  // Exclude dead links and expired; show only active
-  return allContests.filter(c => c.status === 'active' && c.link_valid !== false);
+  // Exclude dead links, expired, and entries whose URL hasn't been resolved yet
+  // (url_resolved===false means the resolver tried but couldn't find a direct link)
+  return allContests.filter(c =>
+    c.status === 'active' &&
+    c.link_valid !== false &&
+    c.url_resolved !== false
+  );
 }
 
 function activeFreebies(){
-  return allFreebies.filter(f => f.status === 'active' && f.link_valid !== false);
+  return allFreebies.filter(f =>
+    f.status === 'active' &&
+    f.link_valid !== false &&
+    f.url_resolved !== false
+  );
 }
 
 function showTab(t, btn){
