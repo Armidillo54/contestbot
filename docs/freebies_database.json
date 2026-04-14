@@ -1,5 +1,2130 @@
 {
-  "freebies": [],
-  "last_updated": "pending",
-  "total_freebies": 0
+  "freebies": [
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-brightside",
+      "name": "Butterly Canada Free Opportunities- FREE Brightside Organics Natura Fibre/ Kidstar Nutrients/ Otelia Protein Pasta",
+      "description": "Butterly Canada Free Opportunities- FREE Brightside Organics Natura Fibre/ Kidstar Nutrients/ Otelia Protein Pasta",
+      "url": "https://butterly.com/en/brightsideorganics/survey/7IULNu",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-temptations-free-lickable-spoons-or-creamy-purrrr-",
+      "name": "Temptations FREE Lickable Spoons OR Creamy Purrrr-ee Cat Treats -GO!! (Mailed)",
+      "description": "Temptations FREE Lickable Spoons OR Creamy Purrrr-ee Cat Treats -GO!! (Mailed)",
+      "url": "https://www.temptationstreats.ca/en-ca/coupons",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/temptations-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-alcon-canada-save-on-eye-drops-contact-lens-soluti",
+      "name": "Alcon Canada \u2013 Save on Eye Drops /Contact Lens Solutions + FREE Contact Lenses Trial",
+      "description": "Alcon Canada \u2013 Save on Eye Drops /Contact Lens Solutions + FREE Contact Lenses Trial",
+      "url": "https://offers.myalcon.com/my-offers/?sid=mya_ec_prd_cpn",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/alcon-canada-coupon/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-home-tester-club-apply-for-free-bodycare-go",
+      "name": "Home Tester Club: Apply for FREE BODYCARE -GO!",
+      "description": "Home Tester Club: Apply for FREE BODYCARE -GO!",
+      "url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-jungle-jims-rewards-jungle-jims-13-lunch-envelope-",
+      "name": "Jungle Jims Rewards \u2013 Jungle Jims $13 Lunch + Envelope of Fortune -3.8 Million in FREE Food!",
+      "description": "Jungle Jims Rewards \u2013 Jungle Jims $13 Lunch + Envelope of Fortune -3.8 Million in FREE Food!",
+      "url": "https://www.canadianfreestuff.com/jungle-jims-canada-deal/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/jungle-jims-canada-deal/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-wowbutter-free-sample-canada-2026-go",
+      "name": "WowButter FREE Sample Canada 2026 -GO!!",
+      "description": "WowButter FREE Sample Canada 2026 -GO!!",
+      "url": "https://wowbutter.com/Consumer-Samples.htm",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/wowbutter-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-the-best-6-free-income-tax-software-canada",
+      "name": "The Best 6 FREE Income Tax Software Canada!",
+      "description": "The Best 6 FREE Income Tax Software Canada!",
+      "url": "https://www.canadianfreestuff.com/free-income-tax-software/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-income-tax-software/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-social-nature-canada-free-ocean-s-halo-organic-sea",
+      "name": "Social Nature Canada -FREE Ocean`s Halo Organic Seaweed Snacks",
+      "description": "Social Nature Canada -FREE Ocean`s Halo Organic Seaweed Snacks",
+      "url": "https://www.socialnature.com/products?country=CA",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/social-nature-canada-free-samples/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-baby-registry-list-canada-10-sites-to-register-you",
+      "name": "Baby Registry List Canada: 10 Sites to Register your Baby!",
+      "description": "Baby Registry List Canada: 10 Sites to Register your Baby!",
+      "url": "https://amzn.to/4sV6GQH",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/canada-baby-registries/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-similac-club-canada-get-free-baby-samples-canada-3",
+      "name": "Similac Club Canada \u2013 Get Free Baby Samples Canada ($300 in value)",
+      "description": "Similac Club Canada \u2013 Get Free Baby Samples Canada ($300 in value)",
+      "url": "https://www.canadianfreestuff.com/similac-coupons/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/similac-coupons/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-renew-denture-cleaner-free-sample",
+      "name": "Renew Denture Cleaner FREE Sample!!",
+      "description": "Renew Denture Cleaner FREE Sample!!",
+      "url": "https://www.canadianfreestuff.com/renew-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/renew-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-milestones-canada-free-appy-free-birthday-dessert",
+      "name": "Milestones Canada \u2013 Free Appy & Free Birthday Dessert!",
+      "description": "Milestones Canada \u2013 Free Appy & Free Birthday Dessert!",
+      "url": "https://www.canadianfreestuff.com/milestones-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/milestones-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-pedigree-dog-food-coupon-free-pedigree-choice-cuts",
+      "name": "Pedigree Dog Food Coupon- FREE PEDIGREE CHOICE CUTS IN GRAVY Pouches -GO!!",
+      "description": "Pedigree Dog Food Coupon- FREE PEDIGREE CHOICE CUTS IN GRAVY Pouches -GO!!",
+      "url": "https://www.mypedigree.ca/en-ca/coupons",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/pedigree-canada-coupons/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-clearly-free-contact-lens-trial-offer-go",
+      "name": "Clearly FREE Contact Lens Trial Offer -GO!!",
+      "description": "Clearly FREE Contact Lens Trial Offer -GO!!",
+      "url": "https://www.clearly.ca/en-ca/c/try-everclear-contact-lenses-for-free",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/clearly-contacts-promo-code-for-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-pampers-coupons-canada-parent-kit-exclusive-coupon",
+      "name": "Pampers Coupons Canada -Parent Kit & Exclusive Coupons -MAILED!",
+      "description": "Pampers Coupons Canada -Parent Kit & Exclusive Coupons -MAILED!",
+      "url": "https://pgbrandsaver.ca/signup/pampers/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/pampers-coupons-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-huggies-free-sample-free-diapers-wipes-for-newborn",
+      "name": "Huggies Free Sample -FREE Diapers & Wipes for Newborn Babies",
+      "description": "Huggies Free Sample -FREE Diapers & Wipes for Newborn Babies",
+      "url": "https://www.canadianfreestuff.com/huggies-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/huggies-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-pull-ups-free-sample-free-pull-ups-potty-training-",
+      "name": "Pull Ups Free Sample \u2013 Free Pull-Ups\u00a0Potty Training Starter kit!",
+      "description": "Pull Ups Free Sample \u2013 Free Pull-Ups\u00a0Potty Training Starter kit!",
+      "url": "https://www.pull-ups.com/en-ca/free-potty-training-kit",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/pull-ups-canada-coupons/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-peekage-canada-free-hartz-delectables-spoons-cat-t",
+      "name": "Peekage Canada: Free Hartz Delectables Spoons Cat Treats-GO!! Still Available!",
+      "description": "Peekage Canada: Free Hartz Delectables Spoons Cat Treats-GO!! Still Available!",
+      "url": "https://peekage.com/web/offers/78c79b47-a5ae-4ce8-97a5-2feb1842d6a1",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/peekage-app/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-mandarin-restaurant-free-birthday-offer",
+      "name": "Mandarin Restaurant Free Birthday Offer!",
+      "description": "Mandarin Restaurant Free Birthday Offer!",
+      "url": "https://www.canadianfreestuff.com/mandarin-restaurant-canada-coupon/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/mandarin-restaurant-canada-coupon/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-sample-source-spring-samples-2026-coming-soon-regi",
+      "name": "Sample Source Spring Samples 2026 -Coming SOON! Register now!",
+      "description": "Sample Source Spring Samples 2026 -Coming SOON! Register now!",
+      "url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-poise-free-sample-kits-canada-go",
+      "name": "Poise Free Sample Kits Canada -GO!!",
+      "description": "Poise Free Sample Kits Canada -GO!!",
+      "url": "https://www.canadianfreestuff.com/poise-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/poise-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-london-drugs-baby-welcome-package-free",
+      "name": "London Drugs Baby Welcome Package -FREE!",
+      "description": "London Drugs Baby Welcome Package -FREE!",
+      "url": "https://www.londondrugs.com/baby-welcome-package/baby-pkg.html",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-london-drugs-baby-welcome-package/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-charmin-roll-extender-still-available",
+      "name": "FREE Charmin Roll Extender \u2013 Still Available!",
+      "description": "FREE Charmin Roll Extender \u2013 Still Available!",
+      "url": "https://www.canadianfreestuff.com/charmin-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/charmin-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-jungle-jims-birthday-offer-get-15-birthday-bucks-f",
+      "name": "Jungle Jims Birthday Offer \u2013 Get $15 Birthday Bucks + FREE Chimi Cheesecake Dessert!",
+      "description": "Jungle Jims Birthday Offer \u2013 Get $15 Birthday Bucks + FREE Chimi Cheesecake Dessert!",
+      "url": "https://www.canadianfreestuff.com/jungle-jims-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/jungle-jims-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-free-tena-canada-sample-kits-mailed-go",
+      "name": "FREE Tena Canada Sample Kits (Mailed) -GO!!",
+      "description": "FREE Tena Canada Sample Kits (Mailed) -GO!!",
+      "url": "https://www.canadianfreestuff.com/tena-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/tena-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-free-kids-glasses-3-ways-to-get-free-glasses-for-k",
+      "name": "Free Kids Glasses -3 Ways to Get Free Glasses for Kids!",
+      "description": "Free Kids Glasses -3 Ways to Get Free Glasses for Kids!",
+      "url": "https://optom.on.ca/esel/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/clearly-free-kids-glasses/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-acuvue-canada-free-contact-lenses-trial",
+      "name": "Acuvue Canada Free Contact Lenses Trial!",
+      "description": "Acuvue Canada Free Contact Lenses Trial!",
+      "url": "https://www.canadianfreestuff.com/acuvue-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/acuvue-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-la-roche-posay-free-sample",
+      "name": "La Roche-Posay Free Sample",
+      "description": "La Roche-Posay Free Sample",
+      "url": "https://www.laroche-posay.ca/en_CA/spotscan.html",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/la-roche-posay-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-brilliant-earth-free-ring-sizer-go",
+      "name": "Brilliant Earth Free Ring Sizer! GO!",
+      "description": "Brilliant Earth Free Ring Sizer! GO!",
+      "url": "https://www.brilliantearth.com/en-ca/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/brilliant-earth-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-bausch-lomb-free-contact-lenses-trial-go",
+      "name": "Bausch & Lomb Free Contact Lenses Trial -GO!",
+      "description": "Bausch & Lomb Free Contact Lenses Trial -GO!",
+      "url": "https://www.canadianfreestuff.com/bausch-lomb-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/bausch-lomb-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-free-riversol-skin-care-sample-packs-go",
+      "name": "FREE Riversol Skin Care Sample Packs -GO!",
+      "description": "FREE Riversol Skin Care Sample Packs -GO!",
+      "url": "https://www.canadianfreestuff.com/riversol-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/riversol-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-biolage-free-sample-of-scalp-sync-clarifying-shamp",
+      "name": "Biolage FREE SAMPLE of Scalp Sync Clarifying Shampoo -GO!!",
+      "description": "Biolage FREE SAMPLE of Scalp Sync Clarifying Shampoo -GO!!",
+      "url": "https://cloud.mail.matrixprofessional.ca/EN_Biolage_Clarifying_Shampoo_Sampling",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/biolage-canada-free-samples/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-new-york-fries-canada-get-free-birthday-fries",
+      "name": "New York Fries Canada: Get FREE Birthday FRIES!",
+      "description": "New York Fries Canada: Get FREE Birthday FRIES!",
+      "url": "https://www.newyorkfries.com/promotions",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/new-york-fries-canada-coupons-discounts/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-east-side-mario-s-canada-free-appetizer-birthday-p",
+      "name": "East Side Mario`s Canada \u2013 FREE Appetizer, Birthday Pasta & More!",
+      "description": "East Side Mario`s Canada \u2013 FREE Appetizer, Birthday Pasta & More!",
+      "url": "https://www.eastsidemarios.com/en/signup.html/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/east-side-marios-coupons/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-red-lobster-free-appetizer-or-dessert-with-sign-up",
+      "name": "Red Lobster FREE Appetizer or Dessert with Sign-Up!!",
+      "description": "Red Lobster FREE Appetizer or Dessert with Sign-Up!!",
+      "url": "https://www.redlobster.ca/fresh-catch-news#/sign-up",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/red-lobster-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-depends-free-sample-kits-go",
+      "name": "Depends Free Sample Kits -Go!!",
+      "description": "Depends Free Sample Kits -Go!!",
+      "url": "https://www.depend.com/en-ca/free-sample",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/depends-free-sample-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-starbucks-canada-get-a-free-15-digital-gift-card-w",
+      "name": "Starbucks Canada -Get a Free $15 Digital Gift Card w/purchase!!",
+      "description": "Starbucks Canada -Get a Free $15 Digital Gift Card w/purchase!!",
+      "url": "https://www.starbucksathome.com/ca/en-ca/Spend50Get15",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/starbucks-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-old-el-paso-offer-get-a-free-10-grocery-gift-card-",
+      "name": "Old El Paso Offer -Get a FREE $10 Grocery Gift Card w/purchase -Go!!!",
+      "description": "Old El Paso Offer -Get a FREE $10 Grocery Gift Card w/purchase -Go!!!",
+      "url": "https://oldelpasogiveaway.ca/enter",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "dead_link",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": false,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/old-el-paso-offers/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-kellogg-s-canada-promotion-free-lunar-new-year-apr",
+      "name": "Kellogg\u2019s Canada Promotion -Free Lunar New Year Apron \u2013 GO!",
+      "description": "Kellogg\u2019s Canada Promotion -Free Lunar New Year Apron \u2013 GO!",
+      "url": "https://www.canadianfreestuff.com/kelloggs-cereal-promotions-canada/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/kelloggs-cereal-promotions-canada/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-goodlife-fitness-free-7-day-pass-for-2026",
+      "name": "GoodLife Fitness FREE 7-Day Pass for 2026",
+      "description": "GoodLife Fitness FREE 7-Day Pass for 2026",
+      "url": "https://try.goodlifefitness.com/leafs",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/goodlife-canada-free-samples/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-general-mills-free-team-canada-toque-go",
+      "name": "General Mills FREE Team Canada Toque -GO!",
+      "description": "General Mills FREE Team Canada Toque -GO!",
+      "url": "https://gmfreetoque.ca/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/general-mills-canada-mail-in-rebate/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-veseys-canada-free-spring-and-seed-catalogues-mail",
+      "name": "Veseys Canada \u2013 Free Spring and Seed Catalogues -Mailed!!",
+      "description": "Veseys Canada \u2013 Free Spring and Seed Catalogues -Mailed!!",
+      "url": "https://www.veseys.com/ca/request-catalogue",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/veseys-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-2026-milk-calendar-go-still-available",
+      "name": "FREE 2026 Milk Calendar -GO -Still Available!",
+      "description": "FREE 2026 Milk Calendar -GO -Still Available!",
+      "url": "https://www.canadianfreestuff.com/dairy-farmers-of-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/dairy-farmers-of-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-kelseys-free-spinach-dip-and-dessert",
+      "name": "Kelseys FREE Spinach Dip and Dessert!",
+      "description": "Kelseys FREE Spinach Dip and Dessert!",
+      "url": "https://www.kelseys.ca/en/freeappy.html",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/kelseys-canada-free-spinach-dip/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-apply-for-free-mccain-deep-n-delicious-cake-and-mo",
+      "name": "Apply for FREE McCain Deep\u2019n Delicious Cake and More!!",
+      "description": "Apply for FREE McCain Deep\u2019n Delicious Cake and More!!",
+      "url": "https://www.shopperarmy.com/offer/memberoffer/access/mo80B083DE5CFB926F/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/shopper-army-canada-free-offers/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-olay-free-sample-of-retinol24-go",
+      "name": "Olay Free Sample of Retinol24 -GO!!!",
+      "description": "Olay Free Sample of Retinol24 -GO!!!",
+      "url": "https://olay.jebbit.com/derxeubb",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/olay-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-unlock-the-secret-to-receiving-free-stuff-in-the-m",
+      "name": "Unlock the Secret to Receiving Free Stuff in the Mail",
+      "description": "Unlock the Secret to Receiving Free Stuff in the Mail",
+      "url": "https://blog.lengow.com/product-code/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/unlock-the-secret-to-receiving-free-stuff-in-the-mail/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-cerave-canada-free-sample-of-anti-dandruff-hydrati",
+      "name": "CeraVe Canada -Free Sample of Anti-Dandruff Hydrating Shampoo & Hydrating Conditioner -GO!",
+      "description": "CeraVe Canada -Free Sample of Anti-Dandruff Hydrating Shampoo & Hydrating Conditioner -GO!",
+      "url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-dairy-queen-canada-free-cone-day-march-19",
+      "name": "Dairy Queen Canada -FREE CONE Day -March 19!!!",
+      "description": "Dairy Queen Canada -FREE CONE Day -March 19!!!",
+      "url": "https://www.dairyqueen.com/en-ca/Blizzard-Fan-Club/?localechange=1",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/dairy-queen-canada-free-blizzard/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-boston-pizza-canada-get-a-free-birthday-dessert-mo",
+      "name": "Boston Pizza Canada \u2013 Get a Free Birthday Dessert & More",
+      "description": "Boston Pizza Canada \u2013 Get a Free Birthday Dessert & More",
+      "url": "https://bostonpizza.com/en/mybp.html",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/boston-pizza-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-200-000-samples-of-free-fuze-iced-tea-go",
+      "name": "200,000 Samples of FREE FUZE\u00ae Iced Tea -GO!",
+      "description": "200,000 Samples of FREE FUZE\u00ae Iced Tea -GO!",
+      "url": "https://www.canadianfreestuff.com/coca-cola-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/coca-cola-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-dove-canada-contest-win-an-ea-sports-fc-26-in-game",
+      "name": "Dove Canada Contest: WIN\u00a0an EA SPORTS FC 26 in-game Ultimate Team pack",
+      "description": "Dove Canada Contest: WIN\u00a0an EA SPORTS FC 26 in-game Ultimate Team pack",
+      "url": "https://www.canadianfreestuff.com/dove-canada-contest/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/dove-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-explore-free-perfume-samples-tips-and-tricks-on-ca",
+      "name": "Explore Free Perfume Samples: Tips and Tricks on Canadian Free Stuff",
+      "description": "Explore Free Perfume Samples: Tips and Tricks on Canadian Free Stuff",
+      "url": "https://www.coolest-gadgets.com/fragrance-statistics/#:~:text=Fragrance%20Statistics%20research%20shows%20that,sales%20in%20the%20beauty%20sector.",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/explore-free-perfume-samples-tips-and-tricks-on-canadian-free-stuff/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-mr-lube-coupon-get-free-wiper-blades-at-mr-lube",
+      "name": "Mr Lube Coupon: Get FREE Wiper Blades at Mr. Lube!",
+      "description": "Mr Lube Coupon: Get FREE Wiper Blades at Mr. Lube!",
+      "url": "https://www.canadianfreestuff.com/mr-lube-canada-coupon/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/mr-lube-canada-coupon/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-a-vogel-canada-free-e-cookbook-go",
+      "name": "A. Vogel Canada FREE e-cookbook -GO!!!",
+      "description": "A. Vogel Canada FREE e-cookbook -GO!!!",
+      "url": "https://www.canadianfreestuff.com/a-vogel-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/a-vogel-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-circle-k-coupons-get-a-free-product-go",
+      "name": "Circle K Coupons: Get a FREE Product -GO!!!",
+      "description": "Circle K Coupons: Get a FREE Product -GO!!!",
+      "url": "https://gg.circlek.coupons/give-to-gain/9VTDKIKR",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/circle-k-canada-coupon/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-perfume-sample-tom-ford-soleil-neige-go",
+      "name": "FREE PERFUME SAMPLE -Tom Ford Soleil Neige -GO!!",
+      "description": "FREE PERFUME SAMPLE -Tom Ford Soleil Neige -GO!!",
+      "url": "https://www.canadianfreestuff.com/free-perfume-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-perfume-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-chapters-indigo-canada-get-a-free-mini-tote",
+      "name": "Chapters Indigo Canada -Get a FREE Mini Tote!",
+      "description": "Chapters Indigo Canada -Get a FREE Mini Tote!",
+      "url": "https://www.indigo.ca/en-ca/valentines-day-shop/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/chapters-indigo-coupons-promo-code/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-walmart-photo-centre-canada-get-20-bonus-prints-fo",
+      "name": "Walmart Photo Centre Canada: Get 20 Bonus Prints for Valentine`s Day!",
+      "description": "Walmart Photo Centre Canada: Get 20 Bonus Prints for Valentine`s Day!",
+      "url": "https://www.walmartphotocentre.ca/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/walmart-photo-centre-promo-code/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-nestle-baby-sample-free-stuff-for-baby-and-mom",
+      "name": "Nestle Baby Sample \u2013 Free Stuff for Baby and Mom",
+      "description": "Nestle Baby Sample \u2013 Free Stuff for Baby and Mom",
+      "url": "https://www.canadianfreestuff.com/nestle-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/nestle-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-canadian-wildlife-federation-free-2025-canadian-wi",
+      "name": "Canadian Wildlife Federation \u2013 FREE 2025 Canadian Wildlife Calendar!",
+      "description": "Canadian Wildlife Federation \u2013 FREE 2025 Canadian Wildlife Calendar!",
+      "url": "https://www.canadianfreestuff.com/canadian-wildlife-federation-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/canadian-wildlife-federation-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-free-nicoderm-patches-nicorette-gum",
+      "name": "Free Nicoderm Patches & Nicorette Gum",
+      "description": "Free Nicoderm Patches & Nicorette Gum",
+      "url": "https://www.canadianfreestuff.com/nicorette-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/nicorette-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-free-telus-calendar-2025-for-customers-is-back",
+      "name": "Free Telus Calendar 2025 for Customers is Back!",
+      "description": "Free Telus Calendar 2025 for Customers is Back!",
+      "url": "https://www.canadianfreestuff.com/telus-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/telus-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-free-pumpkin-stencils-to-print-2024",
+      "name": "Free Pumpkin Stencils to Print \u2013 2024",
+      "description": "Free Pumpkin Stencils to Print \u2013 2024",
+      "url": "https://www.canadianfreestuff.com/free-pumpkin-carving-stencils/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-pumpkin-carving-stencils/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-kfc-canada-customer-survey-free-popcorn-chicken-kf",
+      "name": "KFC Canada Customer Survey \u2013 FREE POPCORN CHICKEN -KFC Listens",
+      "description": "KFC Canada Customer Survey \u2013 FREE POPCORN CHICKEN -KFC Listens",
+      "url": "https://customer.kfc-listens.com/jfe/form/SV_0okhX9n4fu7IfVY?Q_Language=EN",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/kfc-canada-customer-survey-contest-kfc-listens-free-popcorn-chicken/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-get-free-makeup-samples-in-canada-top-offers-and-h",
+      "name": "Get Free Makeup Samples in Canada: Top Offers and How to Claim",
+      "description": "Get Free Makeup Samples in Canada: Top Offers and How to Claim",
+      "url": "https://www.salon.com/2024/01/22/cosmetic-revolt-younger-generations-have-the-chance-to-buck-the-beauty-industry-scam/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/get-free-makeup-samples-in-canada-top-offers-and-how-to-claim/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-2024-list-of-everything-you-can-get-for-free-on-yo",
+      "name": "2024 List Of Everything You Can Get For Free On Your Birthday!",
+      "description": "2024 List Of Everything You Can Get For Free On Your Birthday!",
+      "url": "https://www.canadianfreestuff.com/free-birthday-stuff-in-canada/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-birthday-stuff-in-canada/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-p-g-sample-free-sample-of-mr-clean-ultra-foamy-mag",
+      "name": "P&G Sample \u2013 Free Sample of Mr. Clean Ultra Foamy Magic Eraser -GO!",
+      "description": "P&G Sample \u2013 Free Sample of Mr. Clean Ultra Foamy Magic Eraser -GO!",
+      "url": "https://www.canadianfreestuff.com/pg-brandsampler-free-samples/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/pg-brandsampler-free-samples/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-free-chapmans-super-premium-plus-ice-cream-go",
+      "name": "FREE Chapmans Super Premium Plus Ice Cream -GO!!!",
+      "description": "FREE Chapmans Super Premium Plus Ice Cream -GO!!!",
+      "url": "https://www.chapmans.ca/calendar/2025-chapmans-calendar-request/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-chapmans-calendar/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-kruger-big-assist-promo-get-a-limited-edition-toqu",
+      "name": "Kruger Big Assist Promo: Get a Limited Edition Toque -GO! (Extended)",
+      "description": "Kruger Big Assist Promo: Get a Limited Edition Toque -GO! (Extended)",
+      "url": "https://mykrugerproducts.ca/en-ca/campaigns/kruger-big-assist/get-your-toque",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/kruger-rebate/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-jones-soda-caps-for-gear-get-free-swag",
+      "name": "Jones Soda Caps for Gear \u2013 Get Free Swag",
+      "description": "Jones Soda Caps for Gear \u2013 Get Free Swag",
+      "url": "https://www.jonessoda.com/pages/caps-for-gear-2023",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "dead_link",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": false,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/jones-soda-caps-for-gear/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-enfamil-free-samples-coupons",
+      "name": "Enfamil Free Samples & Coupons",
+      "description": "Enfamil Free Samples & Coupons",
+      "url": "https://www.canadianfreestuff.com/enfamil-free-sample-canada/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/enfamil-free-sample-canada/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-sunrype-free-sample-canada",
+      "name": "SunRype FREE Sample Canada",
+      "description": "SunRype FREE Sample Canada",
+      "url": "https://app.sampler.io/SunRype",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "dead_link",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": false,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/sunrype-canada-coupon/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-topbox-circle-canada-apply-to-try-network",
+      "name": "Topbox Circle Canada \u2013 Apply to Try Network",
+      "description": "Topbox Circle Canada \u2013 Apply to Try Network",
+      "url": "https://www.canadianfreestuff.com/top-box-free-product-review-club/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/top-box-free-product-review-club/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-product-testing-canada-list-32-companies-to-join",
+      "name": "Product Testing Canada List ~ 32 Companies to Join",
+      "description": "Product Testing Canada List ~ 32 Companies to Join",
+      "url": "https://www.canadianfreestuff.com/product-testing-canada/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/product-testing-canada/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-home-depot-free-diy-workshops-kids-valentines-box",
+      "name": "Home Depot Free DIY  Workshops \u2013 Kids Valentines Box",
+      "description": "Home Depot Free DIY  Workshops \u2013 Kids Valentines Box",
+      "url": "https://www.homedepot.ca/en/home/ideas-how-to/workshop/workshops.html",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/home-depot-workshop-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-sample-of-l-or-al-professional-s-metal-detox-",
+      "name": "FREE Sample of L\u2019Or\u00e9al Professional`s Metal Detox Mask",
+      "description": "FREE Sample of L\u2019Or\u00e9al Professional`s Metal Detox Mask",
+      "url": "https://www.canadianfreestuff.com/loreal-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/loreal-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-mcdonalds-rewards-program-earn-free-food-and-drink",
+      "name": "McDonalds Rewards Program -Earn FREE Food and Drinks",
+      "description": "McDonalds Rewards Program -Earn FREE Food and Drinks",
+      "url": "https://www.mcdonalds.com/ca/en-ca/getmoremcds/mymcdonaldsrewards.html",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/mcdonalds-canada-deals/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-redken-free-sample-of-acidic-bonding-curls-shampoo",
+      "name": "Redken Free Sample of Acidic Bonding Curls shampoo + conditioner",
+      "description": "Redken Free Sample of Acidic Bonding Curls shampoo + conditioner",
+      "url": "https://experience.topboxcircle.com/s3/DTC-CA-2024-07-Redken-Sampling-QU-3756",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "dead_link",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": false,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/redken-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-rxbar-protein-bar-go-still-available",
+      "name": "FREE RXBAR Protein Bar -GO -STILL AVAILABLE!!!",
+      "description": "FREE RXBAR Protein Bar -GO -STILL AVAILABLE!!!",
+      "url": "https://kelloggs.websaver.ca/en/FREE_RXBAR/exclusive_coupons?0=",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/rx-bar-coupon/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-feed-good-rewards",
+      "name": "Feed Good Rewards",
+      "description": "Feed Good Rewards",
+      "url": "https://feedgood.ca/contests",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/feed-good-rewards/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-mary-browns-canada-get-a-free-big-mary",
+      "name": "Mary Browns Canada -Get a FREE Big Mary",
+      "description": "Mary Browns Canada -Get a FREE Big Mary",
+      "url": "https://www.canadianfreestuff.com/mary-browns-canada-free-sample/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/mary-browns-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-colgate-free-sample-of-toothpaste",
+      "name": "Colgate Free Sample of Toothpaste",
+      "description": "Colgate Free Sample of Toothpaste",
+      "url": "https://www.canadianfreestuff.com/colgate-canada-free-samples/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/colgate-canada-free-samples/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-skinceuticals-free-sample-discoloration-defense-ha",
+      "name": "SkinCeuticals Free Sample Discoloration Defense, HA Intensifier, and Phyto Corrective Gel",
+      "description": "SkinCeuticals Free Sample Discoloration Defense, HA Intensifier, and Phyto Corrective Gel",
+      "url": "https://app.sampler.io/skinceuticals_ca/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "dead_link",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": false,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/skinceuticals-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-how-to-get-free-amazon-gift-cards-in-canada",
+      "name": "How to Get Free Amazon Gift Cards in Canada",
+      "description": "How to Get Free Amazon Gift Cards in Canada",
+      "url": "https://www.mturk.com/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/how-to-get-free-amazon-gift-cards-in-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-printable-grocery-list-exclusive",
+      "name": "Free Printable Grocery List! ( Exclusive)",
+      "description": "Free Printable Grocery List! ( Exclusive)",
+      "url": "https://www.canadianfreestuff.com/free-printable-grocery-list/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-printable-grocery-list/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-21-free-printable-christmas-gift-tags",
+      "name": "21 free printable Christmas gift tags",
+      "description": "21 free printable Christmas gift tags",
+      "url": "https://amzn.to/35UYLvh",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-printable-christmas-gift-tags/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-taco-bell-free-crunchwrap-supreme",
+      "name": "Free Taco Bell \u2013 Free Crunchwrap Supreme",
+      "description": "Free Taco Bell \u2013 Free Crunchwrap Supreme",
+      "url": "https://www.tacobell.ca/en/app.html",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/taco-bell-free/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-pampers-free-samples-free-newborn-diapers",
+      "name": "Pampers Free Samples \u2013 Free Newborn Diapers",
+      "description": "Pampers Free Samples \u2013 Free Newborn Diapers",
+      "url": "https://pamperssamples.ca/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "dead_link",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": false,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/pampers-canada-free/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-bevtri-free-alcohol-sample-opportunity",
+      "name": "BevTri : Free Alcohol Sample Opportunity",
+      "description": "BevTri : Free Alcohol Sample Opportunity",
+      "url": "https://bevtri.com/index.php/referral-signup/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/bevtri-free-alcohol-samples/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-mcdonalds-survey-get-free-food",
+      "name": "McDonalds Survey  ~ Get FREE Food",
+      "description": "McDonalds Survey  ~ Get FREE Food",
+      "url": "https://survey.medallia.ca/?McD-GSS-FeedlessSurvey",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/mcdonalds-survey-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-get-a-free-tassimo-at-safeway-and-sobeys-go",
+      "name": "Get a FREE Tassimo at Safeway and Sobeys! GO!",
+      "description": "Get a FREE Tassimo at Safeway and Sobeys! GO!",
+      "url": "https://www.canadianfreestuff.com/safeway-canada-deals-coupons/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/safeway-canada-deals-coupons/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-free-sample-of-aveeno-baby-healthy-start-newborn-w",
+      "name": "Free Sample of Aveeno Baby Healthy Start Newborn Wash & Balm -GO",
+      "description": "Free Sample of Aveeno Baby Healthy Start Newborn Wash & Balm -GO",
+      "url": "https://butterly.com/en/johnsonandjohnsonca/survey/LtnC4F",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/aveeno-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-kraft-cafe-to-apply-to-try-on-shoppers-army",
+      "name": "Free Kraft Cafe to Apply to Try on Shoppers Army",
+      "description": "Free Kraft Cafe to Apply to Try on Shoppers Army",
+      "url": "https://www.shopperarmy.com/offer/view/sa_kraft_20880_coffee_recruit",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-kraft/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-door-dashpass-with-amazon-prime-membership",
+      "name": "FREE Door DashPass With Amazon Prime Membership",
+      "description": "FREE Door DashPass With Amazon Prime Membership",
+      "url": "https://amzn.to/3oJTQcW",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-door-dash-pass-with-amazon-prime-membership/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-new-free-stuff-from-sampler-io",
+      "name": "New Free Stuff from Sampler.io",
+      "description": "New Free Stuff from Sampler.io",
+      "url": "https://app.sampler.io/smn?utm_source=Instagram&utm_medium=social&utm_campaign=InstaShorby",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "dead_link",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": false,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/sampler-party/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-slurpee-coupon-for-just-1-00-7-11-promotion",
+      "name": "Slurpee Coupon For Just $1.00  7 11 Promotion",
+      "description": "Slurpee Coupon For Just $1.00  7 11 Promotion",
+      "url": "https://www.slurpee.ca/downloads",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "dead_link",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": false,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/slurpee-coupon-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-ways-to-get-cheap-or-free-diapers-in-canada",
+      "name": "Ways to Get Cheap or Free Diapers in Canada",
+      "description": "Ways to Get Cheap or Free Diapers in Canada",
+      "url": "https://www.pampers.ca/en-ca/free-sample",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/ways-to-get-cheap-or-free-diapers-in-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-toys-r-us-june-events-free-chickadee-magazine",
+      "name": "Toys R Us June Events \u2013 Free Chickadee Magazine",
+      "description": "Toys R Us June Events \u2013 Free Chickadee Magazine",
+      "url": "https://www.toysrus.ca/en/revents/revents.html",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/toys-r-us-events-kids/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-crown-royal-custom-labels-personalize-a-bottl",
+      "name": "FREE Crown Royal Custom Labels ~ Personalize a bottle today",
+      "description": "FREE Crown Royal Custom Labels ~ Personalize a bottle today",
+      "url": "https://www.canadianfreestuff.com/free-crown-royal-labels/",
+      "category": "free-sample",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/free-crown-royal-labels/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-pharmasave-love-local-contest-win-tickets-to-a-202",
+      "name": "Pharmasave Love Local Contest: Win Tickets to a\u00a02026 OHL Game OR 1 of 10 Local Prizes!",
+      "description": "Pharmasave Love Local Contest: Win Tickets to a\u00a02026 OHL Game OR 1 of 10 Local Prizes!",
+      "url": "https://www.canadianfreestuff.com/pharmasave-contest/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/pharmasave-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-westjet-canada-contest-win-a-trip-for-2-to-dublin-",
+      "name": "WestJet Canada Contest: Win a Trip for 2 to Dublin, Ireland!",
+      "description": "WestJet Canada Contest: Win a Trip for 2 to Dublin, Ireland!",
+      "url": "https://www.canadianfreestuff.com/westjet-contest/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/westjet-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-montanas-bbq-canada-contest-win-a-trip-to-yqm-coun",
+      "name": "Montanas BBQ Canada Contest: Win a Trip to YQM Country Fest 2026 to see Post Malone",
+      "description": "Montanas BBQ Canada Contest: Win a Trip to YQM Country Fest 2026 to see Post Malone",
+      "url": "https://www.montanas.ca/en/contests/bud-light.html",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/montanas-bbq-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-fitbit-canada-contest-win-a-fitbit-inspire-3",
+      "name": "Fitbit Canada Contest: Win a Fitbit Inspire 3",
+      "description": "Fitbit Canada Contest: Win a Fitbit Inspire 3",
+      "url": "https://whatsyourtech.ca/enter-to-win-a-google-fitbit-inspire-3-the-ultimate-fitness-tracker/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/fitbit-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-kellogg-s-canada-coupons-2026-new-cereal-and-snack",
+      "name": "Kellogg\u2019s Canada Coupons 2026: *NEW* Cereal and Snack Coupons!!",
+      "description": "Kellogg\u2019s Canada Coupons 2026: *NEW* Cereal and Snack Coupons!!",
+      "url": "https://wkkellogg.websaver.ca/en/breakfastsavvy/exclusive_coupons",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/kelloggs-canada-coupons/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-kashi-coupons-canada-save-3-00-off-kashi-granola-c",
+      "name": "Kashi Coupons Canada: Save $3.00 off Kashi Granola Cereal!",
+      "description": "Kashi Coupons Canada: Save $3.00 off Kashi Granola Cereal!",
+      "url": "https://wkkellogg.websaver.ca/en/breakfastsavvy/exclusive_coupons",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/kashi-canada-coupons/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-okocat-litter-coupon-canada-save-up-to-13-00-off-c",
+      "name": "Okocat Litter Coupon Canada: Save up to $13.00 off Cat Litter! (Print)",
+      "description": "Okocat Litter Coupon Canada: Save up to $13.00 off Cat Litter! (Print)",
+      "url": "https://www.healthy-pet.com/pages/canadian-coupons",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/okocat-litter-canada-coupon/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-la-roche-posay-coupon-canada-save-15-off-sitewide-",
+      "name": "La Roche Posay Coupon Canada -Save 15% off Sitewide + Get a 7-Piece GIFT!",
+      "description": "La Roche Posay Coupon Canada -Save 15% off Sitewide + Get a 7-Piece GIFT!",
+      "url": "https://www.laroche-posay.ca/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/la-roche-posay-canada-coupons/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-harveys-canada-coupons-deals-8-99-meal-deal-and-mo",
+      "name": "Harveys Canada Coupons & Deals \u2013 $8.99 Meal Deal and More!",
+      "description": "Harveys Canada Coupons & Deals \u2013 $8.99 Meal Deal and More!",
+      "url": "https://www.canadianfreestuff.com/harveys-coupons-canada/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/harveys-coupons-canada/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-swiss-chalet-coupons-deals-new-2-can-dine-chicken-",
+      "name": "Swiss Chalet Coupons & Deals -New 2 can Dine Chicken Dinner Coupons!",
+      "description": "Swiss Chalet Coupons & Deals -New 2 can Dine Chicken Dinner Coupons!",
+      "url": "https://www.canadianfreestuff.com/swiss-chalet-coupon-deals/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/swiss-chalet-coupon-deals/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-dominos-coupons-canada-new-weekly-codes-12-99-larg",
+      "name": "Dominos Coupons Canada \u2013 New Weekly Codes \u2013 $12.99 Large Pizza!",
+      "description": "Dominos Coupons Canada \u2013 New Weekly Codes \u2013 $12.99 Large Pizza!",
+      "url": "https://www.canadianfreestuff.com/dominos-canada-coupons-deals/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/dominos-canada-coupons-deals/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-mary-browns-big-mary-monday",
+      "name": "Mary Browns Big Mary Monday!",
+      "description": "Mary Browns Big Mary Monday!",
+      "url": "https://www.canadianfreestuff.com/mary-browns-canada-coupons/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/mary-browns-canada-coupons/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-church-s-chicken-coupons-2-99-wrap-more",
+      "name": "Church\u2019s Chicken Coupons \u2013 $2.99 Wrap & More!",
+      "description": "Church\u2019s Chicken Coupons \u2013 $2.99 Wrap & More!",
+      "url": "https://lowermainland.churchstexaschicken.com/Coupon",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/churchs-chicken-canada-coupons/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-ziploc-canada-rebate-get-a-free-5-digital-reward-w",
+      "name": "Ziploc Canada Rebate \u2013 Get a FREE $5 Digital Reward w/Purchase!",
+      "description": "Ziploc Canada Rebate \u2013 Get a FREE $5 Digital Reward w/Purchase!",
+      "url": "https://www.canadianfreestuff.com/ziploc-canada-coupon/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/ziploc-canada-coupon/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-bassilis-best-coupon-offer-get-a-free-lasagna",
+      "name": "Bassilis Best Coupon Offer- Get a FREE Lasagna!",
+      "description": "Bassilis Best Coupon Offer- Get a FREE Lasagna!",
+      "url": "https://www.canadianfreestuff.com/lasagna-coupon-bassilis-best/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/lasagna-coupon-bassilis-best/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-canadian-coupon-websites-how-to-save-money-with-ca",
+      "name": "Canadian Coupon Websites: How to Save Money with Canadian Coupons!",
+      "description": "Canadian Coupon Websites: How to Save Money with Canadian Coupons!",
+      "url": "https://www.save.ca/coupons",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/how-to-get-coupons-in-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-how-to-create-a-grocery-price-book-for-couponing-i",
+      "name": "How to Create a Grocery Price Book for Couponing in Canada!",
+      "description": "How to Create a Grocery Price Book for Couponing in Canada!",
+      "url": "https://www.walmart.ca/",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/how-to-create-a-price-book/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-salvation-army-thrift-store-coupon-save-30-off-boo",
+      "name": "Salvation Army Thrift Store Coupon: Save 30% off Books & Media in April",
+      "description": "Salvation Army Thrift Store Coupon: Save 30% off Books & Media in April",
+      "url": "https://image.em.salvationarmy.ca/lib/fe341173716405797d1670/m/1/April2026_Coupon_8.5x4_EN.pdf?utm_source=SFMC&utm_medium=email&utm_campaign=Earth+Day+Launch+Buy+3+or+more+%26+receive+30%25+off+books+%26+media+monthly+coupon+-+April+1",
+      "category": "free-product",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-14",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-14",
+      "source_url": "https://www.canadianfreestuff.com/salvation-army-coupon-canada/",
+      "url_resolved": true
+    }
+  ],
+  "last_updated": "2026-04-14",
+  "total_freebies": 118
 }
