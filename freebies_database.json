@@ -2231,8 +2231,152 @@
       "link_checked": "2026-04-14",
       "source_url": "https://www.canadianfreestuff.com/nba-contests/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-brilliant-earth-free-ring-sizer-win-a-1000-gift-ca",
+      "name": "Brilliant Earth Free Ring Sizer + Win a $1000 Gift Card!",
+      "description": "Brilliant Earth Free Ring Sizer + Win a $1000 Gift Card!",
+      "url": "https://www.brilliantearth.com/en-ca/promo-codes-and-offers/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-15",
+      "source_url": "https://www.canadianfreestuff.com/brilliant-earth-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-dove-canada-contest-win-a-limited-edition-dove-x-b",
+      "name": "Dove Canada Contest: WIN a Limited-Edition Dove x Bridgerton Collection",
+      "description": "Dove Canada Contest: WIN a Limited-Edition Dove x Bridgerton Collection",
+      "url": "https://www.canadianfreestuff.com/dove-canada-contest/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-15",
+      "source_url": "https://www.canadianfreestuff.com/dove-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-hamilton-beach-contest-win-a-bread-maker-or-6-qt-p",
+      "name": "Hamilton Beach Contest: Win a Bread Maker or 6-Qt Programmable Defrost Slow Cooker",
+      "description": "Hamilton Beach Contest: Win a Bread Maker or 6-Qt Programmable Defrost Slow Cooker",
+      "url": "https://www.canadianfreestuff.com/hamilton-beach-canada-contest/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-15",
+      "source_url": "https://www.canadianfreestuff.com/hamilton-beach-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-metro-quebec-contest-win-a-trip-to-a-fifa-world-cu",
+      "name": "Metro Quebec Contest: Win a Trip to a FIFA World Cup 2026 Match!",
+      "description": "Metro Quebec Contest: Win a Trip to a FIFA World Cup 2026 Match!",
+      "url": "https://www.canadianfreestuff.com/metro-quebec-contests/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-15",
+      "source_url": "https://www.canadianfreestuff.com/metro-quebec-contests/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-ferrero-rocher-go-all-in-to-win-contest-win-1-of-3",
+      "name": "Ferrero Rocher Go All In to Win Contest~ Win 1 of 3 VIP Canada Soccer Experiences + 10,000 INSTANT WIN PRIZES!",
+      "description": "Ferrero Rocher Go All In to Win Contest~ Win 1 of 3 VIP Canada Soccer Experiences + 10,000 INSTANT WIN PRIZES!",
+      "url": "https://www.goallintowin.ca/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-15",
+      "source_url": "https://www.canadianfreestuff.com/ferrero-rocher-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-tresemme-coupon-canada-save-2-00-off-tresemme-styl",
+      "name": "TRESemme Coupon Canada \u2013 Save $2.00 off TRESemme Styling Products",
+      "description": "TRESemme Coupon Canada \u2013 Save $2.00 off TRESemme Styling Products",
+      "url": "https://coupons.unileverpromos.ca/en/TRESemmeAList_2026/UserFingerprint?access_token=YmI1YTUzODYyMTlhNzllMjliNDQ2NThlNTAyOTYyOGExZWUyNTIyNmU1ZmE1ZmQ4Nzg3YjU0MWZlYmRlOTA5NQ",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-15",
+      "source_url": "https://www.canadianfreestuff.com/tresemme-coupon/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-mary-browns-wednesday-special-2pc-chicken-taters-f",
+      "name": "Mary Browns Wednesday Special -2Pc Chicken & Taters for $5.99!",
+      "description": "Mary Browns Wednesday Special -2Pc Chicken & Taters for $5.99!",
+      "url": "https://www.canadianfreestuff.com/mary-browns-canada-coupons/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-15",
+      "source_url": "https://www.canadianfreestuff.com/mary-browns-canada-coupons/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-michaels-canada-coupons-new-save-30-off-one-regula",
+      "name": "Michaels Canada Coupons \u2013 NEW -Save 30% OFF one regular price item",
+      "description": "Michaels Canada Coupons \u2013 NEW -Save 30% OFF one regular price item",
+      "url": "https://canada.michaels.com/savings",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-15",
+      "source_url": "https://www.canadianfreestuff.com/michaels-canada-coupons-sales/",
+      "url_resolved": true
     }
   ],
-  "last_updated": "2026-04-14",
-  "total_freebies": 116
+  "last_updated": "2026-04-15",
+  "total_freebies": 124
 }
