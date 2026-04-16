@@ -79,15 +79,19 @@ def parse_iso_date(text):
     """Try to extract YYYY-MM-DD from a string. Returns '' on failure."""
     if not text:
         return ''
-    # Already ISO
+    # Already ISO (YYYY-MM-DD)
     m = re.search(r'(\d{4}-\d{2}-\d{2})', text)
     if m:
         return m.group(1)
-    # Month name formats: "April 19, 2026" or "Apr 19 2026"
+    # Compact ISO: 20260712 or 20260712T100000 (Tribe Events Calendar title attr)
+    m = re.match(r'(\d{4})(\d{2})(\d{2})(?:T\d+)?$', text.strip())
+    if m:
+        return f"{m.group(1)}-{m.group(2)}-{m.group(3)}"
     months = {
         'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'may': '05', 'jun': '06',
         'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12',
     }
+    # "April 19, 2026" or "Apr 19 2026"
     m = re.search(r'([A-Za-z]{3,9})\s+(\d{1,2}),?\s+(\d{4})', text)
     if m:
         mon = months.get(m.group(1).lower()[:3])
@@ -316,12 +320,58 @@ def scrape_downtown_orillia():
     """Scrape events from Downtown Orillia BIA."""
     events = []
     today = date.today().isoformat()
+    seen_ids = set()
+
+    # Try Tribe Events REST API first (gives clean structured data with proper dates)
+    try:
+        api_url = ('https://www.downtownorillia.ca/wp-json/tribe/events/v1/events'
+                   '?per_page=50&status=publish')
+        resp = requests.get(api_url, headers=HEADERS, timeout=20)
+        if resp.status_code == 200:
+            data = resp.json()
+            for ev in data.get('events', []):
+                name = ev.get('title', '').strip()
+                if not name:
+                    continue
+                ev_url = ev.get('url', '')
+                event_date = parse_iso_date(ev.get('start_date', ''))
+                end_date = parse_iso_date(ev.get('end_date', ''))
+                venue_info = ev.get('venue', {})
+                venue = (venue_info.get('venue', 'Downtown Orillia, ON')
+                         if venue_info else 'Downtown Orillia, ON')
+                desc = ev.get('description', name)
+                if isinstance(desc, str):
+                    desc = re.sub(r'<[^>]+>', ' ', desc).strip()[:200]
+                ev_id = make_event_id('bia', name, event_date)
+                if ev_id not in seen_ids:
+                    seen_ids.add(ev_id)
+                    events.append({
+                        'id': ev_id,
+                        'name': name,
+                        'date': event_date,
+                        'end_date': end_date,
+                        'time': '',
+                        'venue': venue,
+                        'category': categorize_event(name, desc),
+                        'price': 'Free',
+                        'url': ev_url,
+                        'description': desc,
+                        'source': 'downtownorillia.ca',
+                        'scraped_date': today,
+                        'status': 'active',
+                    })
+            if events:
+                logger.info(f"Downtown Orillia (REST API): {len(events)} events")
+                return events
+    except Exception as e:
+        logger.debug(f"Downtown Orillia REST API failed: {e}")
+
+    # HTML fallback
     urls = [
         'https://www.downtownorillia.ca/events/',
         'https://www.downtownorillia.ca/event_types/live-music/',
         'https://www.downtownorillia.ca/event_types/festivals/',
     ]
-    seen_ids = set()
     for url in urls:
         html = fetch_page(url)
         if not html:
@@ -332,7 +382,6 @@ def scrape_downtown_orillia():
             if ev['id'] not in seen_ids:
                 seen_ids.add(ev['id'])
                 events.append(ev)
-            continue
 
         if not ld_events:
             soup = BeautifulSoup(html, 'html.parser')
@@ -346,11 +395,20 @@ def scrape_downtown_orillia():
                     continue
                 link_el = title_el.find('a', href=True) or article.find('a', href=True)
                 ev_url = link_el['href'] if link_el else url
-                date_el = (article.find(class_=re.compile(r'tribe-event-date|start-date|datetime', re.I))
-                           or article.find('abbr', class_=re.compile(r'dtstart'))
-                           or article.find('time'))
-                date_text = (date_el.get('title') or date_el.get('datetime') or
-                             date_el.get_text()) if date_el else ''
+                # Tribe Events Calendar uses abbr.tribe-events-start-datetime with
+                # title="YYYY-MM-DD HH:MM:SS" or compact "20260712T100000"
+                date_el = (
+                    article.find(class_=re.compile(
+                        r'tribe-events-start-datetime|tribe-event-date|start-date', re.I))
+                    or article.find('abbr', class_=re.compile(r'tribe-events-abbr|dtstart', re.I))
+                    or article.find(attrs={'data-start': True})
+                    or article.find('time')
+                )
+                if date_el:
+                    date_text = (date_el.get('title') or date_el.get('datetime')
+                                 or date_el.get('data-start') or date_el.get_text())
+                else:
+                    date_text = ''
                 event_date = parse_iso_date(date_text)
                 ev_id = make_event_id('bia', name, event_date)
                 if ev_id not in seen_ids:
@@ -504,15 +562,22 @@ def save_events_db(db):
 
 
 def merge_events(db, new_events):
-    existing_ids = {e['id'] for e in db['events']}
+    existing_map = {e['id']: e for e in db['events']}
     added = 0
     for ev in new_events:
         if not ev.get('name') or not ev.get('url'):
             continue
-        if ev['id'] not in existing_ids:
+        if ev['id'] not in existing_map:
             db['events'].append(ev)
-            existing_ids.add(ev['id'])
+            existing_map[ev['id']] = ev
             added += 1
+        else:
+            # Backfill date/end_date on existing entries that were scraped without dates
+            existing = existing_map[ev['id']]
+            if ev.get('date') and not existing.get('date'):
+                existing['date'] = ev['date']
+            if ev.get('end_date') and not existing.get('end_date'):
+                existing['end_date'] = ev['end_date']
     return added
 
 

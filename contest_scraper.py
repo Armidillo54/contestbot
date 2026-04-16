@@ -326,6 +326,135 @@ def scrape_contestchef():
     return contests
 
 
+def _make_entry(prefix, title, href, text, source, freq='single'):
+    """Build a standard contest dict from scraped fields."""
+    prize_match = re.search(r'\$([\d,]+)', text)
+    prize_value = int(prize_match.group(1).replace(',', '')) if prize_match else 0
+    end_match = re.search(
+        r'(?:ends?|closes?|expir\w+|deadline)[\s:]+(\w+\.?\s+\d{1,2},?\s*\d{4})',
+        text, re.IGNORECASE
+    )
+    end_date = ''
+    if end_match:
+        for fmt in ('%B %d %Y', '%b %d %Y', '%B. %d %Y'):
+            try:
+                parsed = datetime.strptime(
+                    re.sub(r'[,.]', '', end_match.group(1)).strip(), fmt
+                ).date()
+                if parsed >= date.today():
+                    end_date = parsed.isoformat()
+                break
+            except ValueError:
+                continue
+    return {
+        'id': make_contest_id(prefix, title),
+        'name': title,
+        'url': href,
+        'prize': text[:200],
+        'prize_value': prize_value,
+        'entry_method': 'online_form',
+        'entry_frequency': freq,
+        'npn': True,
+        'npn_note': f'From {source}',
+        'restrictions': '',
+        'provinces': ['All Canada'],
+        'end_date': end_date,
+        'source': source,
+        'status': 'active',
+        'added_date': date.today().isoformat(),
+        'link_valid': None,
+        'link_checked': None,
+        'last_entered': None,
+    }
+
+
+def scrape_wordpress_contests(urls, prefix, source, freq='single'):
+    """
+    Generic scraper for WordPress-style contest aggregator sites.
+    Works for any site that lists contests as blog posts/articles.
+    """
+    contests = []
+    seen_ids = set()
+    url_list = [urls] if isinstance(urls, str) else urls
+    for url in url_list:
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=30)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.text, 'html.parser')
+            for article in soup.select(
+                'article, .post, .type-post, .contest-item, .entry, '
+                '.contest-listing, li.contest, .item'
+            ):
+                title_el = (
+                    article.find(class_=re.compile(r'entry-title|post-title|contest-title|title')) or
+                    article.find(['h2', 'h1', 'h3', 'h4'])
+                )
+                if not title_el:
+                    continue
+                link_el = title_el.find('a', href=True) or article.find('a', href=True)
+                if not link_el:
+                    continue
+                title = title_el.get_text(strip=True)
+                href = link_el.get('href', '')
+                if not href.startswith('http') or len(title) < 5:
+                    continue
+                if not is_ontario_eligible(title):
+                    continue
+                text = article.get_text(separator=' ', strip=True)
+                entry = _make_entry(prefix, title, href, text, source, freq)
+                if entry['id'] not in seen_ids:
+                    seen_ids.add(entry['id'])
+                    contests.append(entry)
+            logger.info(f"{source} ({url.split('/')[2]}): {len(contests)} contests")
+        except Exception as e:
+            logger.error(f"Error scraping {source} ({url}): {e}")
+    return contests
+
+
+def scrape_contestcanada():
+    """Scrape ContestCanada.net — updated daily since 2006."""
+    return scrape_wordpress_contests(
+        'https://www.contestcanada.net/', 'ccan', 'contestcanada.net'
+    )
+
+
+def scrape_contestscoop():
+    """Scrape ContestScoop.com contest directory."""
+    return scrape_wordpress_contests(
+        ['https://www.contestscoop.com/', 'https://www.contestscoop.com/contests/'],
+        'cscoop', 'contestscoop.com'
+    )
+
+
+def scrape_contestlibrary():
+    """Scrape ContestLibrary.ca."""
+    return scrape_wordpress_contests(
+        'https://www.contestlibrary.ca/', 'clib', 'contestlibrary.ca'
+    )
+
+
+def scrape_secureawin():
+    """Scrape SecureAWin.ca."""
+    return scrape_wordpress_contests(
+        'https://secureawin.ca/', 'saw', 'secureawin.ca'
+    )
+
+
+def scrape_curiousabout():
+    """Scrape CuriousAboutCanadianContests.com."""
+    return scrape_wordpress_contests(
+        'https://curiousaboutcanadiancontests.com/', 'cacc', 'curiousaboutcanadiancontests.com'
+    )
+
+
+def scrape_wannawin():
+    """Scrape WannaWin.ca."""
+    return scrape_wordpress_contests(
+        ['https://www.wannawin.ca/', 'https://www.wannawin.ca/contests/'],
+        'ww', 'wannawin.ca'
+    )
+
+
 def merge_contests(db, new_contests):
     """Merge new contests into database, skipping duplicates by ID."""
     existing_ids = {c['id'] for c in db['contests']}
@@ -361,8 +490,14 @@ def run_scraper():
     rfd = scrape_redflagdeals()
     cfs = scrape_canadianfreestuff_contests()
     cc = scrape_contestchef()
+    ccan = scrape_contestcanada()
+    cscoop = scrape_contestscoop()
+    clib = scrape_contestlibrary()
+    saw = scrape_secureawin()
+    cacc = scrape_curiousabout()
+    ww = scrape_wannawin()
 
-    all_new = cg + rfd + cfs + cc
+    all_new = cg + rfd + cfs + cc + ccan + cscoop + clib + saw + cacc + ww
     added = merge_contests(db, all_new)
     expired = expire_old_contests(db)
     save_database(db)
