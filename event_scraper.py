@@ -204,21 +204,36 @@ def extract_json_ld_events(html, default_venue='Orillia, ON', default_source='')
 # ---------------------------------------------------------------------------
 
 def scrape_eventbrite():
-    """Scrape Eventbrite Orillia events. Uses JSON-LD + HTML fallback."""
+    """Scrape Eventbrite events across Orillia + nearby (Barrie, Simcoe County)."""
     events = []
     today = date.today().isoformat()
+    # Cover Orillia plus nearby hubs — Barrie and Simcoe County pull in concerts
+    # that are reachable from Orillia for a family night out.
     urls = [
         'https://www.eventbrite.ca/d/canada--orillia/events/',
         'https://www.eventbrite.ca/d/canada--orillia/events--this-weekend/',
+        'https://www.eventbrite.ca/d/canada--orillia/music--events/',
+        'https://www.eventbrite.ca/d/canada--orillia/family-and-education--events/',
+        'https://www.eventbrite.ca/d/canada--barrie/music--events/',
+        'https://www.eventbrite.ca/d/canada--barrie/events--this-weekend/',
+        'https://www.eventbrite.ca/d/canada--simcoe-county/events/',
     ]
     seen_ids = set()
     for url in urls:
         html = fetch_page(url)
         if not html:
             continue
-        # Try JSON-LD first
-        ld_events = extract_json_ld_events(html, 'Orillia, ON', 'eventbrite')
+        # Default venue reflects the search scope
+        if 'barrie' in url:
+            default_venue = 'Barrie, ON'
+        elif 'simcoe' in url:
+            default_venue = 'Simcoe County, ON'
+        else:
+            default_venue = 'Orillia, ON'
+
+        ld_events = extract_json_ld_events(html, default_venue, 'eventbrite')
         for ev in ld_events:
+            ev['source'] = 'eventbrite.ca'
             if ev['id'] not in seen_ids:
                 seen_ids.add(ev['id'])
                 events.append(ev)
@@ -251,7 +266,7 @@ def scrape_eventbrite():
                         'date': event_date,
                         'end_date': '',
                         'time': '',
-                        'venue': 'Orillia, ON',
+                        'venue': default_venue,
                         'category': categorize_event(name),
                         'price': 'See event',
                         'url': ev_url,
@@ -264,55 +279,166 @@ def scrape_eventbrite():
     return events
 
 
+def _casino_rama_show_links(html, base_url):
+    """Extract unique individual show/event page URLs from a Casino Rama listing page."""
+    soup = BeautifulSoup(html, 'html.parser')
+    links = []
+    seen = set()
+    for a in soup.find_all('a', href=True):
+        href = a['href']
+        if href.startswith('/'):
+            href = 'https://www.casinorama.com' + href
+        if 'casinorama.com' not in href:
+            continue
+        # Show/event detail pages typically live under /event/ or /entertainment/<slug>/
+        if not re.search(r'/(event|entertainment|shows?)/[a-z0-9\-]+/?$', href, re.I):
+            continue
+        # Skip the top-level index pages themselves
+        if href.rstrip('/').endswith(('/entertainment', '/events', '/shows')):
+            continue
+        if href in seen:
+            continue
+        seen.add(href)
+        links.append(href)
+    return links
+
+
 def scrape_casino_rama():
-    """Scrape upcoming shows from Casino Rama entertainment page."""
+    """Scrape upcoming shows from Casino Rama.
+
+    Strategy: hit the entertainment index pages, harvest both JSON-LD (if
+    present) and every individual show page URL, then fetch each show page to
+    pick up JSON-LD dates/prices that the listing page usually hides.
+    """
     events = []
     today = date.today().isoformat()
-    html = fetch_page('https://www.casinorama.com/entertainment/')
-    if not html:
-        return events
+    seen_ids = set()
 
-    # Try JSON-LD first
-    ld_events = extract_json_ld_events(html, 'Casino Rama Resort, Rama ON', 'casinorama')
-    if ld_events:
-        events.extend(ld_events)
-        logger.info(f"Casino Rama (JSON-LD): {len(events)} events")
-        return events
+    listing_urls = [
+        'https://www.casinorama.com/entertainment/',
+        'https://www.casinorama.com/entertainment/concerts/',
+        'https://www.casinorama.com/entertainment/shows/',
+        'https://www.casinorama.com/events/',
+    ]
 
-    # HTML fallback
-    soup = BeautifulSoup(html, 'html.parser')
-    for article in soup.select('article, .event-card, .wp-block-post, .show-listing'):
-        title_el = (article.find(class_=re.compile(r'title|heading', re.I))
-                    or article.find(['h2', 'h3', 'h4']))
-        if not title_el:
+    show_links = set()
+    for url in listing_urls:
+        html = fetch_page(url)
+        if not html:
             continue
-        name = title_el.get_text(strip=True)
-        if not name or len(name) < 3:
+
+        # JSON-LD on the listing page
+        for ev in extract_json_ld_events(html, 'Casino Rama Resort, Rama ON', 'casinorama'):
+            ev['source'] = 'casinorama.com'
+            if ev.get('price') in ('See event', ''):
+                ev['price'] = 'Ticketed'
+            if ev['id'] not in seen_ids:
+                seen_ids.add(ev['id'])
+                events.append(ev)
+
+        # Collect detail-page links to follow
+        show_links.update(_casino_rama_show_links(html, url))
+
+        # HTML fallback on the listing page — pulls names/links when JSON-LD
+        # is missing, and dates often live inline next to each show card
+        soup = BeautifulSoup(html, 'html.parser')
+        for article in soup.select(
+            'article, .event-card, .wp-block-post, .show-listing, .entertainment-item'
+        ):
+            title_el = (article.find(class_=re.compile(r'title|heading', re.I))
+                        or article.find(['h2', 'h3', 'h4']))
+            if not title_el:
+                continue
+            name = title_el.get_text(strip=True)
+            if not name or len(name) < 3:
+                continue
+            link_el = title_el.find('a', href=True) or article.find('a', href=True)
+            ev_url = link_el['href'] if link_el else url
+            if ev_url.startswith('/'):
+                ev_url = 'https://www.casinorama.com' + ev_url
+            date_el = article.find(class_=re.compile(r'date|time', re.I)) or article.find('time')
+            date_text = ''
+            if date_el:
+                date_text = (date_el.get('datetime') or date_el.get('title')
+                             or date_el.get_text() or '')
+            # Dates sometimes appear as free-floating text inside the card
+            if not parse_iso_date(date_text):
+                date_text = article.get_text(' ', strip=True)
+            event_date = parse_iso_date(date_text)
+            ev_id = make_event_id('rama', name, event_date)
+            if ev_id in seen_ids:
+                continue
+            seen_ids.add(ev_id)
+            events.append({
+                'id': ev_id,
+                'name': name,
+                'date': event_date,
+                'end_date': '',
+                'time': '8:00 PM',
+                'venue': 'Casino Rama Resort, Rama ON',
+                'category': 'music',  # Casino Rama is overwhelmingly concerts
+                'price': 'Ticketed',
+                'url': ev_url,
+                'description': name,
+                'source': 'casinorama.com',
+                'scraped_date': today,
+                'status': 'active',
+            })
+
+    # Follow individual show pages to get proper dates via JSON-LD
+    # Cap at 40 to be polite
+    for detail_url in list(show_links)[:40]:
+        html = fetch_page(detail_url)
+        if not html:
             continue
-        link_el = title_el.find('a', href=True) or article.find('a', href=True)
-        ev_url = link_el['href'] if link_el else 'https://www.casinorama.com/entertainment/'
-        if ev_url.startswith('/'):
-            ev_url = 'https://www.casinorama.com' + ev_url
-        date_el = article.find(class_=re.compile(r'date|time', re.I)) or article.find('time')
-        date_text = date_el.get_text(strip=True) if date_el else ''
-        # Casino Rama embeds dates in the URL sometimes: /bnl-2026/ — try page text too
-        event_date = parse_iso_date(date_text)
-        events.append({
-            'id': make_event_id('rama', name, event_date),
-            'name': name,
-            'date': event_date,
-            'end_date': '',
-            'time': '8:00 PM',
-            'venue': 'Casino Rama Resort, Rama ON',
-            'category': categorize_event(name),
-            'price': 'Ticketed',
-            'url': ev_url,
-            'description': name,
-            'source': 'casinorama.com',
-            'scraped_date': today,
-            'status': 'active',
-        })
-    logger.info(f"Casino Rama (HTML): {len(events)} events")
+        ld = extract_json_ld_events(html, 'Casino Rama Resort, Rama ON', 'casinorama')
+        for ev in ld:
+            ev['source'] = 'casinorama.com'
+            ev['url'] = detail_url  # canonical detail page
+            if ev.get('price') in ('See event', ''):
+                ev['price'] = 'Ticketed'
+            if not ev.get('category') or ev['category'] == 'other':
+                ev['category'] = 'music'
+            # Rebuild id now that we may have a date
+            ev['id'] = make_event_id('rama', ev['name'], ev.get('date', ''))
+            if ev['id'] not in seen_ids:
+                seen_ids.add(ev['id'])
+                events.append(ev)
+            else:
+                # Backfill date onto existing record from the listing
+                for existing in events:
+                    if existing.get('url') == detail_url and not existing.get('date'):
+                        existing['date'] = ev.get('date', '')
+                        existing['end_date'] = ev.get('end_date', '')
+                        break
+
+    logger.info(f"Casino Rama: {len(events)} events ({len(show_links)} detail pages followed)")
+    return events
+
+
+def scrape_songkick_orillia():
+    """Pull concert listings from Songkick's Orillia metro page."""
+    events = []
+    today = date.today().isoformat()
+    seen = set()
+    urls = [
+        'https://www.songkick.com/metro-areas/30614-canada-barrie',  # Barrie metro includes Orillia
+        'https://www.songkick.com/search?query=orillia',
+    ]
+    for url in urls:
+        html = fetch_page(url)
+        if not html:
+            continue
+        ld = extract_json_ld_events(html, 'Orillia area, ON', 'songkick')
+        for ev in ld:
+            ev['source'] = 'songkick.com'
+            ev['category'] = 'music'
+            if ev.get('price') in ('See event', ''):
+                ev['price'] = 'Ticketed'
+            if ev['id'] not in seen:
+                seen.add(ev['id'])
+                events.append(ev)
+    logger.info(f"Songkick: {len(events)} events")
     return events
 
 
@@ -881,6 +1007,7 @@ def run_event_scraper():
         ('Farmers Market', scrape_orillia_farmers_market),
         ('Simcoe.com', scrape_simcoe_events),
         ('Race Roster', scrape_race_roster),
+        ('Songkick', scrape_songkick_orillia),
     ]
     for label, fn in scrapers:
         try:
