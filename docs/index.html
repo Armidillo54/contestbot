@@ -78,10 +78,22 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .event-card .event-btn:hover{opacity:0.85}
 .event-cat-badge{font-size:0.72em;background:#00e5ff15;color:#00e5ff;border:1px solid #00e5ff30;padding:2px 8px;border-radius:20px}
 /* Event week filter bar */
-.week-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.week-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;align-items:center}
 .week-btn{padding:5px 13px;border:1px solid #2a2a3e;border-radius:20px;background:#12121f;color:#888;cursor:pointer;font-size:0.78em;font-weight:600;transition:all 0.2s}
 .week-btn.active{background:#00e5ff20;color:#00e5ff;border-color:#00e5ff40}
 .week-btn:hover:not(.active){background:#1a1a2e;color:#ccc}
+.show-undated-btn{margin-left:auto;padding:5px 12px;border:1px solid #2a2a3e;border-radius:20px;background:#12121f;color:#555;cursor:pointer;font-size:0.76em;font-weight:600}
+.show-undated-btn.on{color:#ffaa00;border-color:#ffaa0040;background:#ffaa0010}
+/* Event date group headers */
+.event-date-group{margin-top:16px}
+.event-date-group:first-child{margin-top:4px}
+.event-date-header{font-size:0.82em;font-weight:700;color:#00e5ff;text-transform:uppercase;letter-spacing:1.2px;padding:6px 2px;border-bottom:1px solid #00e5ff30;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.event-date-header .today-pill{font-size:0.78em;padding:1px 8px;border-radius:10px;background:#00ff8820;color:#00ff88;border:1px solid #00ff8840;letter-spacing:0.5px}
+.event-date-header .tbd{color:#888}
+.event-date-header.tbd-header{color:#888;border-bottom-color:#44444460}
+body.light .event-date-header{border-bottom-color:#00aacc40;color:#0099bb}
+body.light .event-date-header.tbd-header{color:#888;border-bottom-color:#dde3ec}
+body.light .show-undated-btn{background:#fff;border-color:#dde3ec;color:#888}
 /* Sale cards */
 .sale-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:4px}
 .sale-card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
@@ -252,6 +264,7 @@ body.light .dismiss-btn{color:#bbb}
       <button class="week-btn" onclick="filterEventWeek('thisweek',this)">This Week</button>
       <button class="week-btn" onclick="filterEventWeek('nextweek',this)">Next Week</button>
       <button class="week-btn" onclick="filterEventWeek('thismonth',this)">This Month</button>
+      <button class="show-undated-btn" id="showUndatedBtn" onclick="toggleUndated(this)" title="Include events without a confirmed date">Show undated</button>
     </div>
     <div class="cat-bar" id="eventCatBar">
       <button class="cat-btn active" onclick="filterEventCat('all',this)">All</button>
@@ -266,7 +279,7 @@ body.light .dismiss-btn{color:#bbb}
       <button class="cat-btn" onclick="filterEventCat('community',this)">🤝 Community</button>
       <button class="cat-btn" onclick="filterEventCat('other',this)">Other</button>
     </div>
-    <div class="event-grid" id="eventGrid"></div>
+    <div id="eventGrid"></div>
     <div class="empty" id="eventEmpty" style="display:none">No events found for this filter.</div>
   </div>
 </div>
@@ -314,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // --- End Auth ---
 
-let allContests = [], allFreebies = [], allSales = [], allEvents = [], currentTab = 'all', currentCat = 'all', currentEventWeek = 'upcoming', currentEventCat = 'all';
+let allContests = [], allFreebies = [], allSales = [], allEvents = [], currentTab = 'all', currentCat = 'all', currentEventWeek = 'upcoming', currentEventCat = 'all', showUndated = false;
 const today = new Date().toISOString().split('T')[0];
 
 // --- Dismissed items (persisted in localStorage) ---
@@ -517,6 +530,44 @@ function priceBadge(price){
   return `<span class="price-badge price-see">${price}</span>`;
 }
 
+function eventCardHTML(ev){
+  const {month, day} = fmtEventDate(ev.date);
+  const catLabel = ev.category ? ev.category.charAt(0).toUpperCase()+ev.category.slice(1) : '';
+  const dimStyle = dismissed.has(ev.id) ? 'opacity:0.35' : '';
+  const venue = ev.venue || 'Orillia area';
+  const endDate = ev.end_date && ev.end_date !== ev.date ? ` – ${ev.end_date}` : '';
+  return `<div class="event-card" style="${dimStyle}">
+    <button class="dismiss-btn" onclick="dismiss('${ev.id}')" title="Hide this" style="position:absolute;top:10px;right:10px">✕</button>
+    <div class="event-header">
+      <div class="event-date-box">
+        <div class="month">${month||'TBD'}</div>
+        <div class="day">${day}</div>
+      </div>
+      <div style="flex:1;min-width:0">
+        <div class="event-title">${ev.name}</div>
+        <div class="event-venue">📍 ${venue}</div>
+        ${ev.time ? `<div class="event-venue">🕐 ${ev.time}${endDate}</div>` : (endDate ? `<div class="event-venue">📅 Through${endDate}</div>` : '')}
+      </div>
+    </div>
+    <div class="event-footer">
+      <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+        ${catLabel ? `<span class="event-cat-badge">${catLabel}</span>` : ''}
+        ${priceBadge(ev.price)}
+      </div>
+      <a class="event-btn" href="${ev.url}" target="_blank" rel="noopener">Details →</a>
+    </div>
+  </div>`;
+}
+
+function formatDateHeader(dateStr){
+  // Parse as local date to avoid UTC drift
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const dt = new Date(y, m-1, d);
+  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  return `${days[dt.getDay()]}, ${months[dt.getMonth()]} ${dt.getDate()}`;
+}
+
 function renderEvents(list){
   showEvents();
   document.getElementById('catBar').style.display = 'none';
@@ -524,51 +575,60 @@ function renderEvents(list){
   const empty = document.getElementById('eventEmpty');
   if(!list.length){ grid.innerHTML=''; empty.style.display='block'; return; }
   empty.style.display='none';
-  // Sort by date ascending
-  list = [...list].sort((a,b)=>{
-    if(!a.date) return 1; if(!b.date) return -1;
-    return a.date.localeCompare(b.date);
-  });
-  grid.innerHTML = list.map(ev => {
-    const {month,day,year} = fmtEventDate(ev.date);
-    const catLabel = ev.category ? ev.category.charAt(0).toUpperCase()+ev.category.slice(1) : '';
-    const dimStyle = dismissed.has(ev.id) ? 'opacity:0.35' : '';
-    const venue = ev.venue || 'Orillia area';
-    const endDate = ev.end_date && ev.end_date !== ev.date ? ` – ${ev.end_date}` : '';
-    return `<div class="event-card" style="${dimStyle}">
-      <button class="dismiss-btn" onclick="dismiss('${ev.id}')" title="Hide this" style="position:absolute;top:10px;right:10px">✕</button>
-      <div class="event-header">
-        <div class="event-date-box">
-          <div class="month">${month}</div>
-          <div class="day">${day}</div>
-        </div>
-        <div style="flex:1;min-width:0">
-          <div class="event-title">${ev.name}</div>
-          <div class="event-venue">📍 ${venue}</div>
-          ${ev.time ? `<div class="event-venue">🕐 ${ev.time}${endDate}</div>` : (endDate ? `<div class="event-venue">📅 Through${endDate}</div>` : '')}
-        </div>
-      </div>
-      <div class="event-footer">
-        <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
-          ${catLabel ? `<span class="event-cat-badge">${catLabel}</span>` : ''}
-          ${priceBadge(ev.price)}
-        </div>
-        <a class="event-btn" href="${ev.url}" target="_blank" rel="noopener">Details →</a>
-      </div>
+
+  // Split into dated vs undated, sort dated ascending
+  const dated = list.filter(ev => ev.date).sort((a,b)=>a.date.localeCompare(b.date));
+  const undated = list.filter(ev => !ev.date);
+
+  // Group dated events by their start date
+  const groups = new Map();
+  for(const ev of dated){
+    if(!groups.has(ev.date)) groups.set(ev.date, []);
+    groups.get(ev.date).push(ev);
+  }
+
+  const todayStr = new Date().toISOString().split('T')[0];
+  let html = '';
+  for(const [d, evs] of groups){
+    const todayPill = d === todayStr ? '<span class="today-pill">TODAY</span>' : '';
+    html += `<div class="event-date-group">
+      <div class="event-date-header">${formatDateHeader(d)}${todayPill}</div>
+      <div class="event-grid">${evs.map(eventCardHTML).join('')}</div>
     </div>`;
-  }).join('');
+  }
+  if(undated.length){
+    html += `<div class="event-date-group">
+      <div class="event-date-header tbd-header">Date TBD <span class="tbd">(${undated.length})</span></div>
+      <div class="event-grid">${undated.map(eventCardHTML).join('')}</div>
+    </div>`;
+  }
+
+  grid.innerHTML = html;
 }
 
 function activeEvents(){
   const [from, to] = eventWeekRange(currentEventWeek);
+  const todayStr = new Date().toISOString().split('T')[0];
   return allEvents.filter(ev => {
     if(ev.status !== 'active') return false;
     if(dismissed.has(ev.id) && !showHidden) return false;
     const d = ev.date || '';
+    // Defensive: never show past events even if the scraper hasn't cleaned them yet
+    if(d && d < todayStr) return false;
+    // Undated events: hidden unless the user opts in
+    if(!d && !showUndated) return false;
+    // Week/month filter only applies to dated events; undated always pass
     if(d && (d < from || d > to)) return false;
     if(currentEventCat !== 'all' && ev.category !== currentEventCat) return false;
     return true;
   });
+}
+
+function toggleUndated(btn){
+  showUndated = !showUndated;
+  btn.classList.toggle('on', showUndated);
+  btn.textContent = showUndated ? 'Hide undated' : 'Show undated';
+  renderEvents(activeEvents());
 }
 
 function filterEventWeek(filter, btn){
