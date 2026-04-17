@@ -533,6 +533,264 @@ def scrape_city_orillia():
     return events
 
 
+def scrape_tribe_api(api_url, prefix, default_venue, source_name, default_price='See event'):
+    """Generic scraper for WordPress sites running The Events Calendar (Tribe) REST API."""
+    events = []
+    today = date.today().isoformat()
+    try:
+        resp = requests.get(api_url, headers=HEADERS, timeout=20)
+        if resp.status_code != 200:
+            logger.debug(f"{source_name} Tribe API HTTP {resp.status_code}")
+            return events
+        data = resp.json()
+        for ev in data.get('events', []):
+            name = ev.get('title', '').strip()
+            if not name:
+                continue
+            ev_url = ev.get('url', '')
+            event_date = parse_iso_date(ev.get('start_date', ''))
+            end_date = parse_iso_date(ev.get('end_date', ''))
+            venue_info = ev.get('venue', {}) or {}
+            venue = venue_info.get('venue', default_venue) if venue_info else default_venue
+            desc = ev.get('description', name) or name
+            if isinstance(desc, str):
+                desc = re.sub(r'<[^>]+>', ' ', desc).strip()[:200]
+            # Price from cost field if available
+            cost = (ev.get('cost') or '').strip()
+            if cost.lower() in ('', 'free', '$0'):
+                price = 'Free' if cost.lower() == 'free' else default_price
+            else:
+                price = cost
+            events.append({
+                'id': make_event_id(prefix, name, event_date),
+                'name': name,
+                'date': event_date,
+                'end_date': end_date,
+                'time': '',
+                'venue': venue,
+                'category': categorize_event(name, desc),
+                'price': price,
+                'url': ev_url,
+                'description': desc,
+                'source': source_name,
+                'scraped_date': today,
+                'status': 'active',
+            })
+    except Exception as e:
+        logger.debug(f"{source_name} Tribe API failed: {e}")
+    return events
+
+
+def scrape_orillia_opera_house():
+    """Scrape upcoming shows at the Orillia Opera House."""
+    events = []
+    # Tribe Events API (common for WordPress event sites)
+    events = scrape_tribe_api(
+        'https://orilliaoperahouse.ca/wp-json/tribe/events/v1/events?per_page=50&status=publish',
+        'opera', 'Orillia Opera House, Orillia ON', 'orilliaoperahouse.ca', 'Ticketed',
+    )
+    if events:
+        logger.info(f"Orillia Opera House (Tribe API): {len(events)} events")
+        return events
+
+    # HTML fallback — try JSON-LD on the events page
+    today = date.today().isoformat()
+    for url in ['https://orilliaoperahouse.ca/events/',
+                'https://orilliaoperahouse.ca/whats-on/',
+                'https://orilliaoperahouse.ca/']:
+        html = fetch_page(url)
+        if not html:
+            continue
+        ld = extract_json_ld_events(html, 'Orillia Opera House, Orillia ON', 'orilliaoperahouse')
+        for ev in ld:
+            ev['source'] = 'orilliaoperahouse.ca'
+            if ev.get('price') in ('See event', ''):
+                ev['price'] = 'Ticketed'
+            events.append(ev)
+        if events:
+            break
+    logger.info(f"Orillia Opera House: {len(events)} events")
+    return events
+
+
+def scrape_orillia_library():
+    """Scrape events (especially kids/family) from Orillia Public Library."""
+    events = []
+    today = date.today().isoformat()
+    seen = set()
+
+    # Try Tribe Events API first
+    tribe_events = scrape_tribe_api(
+        'https://www.orilliapubliclibrary.ca/wp-json/tribe/events/v1/events?per_page=60&status=publish',
+        'opl', 'Orillia Public Library, Orillia ON', 'orilliapubliclibrary.ca', 'Free',
+    )
+    for ev in tribe_events:
+        if ev['id'] not in seen:
+            seen.add(ev['id'])
+            events.append(ev)
+
+    # HTML fallback: library events page
+    if not events:
+        for url in ['https://www.orilliapubliclibrary.ca/events/',
+                    'https://www.orilliapubliclibrary.ca/programs/',
+                    'https://orilliapubliclibrary.libnet.info/events']:
+            html = fetch_page(url)
+            if not html:
+                continue
+            ld = extract_json_ld_events(html, 'Orillia Public Library, Orillia ON', 'opl')
+            for ev in ld:
+                ev['source'] = 'orilliapubliclibrary.ca'
+                ev['price'] = 'Free'
+                if ev['id'] not in seen:
+                    seen.add(ev['id'])
+                    events.append(ev)
+
+            # LibraryCalendar-style HTML fallback
+            soup = BeautifulSoup(html, 'html.parser')
+            for item in soup.select('article, .event, .event-item, li.evt, .calendar-event'):
+                title_el = (item.find(class_=re.compile(r'title|heading|event-title', re.I))
+                            or item.find(['h2', 'h3', 'h4']))
+                if not title_el:
+                    continue
+                name = title_el.get_text(strip=True)
+                if not name or len(name) < 3:
+                    continue
+                link_el = title_el.find('a', href=True) or item.find('a', href=True)
+                ev_url = link_el['href'] if link_el else url
+                if ev_url.startswith('/'):
+                    ev_url = 'https://www.orilliapubliclibrary.ca' + ev_url
+                date_el = (item.find(class_=re.compile(r'date|time|when|start', re.I))
+                           or item.find('time'))
+                date_text = ''
+                if date_el:
+                    date_text = (date_el.get('datetime') or date_el.get('title')
+                                 or date_el.get_text() or '')
+                event_date = parse_iso_date(date_text)
+                ev_id = make_event_id('opl', name, event_date)
+                if ev_id in seen:
+                    continue
+                seen.add(ev_id)
+                events.append({
+                    'id': ev_id,
+                    'name': name,
+                    'date': event_date,
+                    'end_date': '',
+                    'time': '',
+                    'venue': 'Orillia Public Library, Orillia ON',
+                    'category': categorize_event(name),
+                    'price': 'Free',
+                    'url': ev_url,
+                    'description': name,
+                    'source': 'orilliapubliclibrary.ca',
+                    'scraped_date': today,
+                    'status': 'active',
+                })
+    logger.info(f"Orillia Public Library: {len(events)} events")
+    return events
+
+
+def scrape_orillia_farmers_market():
+    """Scrape Orillia Farmers' Market dates."""
+    events = []
+    today = date.today().isoformat()
+    seen = set()
+
+    # The Orillia Farmers' Market runs Saturdays in season — try their site first
+    for url in ['https://orilliafarmersmarket.ca/',
+                'https://orilliafarmersmarket.ca/market-days/',
+                'https://www.downtownorillia.ca/event/farmers-market/']:
+        html = fetch_page(url)
+        if not html:
+            continue
+        ld = extract_json_ld_events(html, 'Orillia Farmers\' Market, Orillia ON', 'ofm')
+        for ev in ld:
+            ev['source'] = 'orilliafarmersmarket.ca'
+            ev['price'] = 'Free'
+            ev['category'] = 'food'
+            if ev['id'] not in seen:
+                seen.add(ev['id'])
+                events.append(ev)
+
+    # Fallback: synthesize upcoming Saturday market dates for the season (May–Oct)
+    if not events:
+        today_d = date.today()
+        # Find next Saturday
+        days_until_sat = (5 - today_d.weekday()) % 7
+        for i in range(20):  # up to 20 weeks out
+            market_d = today_d + timedelta(days=days_until_sat + 7 * i)
+            # Only during typical outdoor season (mid-May to late Oct)
+            if market_d.month < 5 or market_d.month > 10:
+                continue
+            if market_d.month == 5 and market_d.day < 10:
+                continue
+            if market_d.month == 10 and market_d.day > 31:
+                continue
+            iso = market_d.isoformat()
+            name = 'Orillia Farmers\' Market'
+            events.append({
+                'id': make_event_id('ofm', name, iso),
+                'name': name,
+                'date': iso,
+                'end_date': '',
+                'time': '8:30 AM – 1:00 PM',
+                'venue': 'Centennial Park, Orillia ON',
+                'category': 'food',
+                'price': 'Free',
+                'url': 'https://orilliafarmersmarket.ca/',
+                'description': 'Local farmers, food producers, and artisans at Centennial Park.',
+                'source': 'orilliafarmersmarket.ca',
+                'scraped_date': today,
+                'status': 'active',
+            })
+    logger.info(f"Orillia Farmers' Market: {len(events)} events")
+    return events
+
+
+def scrape_simcoe_events():
+    """Scrape Simcoe.com events aggregator (charity runs, sports, community)."""
+    events = []
+    today = date.today().isoformat()
+    seen = set()
+    urls = [
+        'https://www.simcoe.com/events/?loc=orillia',
+        'https://www.simcoe.com/events/',
+    ]
+    for url in urls:
+        html = fetch_page(url)
+        if not html:
+            continue
+        ld = extract_json_ld_events(html, 'Orillia area, ON', 'simcoe')
+        for ev in ld:
+            ev['source'] = 'simcoe.com'
+            if ev['id'] not in seen:
+                seen.add(ev['id'])
+                events.append(ev)
+    logger.info(f"Simcoe.com: {len(events)} events")
+    return events
+
+
+def scrape_race_roster():
+    """Scrape local charity runs, bike rides, and races from Race Roster."""
+    events = []
+    today = date.today().isoformat()
+    seen = set()
+    # Race Roster search for Orillia-area events
+    for url in ['https://raceroster.com/search?q=orillia',
+                'https://raceroster.com/search?q=simcoe+county']:
+        html = fetch_page(url)
+        if not html:
+            continue
+        ld = extract_json_ld_events(html, 'Orillia area, ON', 'race')
+        for ev in ld:
+            ev['source'] = 'raceroster.com'
+            ev['category'] = 'sports'
+            if ev['id'] not in seen:
+                seen.add(ev['id'])
+                events.append(ev)
+    logger.info(f"Race Roster: {len(events)} events")
+    return events
+
+
 # ---------------------------------------------------------------------------
 # DB helpers
 # ---------------------------------------------------------------------------
@@ -544,40 +802,62 @@ def load_events_db():
     return {'events': [], 'last_updated': None, 'total_events': 0}
 
 
+STALE_UNDATED_DAYS = 21
+
+
 def save_events_db(db):
-    db['last_updated'] = date.today().isoformat()
-    # Remove past events (more than 1 day old with a known date)
-    yesterday = (date.today() - timedelta(days=1)).isoformat()
+    today = date.today()
+    db['last_updated'] = today.isoformat()
+    today_iso = today.isoformat()
+    stale_cutoff = (today - timedelta(days=STALE_UNDATED_DAYS)).isoformat()
     kept = []
+    dropped_past = 0
+    dropped_stale = 0
     for ev in db.get('events', []):
         d = ev.get('date', '')
-        if d and d < yesterday:
-            continue  # drop past events
+        # Drop past events: any event whose date is strictly before today
+        if d and d < today_iso:
+            dropped_past += 1
+            continue
+        # Drop undated events that have been in the DB for a while (likely past)
+        if not d:
+            first_seen = ev.get('first_seen') or ev.get('scraped_date', '')
+            if first_seen and first_seen < stale_cutoff:
+                dropped_stale += 1
+                continue
         kept.append(ev)
     db['events'] = kept
     db['total_events'] = len([e for e in db['events'] if e.get('status') == 'active'])
     with open(EVENTS_DB_PATH, 'w') as f:
         json.dump(db, f, indent=2)
-    logger.info(f"Events DB saved: {db['total_events']} active events")
+    logger.info(
+        f"Events DB saved: {db['total_events']} active "
+        f"(dropped {dropped_past} past, {dropped_stale} stale undated)"
+    )
 
 
 def merge_events(db, new_events):
     existing_map = {e['id']: e for e in db['events']}
+    today_iso = date.today().isoformat()
     added = 0
     for ev in new_events:
         if not ev.get('name') or not ev.get('url'):
             continue
         if ev['id'] not in existing_map:
+            ev.setdefault('first_seen', today_iso)
             db['events'].append(ev)
             existing_map[ev['id']] = ev
             added += 1
         else:
             # Backfill date/end_date on existing entries that were scraped without dates
             existing = existing_map[ev['id']]
+            existing.setdefault('first_seen', existing.get('scraped_date', today_iso))
             if ev.get('date') and not existing.get('date'):
                 existing['date'] = ev['date']
             if ev.get('end_date') and not existing.get('end_date'):
                 existing['end_date'] = ev['end_date']
+            # Refresh last-seen timestamp
+            existing['scraped_date'] = today_iso
     return added
 
 
@@ -590,14 +870,26 @@ def run_event_scraper():
     db = load_events_db()
 
     all_new = []
-    all_new.extend(scrape_eventbrite())
-    all_new.extend(scrape_casino_rama())
-    all_new.extend(scrape_downtown_orillia())
-    all_new.extend(scrape_orillia_matters())
-    all_new.extend(scrape_city_orillia())
+    scrapers = [
+        ('Eventbrite', scrape_eventbrite),
+        ('Casino Rama', scrape_casino_rama),
+        ('Downtown Orillia', scrape_downtown_orillia),
+        ('OrilliaMatters', scrape_orillia_matters),
+        ('City of Orillia', scrape_city_orillia),
+        ('Opera House', scrape_orillia_opera_house),
+        ('Public Library', scrape_orillia_library),
+        ('Farmers Market', scrape_orillia_farmers_market),
+        ('Simcoe.com', scrape_simcoe_events),
+        ('Race Roster', scrape_race_roster),
+    ]
+    for label, fn in scrapers:
+        try:
+            all_new.extend(fn())
+        except Exception as e:
+            logger.error(f"{label} scraper failed: {e}")
 
     # Filter to upcoming events only before merging
-    upcoming = [e for e in all_new if is_upcoming(e.get('date', ''), days_ahead=120)]
+    upcoming = [e for e in all_new if is_upcoming(e.get('date', ''), days_ahead=180)]
     added = merge_events(db, upcoming)
     save_events_db(db)
     logger.info(f"=== Event Scraper Done: {added} new events added ===")
