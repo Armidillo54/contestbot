@@ -106,7 +106,7 @@
       "description": "50% off Select Spring Styles",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://www.reitmans.com/collections/sale",
+      "url": "https://www.reitmans.com/collections/sale-clothing",
       "scraped_date": "2026-04-18",
       "status": "active"
     },
@@ -116,47 +116,47 @@
       "description": "30% off Everything (Almost)",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://www.reitmans.com/collections/sale",
+      "url": "https://www.reitmans.com/collections/sale-clothing",
       "scraped_date": "2026-04-18",
       "status": "active"
     },
     {
       "id": "reitmans-sale-2",
       "store": "Reitmans",
-      "description": "Up to 70% off sale + Extra 30%",
+      "description": "50% OFF SELECTED COATS & JACKETS*",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://www.reitmans.com/collections/sale",
+      "url": "https://www.reitmans.com/collections/sale-clothing",
       "scraped_date": "2026-04-18",
       "status": "active"
     },
     {
       "id": "reitmans-sale-3",
       "store": "Reitmans",
-      "description": "50% off Select Spring Styles Offer valid in-store and online at Reitmans.com from A",
+      "description": "50% OFF SELECTED HYBA ACTIVEWEAR*",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://www.reitmans.com/collections/sale",
+      "url": "https://www.reitmans.com/collections/sale-clothing",
       "scraped_date": "2026-04-18",
       "status": "active"
     },
     {
       "id": "reitmans-sale-4",
       "store": "Reitmans",
-      "description": "50% off Select Spring Styles Offer valid in-sto",
+      "description": "50% OFF JEWERLY*",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://www.reitmans.com/collections/sale",
+      "url": "https://www.reitmans.com/collections/sale-clothing",
       "scraped_date": "2026-04-18",
       "status": "active"
     },
     {
       "id": "reitmans-sale-5",
       "store": "Reitmans",
-      "description": "30% off Everything (Almost) Offer valid in-store and online",
+      "description": "50% OFF SELECTED DRESSES*",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://www.reitmans.com/collections/sale",
+      "url": "https://www.reitmans.com/collections/sale-clothing",
       "scraped_date": "2026-04-18",
       "status": "active"
     },
@@ -311,66 +311,6 @@
       "status": "active"
     },
     {
-      "id": "knix-sale-0",
-      "store": "Knix",
-      "description": "Bundle & Save up to 20%",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-04-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-1",
-      "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorites b",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-04-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-2",
-      "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorit",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-04-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-3",
-      "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorites before the",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-04-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-4",
-      "store": "Knix",
-      "description": "ge of life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-04-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-5",
-      "store": "Knix",
-      "description": "life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-04-18",
-      "status": "active"
-    },
-    {
       "id": "callitspring-sale-general",
       "store": "Call It Spring",
       "description": "Sale on now at Call It Spring",
@@ -392,7 +332,7 @@
     }
   ],
   "last_updated": "2026-04-18",
-  "total_sales": 39,
+  "total_sales": 33,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
