@@ -1,21 +1,6 @@
 {
   "events": [
     {
-      "id": "bia-23rd-annual-classic-car-show-downtown-or",
-      "name": "23rd Annual Classic Car Show \u2013 Downtown Orillia",
-      "date": "",
-      "end_date": "",
-      "time": "",
-      "venue": "Downtown Orillia, ON",
-      "category": "other",
-      "price": "Free",
-      "url": "https://www.downtownorillia.ca/event/23rd-annual-classic-car-show-downtown-orillia/",
-      "description": "23rd Annual Classic Car Show \u2013 Downtown Orillia",
-      "source": "downtownorillia.ca",
-      "scraped_date": "2026-04-14",
-      "status": "active"
-    },
-    {
       "id": "bia-mariposa-folk-festival-downtown-stage",
       "name": "Mariposa Folk Festival Downtown Stage",
       "date": "",
@@ -26,21 +11,6 @@
       "price": "Free",
       "url": "https://www.downtownorillia.ca/event/mariposa-folk-festival-downtown-stage-4/",
       "description": "Mariposa Folk Festival Downtown Stage",
-      "source": "downtownorillia.ca",
-      "scraped_date": "2026-04-14",
-      "status": "active"
-    },
-    {
-      "id": "bia-sweet-summer-dessert-festival-downtown-o",
-      "name": "Sweet Summer Dessert Festival \u2013 Downtown Orillia",
-      "date": "",
-      "end_date": "",
-      "time": "",
-      "venue": "Downtown Orillia, ON",
-      "category": "festival",
-      "price": "Free",
-      "url": "https://www.downtownorillia.ca/event/sweet-summer-dessert-festival-downtown-orillia/",
-      "description": "Sweet Summer Dessert Festival \u2013 Downtown Orillia",
       "source": "downtownorillia.ca",
       "scraped_date": "2026-04-14",
       "status": "active"
@@ -134,53 +104,8 @@
       "source": "downtownorillia.ca",
       "scraped_date": "2026-04-14",
       "status": "active"
-    },
-    {
-      "id": "bia-canada-day-downtown-festival-entertainme",
-      "name": "Canada Day Downtown Festival & Entertainment \u2013 Couchiching Craft Brewing Co",
-      "date": "",
-      "end_date": "",
-      "time": "",
-      "venue": "Downtown Orillia, ON",
-      "category": "festival",
-      "price": "Free",
-      "url": "https://www.downtownorillia.ca/event/canada-day-downtown-festival-entertainment-couchiching-craft-brewing-co/",
-      "description": "Canada Day Downtown Festival & Entertainment \u2013 Couchiching Craft Brewing Co",
-      "source": "downtownorillia.ca",
-      "scraped_date": "2026-04-14",
-      "status": "active"
-    },
-    {
-      "id": "bia-merchants-makers",
-      "name": "Merchants & Makers",
-      "date": "",
-      "end_date": "",
-      "time": "",
-      "venue": "Downtown Orillia, ON",
-      "category": "arts",
-      "price": "Free",
-      "url": "https://www.downtownorillia.ca/event/merchants-makers/",
-      "description": "Merchants & Makers",
-      "source": "downtownorillia.ca",
-      "scraped_date": "2026-04-14",
-      "status": "active"
-    },
-    {
-      "id": "bia-vintage-market-downtown-orillia",
-      "name": "Vintage Market \u2013 Downtown Orillia",
-      "date": "",
-      "end_date": "",
-      "time": "",
-      "venue": "Downtown Orillia, ON",
-      "category": "food",
-      "price": "Free",
-      "url": "https://www.downtownorillia.ca/event/vintage-market-downtown-orillia/",
-      "description": "Vintage Market \u2013 Downtown Orillia",
-      "source": "downtownorillia.ca",
-      "scraped_date": "2026-04-14",
-      "status": "active"
     }
   ],
   "last_updated": "2026-04-18",
-  "total_events": 12
+  "total_events": 7
 }
