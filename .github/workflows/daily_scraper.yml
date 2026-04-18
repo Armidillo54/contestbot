@@ -2,14 +2,44 @@ name: ContestBot Daily Scraper
 
 on:
   schedule:
-    - cron: '0 12 * * *'
+    # 5:00 AM America/Toronto. EDT (Mar-Nov) = 09:00 UTC; EST (Nov-Mar) = 10:00 UTC.
+    # We register both crons so it always fires once at 5:00 local. The
+    # gate-time job below skips the off-DST one each day.
+    - cron: '0 9 * * *'
+    - cron: '0 10 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/daily_scraper.yml'
 
 permissions:
   contents: write
 
 jobs:
+  gate-time:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.check.outputs.should_run }}
+    steps:
+      - id: check
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Trigger is ${{ github.event_name }} — proceeding."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          HOUR=$(TZ=America/Toronto date +%H)
+          if [ "$HOUR" = "05" ]; then
+            echo "Toronto time is 5 AM — proceeding with daily scan."
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Toronto hour is $HOUR, not 05 — skipping this DST-shifted cron."
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
+          fi
+
   scrape-and-deploy:
+    needs: gate-time
+    if: needs.gate-time.outputs.should_run == 'true'
     runs-on: ubuntu-latest
 
     steps:
