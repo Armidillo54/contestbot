@@ -19,9 +19,19 @@ logger = logging.getLogger(__name__)
 
 EVENTS_DB_PATH = Path('events_database.json')
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
-                  '(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept-Language': 'en-CA,en;q=0.9',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:122.0) '
+                  'Gecko/20100101 Firefox/122.0',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,'
+              'image/avif,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-CA,en-US;q=0.9,en;q=0.8',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'DNT': '1',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Referer': 'https://www.google.com/',
 }
 
 # --- Local-area filter --------------------------------------------------------
@@ -119,14 +129,19 @@ def make_event_id(prefix, title, event_date=''):
     return f"{prefix}-{date_slug}-{slug}" if date_slug else f"{prefix}-{slug}"
 
 
-def fetch_page(url):
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=25, allow_redirects=True)
-        if resp.status_code == 200:
-            return resp.text
-        logger.debug(f"HTTP {resp.status_code} for {url}")
-    except Exception as e:
-        logger.debug(f"Fetch failed {url}: {e}")
+def fetch_page(url, attempts=2):
+    """GET with realistic headers and one retry on transient failure / 403."""
+    for i in range(attempts):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=25, allow_redirects=True)
+            if resp.status_code == 200:
+                return resp.text
+            if resp.status_code in (429, 503) and i + 1 < attempts:
+                continue
+            logger.debug(f"HTTP {resp.status_code} for {url}")
+            return None
+        except Exception as e:
+            logger.debug(f"Fetch failed {url} (attempt {i+1}): {e}")
     return None
 
 
@@ -267,84 +282,184 @@ EVENTBRITE_EVENT_HREF = re.compile(
 )
 
 
-def scrape_eventbrite():
-    """Scrape Eventbrite Orillia events.
+def _extract_eventbrite_events_from_listing(html):
+    """Pull fully-populated event records from Eventbrite's embedded listing JSON.
 
-    Strategy: collect every individual event URL (/e/{slug}-tickets-{id}) on the
-    listing page along with the nearest title/date, then defer date filling to
-    the per-page JSON-LD enrichment pass.
+    Eventbrite serializes every event's name, date, venue, and URL into
+    window.__SERVER_DATA__ (plus JSON-LD ItemList). Parsing that is far more
+    reliable than per-page enrichment for 50+ events.
     """
     events = []
+    if not html:
+        return events
+
+    # Strategy A — JSON-LD ItemList with Event objects
+    soup = BeautifulSoup(html, 'html.parser')
+    for script in soup.find_all('script', type='application/ld+json'):
+        try:
+            data = json.loads(script.string or '')
+        except Exception:
+            continue
+        items = data if isinstance(data, list) else [data]
+        for item in items:
+            if isinstance(item, dict) and '@graph' in item:
+                items += item['@graph']
+                continue
+            if not isinstance(item, dict):
+                continue
+            t = item.get('@type', '')
+            if isinstance(t, list):
+                t = ' '.join(t)
+            if 'event' in str(t).lower():
+                ev = _eventbrite_item_to_event(item)
+                if ev:
+                    events.append(ev)
+            # ItemList wrapper
+            if str(t).lower() in ('itemlist',):
+                for el in item.get('itemListElement', []):
+                    inner = el.get('item', el) if isinstance(el, dict) else {}
+                    if isinstance(inner, dict):
+                        ev = _eventbrite_item_to_event(inner)
+                        if ev:
+                            events.append(ev)
+
+    # Strategy B — window.__SERVER_DATA__ / __REACT_QUERY_STATE__
+    for m in re.finditer(
+        r'window\.__(?:SERVER_DATA|REACT_QUERY_STATE)__\s*=\s*(\{.*?\});\s*</script>',
+        html, re.DOTALL
+    ):
+        raw = m.group(1)
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+        for ev in _walk_eventbrite_server_data(data):
+            events.append(ev)
+
+    # Dedupe by URL
+    seen = set()
+    unique = []
+    for ev in events:
+        u = ev.get('url', '')
+        if u and u not in seen:
+            seen.add(u)
+            unique.append(ev)
+    return unique
+
+
+def _eventbrite_item_to_event(item):
+    """Convert a JSON-LD Event or Eventbrite event dict to our event schema."""
     today = date.today().isoformat()
+    name = (item.get('name') or item.get('title') or '').strip()
+    url = item.get('url') or item.get('sameAs') or ''
+    if isinstance(url, dict):
+        url = url.get('en') or url.get('url') or ''
+    if not name or not url:
+        return None
+    if not EVENTBRITE_EVENT_HREF.match(url.split('?')[0]):
+        return None
+    start = item.get('startDate') or item.get('start_date') or ''
+    if isinstance(start, dict):
+        start = start.get('local') or start.get('utc') or ''
+    end = item.get('endDate') or item.get('end_date') or ''
+    if isinstance(end, dict):
+        end = end.get('local') or end.get('utc') or ''
+    event_date = parse_iso_date(str(start))
+    end_date = parse_iso_date(str(end))
+
+    loc = item.get('location') or item.get('venue') or {}
+    if isinstance(loc, list):
+        loc = loc[0] if loc else {}
+    venue = 'Orillia, ON'
+    if isinstance(loc, dict):
+        vn = loc.get('name') or loc.get('venue') or ''
+        addr = loc.get('address') or {}
+        if isinstance(addr, dict):
+            city = addr.get('addressLocality') or addr.get('city') or ''
+            region = addr.get('addressRegion') or addr.get('region') or ''
+        else:
+            city = region = ''
+        parts = [p for p in (vn, city, region) if p]
+        if parts:
+            venue = ', '.join(parts)
+
+    offers = item.get('offers') or {}
+    if isinstance(offers, list):
+        offers = offers[0] if offers else {}
+    price = 'See event'
+    if isinstance(offers, dict):
+        raw_price = str(offers.get('price', ''))
+        if raw_price == '0':
+            price = 'Free'
+        elif raw_price:
+            cur = offers.get('priceCurrency', '$')
+            price = f"{cur}{raw_price}+"
+
+    desc = item.get('description') or name
+    if isinstance(desc, str):
+        desc = re.sub(r'<[^>]+>', ' ', desc)[:250]
+
+    return {
+        'id': make_event_id('eventbrite', name, event_date),
+        'name': name,
+        'date': event_date,
+        'end_date': end_date,
+        'time': '',
+        'venue': venue,
+        'category': categorize_event(name, desc),
+        'price': price,
+        'url': url.split('?')[0],
+        'description': desc,
+        'source': 'eventbrite.ca',
+        'scraped_date': today,
+        'status': 'active',
+    }
+
+
+def _walk_eventbrite_server_data(node, out=None):
+    """Recursively find event-like dicts in Eventbrite's server data JSON."""
+    if out is None:
+        out = []
+    if isinstance(node, dict):
+        if node.get('@type') or node.get('eventbrite_event_id') or (
+            node.get('url') and node.get('name') and
+            (node.get('start') or node.get('startDate'))
+        ):
+            ev = _eventbrite_item_to_event(node)
+            if ev:
+                out.append(ev)
+        for v in node.values():
+            _walk_eventbrite_server_data(v, out)
+    elif isinstance(node, list):
+        for v in node:
+            _walk_eventbrite_server_data(v, out)
+    return out
+
+
+def scrape_eventbrite():
+    """Scrape Eventbrite Orillia events using embedded listing JSON."""
     urls = [
         'https://www.eventbrite.ca/d/canada--orillia/events/',
         'https://www.eventbrite.ca/d/canada--orillia/events--this-weekend/',
+        'https://www.eventbrite.ca/d/canada--orillia/events--next-week/',
+        'https://www.eventbrite.ca/d/canada--orillia/music--events/',
+        'https://www.eventbrite.ca/d/canada--orillia/charity-and-causes--events/',
+        'https://www.eventbrite.ca/d/canada--orillia/family-and-education--events/',
+        'https://www.eventbrite.ca/d/canada--orillia/sports-and-fitness--events/',
     ]
+    all_events = []
     seen_urls = set()
     for url in urls:
         html = fetch_page(url)
         if not html:
             continue
-
-        # Listing-page JSON-LD usually only describes the search itself, but
-        # individual event objects may still be present — keep them if so.
-        for ev in extract_json_ld_events(html, 'Orillia, ON', 'eventbrite'):
-            if ev.get('url') and EVENTBRITE_EVENT_HREF.match(ev['url']):
-                if ev['url'] not in seen_urls:
-                    seen_urls.add(ev['url'])
-                    events.append(ev)
-
-        soup = BeautifulSoup(html, 'html.parser')
-        for link in soup.find_all('a', href=True):
-            href = link['href'].strip().split('?')[0]
-            if href.startswith('/'):
-                href = 'https://www.eventbrite.ca' + href
-            if not EVENTBRITE_EVENT_HREF.match(href):
-                continue
-            if href in seen_urls:
-                continue
-            seen_urls.add(href)
-
-            # Title: link text, or aria-label, or the nearest heading
-            name = (link.get('aria-label') or link.get_text(strip=True) or '').strip()
-            if not name or len(name) < 4:
-                card = link.find_parent(['article', 'section', 'div'])
-                if card:
-                    h = card.find(['h1', 'h2', 'h3'])
-                    if h:
-                        name = h.get_text(strip=True)
-            if not name or len(name) < 4:
-                continue
-
-            # Try to grab a date hint from the surrounding card
-            event_date = ''
-            card = link.find_parent(['article', 'section', 'div'])
-            if card:
-                t = card.find('time')
-                if t:
-                    event_date = parse_iso_date(t.get('datetime') or t.get_text())
-                if not event_date:
-                    date_el = card.find(class_=re.compile(r'date|when', re.I))
-                    if date_el:
-                        event_date = parse_iso_date(date_el.get_text())
-
-            events.append({
-                'id': make_event_id('eventbrite', name, event_date),
-                'name': name,
-                'date': event_date,
-                'end_date': '',
-                'time': '',
-                'venue': 'Orillia, ON',
-                'category': categorize_event(name),
-                'price': 'See event',
-                'url': href,
-                'description': name,
-                'source': 'eventbrite.ca',
-                'scraped_date': today,
-                'status': 'active',
-            })
-    logger.info(f"Eventbrite: {len(events)} events")
-    return events
+        for ev in _extract_eventbrite_events_from_listing(html):
+            u = ev['url']
+            if u not in seen_urls:
+                seen_urls.add(u)
+                all_events.append(ev)
+    logger.info(f"Eventbrite: {len(all_events)} events")
+    return all_events
 
 
 def scrape_casino_rama():
@@ -356,7 +471,7 @@ def scrape_casino_rama():
         return events
 
     # Try JSON-LD first
-    ld_events = extract_json_ld_events(html, 'Casino Rama Resort, Rama ON', 'casinorama')
+    ld_events = extract_json_ld_events(html, 'Casino Rama Resort Entertainment Centre, Rama ON', 'casinorama')
     if ld_events:
         events.extend(ld_events)
         logger.info(f"Casino Rama (JSON-LD): {len(events)} events")
@@ -386,7 +501,7 @@ def scrape_casino_rama():
             'date': event_date,
             'end_date': '',
             'time': '8:00 PM',
-            'venue': 'Casino Rama Resort, Rama ON',
+            'venue': 'Casino Rama Resort Entertainment Centre, Rama ON',
             'category': categorize_event(name),
             'price': 'Ticketed',
             'url': ev_url,
@@ -617,6 +732,157 @@ def scrape_city_orillia():
 
 
 # ---------------------------------------------------------------------------
+# Additional venue scrapers
+# ---------------------------------------------------------------------------
+
+def _parse_ical(text, source, default_venue=''):
+    """Parse .ics calendar text into our event schema."""
+    events = []
+    if not text or 'BEGIN:VEVENT' not in text:
+        return events
+    today = date.today().isoformat()
+    # Unfold RFC5545 line continuations
+    unfolded = re.sub(r'\r?\n[ \t]', '', text)
+    for block in re.findall(r'BEGIN:VEVENT(.*?)END:VEVENT', unfolded, re.DOTALL):
+        fields = {}
+        for line in block.splitlines():
+            if ':' not in line:
+                continue
+            key, _, value = line.partition(':')
+            key = key.split(';')[0].upper()
+            fields[key] = value.strip()
+        name = fields.get('SUMMARY', '').strip()
+        if not name:
+            continue
+        start_date = parse_iso_date(fields.get('DTSTART', ''))
+        if not start_date:
+            continue
+        end_date = parse_iso_date(fields.get('DTEND', ''))
+        ev_url = fields.get('URL', '') or ''
+        venue = fields.get('LOCATION', '') or default_venue
+        desc = fields.get('DESCRIPTION', name)[:300]
+        events.append({
+            'id': make_event_id(source[:6], name, start_date),
+            'name': name,
+            'date': start_date,
+            'end_date': end_date,
+            'time': '',
+            'venue': venue,
+            'category': categorize_event(name, desc),
+            'price': 'See event',
+            'url': ev_url,
+            'description': desc,
+            'source': source,
+            'scraped_date': today,
+            'status': 'active',
+        })
+    return events
+
+
+def scrape_orillia_opera_house():
+    """Orillia Opera House — concerts, theatre, comedy at the downtown venue."""
+    events = []
+    venue = 'Orillia Opera House, 20 Mississaga St W, Orillia ON'
+    # Try iCal export first (most WP calendars support it)
+    for url in [
+        'https://orilliaoperahouse.ca/events/?ical=1',
+        'https://www.orilliaoperahouse.ca/events/?ical=1',
+    ]:
+        text = fetch_page(url)
+        if text and 'BEGIN:VEVENT' in text:
+            events = _parse_ical(text, 'orilliaoperahouse.ca', venue)
+            if events:
+                logger.info(f"Orillia Opera House (iCal): {len(events)} events")
+                return events
+    # Fallback: scrape events page HTML + JSON-LD
+    for url in [
+        'https://orilliaoperahouse.ca/events/',
+        'https://www.orilliaoperahouse.ca/shows/',
+    ]:
+        html = fetch_page(url)
+        if not html:
+            continue
+        for ev in extract_json_ld_events(html, venue, 'orilliaoperahouse.ca'):
+            events.append(ev)
+        if events:
+            break
+    logger.info(f"Orillia Opera House: {len(events)} events")
+    return events
+
+
+def scrape_severn_township():
+    """Severn Township events calendar."""
+    venue = 'Severn Township, ON'
+    for url in [
+        'https://www.severntownship.ca/en/live-here/events.aspx?feed=ical',
+        'https://www.severntownship.ca/Modules/News/Feed.aspx?feedId=events&format=ical',
+    ]:
+        text = fetch_page(url)
+        if text and 'BEGIN:VEVENT' in text:
+            events = _parse_ical(text, 'severntownship.ca', venue)
+            logger.info(f"Severn Township (iCal): {len(events)} events")
+            return events
+    html = fetch_page('https://www.severntownship.ca/en/live-here/events.aspx')
+    events = extract_json_ld_events(html or '', venue, 'severntownship.ca')
+    logger.info(f"Severn Township: {len(events)} events")
+    return events
+
+
+def scrape_oro_medonte():
+    """Oro-Medonte Township events calendar."""
+    venue = 'Oro-Medonte Township, ON'
+    for url in [
+        'https://www.oro-medonte.ca/town-hall/events?feed=ical',
+        'https://www.oro-medonte.ca/en/town-hall/events.aspx?feedId=events&format=ical',
+    ]:
+        text = fetch_page(url)
+        if text and 'BEGIN:VEVENT' in text:
+            events = _parse_ical(text, 'oro-medonte.ca', venue)
+            logger.info(f"Oro-Medonte (iCal): {len(events)} events")
+            return events
+    html = fetch_page('https://www.oro-medonte.ca/town-hall/events')
+    events = extract_json_ld_events(html or '', venue, 'oro-medonte.ca')
+    logger.info(f"Oro-Medonte: {len(events)} events")
+    return events
+
+
+def scrape_ramara_township():
+    """Ramara Township events calendar."""
+    venue = 'Ramara Township, ON'
+    for url in [
+        'https://www.ramara.ca/en/discover/events.aspx?feed=ical',
+        'https://www.ramara.ca/Modules/News/Feed.aspx?feedId=events&format=ical',
+    ]:
+        text = fetch_page(url)
+        if text and 'BEGIN:VEVENT' in text:
+            events = _parse_ical(text, 'ramara.ca', venue)
+            logger.info(f"Ramara Township (iCal): {len(events)} events")
+            return events
+    html = fetch_page('https://www.ramara.ca/en/discover/events.aspx')
+    events = extract_json_ld_events(html or '', venue, 'ramara.ca')
+    logger.info(f"Ramara Township: {len(events)} events")
+    return events
+
+
+def scrape_orillia_library():
+    """Orillia Public Library programs & events."""
+    venue = 'Orillia Public Library, 36 Mississaga St W, Orillia ON'
+    for url in [
+        'https://orilliapubliclibrary.ca/events/?ical=1',
+        'https://www.orilliapubliclibrary.ca/events/?ical=1',
+    ]:
+        text = fetch_page(url)
+        if text and 'BEGIN:VEVENT' in text:
+            events = _parse_ical(text, 'orilliapubliclibrary.ca', venue)
+            logger.info(f"Orillia Library (iCal): {len(events)} events")
+            return events
+    html = fetch_page('https://orilliapubliclibrary.ca/events/')
+    events = extract_json_ld_events(html or '', venue, 'orilliapubliclibrary.ca')
+    logger.info(f"Orillia Library: {len(events)} events")
+    return events
+
+
+# ---------------------------------------------------------------------------
 # DB helpers
 # ---------------------------------------------------------------------------
 
@@ -645,6 +911,45 @@ def save_events_db(db):
     with open(EVENTS_DB_PATH, 'w') as f:
         json.dump(db, f, indent=2)
     logger.info(f"Events DB saved: {db['total_events']} active events")
+
+
+def _extract_venue_from_html(html):
+    """Pull a specific venue string from a single event page's JSON-LD."""
+    if not html:
+        return ''
+    soup = BeautifulSoup(html, 'html.parser')
+    for script in soup.find_all('script', type='application/ld+json'):
+        try:
+            data = json.loads(script.string or '')
+        except Exception:
+            continue
+        items = data if isinstance(data, list) else [data]
+        for item in items:
+            if isinstance(item, dict) and '@graph' in item:
+                items += item['@graph']
+                continue
+            if not isinstance(item, dict):
+                continue
+            t = item.get('@type', '')
+            if isinstance(t, list):
+                t = ' '.join(t)
+            if 'event' not in str(t).lower():
+                continue
+            loc = item.get('location') or {}
+            if isinstance(loc, list):
+                loc = loc[0] if loc else {}
+            if isinstance(loc, dict):
+                vn = loc.get('name') or ''
+                addr = loc.get('address') or {}
+                if isinstance(addr, dict):
+                    street = addr.get('streetAddress') or ''
+                    city = addr.get('addressLocality') or ''
+                else:
+                    street = city = ''
+                parts = [p for p in (vn, street, city) if p]
+                if parts:
+                    return ', '.join(parts)
+    return ''
 
 
 def _extract_dates_from_html(html):
@@ -725,11 +1030,15 @@ def enrich_event_dates(events, max_fetches=200):
     """
     fetched = 0
     enriched = 0
+    generic_venues = {'orillia, on', 'orillia area', 'downtown orillia, on',
+                      'city of orillia, on'}
     for ev in events:
-        if ev.get('date'):
-            continue
         url = ev.get('url', '')
         if not url:
+            continue
+        needs_date = not ev.get('date')
+        needs_venue = (ev.get('venue') or '').strip().lower() in generic_venues
+        if not needs_date and not needs_venue:
             continue
         # Skip Eventbrite directory listings — they're not events
         if any(re.search(p, url) for p in EVENTBRITE_DIRECTORY_PATTERNS):
@@ -738,16 +1047,20 @@ def enrich_event_dates(events, max_fetches=200):
             break
         html = fetch_page(url)
         fetched += 1
-        start, end = _extract_dates_from_html(html)
-        if start:
-            ev['date'] = start
-            if end:
-                ev['end_date'] = end
-            # Recompute id now that we have a real date
-            prefix = ev['id'].split('-', 1)[0]
-            ev['id'] = make_event_id(prefix, ev['name'], start)
-            enriched += 1
-    logger.info(f"Date enrichment: fetched {fetched} pages, filled {enriched} dates")
+        if needs_date:
+            start, end = _extract_dates_from_html(html)
+            if start:
+                ev['date'] = start
+                if end:
+                    ev['end_date'] = end
+                prefix = ev['id'].split('-', 1)[0]
+                ev['id'] = make_event_id(prefix, ev['name'], start)
+                enriched += 1
+        if needs_venue:
+            venue = _extract_venue_from_html(html)
+            if venue:
+                ev['venue'] = venue
+    logger.info(f"Enrichment: fetched {fetched} pages, filled {enriched} dates")
 
 
 def merge_events(db, new_events):
@@ -818,6 +1131,11 @@ def run_event_scraper():
     all_new.extend(scrape_downtown_orillia())
     all_new.extend(scrape_orillia_matters())
     all_new.extend(scrape_city_orillia())
+    all_new.extend(scrape_orillia_opera_house())
+    all_new.extend(scrape_orillia_library())
+    all_new.extend(scrape_severn_township())
+    all_new.extend(scrape_oro_medonte())
+    all_new.extend(scrape_ramara_township())
 
     # Apply local-area filter before any further work
     before = len(all_new)
