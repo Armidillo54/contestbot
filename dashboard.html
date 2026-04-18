@@ -697,11 +697,12 @@ function restoreData(){
 
 async function loadData(){
   try{
+    const bust = `?v=${Date.now()}`;
     const [cr, fr, sr, er] = await Promise.all([
-      fetch('contests_database.json').then(r=>r.json()).catch(()=>({contests:[]})),
-      fetch('freebies_database.json').then(r=>r.json()).catch(()=>({freebies:[]})),
-      fetch('sales_database.json').then(r=>r.json()).catch(()=>({sales:[]})),
-      fetch('events_database.json').then(r=>r.json()).catch(()=>({events:[]})),
+      fetch('contests_database.json' + bust, {cache: 'no-store'}).then(r=>r.json()).catch(()=>({contests:[]})),
+      fetch('freebies_database.json' + bust, {cache: 'no-store'}).then(r=>r.json()).catch(()=>({freebies:[]})),
+      fetch('sales_database.json' + bust, {cache: 'no-store'}).then(r=>r.json()).catch(()=>({sales:[]})),
+      fetch('events_database.json' + bust, {cache: 'no-store'}).then(r=>r.json()).catch(()=>({events:[]})),
     ]);
     allContests = (cr.contests||[]).filter(c => c.name && c.name.length > 3 && c.url);
     allFreebies = (fr.freebies||[]).filter(f => f.name && f.url);
