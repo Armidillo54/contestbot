@@ -203,63 +203,87 @@ def extract_json_ld_events(html, default_venue='Orillia, ON', default_source='')
 # Per-source scrapers
 # ---------------------------------------------------------------------------
 
+EVENTBRITE_EVENT_HREF = re.compile(
+    r'^https?://(?:www\.)?eventbrite\.[a-z.]+/e/[^/?#]+-tickets-\d+', re.I
+)
+
+
 def scrape_eventbrite():
-    """Scrape Eventbrite Orillia events. Uses JSON-LD + HTML fallback."""
+    """Scrape Eventbrite Orillia events.
+
+    Strategy: collect every individual event URL (/e/{slug}-tickets-{id}) on the
+    listing page along with the nearest title/date, then defer date filling to
+    the per-page JSON-LD enrichment pass.
+    """
     events = []
     today = date.today().isoformat()
     urls = [
         'https://www.eventbrite.ca/d/canada--orillia/events/',
         'https://www.eventbrite.ca/d/canada--orillia/events--this-weekend/',
     ]
-    seen_ids = set()
+    seen_urls = set()
     for url in urls:
         html = fetch_page(url)
         if not html:
             continue
-        # Try JSON-LD first
-        ld_events = extract_json_ld_events(html, 'Orillia, ON', 'eventbrite')
-        for ev in ld_events:
-            if ev['id'] not in seen_ids:
-                seen_ids.add(ev['id'])
-                events.append(ev)
 
-        # HTML fallback: Eventbrite event cards
-        if not ld_events:
-            soup = BeautifulSoup(html, 'html.parser')
-            for card in soup.select('[data-event-id], .eds-event-card, .search-event-card, article'):
-                title_el = (card.find(class_=re.compile(r'title|heading|event-name', re.I))
-                            or card.find(['h2', 'h3']))
-                if not title_el:
-                    continue
-                name = title_el.get_text(strip=True)
-                if not name or len(name) < 4:
-                    continue
-                link_el = card.find('a', href=True)
-                ev_url = link_el['href'] if link_el else url
-                if ev_url.startswith('/'):
-                    ev_url = 'https://www.eventbrite.ca' + ev_url
-                date_el = card.find(class_=re.compile(r'date|time', re.I)) or card.find('time')
-                event_date = parse_iso_date(
-                    date_el.get('datetime', date_el.get_text()) if date_el else ''
-                )
-                ev_id = make_event_id('eventbrite', name, event_date)
-                if ev_id not in seen_ids:
-                    seen_ids.add(ev_id)
-                    events.append({
-                        'id': ev_id,
-                        'name': name,
-                        'date': event_date,
-                        'end_date': '',
-                        'time': '',
-                        'venue': 'Orillia, ON',
-                        'category': categorize_event(name),
-                        'price': 'See event',
-                        'url': ev_url,
-                        'description': name,
-                        'source': 'eventbrite.ca',
-                        'scraped_date': today,
-                        'status': 'active',
-                    })
+        # Listing-page JSON-LD usually only describes the search itself, but
+        # individual event objects may still be present — keep them if so.
+        for ev in extract_json_ld_events(html, 'Orillia, ON', 'eventbrite'):
+            if ev.get('url') and EVENTBRITE_EVENT_HREF.match(ev['url']):
+                if ev['url'] not in seen_urls:
+                    seen_urls.add(ev['url'])
+                    events.append(ev)
+
+        soup = BeautifulSoup(html, 'html.parser')
+        for link in soup.find_all('a', href=True):
+            href = link['href'].strip().split('?')[0]
+            if href.startswith('/'):
+                href = 'https://www.eventbrite.ca' + href
+            if not EVENTBRITE_EVENT_HREF.match(href):
+                continue
+            if href in seen_urls:
+                continue
+            seen_urls.add(href)
+
+            # Title: link text, or aria-label, or the nearest heading
+            name = (link.get('aria-label') or link.get_text(strip=True) or '').strip()
+            if not name or len(name) < 4:
+                card = link.find_parent(['article', 'section', 'div'])
+                if card:
+                    h = card.find(['h1', 'h2', 'h3'])
+                    if h:
+                        name = h.get_text(strip=True)
+            if not name or len(name) < 4:
+                continue
+
+            # Try to grab a date hint from the surrounding card
+            event_date = ''
+            card = link.find_parent(['article', 'section', 'div'])
+            if card:
+                t = card.find('time')
+                if t:
+                    event_date = parse_iso_date(t.get('datetime') or t.get_text())
+                if not event_date:
+                    date_el = card.find(class_=re.compile(r'date|when', re.I))
+                    if date_el:
+                        event_date = parse_iso_date(date_el.get_text())
+
+            events.append({
+                'id': make_event_id('eventbrite', name, event_date),
+                'name': name,
+                'date': event_date,
+                'end_date': '',
+                'time': '',
+                'venue': 'Orillia, ON',
+                'category': categorize_event(name),
+                'price': 'See event',
+                'url': href,
+                'description': name,
+                'source': 'eventbrite.ca',
+                'scraped_date': today,
+                'status': 'active',
+            })
     logger.info(f"Eventbrite: {len(events)} events")
     return events
 
@@ -561,6 +585,70 @@ def save_events_db(db):
     logger.info(f"Events DB saved: {db['total_events']} active events")
 
 
+def _extract_dates_from_html(html):
+    """Pull (start_date, end_date) ISO strings from a single event page's JSON-LD."""
+    if not html:
+        return '', ''
+    soup = BeautifulSoup(html, 'html.parser')
+    for script in soup.find_all('script', type='application/ld+json'):
+        try:
+            data = json.loads(script.string or '')
+        except Exception:
+            continue
+        items = data if isinstance(data, list) else [data]
+        for item in items:
+            if isinstance(item, dict) and '@graph' in item:
+                items += item['@graph']
+                continue
+            if not isinstance(item, dict):
+                continue
+            t = item.get('@type', '')
+            if isinstance(t, list):
+                t = ' '.join(t)
+            if 'event' not in str(t).lower():
+                continue
+            start = parse_iso_date(str(item.get('startDate', '')))
+            end = parse_iso_date(str(item.get('endDate', '')))
+            if start:
+                return start, end
+    # Fallback: tribe-event date markers in raw HTML
+    m = re.search(r'tribe-events-(?:start-date|abbr)[^"]*"[^>]*title="([^"]+)"', html)
+    if m:
+        return parse_iso_date(m.group(1)), ''
+    m = re.search(r'datetime="(\d{4}-\d{2}-\d{2}[^"]*)"', html)
+    if m:
+        return parse_iso_date(m.group(1)), ''
+    return '', ''
+
+
+def enrich_event_dates(events, max_fetches=80):
+    """For each event missing a date, fetch its URL and pull JSON-LD startDate.
+
+    Bounded by max_fetches to keep daily runtime reasonable. Skips obvious
+    listing-page URLs (those without a per-event slug).
+    """
+    fetched = 0
+    for ev in events:
+        if ev.get('date'):
+            continue
+        url = ev.get('url', '')
+        if not url or '/d/' in url:  # /d/ = Eventbrite directory listing, not an event
+            continue
+        if fetched >= max_fetches:
+            break
+        html = fetch_page(url)
+        fetched += 1
+        start, end = _extract_dates_from_html(html)
+        if start:
+            ev['date'] = start
+            if end:
+                ev['end_date'] = end
+            # Recompute id now that we have a real date
+            prefix = ev['id'].split('-', 1)[0]
+            ev['id'] = make_event_id(prefix, ev['name'], start)
+    logger.info(f"Date enrichment: fetched {fetched} pages")
+
+
 def merge_events(db, new_events):
     existing_map = {e['id']: e for e in db['events']}
     added = 0
@@ -595,6 +683,14 @@ def run_event_scraper():
     all_new.extend(scrape_downtown_orillia())
     all_new.extend(scrape_orillia_matters())
     all_new.extend(scrape_city_orillia())
+
+    # Fill in missing dates by fetching individual event pages (JSON-LD)
+    enrich_event_dates(all_new)
+
+    # Also backfill dates on entries already in the DB that still have none
+    stale = [e for e in db.get('events', []) if not e.get('date') and e.get('url')]
+    if stale:
+        enrich_event_dates(stale)
 
     # Filter to upcoming events only before merging
     upcoming = [e for e in all_new if is_upcoming(e.get('date', ''), days_ahead=120)]

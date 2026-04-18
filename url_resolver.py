@@ -35,6 +35,12 @@ AGGREGATOR_DOMAINS = {
     'contestchef.ca',
     'redflagdeals.com',
     'forums.redflagdeals.com',
+    'contestcanada.net',
+    'contestscoop.com',
+    'contestlibrary.ca',
+    'secureawin.ca',
+    'curiousaboutcanadiancontests.com',
+    'wannawin.ca',
 }
 
 # These are never useful as contest/freebie destinations
