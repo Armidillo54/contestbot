@@ -239,7 +239,7 @@
       "name": "Veseys Canada \u2013 Free Spring and Seed Catalogues -Mailed!!",
       "description": "Veseys Canada \u2013 Free Spring and Seed Catalogues -Mailed!!",
       "url": "https://www.veseys.com/ca/request-catalogue",
-      "category": "pets",
+      "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
       "status": "active",
@@ -449,8 +449,25 @@
       "link_checked": "2026-04-16",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
+    },
+    {
+      "id": "ss-samplesource-canada-free-sample-box-registration",
+      "name": "SampleSource Canada \u2014 Free Sample Box Registration",
+      "description": "Free box of full-sized sample products mailed across Canada (bi-annual program).",
+      "url": "https://www.samplesource.com/",
+      "category": "other",
+      "source": "samplesource.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-18",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-18",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-04-18",
-  "total_freebies": 22
+  "total_freebies": 23
 }
