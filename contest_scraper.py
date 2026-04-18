@@ -464,6 +464,115 @@ def scrape_wannawin():
     )
 
 
+# --- Local Simcoe/Muskoka radio-station contest scrapers --------------------
+
+LOCAL_AREA = 'Simcoe/Muskoka'
+
+
+def scrape_local_radio(urls, prefix, source, freq='single'):
+    """
+    Scraper for Ontario radio station contest pages (WordPress-style sites).
+    Tags results as Ontario-only + local_area Simcoe/Muskoka so the dashboard
+    can surface them as 'local'.
+    """
+    contests = []
+    seen_ids = set()
+    url_list = [urls] if isinstance(urls, str) else urls
+    for url in url_list:
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=30)
+            resp.raise_for_status()
+            soup = BeautifulSoup(resp.text, 'html.parser')
+            candidates = soup.select(
+                'article, .post, .type-post, .contest, .contest-item, '
+                '.entry, .card, li.contest, .item, .tribe-events-list-event-wrap'
+            )
+            for el in candidates:
+                title_el = (
+                    el.find(class_=re.compile(r'entry-title|post-title|contest-title|card-title|title')) or
+                    el.find(['h2', 'h1', 'h3', 'h4'])
+                )
+                if not title_el:
+                    continue
+                link_el = title_el.find('a', href=True) or el.find('a', href=True)
+                if not link_el:
+                    continue
+                title = title_el.get_text(strip=True)
+                href = link_el.get('href', '')
+                if href.startswith('/'):
+                    base = re.match(r'https?://[^/]+', url).group(0)
+                    href = base + href
+                if not href.startswith('http') or len(title) < 5:
+                    continue
+                if not is_ontario_eligible(title):
+                    continue
+                low = title.lower()
+                # Filter out navigation / generic page titles
+                if any(w in low for w in ['privacy', 'contact', 'about us', 'terms', 'advertise', 'careers']):
+                    continue
+                text = el.get_text(separator=' ', strip=True)
+                entry = _make_entry(prefix, title, href, text, source, freq)
+                entry['provinces'] = ['Ontario']
+                entry['local_area'] = LOCAL_AREA
+                entry['npn_note'] = f'Local contest from {source}'
+                if entry['id'] not in seen_ids:
+                    seen_ids.add(entry['id'])
+                    contests.append(entry)
+            logger.info(f"{source}: {len(contests)} local contests")
+        except Exception as e:
+            logger.error(f"Error scraping {source} ({url}): {e}")
+    return contests
+
+
+def scrape_kicx106():
+    """KICX 106 FM — Simcoe County country station."""
+    return scrape_local_radio(
+        ['https://kicx.ca/contests/', 'https://kicx.ca/'],
+        'kicx', 'KICX 106 (Orillia)'
+    )
+
+
+def scrape_rock95():
+    """Rock 95 Barrie."""
+    return scrape_local_radio(
+        ['https://rock95.com/contests/', 'https://rock95.com/'],
+        'rock95', 'Rock 95 (Barrie)'
+    )
+
+
+def scrape_koolfm():
+    """Kool FM 107.5 — Barrie."""
+    return scrape_local_radio(
+        ['https://koolfm.com/contests/', 'https://koolfm.com/'],
+        'kool', 'Kool FM (Barrie)'
+    )
+
+
+def scrape_country104():
+    """Country 104 — Barrie/Simcoe."""
+    return scrape_local_radio(
+        ['https://country104.ca/contests/', 'https://country104.ca/'],
+        'c104', 'Country 104 (Barrie)'
+    )
+
+
+def scrape_lakecountry887():
+    """Lake Country 88.7 — Orillia/Lake Simcoe."""
+    return scrape_local_radio(
+        ['https://lakecountry887.com/contests/', 'https://lakecountry887.com/'],
+        'lc887', 'Lake Country 88.7 (Orillia)'
+    )
+
+
+def scrape_bayshore():
+    """Bayshore Broadcasting — Muskoka/Parry Sound stations."""
+    return scrape_local_radio(
+        ['https://www.bayshorebroadcasting.ca/contests/',
+         'https://www.bayshorebroadcasting.ca/'],
+        'bay', 'Bayshore Broadcasting (Muskoka)'
+    )
+
+
 def merge_contests(db, new_contests):
     """Merge new contests into database, skipping duplicates by ID."""
     existing_ids = {c['id'] for c in db['contests']}
@@ -506,7 +615,16 @@ def run_scraper():
     cacc = scrape_curiousabout()
     ww = scrape_wannawin()
 
-    all_new = cg + rfd + cfs + cc + ccan + cscoop + clib + saw + cacc + ww
+    # Local Simcoe / Muskoka sources
+    kicx = scrape_kicx106()
+    rock = scrape_rock95()
+    kool = scrape_koolfm()
+    c104 = scrape_country104()
+    lc = scrape_lakecountry887()
+    bay = scrape_bayshore()
+
+    all_new = (cg + rfd + cfs + cc + ccan + cscoop + clib + saw + cacc + ww
+               + kicx + rock + kool + c104 + lc + bay)
     added = merge_contests(db, all_new)
     expired = expire_old_contests(db)
     save_database(db)
