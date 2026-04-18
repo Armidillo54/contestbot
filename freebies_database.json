@@ -2246,7 +2246,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-15",
+      "link_checked": "2026-04-18",
       "source_url": "https://www.canadianfreestuff.com/brilliant-earth-free-sample/",
       "url_resolved": true
     },
@@ -2264,7 +2264,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-15",
+      "link_checked": "2026-04-18",
       "source_url": "https://www.canadianfreestuff.com/dove-canada-contest/",
       "url_resolved": false
     },
@@ -2282,7 +2282,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-15",
+      "link_checked": "2026-04-18",
       "source_url": "https://www.canadianfreestuff.com/hamilton-beach-canada-contest/",
       "url_resolved": false
     },
@@ -2300,7 +2300,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-15",
+      "link_checked": "2026-04-18",
       "source_url": "https://www.canadianfreestuff.com/metro-quebec-contests/",
       "url_resolved": false
     },
@@ -2318,7 +2318,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-15",
+      "link_checked": "2026-04-18",
       "source_url": "https://www.canadianfreestuff.com/ferrero-rocher-canada-contest/",
       "url_resolved": true
     },
@@ -2336,7 +2336,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-15",
+      "link_checked": "2026-04-18",
       "source_url": "https://www.canadianfreestuff.com/tresemme-coupon/",
       "url_resolved": true
     },
@@ -2354,7 +2354,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-15",
+      "link_checked": "2026-04-18",
       "source_url": "https://www.canadianfreestuff.com/mary-browns-canada-coupons/",
       "url_resolved": false
     },
@@ -2372,7 +2372,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-15",
+      "link_checked": "2026-04-18",
       "source_url": "https://www.canadianfreestuff.com/michaels-canada-coupons-sales/",
       "url_resolved": true
     },
@@ -2681,8 +2681,26 @@
       "link_checked": "2026-04-17",
       "source_url": "https://www.canadianfreestuff.com/chapmans-coupon-canada/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-mandarin-restaurant-contest-win-a-mandarin-buffet-",
+      "name": "Mandarin Restaurant Contest -Win a Mandarin Buffet for 4 & a Spa Experience for Mom",
+      "description": "Mandarin Restaurant Contest -Win a Mandarin Buffet for 4 & a Spa Experience for Mom",
+      "url": "https://www.canadianfreestuff.com/mandarin-restaurant-canada-coupon/",
+      "category": "restaurant",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-18",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-18",
+      "source_url": "https://www.canadianfreestuff.com/mandarin-restaurant-canada-coupon/",
+      "url_resolved": false
     }
   ],
-  "last_updated": "2026-04-17",
+  "last_updated": "2026-04-18",
   "total_freebies": 141
 }
