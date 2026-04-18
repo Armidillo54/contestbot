@@ -24,6 +24,61 @@ HEADERS = {
     'Accept-Language': 'en-CA,en;q=0.9',
 }
 
+# --- Local-area filter --------------------------------------------------------
+# User wants ONLY events in Orillia, Oro-Medonte, Severn, Ramara.
+# Barrie / Toronto / Lindsay / Georgina / Muskoka are too far.
+LOCAL_PLACE_PATTERNS = [
+    r'\borillia\b', r'\boro[\s\-]?medonte\b', r'\bsevern\s+(?:township|bridge|falls)?\b',
+    r'\bsevern\b', r'\bramara\b', r'\brama\b',
+    r'\bwashago\b', r'\bbrechin\b', r'\batherley\b',
+    r'\blongford\b', r'\bcouchiching\b', r'\bcoldwater\b',
+    r'\buptergrove\b', r'\bhawkestone\b', r'\bshanty\s+bay\b',
+    r'\bmnjikaning\b', r'\bsimcoe\s+county\b',
+]
+BLOCKED_PLACE_PATTERNS = [
+    r'\bbarrie\b', r'\btoronto\b', r'\boshawa\b', r'\blindsay\b',
+    r'\bgeorgina\b', r'\binnisfil\b', r'\bminesing\b',
+    r'\bmuskoka\b', r'\bgravenhurst\b', r'\bbracebridge\b',
+    r'\bhuntsville\b', r'\bmidland\b', r'\bpenetang(?:uishene)?\b',
+    r'\balliston\b', r'\bnewmarket\b', r'\baurora\b',
+    r'\bmarkham\b', r'\bvaughan\b', r'\bmississauga\b', r'\bbrampton\b',
+    r'\bottawa\b', r'\bmontreal\b', r'\bcollingwood\b',
+    r'\bwasaga\b', r'\bbeaverton\b', r'\bsutton\b',
+    r'\bkeswick\b', r'\bbradford\b', r'\bangus\b',
+    r'\bborden\b', r'\bstayner\b', r'\bcreemore\b',
+]
+GARBAGE_TITLE_PATTERNS = [
+    r'^\d+\.\s*',          # "1.March break" — Eventbrite category nav
+    r'^test\s+event',
+    r'^\s*online\s*$',
+]
+# Eventbrite directory paths that aren't actual events
+EVENTBRITE_DIRECTORY_PATTERNS = [r'/d/[^/]+/', r'/c/[^/]+/']
+
+
+def is_local_event(name, venue='', description='', url=''):
+    """Return True only for events in Orillia/Oro-Medonte/Severn/Ramara."""
+    text = f"{name} {venue} {description}".lower()
+    for pat in GARBAGE_TITLE_PATTERNS:
+        if re.search(pat, name, re.I):
+            return False
+    for pat in BLOCKED_PLACE_PATTERNS:
+        if re.search(pat, text):
+            return False
+    for pat in LOCAL_PLACE_PATTERNS:
+        if re.search(pat, text):
+            return True
+    # Also accept based on URL slug (some Eventbrite events name the venue in the slug)
+    url_l = (url or '').lower()
+    for pat in LOCAL_PLACE_PATTERNS:
+        if re.search(pat, url_l):
+            for bad in BLOCKED_PLACE_PATTERNS:
+                if re.search(bad, url_l):
+                    return False
+            return True
+    return False
+
+
 CATEGORY_KEYWORDS = {
     'music':     ['concert', 'music', 'band', 'live music', 'jazz', 'rock', 'country',
                   'blues', 'folk', 'symphony', 'orchestra', 'choir', 'karaoke', 'open mic',
@@ -106,16 +161,20 @@ def parse_iso_date(text):
     return ''
 
 
-def is_upcoming(event_date_str, days_ahead=90):
-    """Return True if event is today or within the next N days."""
+def is_upcoming(event_date_str, days_ahead=90, allow_undated=False):
+    """Return True if event is today or within the next N days.
+
+    If allow_undated is False (default), missing dates are rejected — we'd rather
+    drop a date-less listing than show a stale event with no date.
+    """
     if not event_date_str:
-        return True  # no date info → keep it
+        return allow_undated
     try:
         ed = date.fromisoformat(event_date_str)
         today = date.today()
         return today <= ed <= today + timedelta(days=days_ahead)
     except ValueError:
-        return True
+        return allow_undated
 
 
 def extract_json_ld_events(html, default_venue='Orillia, ON', default_source=''):
@@ -570,13 +629,16 @@ def load_events_db():
 
 def save_events_db(db):
     db['last_updated'] = date.today().isoformat()
-    # Remove past events (more than 1 day old with a known date)
     yesterday = (date.today() - timedelta(days=1)).isoformat()
+    week_ago = (date.today() - timedelta(days=7)).isoformat()
     kept = []
     for ev in db.get('events', []):
         d = ev.get('date', '')
         if d and d < yesterday:
             continue  # drop past events
+        # Drop dateless entries scraped more than a week ago
+        if not d and ev.get('scraped_date', '') < week_ago:
+            continue
         kept.append(ev)
     db['events'] = kept
     db['total_events'] = len([e for e in db['events'] if e.get('status') == 'active'])
@@ -586,9 +648,11 @@ def save_events_db(db):
 
 
 def _extract_dates_from_html(html):
-    """Pull (start_date, end_date) ISO strings from a single event page's JSON-LD."""
+    """Pull (start_date, end_date) ISO strings from a single event page."""
     if not html:
         return '', ''
+
+    # 1) JSON-LD Event objects (Eventbrite, Casino Rama, etc.)
     soup = BeautifulSoup(html, 'html.parser')
     for script in soup.find_all('script', type='application/ld+json'):
         try:
@@ -611,28 +675,64 @@ def _extract_dates_from_html(html):
             end = parse_iso_date(str(item.get('endDate', '')))
             if start:
                 return start, end
-    # Fallback: tribe-event date markers in raw HTML
+
+    # 2) Eventbrite serializes start time in window state JSON
+    m = re.search(r'"start"\s*:\s*\{[^}]*?"local"\s*:\s*"([^"]+)"', html)
+    if m:
+        d = parse_iso_date(m.group(1))
+        if d:
+            return d, ''
+    m = re.search(r'"startDate"\s*:\s*"([^"]+)"', html)
+    if m:
+        d = parse_iso_date(m.group(1))
+        if d:
+            return d, ''
+
+    # 3) OpenGraph meta
+    for prop in ('event:start_time', 'og:start_time'):
+        m = re.search(rf'<meta[^>]+property=["\']?{re.escape(prop)}["\']?[^>]+content=["\']([^"\']+)["\']', html, re.I)
+        if m:
+            d = parse_iso_date(m.group(1))
+            if d:
+                return d, ''
+
+    # 4) Tribe Events Calendar (Downtown Orillia)
     m = re.search(r'tribe-events-(?:start-date|abbr)[^"]*"[^>]*title="([^"]+)"', html)
     if m:
-        return parse_iso_date(m.group(1)), ''
+        d = parse_iso_date(m.group(1))
+        if d:
+            return d, ''
+
+    # 5) Generic <time datetime="YYYY-MM-DD"> or visible date strings
     m = re.search(r'datetime="(\d{4}-\d{2}-\d{2}[^"]*)"', html)
     if m:
-        return parse_iso_date(m.group(1)), ''
+        d = parse_iso_date(m.group(1))
+        if d:
+            return d, ''
+    m = re.search(r'\b([A-Z][a-z]{2,8}\s+\d{1,2},?\s+20\d{2})\b', html)
+    if m:
+        d = parse_iso_date(m.group(1))
+        if d:
+            return d, ''
     return '', ''
 
 
-def enrich_event_dates(events, max_fetches=80):
-    """For each event missing a date, fetch its URL and pull JSON-LD startDate.
+def enrich_event_dates(events, max_fetches=200):
+    """For each event missing a date, fetch its URL and pull a real start date.
 
     Bounded by max_fetches to keep daily runtime reasonable. Skips obvious
     listing-page URLs (those without a per-event slug).
     """
     fetched = 0
+    enriched = 0
     for ev in events:
         if ev.get('date'):
             continue
         url = ev.get('url', '')
-        if not url or '/d/' in url:  # /d/ = Eventbrite directory listing, not an event
+        if not url:
+            continue
+        # Skip Eventbrite directory listings — they're not events
+        if any(re.search(p, url) for p in EVENTBRITE_DIRECTORY_PATTERNS):
             continue
         if fetched >= max_fetches:
             break
@@ -646,7 +746,8 @@ def enrich_event_dates(events, max_fetches=80):
             # Recompute id now that we have a real date
             prefix = ev['id'].split('-', 1)[0]
             ev['id'] = make_event_id(prefix, ev['name'], start)
-    logger.info(f"Date enrichment: fetched {fetched} pages")
+            enriched += 1
+    logger.info(f"Date enrichment: fetched {fetched} pages, filled {enriched} dates")
 
 
 def merge_events(db, new_events):
@@ -673,9 +774,43 @@ def merge_events(db, new_events):
 # Main entry point
 # ---------------------------------------------------------------------------
 
+def prune_existing_events(db):
+    """One-time cleanup: drop entries that don't pass the local-area filter,
+    Eventbrite directory URLs, garbage titles, and dateless entries older than
+    a week.
+    """
+    today = date.today().isoformat()
+    week_ago = (date.today() - timedelta(days=7)).isoformat()
+    kept = []
+    dropped = 0
+    for ev in db.get('events', []):
+        url = ev.get('url', '')
+        # Drop Eventbrite directory / category URLs (not real events)
+        if any(re.search(p, url) for p in EVENTBRITE_DIRECTORY_PATTERNS):
+            dropped += 1
+            continue
+        # Drop non-local
+        if not is_local_event(ev.get('name', ''), ev.get('venue', ''),
+                              ev.get('description', ''), url):
+            dropped += 1
+            continue
+        # Drop dateless entries scraped more than a week ago — enrichment failed
+        if not ev.get('date') and ev.get('scraped_date', today) < week_ago:
+            dropped += 1
+            continue
+        kept.append(ev)
+    db['events'] = kept
+    if dropped:
+        logger.info(f"Pruned {dropped} non-local / garbage / stale events")
+    return dropped
+
+
 def run_event_scraper():
     logger.info("=== Event Scraper Starting ===")
     db = load_events_db()
+
+    # Clean out non-local + garbage entries from prior runs
+    prune_existing_events(db)
 
     all_new = []
     all_new.extend(scrape_eventbrite())
@@ -684,7 +819,14 @@ def run_event_scraper():
     all_new.extend(scrape_orillia_matters())
     all_new.extend(scrape_city_orillia())
 
-    # Fill in missing dates by fetching individual event pages (JSON-LD)
+    # Apply local-area filter before any further work
+    before = len(all_new)
+    all_new = [e for e in all_new
+               if is_local_event(e.get('name', ''), e.get('venue', ''),
+                                 e.get('description', ''), e.get('url', ''))]
+    logger.info(f"Local filter: {before} -> {len(all_new)} events kept")
+
+    # Fill in missing dates by fetching individual event pages
     enrich_event_dates(all_new)
 
     # Also backfill dates on entries already in the DB that still have none
@@ -692,8 +834,10 @@ def run_event_scraper():
     if stale:
         enrich_event_dates(stale)
 
-    # Filter to upcoming events only before merging
-    upcoming = [e for e in all_new if is_upcoming(e.get('date', ''), days_ahead=120)]
+    # Filter to upcoming events only — drop dateless entries (we tried to enrich)
+    upcoming = [e for e in all_new
+                if is_upcoming(e.get('date', ''), days_ahead=120, allow_undated=False)]
+    logger.info(f"Date filter: {len(all_new)} -> {len(upcoming)} upcoming events")
     added = merge_events(db, upcoming)
     save_events_db(db)
     logger.info(f"=== Event Scraper Done: {added} new events added ===")
