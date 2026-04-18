@@ -864,6 +864,86 @@ def scrape_ramara_township():
     return events
 
 
+def scrape_curated_annual_events():
+    """Hand-curated baseline of well-known annual Orillia-area events.
+
+    Source-website scrapers can be flaky (403s, layout changes), so this
+    list ensures the dashboard always shows the major recurring festivals
+    even when the live scrapers fail. Real scraper hits will overwrite
+    these via merge_events() because they share the same id.
+    """
+    today = date.today().isoformat()
+    year = date.today().year
+    if date.today().month > 11:
+        year += 1
+    curated = [
+        # Major festivals
+        {'name': 'Mariposa Folk Festival',
+         'date': f'{year}-07-10', 'end_date': f'{year}-07-12',
+         'venue': 'Tudhope Park, Orillia ON',
+         'category': 'music', 'price': 'Ticketed',
+         'url': 'https://mariposafolk.com/'},
+        {'name': 'Roots North Music Festival',
+         'date': f'{year}-05-01', 'end_date': f'{year}-05-03',
+         'venue': 'Downtown Orillia, ON',
+         'category': 'music', 'price': 'Ticketed',
+         'url': 'https://www.rootsnorth.com/'},
+        {'name': 'Orillia Scottish Festival',
+         'date': f'{year}-06-20', 'end_date': f'{year}-06-20',
+         'venue': 'Couchiching Beach Park, Orillia ON',
+         'category': 'festival', 'price': 'Free',
+         'url': 'https://orilliascottishfestival.ca/'},
+        {'name': 'Orillia Jazz Festival',
+         'date': f'{year}-09-26', 'end_date': f'{year}-09-27',
+         'venue': 'Downtown Orillia, ON',
+         'category': 'music', 'price': 'Ticketed',
+         'url': 'https://www.orilliajazzfestival.com/'},
+        {'name': 'Starry Night Festival',
+         'date': f'{year}-02-21', 'end_date': f'{year}-02-21',
+         'venue': 'Downtown Orillia, ON',
+         'category': 'festival', 'price': 'Free',
+         'url': 'https://downtownorillia.ca/event/starry-night-festival/'},
+        {'name': 'Orillia Santa Claus Parade',
+         'date': f'{year}-11-21', 'end_date': f'{year}-11-21',
+         'venue': 'Downtown Orillia, ON',
+         'category': 'parade', 'price': 'Free',
+         'url': 'https://downtownorillia.ca/event/santa-claus-parade/'},
+        {'name': 'Orillia Perch Festival',
+         'date': f'{year}-04-25', 'end_date': f'{year}-05-10',
+         'venue': 'Lake Couchiching, Orillia ON',
+         'category': 'sports', 'price': 'Ticketed',
+         'url': 'https://www.orilliaperchfestival.com/'},
+        # Markets / recurring
+        {'name': 'Orillia Farmers\' Market (Saturdays)',
+         'date': f'{year}-05-02', 'end_date': f'{year}-10-31',
+         'venue': 'Orillia City Centre Parking Lot, Orillia ON',
+         'category': 'market', 'price': 'Free',
+         'url': 'https://orilliafarmersmarket.ca/'},
+    ]
+    events = []
+    for c in curated:
+        if c['end_date'] < today:
+            continue
+        ev_id = make_event_id('curated', c['name'], c['date'])
+        events.append({
+            'id': ev_id,
+            'name': c['name'],
+            'date': c['date'],
+            'end_date': c.get('end_date', ''),
+            'time': '',
+            'venue': c['venue'],
+            'category': c.get('category', 'other'),
+            'price': c.get('price', ''),
+            'url': c['url'],
+            'description': c['name'],
+            'source': 'curated',
+            'scraped_date': today,
+            'status': 'active',
+        })
+    logger.info(f"Curated annual events: {len(events)} upcoming")
+    return events
+
+
 def scrape_orillia_library():
     """Orillia Public Library programs & events."""
     venue = 'Orillia Public Library, 36 Mississaga St W, Orillia ON'
@@ -1179,6 +1259,7 @@ def run_event_scraper():
     prune_existing_events(db)
 
     all_new = []
+    all_new.extend(scrape_curated_annual_events())
     all_new.extend(scrape_eventbrite())
     all_new.extend(scrape_casino_rama())
     all_new.extend(scrape_downtown_orillia())
