@@ -4750,9 +4750,81 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cacc-foodie-giveaway",
+      "name": "#FOODIE #GIVEAWAY",
+      "url": "https://curiousaboutcanadiancontests.com/2026/04/18/foodie-giveaway-11/ ",
+      "prize": "Instagram Contests #FOODIE #GIVEAWAY - April 18, 2026 - contestcurious comment on #FOODIE #GIVEAWAY https://www.instagram.com/reel/DXO0MZ2jhRX/?igsh=bXdscmcwOW13aDlm \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-04-18",
+      "link_valid": true,
+      "link_checked": "2026-04-18",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/18/foodie-giveaway-11/ ",
+      "url_resolved": false
+    },
+    {
+      "id": "cacc-renspets-dog-giveaway",
+      "name": "#RensPets #DOG #GIVEAWAY",
+      "url": "https://curiousaboutcanadiancontests.com/2026/04/18/renspets-dog-giveaway/ ",
+      "prize": "Instagram Contests #RensPets #DOG #GIVEAWAY - April 18, 2026 - contestcurious comment on #RensPets #DOG #GIVEAWAY https://www.instagram.com/p/DXO9UgFDkKc/?igsh=bzBucmx3cDBoOXY5 \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-04-18",
+      "link_valid": true,
+      "link_checked": "2026-04-18",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/18/renspets-dog-giveaway/ ",
+      "url_resolved": false
+    },
+    {
+      "id": "cacc-protein-foodie-smeg-blender-giveaway",
+      "name": "#PROTEIN #FOODIE #SMEG #BLENDER #GIVEAWAY",
+      "url": "https://curiousaboutcanadiancontests.com/2026/04/18/protein-foodie-smeg-blender-giveaway/ ",
+      "prize": "Instagram Contests #PROTEIN #FOODIE #SMEG #BLENDER #GIVEAWAY - April 18, 2026 - contestcurious comment on #PROTEIN #FOODIE #SMEG #BLENDER #GIVEAWAY https://www.instagram.com/p/DXPC7sGkdZ6/?igsh=MWk0cm",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-04-18",
+      "link_valid": true,
+      "link_checked": "2026-04-18",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/18/protein-foodie-smeg-blender-giveaway/ ",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-04-18",
-  "total_active": 194,
+  "total_active": 197,
   "total_prize_value": 405986
 }
