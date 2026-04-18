@@ -2,9 +2,9 @@
   "contests": [
     {
       "id": "cfs-pharmasave-love-local-contest-win-tickets-to-a-202",
-      "name": "Pharmasave Love Local Contest: Win Tickets to a\u00a02026 OHL Game OR 1 of 10 Local Prizes!",
+      "name": "Pharmasave Love Local Contest: Win Tickets to a 2026 OHL Game OR 1 of 10 Local Prizes!",
       "url": "https://www.canadianfreestuff.com/pharmasave-contest/",
-      "prize": "Pharmasave Love Local Contest: Win Tickets to a\u00a02026 OHL Game OR 1 of 10 Local Prizes!",
+      "prize": "Pharmasave Love Local Contest: Win Tickets to a 2026 OHL Game OR 1 of 10 Local Prizes!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -50,7 +50,7 @@
     },
     {
       "id": "cfs-montanas-bbq-canada-contest-win-a-trip-to-yqm-coun",
-      "name": "Montanas BBQ Canada Contest: Win a Trip to YQM Country Fest 2026 to see Post Malone",
+      "name": "Montana's / Bud Light: Montanas BBQ Canada Contest: Win a Trip to YQM Country Fest 2026 to see Post Malone",
       "url": "https://www.montanas.ca/en/contests/bud-light.html",
       "prize": "Montanas BBQ Canada Contest: Win a Trip to YQM Country Fest 2026 to see Post Malone",
       "prize_value": 0,
@@ -70,11 +70,12 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/montanas-bbq-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Montana's / Bud Light"
     },
     {
       "id": "cfs-fitbit-canada-contest-win-a-fitbit-inspire-3",
-      "name": "Fitbit Canada Contest: Win a Fitbit Inspire 3",
+      "name": "What's Your Tech: Fitbit Canada Contest: Win a Fitbit Inspire 3",
       "url": "https://whatsyourtech.ca/enter-to-win-a-google-fitbit-inspire-3-the-ultimate-fitness-tracker/",
       "prize": "Fitbit Canada Contest: Win a Fitbit Inspire 3",
       "prize_value": 0,
@@ -94,13 +95,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/fitbit-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "What's Your Tech"
     },
     {
       "id": "cfs-jysk-canada-contest-win-a-500-jysk-gift-card",
-      "name": "JYSK Canada Contest \u2013 Win a $500 JYSK Gift Card!",
+      "name": "JYSK Canada Contest – Win a $500 JYSK Gift Card!",
       "url": "https://www.canadianfreestuff.com/jysk-canada-contest/",
-      "prize": "JYSK Canada Contest \u2013 Win a $500 JYSK Gift Card!",
+      "prize": "JYSK Canada Contest – Win a $500 JYSK Gift Card!",
       "prize_value": 500,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -166,11 +168,12 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/budweiser-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-nestea-bestea-summer-ever-contest-win-the-ultimate",
-      "name": "Nestea Bestea Summer Ever Contest: Win the Ultimate Boathouse Getaway worth $9500!",
+      "name": "Drinknestea: Nestea Bestea Summer Ever Contest: Win the Ultimate Boathouse Getaway worth $9500!",
       "url": "https://www.drinknestea.ca/The-Bestea-Summer-Ever-Contest/#/ON/any/products/~",
       "prize": "Nestea Bestea Summer Ever Contest: Win the Ultimate Boathouse Getaway worth $9500!",
       "prize_value": 9500,
@@ -190,7 +193,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/nestea-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-samsung-canada-contest-win-a-vip-canada-soccer-exp",
@@ -238,7 +242,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/bimbo-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-visa-contest-canada-win-a-150-or-250-visa-gift-car",
@@ -286,13 +291,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/global-news-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Globalnews"
     },
     {
       "id": "cfs-kruger-contest-win-a-year-s-supply-of-bonterra-fac",
-      "name": "Kruger Contest: WIN a year\u2019s supply of Bonterra Facial Tissues / 1 of 3 $10,000 Trips to the 2026 Stanley Cup Final /INSTANT WIN PRIZES!",
+      "name": "Kruger Contest: WIN a year’s supply of Bonterra Facial Tissues / 1 of 3 $10,000 Trips to the 2026 Stanley Cup Final /INSTANT WIN PRIZES!",
       "url": "https://cloud.email.krugerproductsbrands.ca/2026-aprilnews-landing-en",
-      "prize": "Kruger Contest: WIN a year\u2019s supply of Bonterra Facial Tissues / 1 of 3 $10,000 Trips to the 2026 Stanley Cup Final /INSTANT WIN PRIZES!",
+      "prize": "Kruger Contest: WIN a year’s supply of Bonterra Facial Tissues / 1 of 3 $10,000 Trips to the 2026 Stanley Cup Final /INSTANT WIN PRIZES!",
       "prize_value": 10000,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -310,7 +316,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/kruger-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Kruger Products"
     },
     {
       "id": "cfs-keurig-mccafe-home-cup-contest-win-10-000-cash-dai",
@@ -338,9 +345,9 @@
     },
     {
       "id": "cfs-canada-dry-contest-win-1-of-3-blue-jays-vip-experi",
-      "name": "Canada Dry Contest -Win 1 of 3 Blue Jays VIP Experiences + 100\u2019s of prizes to be won!",
+      "name": "Canada Dry Contest -Win 1 of 3 Blue Jays VIP Experiences + 100’s of prizes to be won!",
       "url": "https://www.canadianfreestuff.com/canada-dry-contest/",
-      "prize": "Canada Dry Contest -Win 1 of 3 Blue Jays VIP Experiences + 100\u2019s of prizes to be won!",
+      "prize": "Canada Dry Contest -Win 1 of 3 Blue Jays VIP Experiences + 100’s of prizes to be won!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -382,7 +389,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/mitchells-soup-company-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-coca-cola-contests-win-a-frozen-treat-maker-a-year",
@@ -406,7 +414,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/coca-cola-contest-canada/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Coca Cola"
     },
     {
       "id": "cfs-nba-canada-contest-win-a-trip-to-the-nba-finals",
@@ -430,13 +439,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/nba-contests/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-sobeys-grocery-giveaways-contest-win-a-100-gift-ca",
-      "name": "Sobeys Grocery Giveaways Contest \u2013 Win a $100 Gift Card + Over $100,000 in Prizes to be Won!",
+      "name": "Flyers On Line: Sobeys Grocery Giveaways Contest – Win a $100 Gift Card + Over $100,000 in Prizes to be Won!",
       "url": "https://www.flyers-on-line.com/web-contests/174-win-a-100-sobeys-gift-card-contest",
-      "prize": "Sobeys Grocery Giveaways Contest \u2013 Win a $100 Gift Card + Over $100,000 in Prizes to be Won!",
+      "prize": "Sobeys Grocery Giveaways Contest – Win a $100 Gift Card + Over $100,000 in Prizes to be Won!",
       "prize_value": 100,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -454,7 +464,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/sobeys-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Flyers On Line"
     },
     {
       "id": "cfs-rexall-contest-win-1-000-000-be-well-points",
@@ -550,13 +561,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/sunrise-records-canada-contests/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-ta-appliances-bbq-bonanza-contest-win-a-broil-king",
-      "name": "TA Appliances BBQ Bonanza Contest \u2013 Win a Broil King Gas Grill worth $1199",
+      "name": "TA Appliances BBQ Bonanza Contest – Win a Broil King Gas Grill worth $1199",
       "url": "https://www.taappliance.com/pages/contest",
-      "prize": "TA Appliances BBQ Bonanza Contest \u2013 Win a Broil King Gas Grill worth $1199",
+      "prize": "TA Appliances BBQ Bonanza Contest – Win a Broil King Gas Grill worth $1199",
       "prize_value": 1199,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -574,7 +586,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/ta-appliance-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-walmart-contest-canada-win-a-200-walmart-gift-card",
@@ -670,7 +683,8 @@
       "link_checked": "2026-04-14",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/harley-davidson-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-nespresso-contest-win-a-nespresso-vertuo-pop",
@@ -770,9 +784,9 @@
     },
     {
       "id": "cfs-general-mills-contest-flavour-up-your-game-win-can",
-      "name": "General Mills Contest: Flavour up your game \u2013 Win Canada Soccer Merch -INSTANT WIN!",
+      "name": "General Mills Contest: Flavour up your game – Win Canada Soccer Merch -INSTANT WIN!",
       "url": "https://www.generalmillsandcanadasoccer.ca/",
-      "prize": "General Mills Contest: Flavour up your game \u2013 Win Canada Soccer Merch -INSTANT WIN!",
+      "prize": "General Mills Contest: Flavour up your game – Win Canada Soccer Merch -INSTANT WIN!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -790,7 +804,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/general-mills-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-yamaha-canada-contest-win-your-yamaha-worth-20-000",
@@ -818,9 +833,9 @@
     },
     {
       "id": "cfs-mondelez-spring-music-contest-win-1-of-4-10-000-ul",
-      "name": "Mondelez\u00a0Spring Music Contest: Win 1 of 4 $10,000 Ultimate Festival Trips!",
+      "name": "Mondelez Spring Music Contest: Win 1 of 4 $10,000 Ultimate Festival Trips!",
       "url": "https://spkmusiccontest.ca/",
-      "prize": "Mondelez\u00a0Spring Music Contest: Win 1 of 4 $10,000 Ultimate Festival Trips!",
+      "prize": "Mondelez Spring Music Contest: Win 1 of 4 $10,000 Ultimate Festival Trips!",
       "prize_value": 10000,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -838,13 +853,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/mondelez-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Mondelez"
     },
     {
       "id": "cfs-bubly-galactic-mission-contest-410-movie-ticket-pr",
-      "name": "Bubly Galactic Mission Contest  \u2013 410 Movie Ticket Prizes to be won -INSTANT WIN!",
+      "name": "Bubly Galactic Mission Contest  – 410 Movie Ticket Prizes to be won -INSTANT WIN!",
       "url": "https://www.canadianfreestuff.com/pepsi-contest-canada/",
-      "prize": "Bubly Galactic Mission Contest  \u2013 410 Movie Ticket Prizes to be won -INSTANT WIN!",
+      "prize": "Bubly Galactic Mission Contest  – 410 Movie Ticket Prizes to be won -INSTANT WIN!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -866,9 +882,9 @@
     },
     {
       "id": "cfs-canadian-woodworking-contest-win-a-festool-domino-",
-      "name": "Canadian Woodworking Contest: Win a\u00a0Festool Domino Set worth $1,889.00",
+      "name": "Canadian Woodworking Contest: Win a Festool Domino Set worth $1,889.00",
       "url": "https://www.canadianfreestuff.com/canadian-woodworking-contest/",
-      "prize": "Canadian Woodworking Contest: Win a\u00a0Festool Domino Set worth $1,889.00",
+      "prize": "Canadian Woodworking Contest: Win a Festool Domino Set worth $1,889.00",
       "prize_value": 1889,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -958,7 +974,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/st-hubert-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "St. Hubert"
     },
     {
       "id": "cfs-earls-restaurant-giveaway-win-a-trip-to-nashville",
@@ -982,7 +999,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/earls-restaurant-giveaway/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Earls"
     },
     {
       "id": "cfs-chiquita-banana-contest-win-a-pop-by-nature-cerami",
@@ -1006,7 +1024,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/chiquita-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Chiquita"
     },
     {
       "id": "cfs-linen-chest-canada-contest-win-a-set-of-mauna-dish",
@@ -1034,9 +1053,9 @@
     },
     {
       "id": "cfs-veseys-seeds-national-gardening-day-contest-win-a-",
-      "name": "Veseys Seeds National Gardening Day Contest \u2013 Win a $50 Veseys Gift Card!",
+      "name": "Veseys Seeds National Gardening Day Contest – Win a $50 Veseys Gift Card!",
       "url": "https://www.canadianfreestuff.com/veseys-canada-contest/",
-      "prize": "Veseys Seeds National Gardening Day Contest \u2013 Win a $50 Veseys Gift Card!",
+      "prize": "Veseys Seeds National Gardening Day Contest – Win a $50 Veseys Gift Card!",
       "prize_value": 50,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1058,9 +1077,9 @@
     },
     {
       "id": "cfs-moxies-restaurant-contest-win-a-year-of-free-moxie",
-      "name": "Moxies Restaurant Contest \u2013 Win a Year of FREE Moxies!",
+      "name": "Moxies Restaurant Contest – Win a Year of FREE Moxies!",
       "url": "https://moxies.com/restaurants/",
-      "prize": "Moxies Restaurant Contest \u2013 Win a Year of FREE Moxies!",
+      "prize": "Moxies Restaurant Contest – Win a Year of FREE Moxies!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1078,7 +1097,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/moxies-restaurant-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Moxies"
     },
     {
       "id": "cfs-heinz-canada-contest-win-free-heinz-poutine-ketchu",
@@ -1102,13 +1122,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/heinz-contest-canada/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Heinz"
     },
     {
       "id": "cfs-global-pet-foods-contest-win-free-crumps-naturals-",
-      "name": "Global Pet Foods Contest \u2013 Win FREE Crumps\u2019 Naturals + a $50 Gift Card!",
+      "name": "Global Pet Foods Contest – Win FREE Crumps’ Naturals + a $50 Gift Card!",
       "url": "https://www.canadianfreestuff.com/global-pet-foods-canada-contest/",
-      "prize": "Global Pet Foods Contest \u2013 Win FREE Crumps\u2019 Naturals + a $50 Gift Card!",
+      "prize": "Global Pet Foods Contest – Win FREE Crumps’ Naturals + a $50 Gift Card!",
       "prize_value": 50,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1202,7 +1223,7 @@
     },
     {
       "id": "cfs-ctv-contest-win-a-13-000-yukon-hot-tub",
-      "name": "CTV Contest: Win a $13,000 Yukon Hot Tub!",
+      "name": "Ctvnews: CTV Contest: Win a $13,000 Yukon Hot Tub!",
       "url": "https://www.ctvnews.ca/atlantic/contests-two/",
       "prize": "CTV Contest: Win a $13,000 Yukon Hot Tub!",
       "prize_value": 13000,
@@ -1222,13 +1243,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/ctv-contests/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Ctvnews"
     },
     {
       "id": "cfs-kent-building-supplies-contest-win-1-of-6-candle-s",
-      "name": "Kent Building Supplies Contest \u2013 Win 1 of 6 candle sets from Burning Flame Candle Company",
+      "name": "Kent Building Supplies Contest – Win 1 of 6 candle sets from Burning Flame Candle Company",
       "url": "https://kent.ca/we-install-you-relax",
-      "prize": "Kent Building Supplies Contest \u2013 Win 1 of 6 candle sets from Burning Flame Candle Company",
+      "prize": "Kent Building Supplies Contest – Win 1 of 6 candle sets from Burning Flame Candle Company",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1246,7 +1268,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/kent-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Kent"
     },
     {
       "id": "cfs-dyson-contest-canada-win-a-dyson-v7-vacuum",
@@ -1294,7 +1317,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/aosom-giveaway/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-wheel-of-fortune-spring-forward-sweepstakes-win-up",
@@ -1318,7 +1342,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/wheel-of-fortune-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Wheel of Fortune"
     },
     {
       "id": "cfs-banana-boat-swing-into-the-sun-sweepstakes-win-tic",
@@ -1346,9 +1371,9 @@
     },
     {
       "id": "cfs-mott-s-clamato-contest-win-1-of-10-vip-osheaga-rbc",
-      "name": "Mott\u2019s Clamato Contest: Win 1 of 10 VIP Osheaga, RBC Amphitheatre OR Calgary Stampede Experiences!",
+      "name": "Mott’s Clamato Contest: Win 1 of 10 VIP Osheaga, RBC Amphitheatre OR Calgary Stampede Experiences!",
       "url": "https://www.canadianfreestuff.com/motts-canada-contest/",
-      "prize": "Mott\u2019s Clamato Contest: Win 1 of 10 VIP Osheaga, RBC Amphitheatre OR Calgary Stampede Experiences!",
+      "prize": "Mott’s Clamato Contest: Win 1 of 10 VIP Osheaga, RBC Amphitheatre OR Calgary Stampede Experiences!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1490,9 +1515,9 @@
     },
     {
       "id": "cfs-sport-chek-contest-win-a-trip-for-two-to-a-2026-fi",
-      "name": "Sport Chek Contest: WIN a\u00a0trip for two to a 2026 FIFA World Cup\u2122 match",
+      "name": "Sport Chek Contest: WIN a trip for two to a 2026 FIFA World Cup™ match",
       "url": "https://www.canadianfreestuff.com/sportchek-canada-contest/",
-      "prize": "Sport Chek Contest: WIN a\u00a0trip for two to a 2026 FIFA World Cup\u2122 match",
+      "prize": "Sport Chek Contest: WIN a trip for two to a 2026 FIFA World Cup™ match",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1538,7 +1563,7 @@
     },
     {
       "id": "cfs-walmart-canada-survey-contest-win-a-1000-gift-card",
-      "name": "Walmart Canada Survey Contest: Win a $1000 Gift Card!",
+      "name": "Qualtrics: Walmart Canada Survey Contest: Win a $1000 Gift Card!",
       "url": "https://walmartca.qualtrics.com/jfe/form/SV_cBBOZLiAtrgqIPI",
       "prize": "Walmart Canada Survey Contest: Win a $1000 Gift Card!",
       "prize_value": 1000,
@@ -1558,7 +1583,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/walmart-canada-survey-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Qualtrics"
     },
     {
       "id": "cfs-cuisinart-canada-contest-win-a-15-piece-knife-set",
@@ -1582,7 +1608,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/cuisinart-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-viking-river-cruises-contest-win-an-8-day-viking-c",
@@ -1606,13 +1633,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/viking-river-cruises-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-catit-canada-contest-win-the-catit-pixi-stainless-",
-      "name": "Catit Canada Contest \u2013 Win the Catit PIXI Stainless Steel Drinking Fountain",
+      "name": "Catit Canada Contest – Win the Catit PIXI Stainless Steel Drinking Fountain",
       "url": "https://www.catit.com/my-cat/catit-magazine/my-cat-exclusive-april-2026/#giveaway",
-      "prize": "Catit Canada Contest \u2013 Win the Catit PIXI Stainless Steel Drinking Fountain",
+      "prize": "Catit Canada Contest – Win the Catit PIXI Stainless Steel Drinking Fountain",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1630,7 +1658,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/catit-canada-free-sample/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Catit"
     },
     {
       "id": "cfs-7-eleven-contest-win-an-all-inclusive-trip-for-2-t",
@@ -1682,9 +1711,9 @@
     },
     {
       "id": "cfs-hellmann-s-mayo-contest-win-a-canada-soccer-team-v",
-      "name": "Hellmann\u2019s Mayo Contest: Win a Canada Soccer Team VIP Experience for 2!",
+      "name": "Hellmann’s Mayo Contest: Win a Canada Soccer Team VIP Experience for 2!",
       "url": "https://www.canadianfreestuff.com/hellmanns-canada-contest/",
-      "prize": "Hellmann\u2019s Mayo Contest: Win a Canada Soccer Team VIP Experience for 2!",
+      "prize": "Hellmann’s Mayo Contest: Win a Canada Soccer Team VIP Experience for 2!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1726,7 +1755,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/moosehead-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Moosehead"
     },
     {
       "id": "cfs-circle-k-canada-contest-win-exclusive-canada-socce",
@@ -1750,7 +1780,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/circle-k-contest-all-canada/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Circle K"
     },
     {
       "id": "cfs-la-vie-en-rose-contest-win-the-ultimate-something-",
@@ -1778,9 +1809,9 @@
     },
     {
       "id": "cfs-expedia-canada-cruises-contest-win-a-13-000-river-",
-      "name": "Expedia Canada Cruises Contest \u2013 WIN a $13,000 River Cruise!",
+      "name": "Yahoo: Expedia Canada Cruises Contest – WIN a $13,000 River Cruise!",
       "url": "http://yahoo",
-      "prize": "Expedia Canada Cruises Contest \u2013 WIN a $13,000 River Cruise!",
+      "prize": "Expedia Canada Cruises Contest – WIN a $13,000 River Cruise!",
       "prize_value": 13000,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -1798,7 +1829,8 @@
       "link_checked": "2026-04-14",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/expedia-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Yahoo"
     },
     {
       "id": "cfs-home-hardware-canada-contest-win-the-ultimate-off-",
@@ -1846,7 +1878,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/ryobi-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-old-dutch-discover-canada-contest-win-1-of-5-2500-",
@@ -1970,7 +2003,7 @@
     },
     {
       "id": "cfs-janes-foods-contest-win-a-150-janes-prize-pack",
-      "name": "Janes Foods Contest: Win a $150 JANES Prize Pack!",
+      "name": "Zohopublic: Janes Foods Contest: Win a $150 JANES Prize Pack!",
       "url": "https://survey.zohopublic.ca/zs/vYBZcH",
       "prize": "Janes Foods Contest: Win a $150 JANES Prize Pack!",
       "prize_value": 150,
@@ -1990,7 +2023,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/janes-foods-contest-canada/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Zohopublic"
     },
     {
       "id": "cfs-maple-lodge-farms-contest-win-a-set-of-four-cpl-ti",
@@ -2042,9 +2076,9 @@
     },
     {
       "id": "cfs-sunwing-contest-win-a-free-tropical-getaway-to-pun",
-      "name": "Sunwing Contest \u2013 Win a FREE Tropical Getaway to Punta Canta, Dominican Republic",
+      "name": "Sunwing Contest – Win a FREE Tropical Getaway to Punta Canta, Dominican Republic",
       "url": "https://www.canadianfreestuff.com/sunwing-canada-contest/",
-      "prize": "Sunwing Contest \u2013 Win a FREE Tropical Getaway to Punta Canta, Dominican Republic",
+      "prize": "Sunwing Contest – Win a FREE Tropical Getaway to Punta Canta, Dominican Republic",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -2066,9 +2100,9 @@
     },
     {
       "id": "cfs-purex-contest-win-a-year-s-supply-of-kruger-paper-",
-      "name": "Purex Contest -WIN a Year\u2019s Supply of Kruger Paper Products worth $800",
+      "name": "Purex Contest -WIN a Year’s Supply of Kruger Paper Products worth $800",
       "url": "https://www.canadianfreestuff.com/purex-canada-contest/",
-      "prize": "Purex Contest -WIN a Year\u2019s Supply of Kruger Paper Products worth $800",
+      "prize": "Purex Contest -WIN a Year’s Supply of Kruger Paper Products worth $800",
       "prize_value": 800,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -2110,7 +2144,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/the-fishing-hole-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-dare-foods-snack-race-win-contest-win-1-of-13-hot-",
@@ -2158,7 +2193,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/coors-light-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-landmark-cinemas-contest-win-a-50-gift-card-or-a-n",
@@ -2206,13 +2242,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/kal-tire-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Kaltire"
     },
     {
       "id": "cfs-international-delight-celebrates-40-years-contest-",
-      "name": "International Delight Celebrates 40 Years Contest \u2013 Win $10,000 CASH!",
+      "name": "International Delight Celebrates 40 Years Contest – Win $10,000 CASH!",
       "url": "https://www.canadianfreestuff.com/international-delight-canada-contest/",
-      "prize": "International Delight Celebrates 40 Years Contest \u2013 Win $10,000 CASH!",
+      "prize": "International Delight Celebrates 40 Years Contest – Win $10,000 CASH!",
       "prize_value": 10000,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -2282,9 +2319,9 @@
     },
     {
       "id": "cfs-rogers-contests-be-a-rogers-game-day-owner-of-the-",
-      "name": "Rogers Contests \u2013 Be a Rogers Game Day Owner of the Toronto Blue Jays!",
+      "name": "Rogers Contests – Be a Rogers Game Day Owner of the Toronto Blue Jays!",
       "url": "https://www.canadianfreestuff.com/rogers-canada-contest/",
-      "prize": "Rogers Contests \u2013 Be a Rogers Game Day Owner of the Toronto Blue Jays!",
+      "prize": "Rogers Contests – Be a Rogers Game Day Owner of the Toronto Blue Jays!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -2398,7 +2435,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/oikos-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-pei-burger-love-contests-win-free-fries-for-a-year",
@@ -2470,7 +2508,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/clearly-canadian-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-nba-canada-contest-win-a-trip-to-toronto-to-watch-",
@@ -2494,7 +2533,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/nba-contests/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "NBA"
     },
     {
       "id": "cfs-nhl-contest-canada-win-a-trip-to-the-2026-stanley-",
@@ -2614,7 +2654,8 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/ferrero-rocher-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Goallintowin"
     },
     {
       "id": "cfs-delmonte-canada-100k-giveaway-win-airpods-pro-free",
@@ -2662,13 +2703,14 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/aosom-giveaway/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-kent-building-supplies-contest-win-2000-in-patio-f",
-      "name": "Kent Building Supplies Contest \u2013 Win $2000 in Patio Furniture & Decor!",
+      "name": "Kent Building Supplies Contest – Win $2000 in Patio Furniture & Decor!",
       "url": "https://www.moveradio.ca/halifax/contests/decked-out-with-kent.html",
-      "prize": "Kent Building Supplies Contest \u2013 Win $2000 in Patio Furniture & Decor!",
+      "prize": "Kent Building Supplies Contest – Win $2000 in Patio Furniture & Decor!",
       "prize_value": 2000,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -2686,7 +2728,8 @@
       "link_checked": "2026-04-15",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/kent-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-blue-buffalo-contest-win-a-prize-pack-for-your-cat",
@@ -2710,7 +2753,8 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/blue-buffalo-canada-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Bluebuffalo"
     },
     {
       "id": "cfs-brilliant-earth-free-ring-sizer-win-a-1000-gift-ca",
@@ -2734,7 +2778,8 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/brilliant-earth-free-sample/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": ""
     },
     {
       "id": "cfs-goldfish-contest-win-1-of-2-5000-cash-prizes",
@@ -2858,9 +2903,9 @@
     },
     {
       "id": "cfs-twinings-tea-canada-contest-win-a-twinings-tea-x-c",
-      "name": "Twinings Tea Canada Contest \u2013 WIN a Twinings Tea X Chiwis prize pack",
+      "name": "Twinings Tea Canada Contest – WIN a Twinings Tea X Chiwis prize pack",
       "url": "https://www.canadianfreestuff.com/twinings-tea-canada-contest/",
-      "prize": "Twinings Tea Canada Contest \u2013 WIN a Twinings Tea X Chiwis prize pack",
+      "prize": "Twinings Tea Canada Contest – WIN a Twinings Tea X Chiwis prize pack",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -2926,7 +2971,8 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/global-news-contest/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Globalnews"
     },
     {
       "id": "cfs-iphone-contest-canada-win-a-new-iphone-17-astropad",
@@ -3002,9 +3048,9 @@
     },
     {
       "id": "cfs-hallmark-contest-win-a-disney-villains-prize-pack",
-      "name": "Hallmark Contest \u2013 WIN a Disney Villains Prize Pack",
+      "name": "Hallmark Contest – WIN a Disney Villains Prize Pack",
       "url": "https://www.canadianfreestuff.com/hallmark-canada-contest/",
-      "prize": "Hallmark Contest \u2013 WIN a Disney Villains Prize Pack",
+      "prize": "Hallmark Contest – WIN a Disney Villains Prize Pack",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3094,13 +3140,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/coca-cola-contest-canada/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Coca Cola"
     },
     {
       "id": "cfs-scotiabank-contest-win-a-vip-experience-for-4-to-t",
-      "name": "Scotiabank Contest \u2013 Win a VIP Experience for 4 to the 2026 Stanley Cup Final!",
+      "name": "Scotiabank Contest – Win a VIP Experience for 4 to the 2026 Stanley Cup Final!",
       "url": "https://www.canadianfreestuff.com/scotiabank-canada-contest/",
-      "prize": "Scotiabank Contest \u2013 Win a VIP Experience for 4 to the 2026 Stanley Cup Final!",
+      "prize": "Scotiabank Contest – Win a VIP Experience for 4 to the 2026 Stanley Cup Final!",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3172,7 +3219,7 @@
       "id": "ccan-win-a-200-camel-gift-card-or-one-of-14-other-prize",
       "name": "Win a $200 Camel gift card or one of 14 other prizes of camping and outdoor gear",
       "url": "https://gleam.io/giveaways/amDxH",
-      "prize": "Win a $200 Camel gift card or one of 14 other prizes of camping and outdoor gear Leave no trace, take only memories. Happy Earth Day! To celebrate the beauty of our planet and our \u201cGo Park Go Further\u201d",
+      "prize": "Win a $200 Camel gift card or one of 14 other prizes of camping and outdoor gear Leave no trace, take only memories. Happy Earth Day! To celebrate the beauty of our planet and our “Go Park Go Further”",
       "prize_value": 200,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3194,9 +3241,9 @@
     },
     {
       "id": "ccan-win-a-google-fitbit-inspire-3-the-ultimate-fitness",
-      "name": "Win a Google Fitbit Inspire 3 \u2013 the Ultimate Fitness Tracker, $130 value",
+      "name": "What's Your Tech: Win a Google Fitbit Inspire 3 – the Ultimate Fitness Tracker, $130 value",
       "url": "https://whatsyourtech.ca/win-a-google-fitbit-inspire-3-the-ultimate-fitness-tracker/",
-      "prize": "Win a Google Fitbit Inspire 3 \u2013 the Ultimate Fitness Tracker, $130 value Stay on top of your heart health with the Google Fitbit Inspire 3 that monitors heart rate, tracks sleep quality, and provides ",
+      "prize": "Win a Google Fitbit Inspire 3 – the Ultimate Fitness Tracker, $130 value Stay on top of your heart health with the Google Fitbit Inspire 3 that monitors heart rate, tracks sleep quality, and provides ",
       "prize_value": 130,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3214,7 +3261,8 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/14/win-a-google-fitbit-inspire-3-the-ultimate-fitness-tracker-130-value/"
+      "source_url": "https://www.contestcanada.net/2026/04/14/win-a-google-fitbit-inspire-3-the-ultimate-fitness-tracker-130-value/",
+      "sponsor": "What's Your Tech"
     },
     {
       "id": "ccan-win-1-of-3-ikea-gift-cards-valued-at-500",
@@ -3238,13 +3286,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-1-of-3-ikea-gift-cards-valued-at-500/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-1-of-3-ikea-gift-cards-valued-at-500/",
+      "sponsor": "IKEA"
     },
     {
       "id": "ccan-win-100-000-avion-points-valued-at-1-000",
-      "name": "Win 100,000 Avion points, valued at $1,000",
+      "name": "Avion Rewards: Win 100,000 Avion points, valued at $1,000",
       "url": "https://avionrewards.com/pdf/social-contest/decode-puzzle-contest-official-rules.pdf",
-      "prize": "Win 100,000 Avion points, valued at $1,000 This one\u2019s for Avion members (free to join), and an Instagram account is required. The rules are linked below and here is the hidden egg post: https://www.in",
+      "prize": "Win 100,000 Avion points, valued at $1,000 This one’s for Avion members (free to join), and an Instagram account is required. The rules are linked below and here is the hidden egg post: https://www.in",
       "prize_value": 1000,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3262,13 +3311,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-100000-avion-points-valued-at-1000/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-100000-avion-points-valued-at-1000/",
+      "sponsor": "Avion Rewards"
     },
     {
       "id": "ccan-win-a-pair-of-hilary-duff-concert-tickets-in-toron",
       "name": "Win a pair of Hilary Duff concert tickets in Toronto plus a Roku streaming stick, valued at $385",
       "url": "https://www.contestcanada.net/2026/04/16/win-a-pair-of-hilary-duff-concert-tickets-in-toronto-plus-a-roku-streaming-stick-valued-at-385/",
-      "prize": "Win a pair of Hilary Duff concert tickets in Toronto plus a Roku streaming stick, valued at $385 @rokucanada has an Instagram giveaway. You can win: \u2013 2 tickets to the August 12 Hilary Duff concert in",
+      "prize": "Win a pair of Hilary Duff concert tickets in Toronto plus a Roku streaming stick, valued at $385 @rokucanada has an Instagram giveaway. You can win: – 2 tickets to the August 12 Hilary Duff concert in",
       "prize_value": 385,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3285,7 +3335,8 @@
       "link_valid": true,
       "link_checked": "2026-04-16",
       "last_entered": null,
-      "url_resolved": false
+      "url_resolved": false,
+      "sponsor": ""
     },
     {
       "id": "ccan-win-1-of-3-prize-packs-with-a-blanket-bag-water-bo",
@@ -3309,7 +3360,8 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": false,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-1-of-3-prize-packs-with-a-blanket-bag-water-bottle-hat-and-insulated-grocery-bag-valued-at-90/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-1-of-3-prize-packs-with-a-blanket-bag-water-bottle-hat-and-insulated-grocery-bag-valued-at-90/",
+      "sponsor": ""
     },
     {
       "id": "ccan-win-a-400-gift-card-or-400-paypal-cash",
@@ -3361,9 +3413,9 @@
     },
     {
       "id": "ccan-win-a-1-week-all-inclusive-european-river-cruise-v",
-      "name": "Win a 1-week all-inclusive European River Cruise valued at $18,095",
+      "name": "Expedia Cruises: Win a 1-week all-inclusive European River Cruise valued at $18,095",
       "url": "https://www.expediacruises.ca/en-ca/canada/Contest",
-      "prize": "April 15th, 2026 Win a 1-week all-inclusive European River Cruise valued at $18,095 Here\u2019s a chance to win a European River cruise, 1 week duration, all-inclusive ($18,095 value). Entry Frequency: sin",
+      "prize": "April 15th, 2026 Win a 1-week all-inclusive European River Cruise valued at $18,095 Here’s a chance to win a European River cruise, 1 week duration, all-inclusive ($18,095 value). Entry Frequency: sin",
       "prize_value": 18095,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3381,11 +3433,12 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/15/win-a-1-week-all-inclusive-european-river-cruise-valued-at-18095/"
+      "source_url": "https://www.contestcanada.net/2026/04/15/win-a-1-week-all-inclusive-european-river-cruise-valued-at-18095/",
+      "sponsor": "Expedia Cruises"
     },
     {
       "id": "ccan-win-a-1-week-trip-to-japan-with-flights-accommodat",
-      "name": "Win a 1-week trip to Japan with flights & accommodations valued at $14,505",
+      "name": "Old Spice: Win a 1-week trip to Japan with flights & accommodations valued at $14,505",
       "url": "https://oldspicesupercontest.com/",
       "prize": "Win a 1-week trip to Japan with flights & accommodations valued at $14,505 You can win a trip to Japan valued at $14,505! You can enter with the free email entry option (see rules), or purchase a part",
       "prize_value": 14505,
@@ -3405,11 +3458,12 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/15/win-a-1-week-trip-to-japan-with-flights-accommodations-valued-at-14505/"
+      "source_url": "https://www.contestcanada.net/2026/04/15/win-a-1-week-trip-to-japan-with-flights-accommodations-valued-at-14505/",
+      "sponsor": "Old Spice"
     },
     {
       "id": "ccan-win-1-of-4-4-night-trips-to-a-canadian-festival-ac",
-      "name": "Win 1 of 4 4-night trips to a Canadian Festival across Canada with flights, hotel, cash & tickets valued at $10,000",
+      "name": "Mondelez: Win 1 of 4 4-night trips to a Canadian Festival across Canada with flights, hotel, cash & tickets valued at $10,000",
       "url": "https://spkmusiccontest.ca/",
       "prize": "Win 1 of 4 4-night trips to a Canadian Festival across Canada with flights, hotel, cash & tickets valued at $10,000 Mondelez has a giveaway for 4 4-night trips to a Festival in Canada, including fligh",
       "prize_value": 10000,
@@ -3429,7 +3483,8 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/15/win-1-of-4-4-night-trips-to-a-canadian-festival-across-canada-with-flights-hotel-cash-tickets-valued-at-10000/"
+      "source_url": "https://www.contestcanada.net/2026/04/15/win-1-of-4-4-night-trips-to-a-canadian-festival-across-canada-with-flights-hotel-cash-tickets-valued-at-10000/",
+      "sponsor": "Mondelez"
     },
     {
       "id": "ccan-win-a-1-week-tour-of-ontario-quebec-with-flights-a",
@@ -3477,13 +3532,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2026/03/enter-to-win-trip-to-hawaii-with-dole.html"
+      "source_url": "https://www.contestlibrary.ca/2026/03/enter-to-win-trip-to-hawaii-with-dole.html",
+      "sponsor": "Dole"
     },
     {
       "id": "clib-kruger-find-the-cup-to-win-instant-win-contest",
-      "name": "Kruger Find the Cup to Win Instant Win Contest",
+      "name": "Kruger Products: Kruger Find the Cup to Win Instant Win Contest",
       "url": "https://mykrugerproducts.ca/en-ca/campaigns/find-and-win",
-      "prize": "Kruger Find the Cup to Win Instant Win Contest Find the Cup and Clean Up to Win Contest\u00a0 Contest dates : March 1, 2026 - May 15, 2026 Starting March 1, 2026 you can  enter daily  for your chance to wi",
+      "prize": "Kruger Find the Cup to Win Instant Win Contest Find the Cup and Clean Up to Win Contest  Contest dates : March 1, 2026 - May 15, 2026 Starting March 1, 2026 you can  enter daily  for your chance to wi",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3501,13 +3557,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2023/02/kruger-find-cup-to-win-instant-win.html"
+      "source_url": "https://www.contestlibrary.ca/2023/02/kruger-find-cup-to-win-instant-win.html",
+      "sponsor": "Kruger Products"
     },
     {
       "id": "clib-enter-to-win-1-of-208-prizes-with-canada-dry",
-      "name": "Enter to WIN 1 of 208 Prizes with Canada Dry",
+      "name": "Wits: Enter to WIN 1 of 208 Prizes with Canada Dry",
       "url": "https://mlb.witcontests.com/bluejays/artwall/blue-jays-canada-dry-pop-fly-260301",
-      "prize": "Enter to WIN 1 of 208 Prizes with Canada Dry Blue Jays Canada Dry Pop Fly Contest Contest dates : March 1, 2026 -\u00a0 April 30, 2026 Upload a receipt from a purchase of\u00a0  any  Canada Dry ginger ale, toni",
+      "prize": "Enter to WIN 1 of 208 Prizes with Canada Dry Blue Jays Canada Dry Pop Fly Contest Contest dates : March 1, 2026 -  April 30, 2026 Upload a receipt from a purchase of   any  Canada Dry ginger ale, toni",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3525,13 +3582,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2026/03/enter-to-win-1-of-208-prizes-with.html"
+      "source_url": "https://www.contestlibrary.ca/2026/03/enter-to-win-1-of-208-prizes-with.html",
+      "sponsor": "Wits"
     },
     {
       "id": "clib-lay-s-fan-of-the-match-contest",
-      "name": "LAY\u2019S FAN OF THE MATCH Contest",
+      "name": "Nolaysnogame: LAY’S FAN OF THE MATCH Contest",
       "url": "https://www.nolaysnogame.ca/fan-of-the-match",
-      "prize": "LAY\u2019S FAN OF THE MATCH Contest LAY\u2019S FAN OF THE MATCH Contest Contest dates : February 23, 2026 - March 31, 2026 Enter for you chance at winning the ultimate fan experience!\u00a0 During the Contest Period",
+      "prize": "LAY’S FAN OF THE MATCH Contest LAY’S FAN OF THE MATCH Contest Contest dates : February 23, 2026 - March 31, 2026 Enter for you chance at winning the ultimate fan experience!  During the Contest Period",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3549,13 +3607,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2026/02/lays-fan-of-match-contest.html"
+      "source_url": "https://www.contestlibrary.ca/2026/02/lays-fan-of-match-contest.html",
+      "sponsor": ""
     },
     {
       "id": "clib-win-prizes-instantly-with-the-bubly-contest",
       "name": "Win Prizes Instantly with the Bubly Contest!",
       "url": "https://bublygalacticmission.ca/",
-      "prize": "Win Prizes Instantly with the Bubly Contest! Bubly x Super Mario Bros Movie Contest Contest dates : February 23, 2026 - April 20, 2026 Pick up a specially marked case of\u00a0 12 pack or 6 pack of the  NEW",
+      "prize": "Win Prizes Instantly with the Bubly Contest! Bubly x Super Mario Bros Movie Contest Contest dates : February 23, 2026 - April 20, 2026 Pick up a specially marked case of  12 pack or 6 pack of the  NEW",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3573,7 +3632,8 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2025/06/win-prizes-instantly-with-bubly-contest.html"
+      "source_url": "https://www.contestlibrary.ca/2025/06/win-prizes-instantly-with-bubly-contest.html",
+      "sponsor": ""
     },
     {
       "id": "clib-instantly-win-prizes-online-instant-win-contests",
@@ -3597,13 +3657,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2023/04/Canadian-Instant-win-Contests.html"
+      "source_url": "https://www.contestlibrary.ca/2023/04/Canadian-Instant-win-Contests.html",
+      "sponsor": ""
     },
     {
       "id": "clib-dasani-fifa-watch-party-contest-enter-to-win",
-      "name": "Dasani - FIFA  Watch Party Contest - Enter to WIN!",
+      "name": "Coca Cola: Dasani - FIFA  Watch Party Contest - Enter to WIN!",
       "url": "https://www.coca-cola.com/ca/en/offerings/fifa-world-cup-26/dasani-watchparty-promotion",
-      "prize": "Dasani - FIFA  Watch Party Contest - Enter to WIN! Dasani -FIFA 2026 Contest Contest dates : Ends July 31, 2026 Enter for your chance to win instant prizes with Dasani.\u00a0 Be warned this contest is glit",
+      "prize": "Dasani - FIFA  Watch Party Contest - Enter to WIN! Dasani -FIFA 2026 Contest Contest dates : Ends July 31, 2026 Enter for your chance to win instant prizes with Dasani.  Be warned this contest is glit",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3621,7 +3682,8 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2026/02/dasani-fifa-watch-party-contest-enter.html"
+      "source_url": "https://www.contestlibrary.ca/2026/02/dasani-fifa-watch-party-contest-enter.html",
+      "sponsor": "Coca Cola"
     },
     {
       "id": "clib-excel-gum-instant-win-contest",
@@ -3645,13 +3707,14 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2024/02/excel-gum-instant-win-contest.html"
+      "source_url": "https://www.contestlibrary.ca/2024/02/excel-gum-instant-win-contest.html",
+      "sponsor": "Excel"
     },
     {
       "id": "clib-instant-win-contest-break-like-a-champ",
       "name": "Instant Win Contest - Break Like a Champ",
       "url": "https://www.madewithnestle.ca/kit-kat/break-like-a-champ.html",
-      "prize": "Instant Win Contest - Break Like a Champ Nestle Break Like a Champ Instant Win Contest Contest dates are : January 5, 2026 - April 30, 2026 .\u00a0 Upload a receipt of a participating Nestle chocolate prod",
+      "prize": "Instant Win Contest - Break Like a Champ Nestle Break Like a Champ Instant Win Contest Contest dates are : January 5, 2026 - April 30, 2026 .  Upload a receipt of a participating Nestle chocolate prod",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -3669,7 +3732,8 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2023/01/instant-win-contest-break-like-champ.html"
+      "source_url": "https://www.contestlibrary.ca/2023/01/instant-win-contest-break-like-champ.html",
+      "sponsor": ""
     },
     {
       "id": "clib-enter-to-win-1-of-50-500-gift-cards-with-the-brewt",
@@ -3693,7 +3757,8 @@
       "link_checked": "2026-04-16",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestlibrary.ca/2026/01/enter-to-win-1-of-50-500-gift-cards.html"
+      "source_url": "https://www.contestlibrary.ca/2026/01/enter-to-win-1-of-50-500-gift-cards.html",
+      "sponsor": ""
     },
     {
       "id": "cfs-nhl-contest-canada-great-clips-win-a-trip-to-the-2",
@@ -3885,7 +3950,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/earls-restaurant-giveaway/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Earls"
     },
     {
       "id": "cfs-swiss-chalet-canada-contest-win-1-of-two-50-gift-c",
@@ -4005,11 +4071,12 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/17/win-1-million-or-1-of-50-nba-themed-prizes/"
+      "source_url": "https://www.contestcanada.net/2026/04/17/win-1-million-or-1-of-50-nba-themed-prizes/",
+      "sponsor": "NBA"
     },
     {
       "id": "ccan-win-a-1-000-grocery-gift-card-or-1-of-40-food-gift",
-      "name": "Win a $1,000 grocery gift card or 1 of 40 food gift cards valued at $200",
+      "name": "Love Food Hate Waste: Win a $1,000 grocery gift card or 1 of 40 food gift cards valued at $200",
       "url": "https://lovefoodhatewaste.ca/2026-national-food-study/",
       "prize": "Win a $1,000 grocery gift card or 1 of 40 food gift cards valued at $200 Complete this food waste survey for the chance to win $1,000 towards groceries or 1 of 40 $200 food prize packs (featuring Too ",
       "prize_value": 1000,
@@ -4029,13 +4096,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/17/win-a-1000-grocery-gift-card-or-1-of-40-food-gift-cards-valued-at-200/"
+      "source_url": "https://www.contestcanada.net/2026/04/17/win-a-1000-grocery-gift-card-or-1-of-40-food-gift-cards-valued-at-200/",
+      "sponsor": "Love Food Hate Waste"
     },
     {
       "id": "ccan-win-1-of-10-pairs-of-custom-reese-s-sneakers",
-      "name": "Win 1 of 10 pairs of custom REESE\u2019s sneakers",
+      "name": "Win 1 of 10 pairs of custom REESE’s sneakers",
       "url": "https://m.cmpgn.page/gQs1q0",
-      "prize": "Win 1 of 10 pairs of custom REESE\u2019s sneakers REESE has collaborated with Canadian sneaker artist Inked Out Kicks to design a custom shoe. You can win 1 of 10 pairs. Entry Frequency: single Expires: Ap",
+      "prize": "Win 1 of 10 pairs of custom REESE’s sneakers REESE has collaborated with Canadian sneaker artist Inked Out Kicks to design a custom shoe. You can win 1 of 10 pairs. Entry Frequency: single Expires: Ap",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4053,7 +4121,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/17/win-1-of-10-pairs-of-custom-reeses-sneakers/"
+      "source_url": "https://www.contestcanada.net/2026/04/17/win-1-of-10-pairs-of-custom-reeses-sneakers/",
+      "sponsor": ""
     },
     {
       "id": "ccan-win-a-meal-for-four-at-mandarin-restaurant-and-spa",
@@ -4077,11 +4146,12 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/17/win-a-meal-for-four-at-mandarin-restaurant-and-spa-gift-card-valued-at-326/"
+      "source_url": "https://www.contestcanada.net/2026/04/17/win-a-meal-for-four-at-mandarin-restaurant-and-spa-gift-card-valued-at-326/",
+      "sponsor": "Mandarin Restaurant"
     },
     {
       "id": "ccan-win-a-2-night-trip-to-a-stanley-cup-game-for-4-wit",
-      "name": "Win a 2-night trip to a Stanley Cup game for 4, with flights, hotel & tickets valued at $20,000",
+      "name": "Scotiabank: Win a 2-night trip to a Stanley Cup game for 4, with flights, hotel & tickets valued at $20,000",
       "url": "https://arm5f.scotiabank.com/en/SO_DC_SPLT_DIG",
       "prize": "April 16th, 2026 Win a 2-night trip to a Stanley Cup game for 4, with flights, hotel & tickets valued at $20,000 BIG day for sports contests and trips to be won! The NHL playoffs are about to start, s",
       "prize_value": 20000,
@@ -4101,11 +4171,12 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-2-night-trip-to-a-stanley-cup-game-for-4-with-flights-hotel-tickets-valued-at-20000/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-2-night-trip-to-a-stanley-cup-game-for-4-with-flights-hotel-tickets-valued-at-20000/",
+      "sponsor": "Scotiabank"
     },
     {
       "id": "ccan-win-a-2-night-trip-to-a-walter-cup-final-game-for-",
-      "name": "Win a 2-night trip to a Walter Cup Final game for 4 people with flights, hotel & PWHL tickets valued at $15,000",
+      "name": "Scotiabank: Win a 2-night trip to a Walter Cup Final game for 4 people with flights, hotel & PWHL tickets valued at $15,000",
       "url": "https://arm5.scotiabank.com/en-ca",
       "prize": "Win a 2-night trip to a Walter Cup Final game for 4 people with flights, hotel & PWHL tickets valued at $15,000 You can win a trip for 4 to a PWHL final game, including flights, hotel and tix ($15,000",
       "prize_value": 15000,
@@ -4125,11 +4196,12 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-2-night-trip-to-a-walter-cup-final-game-for-4-people-with-flights-hotel-pwhl-tickets-valued-at-15000/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-2-night-trip-to-a-walter-cup-final-game-for-4-people-with-flights-hotel-pwhl-tickets-valued-at-15000/",
+      "sponsor": "Scotiabank"
     },
     {
       "id": "ccan-win-1-of-2-5-night-trips-to-edmonton-with-flights-",
-      "name": "Win 1 of 2 5-night trips to Edmonton, with flights, hotel, cash & 2027 World Juniors tickets valued at $13,600",
+      "name": "Bauer: Win 1 of 2 5-night trips to Edmonton, with flights, hotel, cash & 2027 World Juniors tickets valued at $13,600",
       "url": "https://ca.bauer.com/blogs/sweepstakes/bauer-mvp-2027-world-juniors-experience-sweepstakes",
       "prize": "Win 1 of 2 5-night trips to Edmonton, with flights, hotel, cash & 2027 World Juniors tickets valued at $13,600 Members of Bauer.com (free to join) can enter for a chance to win 1 of 2 trips to Edmonto",
       "prize_value": 13600,
@@ -4149,11 +4221,12 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-1-of-2-5-night-trips-to-edmonton-with-flights-hotel-cash-2027-world-juniors-tickets-valued-at-13600/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-1-of-2-5-night-trips-to-edmonton-with-flights-hotel-cash-2027-world-juniors-tickets-valued-at-13600/",
+      "sponsor": "Bauer"
     },
     {
       "id": "ccan-win-a-fifa-vip-experience-with-flights-accommodati",
-      "name": "Win a FIFA VIP experience with flights, accommodations & FIFA tickets valued at $10,000",
+      "name": "Sobeys / Coca-Cola: Win a FIFA VIP experience with flights, accommodations & FIFA tickets valued at $10,000",
       "url": "https://www.sobeys.com/coca-cola-world-cup-contest-rules",
       "prize": "Win a FIFA VIP experience with flights, accommodations & FIFA tickets valued at $10,000 Purchase 2 participating Coca-cola products at Sobeys and scan your Scene+ card for one contest entry. You can w",
       "prize_value": 10000,
@@ -4173,11 +4246,12 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-fifa-vip-experience-with-flights-accommodations-fifa-tickets-valued-at-10000/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-fifa-vip-experience-with-flights-accommodations-fifa-tickets-valued-at-10000/",
+      "sponsor": "Sobeys / Coca-Cola"
     },
     {
       "id": "ccan-win-a-3-night-trip-to-moncton-nb-with-flights-hote",
-      "name": "Win a 3-night trip to Moncton, NB with flights, hotel, cash & YQM Music Festival VIP tickets valued at $7,100",
+      "name": "Montana's / Bud Light: Win a 3-night trip to Moncton, NB with flights, hotel, cash & YQM Music Festival VIP tickets valued at $7,100",
       "url": "https://www.montanas.ca/en/contests/bud-light.html",
       "prize": "Win a 3-night trip to Moncton, NB with flights, hotel, cash & YQM Music Festival VIP tickets valued at $7,100 You can win a 3-night trip to New Brunswick to attend the YQM Music Festival. Prize includ",
       "prize_value": 7100,
@@ -4197,13 +4271,14 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-3-night-trip-to-moncton-nb-with-flights-hotel-cash-yqm-music-festival-vip-tickets-valued-at-7100/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-3-night-trip-to-moncton-nb-with-flights-hotel-cash-yqm-music-festival-vip-tickets-valued-at-7100/",
+      "sponsor": "Montana's / Bud Light"
     },
     {
       "id": "ccan-win-a-2-night-trip-to-toronto-with-flights-hotel-r",
-      "name": "Win a 2-night trip to Toronto, with flights, hotel & Raptors playoff tickets valued at $5,000",
+      "name": "NBA: Win a 2-night trip to Toronto, with flights, hotel & Raptors playoff tickets valued at $5,000",
       "url": "https://nbacontest.com/playoffs2026",
-      "prize": "Win a 2-night trip to Toronto, with flights, hotel & Raptors playoff tickets valued at $5,000 Go Raps! here\u2019s a chance to win a 2-night trip to see a Raptors playoff game, valued at $5,000. Entry Freq",
+      "prize": "Win a 2-night trip to Toronto, with flights, hotel & Raptors playoff tickets valued at $5,000 Go Raps! here’s a chance to win a 2-night trip to see a Raptors playoff game, valued at $5,000. Entry Freq",
       "prize_value": 5000,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4221,7 +4296,8 @@
       "link_checked": "2026-04-17",
       "last_entered": null,
       "url_resolved": true,
-      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-2-night-trip-to-toronto-with-flights-hotel-raptors-playoff-tickets-valued-at-5000/"
+      "source_url": "https://www.contestcanada.net/2026/04/16/win-a-2-night-trip-to-toronto-with-flights-hotel-raptors-playoff-tickets-valued-at-5000/",
+      "sponsor": "NBA"
     },
     {
       "id": "cfs-mandarin-restaurant-contest-win-a-mandarin-buffet-",
@@ -4248,34 +4324,10 @@
       "url_resolved": false
     },
     {
-      "id": "ccan-win-10-000",
-      "name": "Win $10,000",
-      "url": "https://ici.radio-canada.ca/prosperite/dejouer-imprevisible.php",
-      "prize": "April 17th, 2026 Win $10,000 Pick a goal and spin the wheel 3-4 times to get to the contest entry form. You can win $10,000. Entry Frequency: single Expires: June 7, 2026 https://ici.radio-canada.ca/p",
-      "prize_value": 10000,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From contestcanada.net",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "2026-06-07",
-      "source": "contestcanada.net",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://www.contestcanada.net/2026/04/17/win-10000-188/",
-      "url_resolved": true
-    },
-    {
       "id": "ccan-win-a-trip-for-2-to-italy-including-flights-hotel-",
       "name": "Win a trip for 2 to Italy, including flights, hotel, and wine tour, valued at $7,750",
       "url": "https://matchpub.com/ruffino-giveaway/",
-      "prize": "Win a trip for 2 to Italy, including flights, hotel, and wine tour, valued at $7,750 Here\u2019s a chance to win a trip to Italy for two, including flights, hotels and wine tour ($7,750 value). You can get",
+      "prize": "Win a trip for 2 to Italy, including flights, hotel, and wine tour, valued at $7,750 Here’s a chance to win a trip to Italy for two, including flights, hotels and wine tour ($7,750 value). You can get",
       "prize_value": 7750,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4297,7 +4349,7 @@
     },
     {
       "id": "ccan-win-5-000-or-3-000-or-2-000-or-1-500-or-1-000",
-      "name": "Win $5,000 or $3,000 or $2,000 or $1,500 or $1,000",
+      "name": "WD-40: Win $5,000 or $3,000 or $2,000 or $1,500 or $1,000",
       "url": "https://repairdontreplace.wd40.ca/",
       "prize": "Win $5,000 or $3,000 or $2,000 or $1,500 or $1,000 This is a photo/video contest and entries will be judged. Submit your repair project and you could win 1 of 5 cash prizes between $1,000 and $5,000. ",
       "prize_value": 5000,
@@ -4317,11 +4369,12 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/04/17/win-5000-or-3000-or-2000-or-1500-or-1000/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "WD-40"
     },
     {
       "id": "ccan-win-1-of-2-prizes-of-5-000",
-      "name": "Win 1 of 2 prizes of $5,000",
+      "name": "Goldfish: Win 1 of 2 prizes of $5,000",
       "url": "https://www.winwithgoldfish.ca/",
       "prize": "Win 1 of 2 prizes of $5,000 Purchase 3 participating Goldfish products and upload a photo of the receipt for a chance to win 1 of 2 prizes of $5,000. Entry Frequency: daily Photo/Video required Expire",
       "prize_value": 5000,
@@ -4341,7 +4394,8 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/04/17/win-1-of-2-prizes-of-5000-2/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Goldfish"
     },
     {
       "id": "ccan-win-5-000-or-a-limited-edition-bottle-of-cincoro-v",
@@ -4369,7 +4423,7 @@
     },
     {
       "id": "ccan-win-2-000-a-pair-of-2026-all-star-game-tickets-in-",
-      "name": "Win $2,000 & a pair of 2026 All-star game tickets in Philadelphia, valued at $5,579",
+      "name": "MLB: Win $2,000 & a pair of 2026 All-star game tickets in Philadelphia, valued at $5,579",
       "url": "https://www.mlb.com/forms/swing-into-the-sun-sweepstakes",
       "prize": "Win $2,000 & a pair of 2026 All-star game tickets in Philadelphia, valued at $5,579 Enter this contest from MLB and you could win $2,000 and two tickets to the baseball All-Star game and Home Run Derb",
       "prize_value": 2000,
@@ -4389,11 +4443,12 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/04/17/win-2000-a-pair-of-2026-all-star-game-tickets-in-philadelphia-valued-at-5579/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "MLB"
     },
     {
       "id": "ccan-win-1-392-or-1-of-29-prizes-of-139",
-      "name": "Win $1,392 or 1 of 29 prizes of $139",
+      "name": "Gusto TV: Win $1,392 or 1 of 29 prizes of $139",
       "url": "https://gustotv.com/https/gustotvcom/spring-has-sprung-giveaway/#google_vignette",
       "prize": "Win $1,392 or 1 of 29 prizes of $139 Gusto TV is giving away cash! You can win the top prize of $1,392 or 1 of 29 prizes of $139. Entry Frequency: daily Expires: April 30, 2026 https://gustotv.com/htt",
       "prize_value": 1392,
@@ -4413,13 +4468,14 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/04/17/win-1392-or-1-of-29-prizes-of-139/",
-      "url_resolved": true
+      "url_resolved": true,
+      "sponsor": "Gusto TV"
     },
     {
       "id": "ccan-win-1-of-4-prizes-of-10-000",
-      "name": "Win 1 of 4 prizes of $10,000",
+      "name": "The Personal (CFMWS): Win 1 of 4 prizes of $10,000",
       "url": "https://www.thepersonal.com/on/en/offers/contest/cfmws-rules.html#",
-      "prize": "Win 1 of 4 prizes of $10,000 Great prizes here, but this one\u2019s pretty exclusive. To enter you must be eligible for home and auto insurance under the Canadian Forces Moral & Welfare Services (CFMWS) gr",
+      "prize": "Win 1 of 4 prizes of $10,000 Great prizes here, but this one’s pretty exclusive. To enter you must be eligible for home and auto insurance under the Canadian Forces Moral & Welfare Services (CFMWS) gr",
       "prize_value": 10000,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4437,37 +4493,14 @@
       "link_checked": "2026-04-18",
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/04/17/win-1-of-4-prizes-of-10000/",
-      "url_resolved": true
-    },
-    {
-      "id": "cacc-win-mileendkicks-cineplex-movie-tickets",
-      "name": "#WIN #MileEndKicks #CINEPLEX #MOVIE #TICKETS",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/18/win-mileendkicks-cineplex-movie-tickets/ ",
-      "prize": "Instagram Contests #WIN #MileEndKicks #CINEPLEX #MOVIE #TICKETS - April 18, 2026 - contestcurious comment on #WIN #MileEndKicks #CINEPLEX #MOVIE #TICKETS https://www.instagram.com/reel/DXPXa7zikDl/?ig",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From curiousaboutcanadiancontests.com",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "",
-      "source": "curiousaboutcanadiancontests.com",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/18/win-mileendkicks-cineplex-movie-tickets/ ",
-      "url_resolved": false
+      "url_resolved": true,
+      "sponsor": "The Personal (CFMWS)"
     },
     {
       "id": "cacc-win-firepit",
-      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #FirePit",
+      "name": "🇨🇦🇺🇸 #WIN #FirePit",
       "url": "https://curiousaboutcanadiancontests.com/2026/04/18/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-win-firepit/ ",
-      "prize": "Instagram Contests / USA Friendly \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #FirePit - April 18, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #FirePit https://www.instagram.com/p/DXPCloajVlE/?igsh=aDZtcDFlcTRraG13 \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
+      "prize": "Instagram Contests / USA Friendly 🇨🇦🇺🇸 #WIN #FirePit - April 18, 2026 - contestcurious comment on 🇨🇦🇺🇸 #WIN #FirePit https://www.instagram.com/p/DXPCloajVlE/?igsh=aDZtcDFlcTRraG13 ⬆️⬆️⬆️⬆️⬆️ Read More",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4489,9 +4522,9 @@
     },
     {
       "id": "cacc-hat-giveaway",
-      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #HAT #GIVEAWAY",
+      "name": "🇨🇦🇺🇸 #HAT #GIVEAWAY",
       "url": "https://curiousaboutcanadiancontests.com/2026/04/18/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-hat-giveaway/ ",
-      "prize": "Instagram Contests / USA Friendly \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #HAT #GIVEAWAY - April 18, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #HAT #GIVEAWAY https://www.instagram.com/p/DXFmQf5DjfM/?img_index=1&igsh=Nms1ajdtZjk0aW1p \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f",
+      "prize": "Instagram Contests / USA Friendly 🇨🇦🇺🇸 #HAT #GIVEAWAY - April 18, 2026 - contestcurious comment on 🇨🇦🇺🇸 #HAT #GIVEAWAY https://www.instagram.com/p/DXFmQf5DjfM/?img_index=1&igsh=Nms1ajdtZjk0aW1p ⬆️⬆️⬆️",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4513,9 +4546,9 @@
     },
     {
       "id": "cacc-win-cyberpunk-tcg-bundle",
-      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #CYBERPUNK #TCG #BUNDLE",
+      "name": "🇨🇦🇺🇸 #WIN #CYBERPUNK #TCG #BUNDLE",
       "url": "https://curiousaboutcanadiancontests.com/2026/04/17/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-win-cyberpunk-tcg-bundle/ ",
-      "prize": "Facebook Contests / USA Friendly \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #CYBERPUNK #TCG #BUNDLE - April 17, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #CYBERPUNK #TCG #BUNDLE https://www.facebook.com/share/p/1H5SY2AVRa/?mibextid=",
+      "prize": "Facebook Contests / USA Friendly 🇨🇦🇺🇸 #WIN #CYBERPUNK #TCG #BUNDLE - April 17, 2026 - contestcurious comment on 🇨🇦🇺🇸 #WIN #CYBERPUNK #TCG #BUNDLE https://www.facebook.com/share/p/1H5SY2AVRa/?mibextid=",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4537,9 +4570,9 @@
     },
     {
       "id": "cacc-book-plush-toy-giveaway",
-      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #BOOK #PLUSH #TOY #GIVEAWAY",
+      "name": "🇨🇦🇺🇸 #BOOK #PLUSH #TOY #GIVEAWAY",
       "url": "https://curiousaboutcanadiancontests.com/2026/04/17/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-book-plush-toy-giveaway/ ",
-      "prize": "Instagram Contests / USA Friendly \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #BOOK #PLUSH #TOY #GIVEAWAY - April 17, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #BOOK #PLUSH #TOY #GIVEAWAY https://www.instagram.com/p/DXMp0TimFO7/?igsh=MXIzNWp1a",
+      "prize": "Instagram Contests / USA Friendly 🇨🇦🇺🇸 #BOOK #PLUSH #TOY #GIVEAWAY - April 17, 2026 - contestcurious comment on 🇨🇦🇺🇸 #BOOK #PLUSH #TOY #GIVEAWAY https://www.instagram.com/p/DXMp0TimFO7/?igsh=MXIzNWp1a",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4560,106 +4593,10 @@
       "url_resolved": false
     },
     {
-      "id": "cacc-camping-yeti-giveaway",
-      "name": "#CAMPING #YETI #GIVEAWAY",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/17/camping-yeti-giveaway/ ",
-      "prize": "Instagram Contests #CAMPING #YETI #GIVEAWAY - April 17, 2026 - contestcurious comment on #CAMPING #YETI #GIVEAWAY https://www.instagram.com/p/DXMiHXEjdqH/?igsh=eDZzbDhndXhjY29r \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From curiousaboutcanadiancontests.com",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "",
-      "source": "curiousaboutcanadiancontests.com",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/17/camping-yeti-giveaway/ ",
-      "url_resolved": false
-    },
-    {
-      "id": "cacc-win-stanleycup-trip",
-      "name": "#WIN #StanleyCup #TRIP",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/17/win-stanleycup-trip-2/ ",
-      "prize": "Instagram Contests #WIN #StanleyCup #TRIP - April 17, 2026 - contestcurious comment on #WIN #StanleyCup #TRIP https://www.instagram.com/p/DXPYn_bDD_J/?igsh=MXkwb3YwcnJsNDBkbg== \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From curiousaboutcanadiancontests.com",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "",
-      "source": "curiousaboutcanadiancontests.com",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/17/win-stanleycup-trip-2/ ",
-      "url_resolved": false
-    },
-    {
-      "id": "cacc-win-socks",
-      "name": "#WIN #SOCKS",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/17/win-socks/ ",
-      "prize": "Facebook Contests #WIN #SOCKS - April 17, 2026 | April 17, 2026 - contestcurious comment on #WIN #SOCKS https://www.facebook.com/share/1H8L4NDy3V/?mibextid=wwXIfr \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From curiousaboutcanadiancontests.com",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "",
-      "source": "curiousaboutcanadiancontests.com",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/17/win-socks/ ",
-      "url_resolved": false
-    },
-    {
-      "id": "cacc-camping-giveaway",
-      "name": "#CAMPING #GIVEAWAY",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/17/camping-giveaway/ ",
-      "prize": "Website Contests #CAMPING #GIVEAWAY - April 17, 2026 | April 17, 2026 - contestcurious comment on #CAMPING #GIVEAWAY https://www.mec.ca/en/p/family-camp-essentials-giveaway2026 \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From curiousaboutcanadiancontests.com",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "",
-      "source": "curiousaboutcanadiancontests.com",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/17/camping-giveaway/ ",
-      "url_resolved": false
-    },
-    {
       "id": "cacc-win-mothersday-prize",
-      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #MothersDay #PRIZE",
+      "name": "🇨🇦🇺🇸 #WIN #MothersDay #PRIZE",
       "url": "https://curiousaboutcanadiancontests.com/2026/04/17/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-win-mothersday-prize/ ",
-      "prize": "USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #MothersDay #PRIZE - April 17, 2026 | April 17, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #WIN #MothersDay #PRIZE https://omniform1.com/forms/v1/landingPage/5e3af",
+      "prize": "USA Friendly / Website Contests 🇨🇦🇺🇸 #WIN #MothersDay #PRIZE - April 17, 2026 | April 17, 2026 - contestcurious comment on 🇨🇦🇺🇸 #WIN #MothersDay #PRIZE https://omniform1.com/forms/v1/landingPage/5e3af",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4681,9 +4618,9 @@
     },
     {
       "id": "cacc-jackson5-music-giveaway",
-      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #Jackson5 #MUSIC #GIVEAWAY",
+      "name": "🇨🇦🇺🇸🌎 #Jackson5 #MUSIC #GIVEAWAY",
       "url": "https://curiousaboutcanadiancontests.com/2026/04/17/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-jackson5-music-giveaway/ ",
-      "prize": "International / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #Jackson5 #MUSIC #GIVEAWAY - April 17, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #Jackson5 #MUSIC #GIVEAWAY https://www.udiscovermusic.com/competitio",
+      "prize": "International / USA Friendly / Website Contests 🇨🇦🇺🇸🌎 #Jackson5 #MUSIC #GIVEAWAY - April 17, 2026 - contestcurious comment on 🇨🇦🇺🇸🌎 #Jackson5 #MUSIC #GIVEAWAY https://www.udiscovermusic.com/competitio",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4705,9 +4642,9 @@
     },
     {
       "id": "cacc-costco-giftcard-giveaway",
-      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COSTCO #GIFTCARD #GIVEAWAY",
+      "name": "🇨🇦🇺🇸 #COSTCO #GIFTCARD #GIVEAWAY",
       "url": "https://curiousaboutcanadiancontests.com/2026/04/17/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-costco-giftcard-giveaway/ ",
-      "prize": "Daily Entry / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COSTCO #GIFTCARD #GIVEAWAY - April 17, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COSTCO #GIFTCARD #GIVEAWAY https://steamykitchen.com/255206-10-costco-",
+      "prize": "Daily Entry / USA Friendly / Website Contests 🇨🇦🇺🇸 #COSTCO #GIFTCARD #GIVEAWAY - April 17, 2026 - contestcurious comment on 🇨🇦🇺🇸 #COSTCO #GIFTCARD #GIVEAWAY https://steamykitchen.com/255206-10-costco-",
       "prize_value": 0,
       "entry_method": "online_form",
       "entry_frequency": "single",
@@ -4726,105 +4663,9 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/04/17/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-costco-giftcard-giveaway/ ",
       "url_resolved": false
-    },
-    {
-      "id": "bay-charges-in-single-vehicle-crash-in-saugeen-shores",
-      "name": "Charges In Single Vehicle Crash In Saugeen Shores",
-      "url": "https://www.bayshorebroadcasting.ca/news/",
-      "prize": "Top Stories Charges In Single Vehicle Crash In Saugeen Shores 1h ago Grey Bruce Evening News - Friday, April 17 14h ago Eight Community Organizations Receive Funding From Spring Tourism Development Fu",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "Local contest from Bayshore Broadcasting (Muskoka)",
-      "restrictions": "",
-      "provinces": [
-        "Ontario"
-      ],
-      "end_date": "",
-      "source": "Bayshore Broadcasting (Muskoka)",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "local_area": "Simcoe/Muskoka",
-      "url_resolved": true
-    },
-    {
-      "id": "cacc-foodie-giveaway",
-      "name": "#FOODIE #GIVEAWAY",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/18/foodie-giveaway-11/ ",
-      "prize": "Instagram Contests #FOODIE #GIVEAWAY - April 18, 2026 - contestcurious comment on #FOODIE #GIVEAWAY https://www.instagram.com/reel/DXO0MZ2jhRX/?igsh=bXdscmcwOW13aDlm \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From curiousaboutcanadiancontests.com",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "",
-      "source": "curiousaboutcanadiancontests.com",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/18/foodie-giveaway-11/ ",
-      "url_resolved": false
-    },
-    {
-      "id": "cacc-renspets-dog-giveaway",
-      "name": "#RensPets #DOG #GIVEAWAY",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/18/renspets-dog-giveaway/ ",
-      "prize": "Instagram Contests #RensPets #DOG #GIVEAWAY - April 18, 2026 - contestcurious comment on #RensPets #DOG #GIVEAWAY https://www.instagram.com/p/DXO9UgFDkKc/?igsh=bzBucmx3cDBoOXY5 \u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f\u2b06\ufe0f Read More",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From curiousaboutcanadiancontests.com",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "",
-      "source": "curiousaboutcanadiancontests.com",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/18/renspets-dog-giveaway/ ",
-      "url_resolved": false
-    },
-    {
-      "id": "cacc-protein-foodie-smeg-blender-giveaway",
-      "name": "#PROTEIN #FOODIE #SMEG #BLENDER #GIVEAWAY",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/18/protein-foodie-smeg-blender-giveaway/ ",
-      "prize": "Instagram Contests #PROTEIN #FOODIE #SMEG #BLENDER #GIVEAWAY - April 18, 2026 - contestcurious comment on #PROTEIN #FOODIE #SMEG #BLENDER #GIVEAWAY https://www.instagram.com/p/DXPC7sGkdZ6/?igsh=MWk0cm",
-      "prize_value": 0,
-      "entry_method": "online_form",
-      "entry_frequency": "single",
-      "npn": true,
-      "npn_note": "From curiousaboutcanadiancontests.com",
-      "restrictions": "",
-      "provinces": [
-        "All Canada"
-      ],
-      "end_date": "",
-      "source": "curiousaboutcanadiancontests.com",
-      "status": "active",
-      "added_date": "2026-04-18",
-      "link_valid": true,
-      "link_checked": "2026-04-18",
-      "last_entered": null,
-      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/18/protein-foodie-smeg-blender-giveaway/ ",
-      "url_resolved": false
     }
   ],
   "last_updated": "2026-04-18",
-  "total_active": 197,
-  "total_prize_value": 405986
+  "total_active": 187,
+  "total_prize_value": 395986
 }

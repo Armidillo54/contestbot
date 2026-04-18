@@ -335,6 +335,171 @@ def scrape_contestchef():
     return contests
 
 
+# --- Sponsor extraction -----------------------------------------------------
+# Aggregators don't identify the brand; we need to pull it from the linked URL
+# domain or the description body so the dashboard shows "Kruger: Win $10,000"
+# instead of a bare "Win $10,000".
+
+AGGREGATOR_HOSTS = {
+    'contestcanada.net', 'www.contestcanada.net',
+    'canadianfreestuff.com', 'www.canadianfreestuff.com',
+    'contestchef.ca', 'www.contestchef.ca',
+    'contestscoop.com', 'www.contestscoop.com',
+    'contestlibrary.ca', 'www.contestlibrary.ca',
+    'secureawin.ca', 'www.secureawin.ca',
+    'curiousaboutcanadiancontests.com', 'www.curiousaboutcanadiancontests.com',
+    'wannawin.ca', 'www.wannawin.ca',
+    'forums.redflagdeals.com', 'redflagdeals.com',
+    'contestgirl.com', 'www.contestgirl.com',
+    'gleam.io', 'woobox.com', 'rafflecopter.com',
+    'matchpub.com', 'www.matchpub.com',
+    'cmpgn.page', 'm.cmpgn.page', 'storybookcontest.cmpgn.page',
+    'royaldraw.com', 'www.royaldraw.com',
+    # News & generic sites that aren't really sponsors
+    'globalnews.ca', 'www.globalnews.ca',
+    'ctvnews.ca', 'www.ctvnews.ca', 'toronto.ctvnews.ca',
+    'cbc.ca', 'www.cbc.ca',
+    'googleusercontent.com',
+}
+
+# Host -> display brand name for cases where the slug alone isn't ideal
+HOST_BRAND_OVERRIDES = {
+    'ici.radio-canada.ca': 'Radio-Canada',
+    'radio-canada.ca': 'Radio-Canada',
+    'arm5.scotiabank.com': 'Scotiabank',
+    'arm5f.scotiabank.com': 'Scotiabank',
+    'thepersonal.com': 'The Personal (CFMWS)',
+    'nbacontest.com': 'NBA',
+    'picks.nba.com': 'NBA',
+    'ca.bauer.com': 'Bauer',
+    'sobeys.com': 'Sobeys / Coca-Cola',
+    'montanas.ca': "Montana's / Bud Light",
+    'mandarin.promo-manager.com': 'Mandarin Restaurant',
+    'wd40.ca': 'WD-40',
+    'repairdontreplace.wd40.ca': 'WD-40',
+    'gustotv.com': 'Gusto TV',
+    'mlb.com': 'MLB',
+    'winwithgoldfish.ca': 'Goldfish',
+    'expediacruises.ca': 'Expedia Cruises',
+    'oldspicesupercontest.com': 'Old Spice',
+    'lovefoodhatewaste.ca': 'Love Food Hate Waste',
+    'avionrewards.com': 'Avion Rewards',
+    'ikea.com': 'IKEA',
+    'www.ikea.com': 'IKEA',
+    'whatsyourtech.ca': "What's Your Tech",
+    'spkmusiccontest.ca': 'Mondelez',
+    'krugerproductsbrands.ca': 'Kruger Products',
+    'cloud.email.krugerproductsbrands.ca': 'Kruger Products',
+    'mykrugerproducts.ca': 'Kruger Products',
+    'st-hubert.com': 'St. Hubert',
+    'www.st-hubert.com': 'St. Hubert',
+    'wheeloffortune.com': 'Wheel of Fortune',
+    'www.wheeloffortune.com': 'Wheel of Fortune',
+    'games.circlek.com': 'Circle K',
+    'winwithdole.ca': 'Dole',
+    'www.winwithdole.ca': 'Dole',
+    'matchpub.com': '',
+}
+
+SPONSOR_DESCRIPTION_PATTERNS = [
+    r'([A-Z][A-Za-z0-9&\.\-\']+(?:\s+[A-Z][A-Za-z0-9&\.\-\']+){0,3})\s+(?:has\s+a\s+giveaway|is\s+giving\s+away|has\s+an?\s+Earth\s+Month|has\s+collaborated|has\s+a\s+contest|presents)',
+    r'(?:Enter\s+this\s+contest\s+from|contest\s+from)\s+([A-Z][A-Za-z0-9&\.\-\']+(?:\s+[A-Z][A-Za-z0-9&\.\-\']+){0,3})[.\s,]',
+    r'participating\s+([A-Z][A-Za-z0-9&\.\-\']+(?:\s+[A-Z][A-Za-z0-9&\.\-\']+)?)\s+products?',
+    r'@([a-z][a-z0-9]+?)canada\s+(?:has|is)',
+]
+
+
+def _brand_from_host(host):
+    """Turn a host like 'games.circlek.com' into a tidy brand name."""
+    if not host:
+        return ''
+    if host in HOST_BRAND_OVERRIDES:
+        return HOST_BRAND_OVERRIDES[host]
+    # Try parent-domain overrides
+    parts = host.split('.')
+    for i in range(len(parts) - 1):
+        sub = '.'.join(parts[i:])
+        if sub in HOST_BRAND_OVERRIDES:
+            return HOST_BRAND_OVERRIDES[sub]
+    # Strip TLD + "www" + promotional prefixes from host's core label
+    core = host
+    for suffix in ('.ca', '.com', '.net', '.org', '.co', '.io'):
+        if core.endswith(suffix):
+            core = core[:-len(suffix)]
+            break
+    label = core.split('.')[-1] or core
+    label = re.sub(
+        r'(?:winwith|win[-]?with[-]?|sweepstakes?|giveaway|promo|contest)',
+        '', label, flags=re.I
+    ).strip('-')
+    if not label or len(label) < 3:
+        return ''
+    # Skip ugly slug-derived brand names (long mashed-together words)
+    if '-' not in label and len(label) > 12:
+        return ''
+    # Skip news/generic single-word labels
+    if label.lower() in ('news', 'media', 'shop', 'store', 'enter', 'win',
+                          'free', 'prize', 'click', 'press', 'home', 'about',
+                          'blog', 'page', 'site', 'event', 'play', 'app'):
+        return ''
+    # Skip slogan/verb-prefix URLs (drinkX, snackX, eatX, noXgame, etc.)
+    if '-' not in label:
+        for verb in ('drink', 'snack', 'eat', 'try', 'shop', 'visit',
+                     'love', 'no', 'wit', 'taa', 'thefishin', 'thebear'):
+            if label.lower().startswith(verb) and len(label) > len(verb) + 1:
+                return ''
+        # Skip labels ending in obvious filler suffixes
+        for suf in ('contest', 'contests', 'rocks', 'radio', 'gear',
+                     'represent', 'appliance'):
+            if label.lower().endswith(suf) and label.lower() != suf:
+                return ''
+    return label.replace('-', ' ').title()
+
+
+def extract_sponsor(description, url=''):
+    """Return a sponsor/brand name for the contest, or ''."""
+    # 1) URL domain (only if it isn't an aggregator / link-shortener)
+    if url:
+        m = re.match(r'https?://([^/]+)', url.lower())
+        host = m.group(1) if m else ''
+        if host and host not in AGGREGATOR_HOSTS:
+            brand = _brand_from_host(host)
+            if brand and len(brand) > 1:
+                return brand
+    # 2) Description patterns
+    if description:
+        for pat in SPONSOR_DESCRIPTION_PATTERNS:
+            m = re.search(pat, description)
+            if m:
+                cand = m.group(1).strip(' ,.-')
+                cand = re.sub(r'^(BIG|Great|Here|This|Ontarians|Nova\s+Scotians|Members)\b.*', '', cand).strip()
+                if 1 < len(cand) < 40 and not cand.isdigit():
+                    return cand
+    return ''
+
+
+def _apply_sponsor_prefix(title, sponsor):
+    """Prepend sponsor to title if its key word isn't already there."""
+    if not sponsor or not title:
+        return title
+    title_low = title.lower()
+    if sponsor.lower() in title_low:
+        return title
+    # Compare with all separators stripped, so 'Kaltire' matches 'Kal Tire'.
+    norm = lambda s: re.sub(r'[^a-z0-9]+', '', s.lower())
+    if norm(sponsor) and norm(sponsor) in norm(title):
+        return title
+    # If any meaningful word from the sponsor already appears in the title,
+    # don't prefix (avoids 'Kruger Products: Kruger Contest: ...').
+    for word in re.findall(r"[A-Za-z][A-Za-z\-']{2,}", sponsor):
+        if word.lower() in ('the', 'and', 'inc', 'ltd', 'products', 'canada',
+                             'corp', 'company', 'restaurant'):
+            continue
+        if word.lower() in title_low:
+            return title
+    return f"{sponsor}: {title.strip()}"
+
+
 def _make_entry(prefix, title, href, text, source, freq='single'):
     """Build a standard contest dict from scraped fields."""
     prize_match = re.search(r'\$([\d,]+)', text)
@@ -355,9 +520,12 @@ def _make_entry(prefix, title, href, text, source, freq='single'):
                 break
             except ValueError:
                 continue
+    sponsor = extract_sponsor(text, href)
+    display_name = _apply_sponsor_prefix(title, sponsor)
     return {
-        'id': make_contest_id(prefix, title),
-        'name': title,
+        'id': make_contest_id(prefix, display_name),
+        'name': display_name,
+        'sponsor': sponsor,
         'url': href,
         'prize': text[:200],
         'prize_value': prize_value,
@@ -408,6 +576,13 @@ def scrape_wordpress_contests(urls, prefix, source, freq='single'):
                 if not href.startswith('http') or len(title) < 5:
                     continue
                 if not is_ontario_eligible(title):
+                    continue
+                # Drop hashtag-only / emoji titles that aggregators pull from
+                # Instagram (e.g. '#WIN #MileEndKicks #CINEPLEX'). They give
+                # no useful prize info.
+                stripped = re.sub(r'[\s#]+', ' ', title).strip()
+                letters = re.sub(r'[^A-Za-z]', '', stripped)
+                if len(letters) < 8 or title.lstrip().startswith('#'):
                     continue
                 text = article.get_text(separator=' ', strip=True)
                 entry = _make_entry(prefix, title, href, text, source, freq)
@@ -511,6 +686,13 @@ def scrape_local_radio(urls, prefix, source, freq='single'):
                 if any(w in low for w in ['privacy', 'contact', 'about us', 'terms', 'advertise', 'careers']):
                     continue
                 text = el.get_text(separator=' ', strip=True)
+                # Radio-station pages often mix contests with news articles; require
+                # at least one contest-signal word in title or body.
+                contest_signals = ('win', 'contest', 'giveaway', 'sweepstake',
+                                   'prize', 'tickets', 'enter to')
+                if not any(w in low for w in contest_signals) and \
+                   not any(w in text.lower() for w in contest_signals):
+                    continue
                 entry = _make_entry(prefix, title, href, text, source, freq)
                 entry['provinces'] = ['Ontario']
                 entry['local_area'] = LOCAL_AREA
@@ -565,10 +747,13 @@ def scrape_lakecountry887():
 
 
 def scrape_bayshore():
-    """Bayshore Broadcasting — Muskoka/Parry Sound stations."""
+    """Bayshore Broadcasting — Muskoka/Parry Sound stations.
+
+    Only hit the /contests/ path; the homepage is a news aggregator whose
+    articles were being picked up as 'contests' (e.g. crash reports).
+    """
     return scrape_local_radio(
-        ['https://www.bayshorebroadcasting.ca/contests/',
-         'https://www.bayshorebroadcasting.ca/'],
+        ['https://www.bayshorebroadcasting.ca/contests/'],
         'bay', 'Bayshore Broadcasting (Muskoka)'
     )
 
