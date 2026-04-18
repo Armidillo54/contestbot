@@ -30,6 +30,15 @@ ONTARIO_EXCLUDE_PATTERNS = [
     r'\bpurchase\s+required\b', r'\bpurchase\s+necessary\b',
     r'\bno\s+ontario\b', r'\bexclude[sd]?\s+ontario\b',
     r'\bnot\s+(available|open|valid)\s+(in|to)\s+ontario\b',
+    # Quebec-targeted listings from Canadian aggregators
+    r'\b(open|exclusive|limited)\s+to\s+quebec\b',
+    r'\bquebec\s+(residents?|only|exclusive)\b',
+    r'\b(pour|au)\s+(le\s+)?qu[ée]bec\b',
+    r'\bconcours\s+(pour|au)\b',
+    r'\bcadeaux?\s+gratuits?\s+pour\b',
+    # US-only contests that slip in via Canadian aggregators
+    r'\b(us|u\.s\.|usa|united\s+states)\s+(only|residents?\s+only)\b',
+    r'\b(open|limited)\s+to\s+(us|u\.s\.|usa|united\s+states)\s+residents?\b',
 ]
 
 # Keywords that confirm Ontario or Canada-wide eligibility

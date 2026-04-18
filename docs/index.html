@@ -501,12 +501,12 @@ function eventWeekRange(filter){
 }
 
 function fmtEventDate(dateStr){
-  if(!dateStr) return {month:'', day:'?'};
+  if(!dateStr) return {month:'TBA', day:''};
   try{
     const [y,m,d] = dateStr.split('-').map(Number);
     const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
-    return {month: months[m-1]||'', day: d, year: y};
-  } catch(e){ return {month:'', day:'?'}; }
+    return {month: months[m-1]||'TBA', day: d || '', year: y};
+  } catch(e){ return {month:'TBA', day:''}; }
 }
 
 function priceBadge(price){
