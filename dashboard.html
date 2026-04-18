@@ -565,7 +565,9 @@ function activeEvents(){
     if(ev.status !== 'active') return false;
     if(dismissed.has(ev.id) && !showHidden) return false;
     const d = ev.date || '';
-    if(d && (d < from || d > to)) return false;
+    // Drop dateless events — TBA cards are clutter
+    if(!d) return false;
+    if(d < from || d > to) return false;
     if(currentEventCat !== 'all' && ev.category !== currentEventCat) return false;
     return true;
   });
