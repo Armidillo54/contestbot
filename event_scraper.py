@@ -370,7 +370,7 @@ def _eventbrite_item_to_event(item):
     loc = item.get('location') or item.get('venue') or {}
     if isinstance(loc, list):
         loc = loc[0] if loc else {}
-    venue = 'Orillia, ON'
+    venue = ''
     if isinstance(loc, dict):
         vn = loc.get('name') or loc.get('venue') or ''
         addr = loc.get('address') or {}
@@ -382,6 +382,12 @@ def _eventbrite_item_to_event(item):
         parts = [p for p in (vn, city, region) if p]
         if parts:
             venue = ', '.join(parts)
+    # Require an explicit venue — Eventbrite search 'Orillia' returns events
+    # from Barrie/Toronto and the local-filter would let them through if we
+    # defaulted to 'Orillia, ON'. Drop entries where Eventbrite didn't tell
+    # us a real city.
+    if not venue:
+        return None
 
     offers = item.get('offers') or {}
     if isinstance(offers, list):
@@ -892,7 +898,7 @@ def scrape_curated_annual_events():
          'date': f'{year}-06-20', 'end_date': f'{year}-06-20',
          'venue': 'Couchiching Beach Park, Orillia ON',
          'category': 'festival', 'price': 'Free',
-         'url': 'https://orilliascottishfestival.ca/'},
+         'url': 'https://www.downtownorillia.ca/event/44th-annual-orillia-scottish-festival/'},
         {'name': 'Orillia Jazz Festival',
          'date': f'{year}-09-26', 'end_date': f'{year}-09-27',
          'venue': 'Downtown Orillia, ON',
@@ -918,7 +924,7 @@ def scrape_curated_annual_events():
          'date': f'{year}-05-02', 'end_date': f'{year}-10-31',
          'venue': 'Orillia City Centre Parking Lot, Orillia ON',
          'category': 'market', 'price': 'Free',
-         'url': 'https://orilliafarmersmarket.ca/'},
+         'url': 'https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx'},
     ]
     events = []
     for c in curated:
@@ -942,6 +948,111 @@ def scrape_curated_annual_events():
         })
     logger.info(f"Curated annual events: {len(events)} upcoming")
     return events
+
+
+def _scrape_radio_station_events(candidate_urls, source_name, venue_default):
+    """Generic event scraper for local radio station websites.
+
+    Radio stations publish a 'community calendar' or 'events' page. They use a
+    grab bag of CMS templates, so we try several common paths and extract via
+    JSON-LD first, falling back to HTML article cards.
+    """
+    today = date.today().isoformat()
+    events = []
+    seen_ids = set()
+    for base in candidate_urls:
+        base = base.rstrip('/')
+        for path in (
+            '/events/', '/community-events/', '/community-calendar/',
+            '/local-events/', '/calendar/', '/whats-happening/',
+        ):
+            url = base + path
+            html = fetch_page(url)
+            if not html:
+                continue
+            # Try JSON-LD first
+            for ev in extract_json_ld_events(html, venue_default, source_name):
+                if ev['id'] not in seen_ids:
+                    seen_ids.add(ev['id'])
+                    events.append(ev)
+            # HTML cards fallback
+            if not events:
+                soup = BeautifulSoup(html, 'html.parser')
+                for article in soup.select(
+                        'article, .event, .event-card, .event-item, .calendar-event, '
+                        '.tribe-event, li.event'):
+                    title_el = (article.find(class_=re.compile(r'title|heading', re.I))
+                                or article.find(['h2', 'h3', 'h4']))
+                    if not title_el:
+                        continue
+                    name = title_el.get_text(strip=True)
+                    if not name or len(name) < 4:
+                        continue
+                    link_el = title_el.find('a', href=True) or article.find('a', href=True)
+                    ev_url = link_el['href'] if link_el else url
+                    if ev_url.startswith('/'):
+                        ev_url = base + ev_url
+                    date_el = (article.find(class_=re.compile(r'date|time', re.I))
+                               or article.find('time'))
+                    date_text = (date_el.get('datetime') or date_el.get_text(strip=True)
+                                 if date_el else '')
+                    event_date = parse_iso_date(date_text)
+                    if not event_date:
+                        continue   # skip dateless cards
+                    ev_id = make_event_id(source_name[:5].lower(), name, event_date)
+                    if ev_id not in seen_ids:
+                        seen_ids.add(ev_id)
+                        events.append({
+                            'id': ev_id,
+                            'name': name,
+                            'date': event_date,
+                            'end_date': '',
+                            'time': '',
+                            'venue': venue_default,
+                            'category': categorize_event(name),
+                            'price': '',
+                            'url': ev_url,
+                            'description': name,
+                            'source': source_name,
+                            'scraped_date': today,
+                            'status': 'active',
+                        })
+            if events:
+                break   # first working path wins
+        if events:
+            break
+    logger.info(f"{source_name}: {len(events)} events")
+    return events
+
+
+def scrape_pure_country_orillia():
+    """Pure Country 106 (formerly KICX) — Orillia country station."""
+    return _scrape_radio_station_events(
+        ['https://kicx.ca', 'https://www.kicx.ca',
+         'https://purecountry106.ca', 'https://www.purecountry106.ca'],
+        'purecountryorillia.ca',
+        'Orillia, ON',
+    )
+
+
+def scrape_max_fm_orillia():
+    """MAX FM 105.9 — Orillia community radio."""
+    return _scrape_radio_station_events(
+        ['https://1059themax.ca', 'https://www.1059themax.ca',
+         'https://maxfmorillia.ca', 'https://www.maxfmorillia.ca',
+         'https://105max.ca', 'https://www.105max.ca'],
+        'maxfm.ca',
+        'Orillia, ON',
+    )
+
+
+def scrape_lake_country_events():
+    """Lake Country 88.7 — Orillia easy-listening station."""
+    return _scrape_radio_station_events(
+        ['https://lakecountry887.com', 'https://www.lakecountry887.com'],
+        'lakecountry887.com',
+        'Orillia, ON',
+    )
 
 
 def scrape_orillia_library():
@@ -1270,6 +1381,9 @@ def run_event_scraper():
     all_new.extend(scrape_severn_township())
     all_new.extend(scrape_oro_medonte())
     all_new.extend(scrape_ramara_township())
+    all_new.extend(scrape_pure_country_orillia())
+    all_new.extend(scrape_max_fm_orillia())
+    all_new.extend(scrape_lake_country_events())
 
     # Apply local-area filter before any further work
     before = len(all_new)
