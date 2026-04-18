@@ -1022,6 +1022,35 @@ def _extract_dates_from_html(html):
     return '', ''
 
 
+def _enrich_via_tribe_rest(url):
+    """Try the Tribe Events Calendar REST endpoint to get clean date/venue for
+    an event URL like https://example.com/event/<slug>/."""
+    m = re.match(r'(https?://[^/]+)/event/([^/?#]+)', url)
+    if not m:
+        return '', '', ''
+    base, slug = m.group(1), m.group(2)
+    try:
+        resp = requests.get(
+            f'{base}/wp-json/tribe/events/v1/events/by-slug/{slug}',
+            headers=HEADERS, timeout=10
+        )
+        if resp.status_code != 200:
+            return '', '', ''
+        data = resp.json()
+        start = parse_iso_date(data.get('start_date', ''))
+        end = parse_iso_date(data.get('end_date', ''))
+        venue_info = data.get('venue') or {}
+        venue = ''
+        if isinstance(venue_info, dict):
+            parts = [venue_info.get('venue', ''),
+                     venue_info.get('address', ''),
+                     venue_info.get('city', '')]
+            venue = ', '.join(p for p in parts if p)
+        return start, end, venue
+    except Exception:
+        return '', '', ''
+
+
 def enrich_event_dates(events, max_fetches=200):
     """For each event missing a date, fetch its URL and pull a real start date.
 
@@ -1045,6 +1074,21 @@ def enrich_event_dates(events, max_fetches=200):
             continue
         if fetched >= max_fetches:
             break
+        # First try the Tribe REST API per-slug — gives clean structured data
+        start, end, venue = _enrich_via_tribe_rest(url)
+        if start and needs_date:
+            ev['date'] = start
+            if end:
+                ev['end_date'] = end
+            prefix = ev['id'].split('-', 1)[0]
+            ev['id'] = make_event_id(prefix, ev['name'], start)
+            enriched += 1
+            needs_date = False
+        if venue and needs_venue:
+            ev['venue'] = venue
+            needs_venue = False
+        if not needs_date and not needs_venue:
+            continue
         html = fetch_page(url)
         fetched += 1
         if needs_date:
@@ -1069,17 +1113,24 @@ def merge_events(db, new_events):
     for ev in new_events:
         if not ev.get('name') or not ev.get('url'):
             continue
+        # Refuse dateless entries — TBA events are noise on the dashboard
+        if not ev.get('date'):
+            continue
         if ev['id'] not in existing_map:
             db['events'].append(ev)
             existing_map[ev['id']] = ev
             added += 1
         else:
-            # Backfill date/end_date on existing entries that were scraped without dates
+            # Backfill date/end_date/venue on existing entries
             existing = existing_map[ev['id']]
             if ev.get('date') and not existing.get('date'):
                 existing['date'] = ev['date']
             if ev.get('end_date') and not existing.get('end_date'):
                 existing['end_date'] = ev['end_date']
+            if ev.get('venue') and existing.get('venue', '').lower() in (
+                    'orillia, on', 'orillia area', 'downtown orillia, on',
+                    'city of orillia, on'):
+                existing['venue'] = ev['venue']
     return added
 
 
@@ -1088,12 +1139,9 @@ def merge_events(db, new_events):
 # ---------------------------------------------------------------------------
 
 def prune_existing_events(db):
-    """One-time cleanup: drop entries that don't pass the local-area filter,
-    Eventbrite directory URLs, garbage titles, and dateless entries older than
-    a week.
-    """
+    """Drop entries that don't pass the local-area filter, Eventbrite directory
+    URLs, garbage titles, dateless entries, and past events."""
     today = date.today().isoformat()
-    week_ago = (date.today() - timedelta(days=7)).isoformat()
     kept = []
     dropped = 0
     for ev in db.get('events', []):
@@ -1107,14 +1155,19 @@ def prune_existing_events(db):
                               ev.get('description', ''), url):
             dropped += 1
             continue
-        # Drop dateless entries scraped more than a week ago — enrichment failed
-        if not ev.get('date') and ev.get('scraped_date', today) < week_ago:
+        # Drop dateless entries — TBA is noise
+        if not ev.get('date'):
+            dropped += 1
+            continue
+        # Drop past events
+        end = ev.get('end_date') or ev.get('date')
+        if end and end < today:
             dropped += 1
             continue
         kept.append(ev)
     db['events'] = kept
     if dropped:
-        logger.info(f"Pruned {dropped} non-local / garbage / stale events")
+        logger.info(f"Pruned {dropped} non-local / dateless / past events")
     return dropped
 
 
