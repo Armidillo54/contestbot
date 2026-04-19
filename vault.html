@@ -54,26 +54,32 @@ button.danger:hover{background:#ff6b6b15}
 <div id="setupScreen" class="card hidden">
   <h2>Create your vault</h2>
   <p>Your info is encrypted with AES-GCM and stored only on this device. Pick a strong password — you'll need it every time you use the autofill bookmarklet. <strong>There is no recovery if you forget it.</strong></p>
-  <div class="field">
-    <label>New vault password (8+ chars)</label>
-    <input type="password" id="newPass" autocomplete="new-password" placeholder="Choose a strong password">
-  </div>
-  <div class="field">
-    <label>Confirm password</label>
-    <input type="password" id="newPassConfirm" autocomplete="new-password" placeholder="Repeat the password">
-  </div>
-  <button onclick="createVault()">Create Vault</button>
+  <form id="setupForm" action="#" method="post" onsubmit="event.preventDefault();createVault();return false">
+    <input type="text" name="username" id="setupUsername" value="contestbot-vault" autocomplete="username" readonly aria-hidden="true" tabindex="-1" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+    <div class="field">
+      <label for="newPass">New vault password (8+ chars)</label>
+      <input type="password" id="newPass" name="new-password" autocomplete="new-password" placeholder="Choose a strong password">
+    </div>
+    <div class="field">
+      <label for="newPassConfirm">Confirm password</label>
+      <input type="password" id="newPassConfirm" name="new-password-confirm" autocomplete="new-password" placeholder="Repeat the password">
+    </div>
+    <button type="submit">Create Vault</button>
+  </form>
   <div class="msg" id="setupMsg" style="display:none"></div>
 </div>
 
 <!-- STATE: unlock existing vault -->
 <div id="unlockScreen" class="card hidden">
   <h2>Unlock your vault</h2>
-  <div class="field">
-    <label>Vault password</label>
-    <input type="password" id="unlockPass" autocomplete="current-password" placeholder="Enter your vault password">
-  </div>
-  <button onclick="unlockVault()">Unlock</button>
+  <form id="unlockForm" action="#" method="post" onsubmit="event.preventDefault();unlockVault();return false">
+    <input type="text" name="username" id="unlockUsername" value="contestbot-vault" autocomplete="username" readonly aria-hidden="true" tabindex="-1" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+    <div class="field">
+      <label for="unlockPass">Vault password</label>
+      <input type="password" id="unlockPass" name="password" autocomplete="current-password" placeholder="Enter your vault password">
+    </div>
+    <button type="submit">Unlock</button>
+  </form>
   <div class="msg" id="unlockMsg" style="display:none"></div>
   <div style="margin-top:14px;text-align:center">
     <button class="danger" onclick="resetVault()">Reset vault (delete & start over)</button>
@@ -209,6 +215,18 @@ button.danger:hover{background:#ff6b6b15}
       <li>Test it: open a contest page → tap bookmarks → tap <em>Fill Contest</em>. Enter your vault password. Fields fill in. Review, tick terms, solve any CAPTCHA / skill-test, tap submit.</li>
     </ol>
     <div class="warning" style="margin-top:14px">DuckDuckGo browser on iOS doesn't reliably run bookmarklets — use Safari for contest entry. You can still browse contests in DDG and tap the URL to open in Safari.</div>
+  </div>
+
+  <div class="card">
+    <h2>Autofill the vault password itself (LastPass / iCloud Keychain)</h2>
+    <p>Typing your long vault password every time is slow. The bookmarklet now opens a real password form instead of a browser prompt, so your password manager can autofill it.</p>
+    <ol class="install-steps">
+      <li><strong>First time:</strong> tap the bookmarklet on any contest page. In the vault unlock overlay, type your password manually and tap Fill.</li>
+      <li>Your password manager (LastPass, iCloud Keychain, 1Password, Bitwarden) will offer to <em>save</em> the credential for username <code>contestbot-vault</code>. Accept.</li>
+      <li>Next time you tap the bookmarklet, your password manager should offer to autofill — one tap instead of a full password entry.</li>
+      <li>If LastPass doesn't prompt to save, open LastPass manually and add an entry: URL <code>contestbot-vault.local</code>, username <code>contestbot-vault</code>, password = your vault password.</li>
+    </ol>
+    <div class="warning" style="margin-top:14px">If autofill still doesn't work reliably, tell Claude and ask for the short-PIN upgrade — you'll type a 4–6 digit PIN instead of the full password.</div>
   </div>
 
   <div class="card">
@@ -373,8 +391,10 @@ async function generateBookmarklet() {
 }
 
 function buildBookmarklet(encVault) {
-  // Single-line javascript: URL. Keep readable here — Safari tolerates long URLs.
-  return `javascript:(async()=>{try{const V='${encVault}';const u=Uint8Array.from(atob(V),c=>c.charCodeAt(0));const s=u.slice(0,16),i=u.slice(16,28),c=u.slice(28);const p=prompt('Vault password:');if(!p)return;const m=await crypto.subtle.importKey('raw',new TextEncoder().encode(p),'PBKDF2',false,['deriveKey']);const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:s,iterations:100000,hash:'SHA-256'},m,{name:'AES-GCM',length:256},false,['decrypt']);let v;try{const d=await crypto.subtle.decrypt({name:'AES-GCM',iv:i},k,c);v=JSON.parse(new TextDecoder().decode(d));}catch(e){alert('Wrong password');return;}let n=0;const setVal=(el,val)=>{if(!val||el.disabled||el.readOnly)return;if(el.value&&el.value.trim())return;el.focus();el.value=val;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));el.style.outline='2px solid #00d4ff';n++;};const sel=q=>document.querySelectorAll(q);const f=(q,val)=>sel(q).forEach(e=>setVal(e,val));const byLabel=(keywords,val)=>{if(!val)return;document.querySelectorAll('input,select').forEach(el=>{if(el.value&&el.value.trim())return;const id=(el.id||'').toLowerCase();const name=(el.name||'').toLowerCase();const ph=(el.placeholder||'').toLowerCase();const ac=(el.autocomplete||'').toLowerCase();const lbl=el.labels&&el.labels[0]?el.labels[0].textContent.toLowerCase():'';const hay=id+' '+name+' '+ph+' '+ac+' '+lbl;if(keywords.some(k=>hay.includes(k))){if(el.tagName==='SELECT'){for(const o of el.options){if(o.value===val||o.text.toLowerCase().includes(val.toLowerCase())){el.value=o.value;el.dispatchEvent(new Event('change',{bubbles:true}));n++;break;}}}else{setVal(el,val);}}});};byLabel(['first','given','fname','firstname'],v.firstName);byLabel(['last','family','lname','lastname','surname'],v.lastName);byLabel(['email','e-mail'],v.email);byLabel(['phone','tel','mobile','cell'],v.phone);byLabel(['address1','street','addr1','address-line1','line1'],v.address1);byLabel(['address2','addr2','address-line2','line2','apt','suite','unit'],v.address2);byLabel(['city','town','municipality','address-level2'],v.city);byLabel(['postal','zip','address-level1'],v.postal);byLabel(['country'],v.country);byLabel(['province','state','region','address-level1'],v.province);byLabel(['gender','sex'],v.gender);if(v.dobMonth)byLabel(['birthmonth','dobmonth','bday-month','bmonth'],v.dobMonth);if(v.dobDay)byLabel(['birthday','dobday','bday-day','bday','bdayday'],v.dobDay);if(v.dobYear)byLabel(['birthyear','dobyear','bday-year','byear'],v.dobYear);if(v.dobYear&&v.dobMonth&&v.dobDay){const iso=v.dobYear+'-'+String(v.dobMonth).padStart(2,'0')+'-'+String(v.dobDay).padStart(2,'0');document.querySelectorAll('input[type=date]').forEach(el=>setVal(el,iso));f('input[autocomplete=bday]',iso);}alert('Filled '+n+' fields. Review terms, solve any skill-test, then submit.');}catch(e){alert('Autofill error: '+e.message);}})();`;
+  // Injects an overlay <form> with proper autocomplete attributes so LastPass /
+  // iCloud Keychain / 1Password can autofill the vault password. Falls back to
+  // manual typing when no password manager is present.
+  return `javascript:(async()=>{try{const V='${encVault}';const u=Uint8Array.from(atob(V),c=>c.charCodeAt(0));const s=u.slice(0,16),i=u.slice(16,28),c=u.slice(28);const prev=document.getElementById('cbvo');if(prev)prev.remove();const ov=document.createElement('div');ov.id='cbvo';ov.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:-apple-system,sans-serif';ov.innerHTML='<form id=cbvf action=https://contestbot-vault.local/login method=post style="background:#1a1a2e;padding:22px;border-radius:12px;width:320px;max-width:90vw;box-shadow:0 4px 20px rgba(0,0,0,0.5)"><div style="color:#00d4ff;font-size:17px;font-weight:600;margin-bottom:6px">ContestBot Autofill</div><div style="color:#aaa;font-size:13px;margin-bottom:14px">Unlock vault to fill this form.</div><input type=text name=username value=contestbot-vault autocomplete=username readonly tabindex=-1 style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0"><input type=password id=cbvp name=password autocomplete=current-password placeholder="Vault password" style="width:100%;padding:11px 12px;border-radius:8px;border:1px solid #2a2a3e;background:#0a0a0f;color:#fff;font-size:16px;box-sizing:border-box;margin-bottom:12px"><div style="display:flex;gap:8px"><button type=button id=cbvc style="flex:1;padding:11px;border-radius:8px;border:1px solid #2a2a3e;background:transparent;color:#ccc;font-size:14px;cursor:pointer">Cancel</button><button type=submit style="flex:1.2;padding:11px;border-radius:8px;border:none;background:#00d4ff;color:#000;font-weight:600;font-size:14px;cursor:pointer">Fill</button></div><div id=cbverr style="color:#ff6b6b;font-size:12px;margin-top:10px;display:none"></div></form>';document.body.appendChild(ov);const pwIn=document.getElementById('cbvp');setTimeout(()=>pwIn.focus(),50);const tryUnlock=async pw=>{if(!pw)return null;const m=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']);const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:s,iterations:100000,hash:'SHA-256'},m,{name:'AES-GCM',length:256},false,['decrypt']);try{const d=await crypto.subtle.decrypt({name:'AES-GCM',iv:i},k,c);return JSON.parse(new TextDecoder().decode(d));}catch(e){return null;}};const v=await new Promise(res=>{document.getElementById('cbvf').addEventListener('submit',async e=>{e.preventDefault();const vv=await tryUnlock(pwIn.value);if(!vv){const err=document.getElementById('cbverr');err.textContent='Wrong password. Try again.';err.style.display='block';pwIn.select();return;}ov.remove();res(vv);});document.getElementById('cbvc').addEventListener('click',()=>{ov.remove();res(null);});});if(!v)return;let n=0;const setVal=(el,val)=>{if(!val||el.disabled||el.readOnly)return;if(el.value&&el.value.trim())return;el.focus();el.value=val;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));el.style.outline='2px solid #00d4ff';n++;};const sel=q=>document.querySelectorAll(q);const f=(q,val)=>sel(q).forEach(e=>setVal(e,val));const byLabel=(keywords,val)=>{if(!val)return;document.querySelectorAll('input,select').forEach(el=>{if(el.value&&el.value.trim())return;const id=(el.id||'').toLowerCase();const name=(el.name||'').toLowerCase();const ph=(el.placeholder||'').toLowerCase();const ac=(el.autocomplete||'').toLowerCase();const lbl=el.labels&&el.labels[0]?el.labels[0].textContent.toLowerCase():'';const hay=id+' '+name+' '+ph+' '+ac+' '+lbl;if(keywords.some(k=>hay.includes(k))){if(el.tagName==='SELECT'){for(const o of el.options){if(o.value===val||o.text.toLowerCase().includes(val.toLowerCase())){el.value=o.value;el.dispatchEvent(new Event('change',{bubbles:true}));n++;break;}}}else{setVal(el,val);}}});};byLabel(['first','given','fname','firstname'],v.firstName);byLabel(['last','family','lname','lastname','surname'],v.lastName);byLabel(['email','e-mail'],v.email);byLabel(['phone','tel','mobile','cell'],v.phone);byLabel(['address1','street','addr1','address-line1','line1'],v.address1);byLabel(['address2','addr2','address-line2','line2','apt','suite','unit'],v.address2);byLabel(['city','town','municipality','address-level2'],v.city);byLabel(['postal','zip','address-level1'],v.postal);byLabel(['country'],v.country);byLabel(['province','state','region','address-level1'],v.province);byLabel(['gender','sex'],v.gender);if(v.dobMonth)byLabel(['birthmonth','dobmonth','bday-month','bmonth'],v.dobMonth);if(v.dobDay)byLabel(['birthday','dobday','bday-day','bday','bdayday'],v.dobDay);if(v.dobYear)byLabel(['birthyear','dobyear','bday-year','byear'],v.dobYear);if(v.dobYear&&v.dobMonth&&v.dobDay){const iso=v.dobYear+'-'+String(v.dobMonth).padStart(2,'0')+'-'+String(v.dobDay).padStart(2,'0');document.querySelectorAll('input[type=date]').forEach(el=>setVal(el,iso));f('input[autocomplete=bday]',iso);}alert('Filled '+n+' fields. Review terms, solve any skill-test, then submit.');}catch(e){alert('Autofill error: '+e.message);}})();`;
 }
 
 async function copyBookmarklet() {
