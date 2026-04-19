@@ -205,7 +205,7 @@ body.light .dismiss-btn{color:#bbb}
   <div class="stat-card" onclick="jumpToTab('all')" title="View all contests"><div class="number" id="totalActive">--</div><div class="label">Active Contests</div></div>
   <div class="stat-card prize" onclick="jumpToTab('highvalue')" title="View high value contests"><div class="number" id="totalPrize">--</div><div class="label">Total Prize Pool</div></div>
   <div class="stat-card new" onclick="jumpToTab('new')" title="View new contests"><div class="number" id="totalNew">--</div><div class="label">New Today</div></div>
-  <div class="stat-card daily" onclick="jumpToTab('daily')" title="View daily entry contests"><div class="number" id="totalDaily">--</div><div class="label">Daily Entry</div></div>
+  <div class="stat-card daily" onclick="jumpToTab('submitted')" title="View all contests you've entered"><div class="number" id="totalSubmitted">--</div><div class="label">Submitted Contests</div></div>
   <div class="stat-card freebies" onclick="jumpToTab('freebies')" title="View freebies"><div class="number" id="totalFreebies">--</div><div class="label">Active Freebies</div></div>
   <div class="stat-card sales" onclick="jumpToTab('sales')" title="View store sales"><div class="number" id="totalSales">--</div><div class="label">Store Sales</div></div>
   <div class="stat-card events" onclick="jumpToTab('events')" title="View local events"><div class="number" id="totalEvents">--</div><div class="label">Local Events</div></div>
@@ -355,6 +355,8 @@ function toggleHidden(btn){
 }
 
 function refreshTab(){
+  const el = document.getElementById('totalSubmitted');
+  if (el) el.textContent = submitted.size;
   showTab(currentTab, null);
 }
 
@@ -896,7 +898,7 @@ async function loadData(){
     document.getElementById('totalActive').textContent  = ac.length;
     document.getElementById('totalPrize').textContent   = fmt(ac.reduce((s,c)=>s+(c.prize_value||0),0));
     document.getElementById('totalNew').textContent     = ac.filter(isNew).length + af.filter(isNew).length;
-    document.getElementById('totalDaily').textContent   = ac.filter(c=>c.entry_frequency==='daily').length;
+    document.getElementById('totalSubmitted').textContent = submitted.size;
     document.getElementById('totalFreebies').textContent = af.length;
     document.getElementById('totalSales').textContent   = activeSales.length;
     document.getElementById('totalEvents').textContent  = activeEvt.length;
