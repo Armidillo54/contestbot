@@ -10,9 +10,18 @@ import logging
 import re
 from datetime import date, datetime, timedelta
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+
+try:
+    import cloudscraper
+    _CF_SCRAPER = cloudscraper.create_scraper(
+        browser={'browser': 'firefox', 'platform': 'windows', 'mobile': False}
+    )
+except Exception:
+    _CF_SCRAPER = None
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
@@ -132,18 +141,31 @@ def make_event_id(prefix, title, event_date=''):
 
 
 def fetch_page(url, attempts=2):
-    """GET with realistic headers and one retry on transient failure / 403."""
+    """GET with realistic headers, retry on 5xx/429, then fall back to cloudscraper on 403/503."""
+    last_status = None
     for i in range(attempts):
         try:
             resp = requests.get(url, headers=HEADERS, timeout=25, allow_redirects=True)
+            last_status = resp.status_code
             if resp.status_code == 200:
                 return resp.text
             if resp.status_code in (429, 503) and i + 1 < attempts:
                 continue
             logger.debug(f"HTTP {resp.status_code} for {url}")
-            return None
+            break
         except Exception as e:
             logger.debug(f"Fetch failed {url} (attempt {i+1}): {e}")
+
+    # Cloudflare JS-challenge / bot-block fallback
+    if _CF_SCRAPER is not None and last_status in (403, 503, None):
+        try:
+            resp = _CF_SCRAPER.get(url, timeout=30, allow_redirects=True)
+            if resp.status_code == 200:
+                logger.debug(f"cloudscraper succeeded for {url}")
+                return resp.text
+            logger.debug(f"cloudscraper HTTP {resp.status_code} for {url}")
+        except Exception as e:
+            logger.debug(f"cloudscraper failed {url}: {e}")
     return None
 
 
@@ -1175,10 +1197,127 @@ def scrape_lake_country_events():
     )
 
 
+EVENT_LINK_PATTERNS = (
+    r'/event/[^/?#]+/?$',
+    r'/events/[^/?#]+/?$',
+    r'/show/[^/?#]+/?$',
+    r'/shows/[^/?#]+/?$',
+    r'/performance/[^/?#]+/?$',
+    r'/performances/[^/?#]+/?$',
+    r'/concert/[^/?#]+/?$',
+    r'/concerts/[^/?#]+/?$',
+    r'/whats-on/[^/?#]+/?$',
+    r'/programs/[^/?#]+/?$',
+)
+EVENT_LINK_SKIP = re.compile(
+    r'/(category|categories|tag|tags|author|feed|page|list)/', re.I
+)
+
+
+def _find_event_links(html, base):
+    """Scan anchor hrefs for individual event pages."""
+    soup = BeautifulSoup(html, 'html.parser')
+    base_host = urlparse(base).netloc
+    links = []
+    seen = set()
+    for a in soup.find_all('a', href=True):
+        href = a['href'].strip()
+        if not href or href.startswith('#') or href.startswith('mailto:'):
+            continue
+        full = urljoin(base + '/', href)
+        if urlparse(full).netloc not in ('', base_host):
+            continue
+        if EVENT_LINK_SKIP.search(full):
+            continue
+        for pat in EVENT_LINK_PATTERNS:
+            if re.search(pat, full, re.I):
+                clean = full.split('#')[0]
+                if clean not in seen:
+                    seen.add(clean)
+                    links.append(clean)
+                break
+    return links
+
+
+def _extract_event_from_page(html, url, default_venue, source):
+    """Build one event from a single event-detail page via JSON-LD or OG/meta."""
+    if not html:
+        return None
+    today = date.today().isoformat()
+    # Prefer JSON-LD
+    ldevents = extract_json_ld_events(html, default_venue, source)
+    for ev in ldevents:
+        if ev.get('date'):
+            ev['url'] = ev.get('url') or url
+            return ev
+    # Fallback: OG title + any visible date
+    soup = BeautifulSoup(html, 'html.parser')
+    title = ''
+    og = soup.find('meta', property='og:title')
+    if og and og.get('content'):
+        title = og['content'].strip()
+    if not title:
+        h1 = soup.find('h1')
+        if h1:
+            title = h1.get_text(' ', strip=True)
+    if not title:
+        tt = soup.find('title')
+        if tt:
+            title = tt.get_text(strip=True).split('|')[0].split('–')[0].strip()
+    if not title:
+        return None
+    start, end = _extract_dates_from_html(html)
+    if not start:
+        return None
+    desc = ''
+    md = soup.find('meta', attrs={'name': 'description'}) or \
+        soup.find('meta', property='og:description')
+    if md and md.get('content'):
+        desc = md['content'].strip()[:200]
+    ev_id = make_event_id(source[:6].lower() or 'evt', title, start)
+    return {
+        'id': ev_id,
+        'name': title,
+        'date': start,
+        'end_date': end,
+        'time': '',
+        'venue': _extract_venue_from_html(html) or default_venue,
+        'category': categorize_event(title, desc),
+        'price': 'See event',
+        'url': url,
+        'description': desc or title,
+        'source': source,
+        'scraped_date': today,
+        'status': 'active',
+    }
+
+
+def _follow_event_links(base, source, default_venue, max_pages=25):
+    """Homepage/listing → discover event links → fetch each → extract."""
+    events = []
+    seen_ids = set()
+    for path in ('/events/', '/events', '/whats-on/', '/calendar/', '/shows/', '/'):
+        html = fetch_page(base + path)
+        if not html:
+            continue
+        links = _find_event_links(html, base)
+        if not links:
+            continue
+        for link in links[:max_pages]:
+            page = fetch_page(link)
+            ev = _extract_event_from_page(page, link, default_venue, source)
+            if ev and ev['id'] not in seen_ids:
+                seen_ids.add(ev['id'])
+                events.append(ev)
+        if events:
+            return events
+    return events
+
+
 def _scrape_generic_venue(
     candidate_urls, source, venue_default, paths=None, ical_first=True
 ):
-    """Try iCal, then Tribe REST, then JSON-LD, then HTML-card fallback."""
+    """Try iCal → Tribe REST → JSON-LD listing → individual event-link follow."""
     today = date.today().isoformat()
     paths = paths or (
         '', '/events/', '/events', '/calendar/', '/upcoming-events/',
@@ -1191,7 +1330,8 @@ def _scrape_generic_venue(
         base = base.rstrip('/')
         # 1) iCal endpoints
         if ical_first:
-            for suffix in ('/events/?ical=1', '/events?ical=1', '/?ical=1'):
+            for suffix in ('/events/?ical=1', '/events?ical=1', '/?ical=1',
+                          '/events/feed/', '/feed/?post_type=tribe_events'):
                 text = fetch_page(base + suffix)
                 if text and 'BEGIN:VEVENT' in text:
                     parsed = _parse_ical(text, source, venue_default)
@@ -1263,6 +1403,15 @@ def _scrape_generic_venue(
             if events:
                 logger.info(f"{source} (JSON-LD): {len(events)} events")
                 return events
+        # 4) Follow individual event links from the homepage/listing pages
+        followed = _follow_event_links(base, source, venue_default)
+        for ev in followed:
+            if ev['id'] not in seen_ids:
+                seen_ids.add(ev['id'])
+                events.append(ev)
+        if events:
+            logger.info(f"{source} (follow-links): {len(events)} events")
+            return events
     logger.info(f"{source}: {len(events)} events")
     return events
 
