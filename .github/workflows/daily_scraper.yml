@@ -2,8 +2,8 @@ name: ContestBot Daily Scraper
 
 on:
   schedule:
-    # 5:00 AM America/Toronto. EDT (Mar-Nov) = 09:00 UTC; EST (Nov-Mar) = 10:00 UTC.
-    # Both crons are registered so the job always fires once at 5:00 local.
+    # 5:00 AM America/Toronto daily. EDT = 09:00 UTC (Mar-Nov), EST = 10:00 UTC (Nov-Mar).
+    # Both crons are registered so the job fires once at 5:00 local.
     # The gate-time job below skips the off-DST one each day.
     - cron: '0 9 * * *'
     - cron: '0 10 * * *'
