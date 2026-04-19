@@ -44,6 +44,8 @@ LOCAL_PLACE_PATTERNS = [
     r'\blongford\b', r'\bcouchiching\b', r'\bcoldwater\b',
     r'\buptergrove\b', r'\bhawkestone\b', r'\bshanty\s+bay\b',
     r'\bmnjikaning\b', r'\bsimcoe\s+county\b',
+    r'\boro\s+station\b', r'\btudhope\b', r'\bburl\'?s\s+creek\b',
+    r'\bhawk\s+ridge\b', r'\bosmh\b',
 ]
 BLOCKED_PLACE_PATTERNS = [
     r'\bbarrie\b', r'\btoronto\b', r'\boshawa\b', r'\blindsay\b',
@@ -882,8 +884,9 @@ def scrape_curated_annual_events():
     year = date.today().year
     if date.today().month > 11:
         year += 1
+    next_year = year + 1
     curated = [
-        # Major festivals
+        # ===== MAJOR FESTIVALS =====
         {'name': 'Mariposa Folk Festival',
          'date': f'{year}-07-10', 'end_date': f'{year}-07-12',
          'venue': 'Tudhope Park, Orillia ON',
@@ -905,7 +908,7 @@ def scrape_curated_annual_events():
          'category': 'music', 'price': 'Ticketed',
          'url': 'https://www.orilliajazzfestival.com/'},
         {'name': 'Starry Night Festival',
-         'date': f'{year}-02-21', 'end_date': f'{year}-02-21',
+         'date': f'{next_year}-02-20', 'end_date': f'{next_year}-02-20',
          'venue': 'Downtown Orillia, ON',
          'category': 'festival', 'price': 'Free',
          'url': 'https://downtownorillia.ca/event/starry-night-festival/'},
@@ -919,22 +922,139 @@ def scrape_curated_annual_events():
          'venue': 'Lake Couchiching, Orillia ON',
          'category': 'sports', 'price': 'Ticketed',
          'url': 'https://www.orilliaperchfestival.com/'},
-        # Markets / recurring
+        {'name': 'Dickens Olde Fashioned Christmas',
+         'date': f'{year}-12-05', 'end_date': f'{year}-12-05',
+         'venue': 'Downtown Orillia, ON',
+         'category': 'festival', 'price': 'Free',
+         'url': 'https://downtownorillia.ca/events/'},
+        # ===== CIVIC / HOLIDAYS =====
+        {'name': 'Canada Day Celebrations - Orillia',
+         'date': f'{year}-07-01', 'end_date': f'{year}-07-01',
+         'venue': 'Couchiching Beach Park, Orillia ON',
+         'category': 'festival', 'price': 'Free',
+         'url': 'https://www.orillia.ca/en/things-to-do/canada-day.aspx'},
+        {'name': 'Remembrance Day Service',
+         'date': f'{year}-11-11', 'end_date': f'{year}-11-11',
+         'venue': 'Orillia Veterans Memorial / Soldiers Monument, Coldwater Rd & West St',
+         'category': 'community', 'price': 'Free',
+         'url': 'https://www.orillia.ca/en/city-hall/remembrance-day.aspx'},
+        {'name': 'Mayor\'s Levee',
+         'date': f'{next_year}-01-01', 'end_date': f'{next_year}-01-01',
+         'venue': 'Orillia City Centre, 50 Andrew St S, Orillia ON',
+         'category': 'community', 'price': 'Free',
+         'url': 'https://www.orillia.ca/en/city-hall/mayor-and-council.aspx'},
+        # ===== CHARITY =====
+        {'name': 'Terry Fox Run - Orillia',
+         'date': f'{year}-09-20', 'end_date': f'{year}-09-20',
+         'venue': 'Couchiching Beach Park, Orillia ON',
+         'category': 'community', 'price': 'Free',
+         'url': 'https://run.terryfox.ca/'},
+        {'name': 'OSMH Foundation Couchiching Classic Golf Tournament',
+         'date': f'{year}-09-11', 'end_date': f'{year}-09-11',
+         'venue': 'Hawk Ridge Golf Club, Orillia ON',
+         'category': 'community', 'price': 'Ticketed',
+         'url': 'https://osmhfoundation.ca/events/'},
+        {'name': 'OSMH Foundation Annual Gala',
+         'date': f'{year}-10-24', 'end_date': f'{year}-10-24',
+         'venue': 'Casino Rama Resort, Rama ON',
+         'category': 'community', 'price': 'Ticketed',
+         'url': 'https://osmhfoundation.ca/events/'},
+        # ===== RECURRING / MARKETS =====
         {'name': 'Orillia Farmers\' Market (Saturdays)',
          'date': f'{year}-05-02', 'end_date': f'{year}-10-31',
          'venue': 'Orillia City Centre Parking Lot, Orillia ON',
          'category': 'market', 'price': 'Free',
          'url': 'https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx'},
+        {'name': 'Downtown Orillia Midnight Madness',
+         'date': f'{year}-12-04', 'end_date': f'{year}-12-04',
+         'venue': 'Downtown Orillia, ON',
+         'category': 'festival', 'price': 'Free',
+         'url': 'https://downtownorillia.ca/events/'},
+        # ===== SPORTING =====
+        {'name': 'Orillia Terriers OJHL Home Games',
+         'date': f'{year}-09-15', 'end_date': f'{next_year}-03-15',
+         'venue': 'Rotary Place, 100 University Ave, Orillia ON',
+         'category': 'sports', 'price': 'Ticketed',
+         'url': 'https://orilliaterriers.pointstreaksites.com/view/orilliaterriers/'},
+        {'name': 'Orillia Kings OBA Baseball Season',
+         'date': f'{year}-05-10', 'end_date': f'{year}-08-31',
+         'venue': 'Tudhope Park, Orillia ON',
+         'category': 'sports', 'price': 'Free',
+         'url': 'https://orilliakings.ca/'},
+        # ===== VENUES (linked to their event pages) =====
+        {'name': 'Orillia Opera House — Season Schedule',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Orillia Opera House, 20 Mississaga St W, Orillia ON',
+         'category': 'theatre', 'price': 'Ticketed',
+         'url': 'https://orilliaoperahouse.ca/events/'},
+        {'name': 'Casino Rama Entertainment — Shows & Concerts',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Casino Rama Resort Entertainment Centre, Rama ON',
+         'category': 'music', 'price': 'Ticketed',
+         'url': 'https://www.casinorama.com/entertainment/'},
+        {'name': 'Mariposa Arts Theatre — Current Season',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Mariposa Arts Theatre, Orillia ON',
+         'category': 'theatre', 'price': 'Ticketed',
+         'url': 'https://mariposaartstheatre.com/'},
+        {'name': 'Orillia Museum of Art & History — Current Exhibitions',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON',
+         'category': 'arts', 'price': 'See event',
+         'url': 'https://orilliamuseum.org/'},
+        {'name': 'Stephen Leacock Museum — Programs & Events',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Stephen Leacock Museum, 50 Museum Dr, Orillia ON',
+         'category': 'arts', 'price': 'See event',
+         'url': 'https://leacockmuseum.com/events/'},
+        {'name': 'Brewery Bay Food Co. — Live Music Weekends',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Brewery Bay Food Co., 117 Mississaga St E, Orillia ON',
+         'category': 'music', 'price': 'Free',
+         'url': 'https://www.brewerybay.com/'},
+        {'name': 'Quayle\'s Brewery — Events & Live Music',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Quayle\'s Brewery, 5781 Hwy 11, Oro Station ON',
+         'category': 'food', 'price': 'See event',
+         'url': 'https://www.quaylesbrewery.com/'},
+        {'name': 'Couchiching Conservancy — Outings & Hikes',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Couchiching Conservancy — Orillia area',
+         'category': 'outdoor', 'price': 'Free',
+         'url': 'https://couchichingconserv.ca/events/'},
+        {'name': 'Orillia Public Library — Programs & Events',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Orillia Public Library, 36 Mississaga St W, Orillia ON',
+         'category': 'community', 'price': 'Free',
+         'url': 'https://orilliapubliclibrary.ca/events/'},
+        {'name': 'Orillia Chamber of Commerce — Business Events',
+         'date': f'{year}-04-25', 'end_date': f'{year}-12-31',
+         'venue': 'Orillia Chamber of Commerce, Orillia ON',
+         'category': 'community', 'price': 'See event',
+         'url': 'https://orilliachamber.com/events/'},
+        {'name': 'Port of Orillia — Summer Activities',
+         'date': f'{year}-05-20', 'end_date': f'{year}-10-15',
+         'venue': 'Port of Orillia, 10 Front St S, Orillia ON',
+         'category': 'outdoor', 'price': 'See event',
+         'url': 'https://www.orillia.ca/en/recreation/port-of-orillia.aspx'},
+        {'name': 'Burl\'s Creek Event Grounds — Summer Concerts',
+         'date': f'{year}-06-01', 'end_date': f'{year}-09-30',
+         'venue': 'Burl\'s Creek Event Grounds, Oro-Medonte ON',
+         'category': 'music', 'price': 'Ticketed',
+         'url': 'https://burlscreek.com/events/'},
     ]
     events = []
     for c in curated:
         if c['end_date'] < today:
             continue
+        # Clamp the display date to today if the range has already started,
+        # so ongoing series show up as 'happening now' rather than in the past.
+        display_date = max(c['date'], today) if c['end_date'] >= today else c['date']
         ev_id = make_event_id('curated', c['name'], c['date'])
         events.append({
             'id': ev_id,
             'name': c['name'],
-            'date': c['date'],
+            'date': display_date,
             'end_date': c.get('end_date', ''),
             'time': '',
             'venue': c['venue'],
@@ -1052,6 +1172,190 @@ def scrape_lake_country_events():
         ['https://lakecountry887.com', 'https://www.lakecountry887.com'],
         'lakecountry887.com',
         'Orillia, ON',
+    )
+
+
+def _scrape_generic_venue(
+    candidate_urls, source, venue_default, paths=None, ical_first=True
+):
+    """Try iCal, then Tribe REST, then JSON-LD, then HTML-card fallback."""
+    today = date.today().isoformat()
+    paths = paths or (
+        '', '/events/', '/events', '/calendar/', '/upcoming-events/',
+        '/whats-on/', '/shows/', '/programs/',
+    )
+    events = []
+    seen_ids = set()
+
+    for base in candidate_urls:
+        base = base.rstrip('/')
+        # 1) iCal endpoints
+        if ical_first:
+            for suffix in ('/events/?ical=1', '/events?ical=1', '/?ical=1'):
+                text = fetch_page(base + suffix)
+                if text and 'BEGIN:VEVENT' in text:
+                    parsed = _parse_ical(text, source, venue_default)
+                    for ev in parsed:
+                        if ev['id'] not in seen_ids:
+                            seen_ids.add(ev['id'])
+                            events.append(ev)
+                    if parsed:
+                        logger.info(f"{source} (iCal): {len(events)} events")
+                        return events
+        # 2) Tribe REST API
+        try:
+            resp = requests.get(
+                f'{base}/wp-json/tribe/events/v1/events?per_page=50',
+                headers=HEADERS, timeout=15,
+            )
+            if resp.status_code == 200:
+                data = resp.json()
+                for ev in data.get('events', []):
+                    name = (ev.get('title') or '').strip()
+                    if not name:
+                        continue
+                    start = parse_iso_date(ev.get('start_date', ''))
+                    if not start:
+                        continue
+                    end = parse_iso_date(ev.get('end_date', ''))
+                    vinfo = ev.get('venue') or {}
+                    venue = venue_default
+                    if isinstance(vinfo, dict) and vinfo.get('venue'):
+                        parts = [vinfo.get('venue', ''),
+                                 vinfo.get('address', ''),
+                                 vinfo.get('city', '')]
+                        venue = ', '.join(p for p in parts if p) or venue_default
+                    desc = ev.get('description') or name
+                    if isinstance(desc, str):
+                        desc = re.sub(r'<[^>]+>', ' ', desc).strip()[:200]
+                    ev_id = make_event_id(source[:6].lower(), name, start)
+                    if ev_id not in seen_ids:
+                        seen_ids.add(ev_id)
+                        events.append({
+                            'id': ev_id,
+                            'name': name,
+                            'date': start,
+                            'end_date': end,
+                            'time': '',
+                            'venue': venue,
+                            'category': categorize_event(name, desc),
+                            'price': 'See event',
+                            'url': ev.get('url', base),
+                            'description': desc,
+                            'source': source,
+                            'scraped_date': today,
+                            'status': 'active',
+                        })
+                if events:
+                    logger.info(f"{source} (Tribe REST): {len(events)} events")
+                    return events
+        except Exception:
+            pass
+        # 3) HTML scrape for JSON-LD on each candidate path
+        for path in paths:
+            html = fetch_page(base + path)
+            if not html:
+                continue
+            for ev in extract_json_ld_events(html, venue_default, source):
+                if ev['id'] not in seen_ids and ev.get('date'):
+                    seen_ids.add(ev['id'])
+                    events.append(ev)
+            if events:
+                logger.info(f"{source} (JSON-LD): {len(events)} events")
+                return events
+    logger.info(f"{source}: {len(events)} events")
+    return events
+
+
+def scrape_orillia_opera_house_v2():
+    return _scrape_generic_venue(
+        ['https://orilliaoperahouse.ca', 'https://www.orilliaoperahouse.ca'],
+        'orilliaoperahouse.ca',
+        'Orillia Opera House, 20 Mississaga St W, Orillia ON',
+    )
+
+
+def scrape_casino_rama_v2():
+    return _scrape_generic_venue(
+        ['https://www.casinorama.com', 'https://casinorama.com'],
+        'casinorama.com',
+        'Casino Rama Resort Entertainment Centre, Rama ON',
+        paths=('/entertainment/', '/events/', '/shows/'),
+        ical_first=False,
+    )
+
+
+def scrape_orillia_museum():
+    return _scrape_generic_venue(
+        ['https://orilliamuseum.org', 'https://www.orilliamuseum.org'],
+        'orilliamuseum.org',
+        'Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON',
+    )
+
+
+def scrape_leacock_museum():
+    return _scrape_generic_venue(
+        ['https://leacockmuseum.com', 'https://www.leacockmuseum.com'],
+        'leacockmuseum.com',
+        'Stephen Leacock Museum, 50 Museum Dr, Orillia ON',
+    )
+
+
+def scrape_mariposa_arts_theatre():
+    return _scrape_generic_venue(
+        ['https://mariposaartstheatre.com', 'https://www.mariposaartstheatre.com'],
+        'mariposaartstheatre.com',
+        'Mariposa Arts Theatre, Orillia ON',
+    )
+
+
+def scrape_osmh_foundation():
+    return _scrape_generic_venue(
+        ['https://osmhfoundation.ca', 'https://www.osmhfoundation.ca'],
+        'osmhfoundation.ca',
+        'OSMH Foundation — Orillia, ON',
+    )
+
+
+def scrape_orillia_chamber():
+    return _scrape_generic_venue(
+        ['https://orilliachamber.com', 'https://www.orilliachamber.com'],
+        'orilliachamber.com',
+        'Orillia Chamber of Commerce, Orillia ON',
+    )
+
+
+def scrape_couchiching_conservancy():
+    return _scrape_generic_venue(
+        ['https://couchichingconserv.ca', 'https://www.couchichingconserv.ca',
+         'https://couchconservancy.ca', 'https://www.couchconservancy.ca'],
+        'couchichingconserv.ca',
+        'Couchiching Conservancy — Orillia area',
+    )
+
+
+def scrape_brewery_bay():
+    return _scrape_generic_venue(
+        ['https://www.brewerybay.com', 'https://brewerybay.com'],
+        'brewerybay.com',
+        'Brewery Bay Food Co., 117 Mississaga St E, Orillia ON',
+    )
+
+
+def scrape_quayles_brewery():
+    return _scrape_generic_venue(
+        ['https://www.quaylesbrewery.com', 'https://quaylesbrewery.com',
+         'https://quaylesbrewery.ca'],
+        'quaylesbrewery.com',
+        'Quayle\'s Brewery, 5781 Hwy 11, Oro Station ON',
+    )
+
+
+def scrape_burls_creek():
+    return _scrape_generic_venue(
+        ['https://burlscreek.com', 'https://www.burlscreek.com'],
+        'burlscreek.com',
+        'Burl\'s Creek Event Grounds, Oro-Medonte ON',
     )
 
 
@@ -1377,7 +1681,18 @@ def run_event_scraper():
     all_new.extend(scrape_orillia_matters())
     all_new.extend(scrape_city_orillia())
     all_new.extend(scrape_orillia_opera_house())
+    all_new.extend(scrape_orillia_opera_house_v2())
+    all_new.extend(scrape_casino_rama_v2())
     all_new.extend(scrape_orillia_library())
+    all_new.extend(scrape_orillia_museum())
+    all_new.extend(scrape_leacock_museum())
+    all_new.extend(scrape_mariposa_arts_theatre())
+    all_new.extend(scrape_osmh_foundation())
+    all_new.extend(scrape_orillia_chamber())
+    all_new.extend(scrape_couchiching_conservancy())
+    all_new.extend(scrape_brewery_bay())
+    all_new.extend(scrape_quayles_brewery())
+    all_new.extend(scrape_burls_creek())
     all_new.extend(scrape_severn_township())
     all_new.extend(scrape_oro_medonte())
     all_new.extend(scrape_ramara_township())
