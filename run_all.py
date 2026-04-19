@@ -19,6 +19,8 @@ def generate_dashboard():
     """Copy dashboard and data files into docs/ for GitHub Pages."""
     os.makedirs('docs', exist_ok=True)
     shutil.copy('dashboard.html', 'docs/index.html')
+    if os.path.exists('vault.html'):
+        shutil.copy('vault.html', 'docs/vault.html')
     shutil.copy('contests_database.json', 'docs/contests_database.json')
     shutil.copy('freebies_database.json', 'docs/freebies_database.json')
     shutil.copy('sales_database.json', 'docs/sales_database.json')
