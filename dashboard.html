@@ -196,8 +196,7 @@ body.light .dismiss-btn{color:#bbb}
   <div class="updated" id="lastUpdated">Loading...</div>
   <div class="header-controls">
     <button class="hdr-btn" id="themeBtn" onclick="toggleTheme()">☀️ Light Mode</button>
-    <button class="hdr-btn" onclick="backupData()" title="Copy your entered/dismissed list to clipboard">💾 Backup Progress</button>
-    <button class="hdr-btn" onclick="restoreData()" title="Paste backup code to restore your progress">📥 Restore Progress</button>
+    <button class="hdr-btn" id="cloudBtn" onclick="connectCloudSync()" title="Save your entered/dismissed list to a private GitHub gist">☁ Connect Cloud Sync</button>
     <a class="hdr-btn" href="vault.html" style="text-decoration:none;display:inline-block" title="Manage your autofill vault">🔐 Autofill Vault</a>
   </div>
 </div>
@@ -321,14 +320,29 @@ document.addEventListener('DOMContentLoaded', () => {
 let allContests = [], allFreebies = [], allSales = [], allEvents = [], currentTab = 'all', currentCat = 'all', currentEventWeek = 'upcoming', currentEventCat = 'all';
 const today = new Date().toISOString().split('T')[0];
 
-// --- Dismissed items (persisted in localStorage) ---
-let dismissed = new Set(JSON.parse(localStorage.getItem('cb_dismissed') || '[]'));
+// --- Dismissed items (Map<id, ISO_timestamp>, persisted in localStorage) ---
+// Back-compat: migrate legacy Set<id> stored under 'cb_dismissed'.
+function loadMap(newKey, oldKey){
+  const raw = localStorage.getItem(newKey);
+  if (raw) {
+    try { return new Map(Object.entries(JSON.parse(raw))); } catch(e){}
+  }
+  const legacy = localStorage.getItem(oldKey);
+  if (legacy) {
+    try { return new Map(JSON.parse(legacy).map(id => [id, ''])); } catch(e){}
+  }
+  return new Map();
+}
+let dismissed = loadMap('cb_dismissed_v2', 'cb_dismissed');
 let showHidden = false;
 
-function saveDismissed(){ localStorage.setItem('cb_dismissed', JSON.stringify([...dismissed])); }
+function saveDismissed(){
+  localStorage.setItem('cb_dismissed_v2', JSON.stringify(Object.fromEntries(dismissed)));
+  schedulePush();
+}
 
 function dismiss(id){
-  dismissed.add(id);
+  dismissed.set(id, new Date().toISOString());
   saveDismissed();
   refreshTab();
 }
@@ -410,27 +424,52 @@ function renderContests(list){
     }).join('');
 }
 
-function renderSubmitted(list){
+function formatEnteredDate(iso){
+  if (!iso) return '<span style="color:#666">unknown</span>';
+  const d = new Date(iso);
+  if (isNaN(d)) return '<span style="color:#666">unknown</span>';
+  const now = new Date();
+  const days = Math.floor((now - d) / 86400000);
+  if (days === 0) return 'Today';
+  if (days === 1) return 'Yesterday';
+  if (days < 7) return days + ' days ago';
+  const opts = { month: 'short', day: 'numeric' };
+  if (d.getFullYear() !== now.getFullYear()) opts.year = 'numeric';
+  return d.toLocaleDateString(undefined, opts);
+}
+
+function renderSubmitted(){
   showTable();
   document.getElementById('catBar').style.display = 'none';
   document.getElementById('tableHead').innerHTML =
-    '<tr><th></th><th>Contest</th><th class="col-hide-sm">Prize</th><th>Value</th><th>Frequency</th><th>Ends</th><th class="col-hide-sm">Source</th><th></th></tr>';
+    '<tr><th></th><th>Contest</th><th class="col-hide-sm">Prize</th><th>Value</th><th>Entered</th><th class="col-hide-sm">Source</th><th></th></tr>';
   const tbody = document.getElementById('contestBody');
   const empty = document.getElementById('emptyMsg');
-  if(!list.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
+  const entries = [...submitted.entries()]
+    .map(([id, data]) => {
+      const live = allContests.find(c => c.id === id);
+      return {
+        id,
+        name: data.name || live?.name || id,
+        prize: data.prize || live?.prize || '',
+        prize_value: data.prize_value ?? live?.prize_value ?? 0,
+        url: data.url || live?.url || '#',
+        source: data.source || live?.source || '',
+        ts: data.ts || ''
+      };
+    })
+    .sort((a,b) => (b.ts||'').localeCompare(a.ts||''));
+  if(!entries.length){ tbody.innerHTML=''; empty.style.display='block'; return; }
   empty.style.display='none';
-  tbody.innerHTML = list
-    .sort((a,b)=>(b.prize_value||0)-(a.prize_value||0))
-    .map(c => `<tr>
-        <td style="width:14px">${linkDot(c)}</td>
-        <td><a href="${c.url}" target="_blank" rel="noopener">${c.name||'--'}</a></td>
-        <td class="col-hide-sm" style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.prize||'--'}</td>
-        <td class="prize-val">${fmt(c.prize_value)}</td>
-        <td>${freqBadge(c.entry_frequency)}</td>
-        <td>${c.end_date||'--'}</td>
-        <td class="col-hide-sm source-tag">${c.source||'--'}</td>
-        <td><button onclick="unsubmit('${c.id}')" style="padding:3px 8px;border:1px solid #ff6b6b40;border-radius:6px;background:#ff6b6b10;color:#ff6b6b;cursor:pointer;font-size:0.75em">Undo</button></td>
-      </tr>`).join('');
+  tbody.innerHTML = entries.map(c => `<tr>
+      <td style="width:14px"></td>
+      <td><a href="${c.url}" target="_blank" rel="noopener">${c.name||'--'}</a></td>
+      <td class="col-hide-sm" style="max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.prize||'--'}</td>
+      <td class="prize-val">${fmt(c.prize_value)}</td>
+      <td title="${c.ts}">${formatEnteredDate(c.ts)}</td>
+      <td class="col-hide-sm source-tag">${c.source||'--'}</td>
+      <td><button onclick="unsubmit('${c.id}')" style="padding:3px 8px;border:1px solid #ff6b6b40;border-radius:6px;background:#ff6b6b10;color:#ff6b6b;cursor:pointer;font-size:0.75em">Undo</button></td>
+    </tr>`).join('');
 }
 
 function unsubmit(id){
@@ -599,13 +638,37 @@ function filterFreebies(cat, btn){
   renderFreebies(cat === 'all' ? af : af.filter(f => f.category === cat));
 }
 
-// --- Submitted tracking (persisted in localStorage) ---
-let submitted = new Set(JSON.parse(localStorage.getItem('cb_submitted') || '[]'));
-function saveSubmitted(){ localStorage.setItem('cb_submitted', JSON.stringify([...submitted])); }
+// --- Submitted tracking (Map<id, {ts, name, prize, prize_value, url, source}>) ---
+// Legacy format was Set<id>; migrate to rich map with empty timestamps.
+function loadSubmittedMap(){
+  const raw = localStorage.getItem('cb_submitted_v2');
+  if (raw) {
+    try { return new Map(Object.entries(JSON.parse(raw))); } catch(e){}
+  }
+  const legacy = localStorage.getItem('cb_submitted');
+  if (legacy) {
+    try { return new Map(JSON.parse(legacy).map(id => [id, { ts: '' }])); } catch(e){}
+  }
+  return new Map();
+}
+let submitted = loadSubmittedMap();
+function saveSubmitted(){
+  localStorage.setItem('cb_submitted_v2', JSON.stringify(Object.fromEntries(submitted)));
+  schedulePush();
+}
 
 function markSubmitted(id){
-  submitted.add(id);
-  dismissed.add(id);   // also hides from main list
+  const c = allContests.find(x => x.id === id);
+  const now = new Date().toISOString();
+  submitted.set(id, {
+    ts: now,
+    name: c?.name || '',
+    prize: c?.prize || '',
+    prize_value: c?.prize_value || 0,
+    url: c?.url || '',
+    source: c?.source || ''
+  });
+  dismissed.set(id, now);
   saveSubmitted();
   saveDismissed();
   refreshTab();
@@ -632,10 +695,6 @@ function activeFreebies(){
   return base.filter(f => !dismissed.has(f.id));
 }
 
-function submittedContests(){
-  return allContests.filter(c => submitted.has(c.id));
-}
-
 function jumpToTab(tabName){
   const btn = document.querySelector(`.tab-btn[data-tab="${tabName}"]`);
   showTab(tabName, btn);
@@ -660,7 +719,7 @@ function showTab(t, btn){
     document.querySelectorAll('.week-btn').forEach((b,i)=>b.classList.toggle('active',i===0));
     document.querySelectorAll('#eventCatBar .cat-btn').forEach((b,i)=>b.classList.toggle('active',i===0));
     renderEvents(activeEvents()); }
-  else if(t === 'submitted') renderSubmitted(submittedContests());
+  else if(t === 'submitted') renderSubmitted();
 }
 
 // --- Theme toggle ---
@@ -676,39 +735,144 @@ function toggleTheme(){
 // Apply saved theme immediately
 (function(){ applyTheme(localStorage.getItem('cb_theme') || 'dark'); })();
 
-// --- Backup / Restore submitted + dismissed ---
-function backupData(){
-  const payload = {
-    s: [...submitted],
-    d: [...dismissed],
-    v: 1
-  };
-  const code = btoa(JSON.stringify(payload));
-  navigator.clipboard.writeText(code).then(()=>{
-    alert('✅ Backup code copied to clipboard!\n\nPaste it on another device using "Restore Progress" to sync your entries.');
-  }).catch(()=>{
-    prompt('Copy this backup code:', code);
-  });
+// --- Cloud sync via GitHub gist ---
+// Persists submitted + dismissed maps to a private gist so state survives
+// browser wipes (DuckDuckGo fire button, Safari ITP) and syncs across devices.
+let gistCfg = JSON.parse(localStorage.getItem('cb_gist_cfg') || '{}');
+
+function updateCloudBtn(){
+  const btn = document.getElementById('cloudBtn');
+  if (!btn) return;
+  if (gistCfg.token && gistCfg.gistId) {
+    btn.textContent = '☁ Sync: On';
+    btn.title = 'Cloud sync active. Click to disconnect.';
+    btn.onclick = disconnectCloudSync;
+  } else {
+    btn.textContent = '☁ Connect Cloud Sync';
+    btn.title = 'Save your entered/dismissed list to a private GitHub gist so it survives browser wipes';
+    btn.onclick = connectCloudSync;
+  }
 }
 
-function restoreData(){
-  const code = prompt('Paste your backup code:');
-  if(!code) return;
-  try{
-    const payload = JSON.parse(atob(code.trim()));
-    if(payload.v !== 1) throw new Error('Invalid');
-    (payload.s||[]).forEach(id => submitted.add(id));
-    (payload.d||[]).forEach(id => dismissed.add(id));
-    saveSubmitted();
-    saveDismissed();
-    refreshTab();
-    alert(`✅ Restored! ${(payload.s||[]).length} entered contests and ${(payload.d||[]).length} hidden items loaded.`);
-  } catch(e){
-    alert('❌ Invalid backup code. Please try again.');
+async function connectCloudSync(){
+  const token = prompt(
+    'Paste a GitHub Personal Access Token with "gist" scope.\n\n' +
+    'Create one at: github.com/settings/tokens\n' +
+    '→ Generate new token (classic) → tick "gist" scope only → Generate.'
+  );
+  if (!token || !token.trim()) return;
+  let gistId = prompt('Optional: paste an existing gist ID to reuse (leave blank to create a new private gist):') || '';
+  gistId = gistId.trim();
+  try {
+    if (!gistId) {
+      const payload = {
+        submitted: Object.fromEntries(submitted),
+        dismissed: Object.fromEntries(dismissed),
+        updated: new Date().toISOString()
+      };
+      const res = await fetch('https://api.github.com/gists', {
+        method: 'POST',
+        headers: {
+          'Authorization': 'token ' + token.trim(),
+          'Accept': 'application/vnd.github+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          public: false,
+          description: 'ContestBot state (entered + dismissed)',
+          files: { 'contestbot_state.json': { content: JSON.stringify(payload, null, 2) } }
+        })
+      });
+      if (!res.ok) { alert('Failed to create gist (' + res.status + '). Check token scope.'); return; }
+      const gist = await res.json();
+      gistId = gist.id;
+    }
+    gistCfg = { token: token.trim(), gistId };
+    localStorage.setItem('cb_gist_cfg', JSON.stringify(gistCfg));
+    updateCloudBtn();
+    await pullFromGist();
+    alert('✅ Cloud sync enabled.\n\nGist ID: ' + gistId + '\n\nTo enable on another device, use the same token + gist ID.');
+  } catch (e) {
+    alert('Cloud sync setup failed: ' + e.message);
+  }
+}
+
+function disconnectCloudSync(){
+  if (!confirm('Disconnect cloud sync? Your list stays on this device but stops syncing.')) return;
+  gistCfg = {};
+  localStorage.removeItem('cb_gist_cfg');
+  updateCloudBtn();
+}
+
+async function pullFromGist(){
+  if (!gistCfg.token || !gistCfg.gistId) return;
+  try {
+    const res = await fetch('https://api.github.com/gists/' + gistCfg.gistId, {
+      headers: {
+        'Authorization': 'token ' + gistCfg.token,
+        'Accept': 'application/vnd.github+json'
+      },
+      cache: 'no-store'
+    });
+    if (!res.ok) return;
+    const gist = await res.json();
+    const file = gist.files && gist.files['contestbot_state.json'];
+    if (!file || !file.content) return;
+    const remote = JSON.parse(file.content);
+    let changed = false;
+    for (const [id, data] of Object.entries(remote.submitted || {})) {
+      const local = submitted.get(id);
+      const localTs = local?.ts || '';
+      const remoteTs = data?.ts || '';
+      if (!local || remoteTs > localTs) { submitted.set(id, data); changed = true; }
+    }
+    for (const [id, ts] of Object.entries(remote.dismissed || {})) {
+      const localTs = dismissed.get(id) || '';
+      if (ts > localTs) { dismissed.set(id, ts); changed = true; }
+    }
+    if (changed) {
+      localStorage.setItem('cb_submitted_v2', JSON.stringify(Object.fromEntries(submitted)));
+      localStorage.setItem('cb_dismissed_v2', JSON.stringify(Object.fromEntries(dismissed)));
+      refreshTab();
+    }
+  } catch (e) {
+    console.warn('Pull from gist failed:', e);
+  }
+}
+
+let pushTimer = null;
+function schedulePush(){
+  if (!gistCfg.token || !gistCfg.gistId) return;
+  clearTimeout(pushTimer);
+  pushTimer = setTimeout(pushToGist, 1200);
+}
+
+async function pushToGist(){
+  if (!gistCfg.token || !gistCfg.gistId) return;
+  try {
+    const payload = {
+      submitted: Object.fromEntries(submitted),
+      dismissed: Object.fromEntries(dismissed),
+      updated: new Date().toISOString()
+    };
+    await fetch('https://api.github.com/gists/' + gistCfg.gistId, {
+      method: 'PATCH',
+      headers: {
+        'Authorization': 'token ' + gistCfg.token,
+        'Accept': 'application/vnd.github+json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        files: { 'contestbot_state.json': { content: JSON.stringify(payload, null, 2) } }
+      })
+    });
+  } catch (e) {
+    console.warn('Push to gist failed:', e);
   }
 }
 
 async function loadData(){
+  updateCloudBtn();
   try{
     const bust = `?v=${Date.now()}`;
     const [cr, fr, sr, er] = await Promise.all([
@@ -717,6 +881,8 @@ async function loadData(){
       fetch('sales_database.json' + bust, {cache: 'no-store'}).then(r=>r.json()).catch(()=>({sales:[]})),
       fetch('events_database.json' + bust, {cache: 'no-store'}).then(r=>r.json()).catch(()=>({events:[]})),
     ]);
+    // Pull remote state before first render so entered/dismissed reflect other devices.
+    await pullFromGist();
     allContests = (cr.contests||[]).filter(c => c.name && c.name.length > 3 && c.url);
     allFreebies = (fr.freebies||[]).filter(f => f.name && f.url);
     allSales    = (sr.sales||[]);
