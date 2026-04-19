@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ContestBot Vault</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0f;color:#e0e0e0;padding:20px;max-width:680px;margin:0 auto;min-height:100vh}
+.header{text-align:center;padding:20px 0;border-bottom:1px solid #1a1a2e;margin-bottom:24px}
+.header h1{font-size:1.8em;background:linear-gradient(135deg,#00d4ff,#7b2ff7);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header p{color:#888;margin-top:4px;font-size:0.88em}
+.back-link{display:inline-block;color:#888;text-decoration:none;margin-bottom:14px;font-size:0.88em}
+.back-link:hover{color:#00d4ff}
+.card{background:#12121f;border:1px solid #1a1a2e;border-radius:12px;padding:22px;margin-bottom:18px}
+.card h2{font-size:1.1em;color:#00d4ff;margin-bottom:14px}
+.card p{color:#888;font-size:0.88em;line-height:1.5;margin-bottom:12px}
+label{display:block;color:#aaa;font-size:0.8em;margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px}
+input[type=text],input[type=email],input[type=tel],input[type=password],input[type=number],select,textarea{width:100%;background:#0a0a0f;border:1px solid #2a2a3e;border-radius:8px;padding:10px 12px;color:#e0e0e0;font-size:0.95em;outline:none;transition:border-color 0.2s;font-family:inherit}
+input:focus,select:focus,textarea:focus{border-color:#00d4ff}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.row-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:14px}
+.field{margin-bottom:14px}
+button{padding:12px 20px;background:linear-gradient(135deg,#00d4ff,#7b2ff7);border:none;border-radius:8px;color:#fff;font-size:0.95em;font-weight:700;cursor:pointer;width:100%;margin-top:4px}
+button:hover{opacity:0.9}
+button.secondary{background:#1a1a2e;color:#aaa;border:1px solid #2a2a3e}
+button.secondary:hover{background:#2a2a3e;color:#e0e0e0}
+button.danger{background:none;color:#ff6b6b;border:1px solid #ff6b6b40}
+button.danger:hover{background:#ff6b6b15}
+.msg{font-size:0.85em;min-height:20px;margin-top:10px;padding:8px 10px;border-radius:6px}
+.msg.error{background:#ff6b6b15;color:#ff6b6b;border:1px solid #ff6b6b40}
+.msg.ok{background:#00ff8815;color:#00ff88;border:1px solid #00ff8840}
+.msg.info{background:#00d4ff15;color:#00d4ff;border:1px solid #00d4ff40}
+.hidden{display:none!important}
+.bookmarklet-link{display:inline-block;background:linear-gradient(135deg,#00d4ff,#7b2ff7);color:#fff;padding:12px 20px;border-radius:8px;font-weight:700;text-decoration:none;font-size:0.95em;margin:6px 0;word-break:break-all}
+.code-block{background:#0a0a0f;border:1px solid #2a2a3e;border-radius:8px;padding:10px;font-family:ui-monospace,Menlo,monospace;font-size:0.72em;color:#888;max-height:120px;overflow-y:auto;word-break:break-all;margin-bottom:8px}
+.install-steps{counter-reset:step;padding-left:0;list-style:none}
+.install-steps li{counter-increment:step;padding:8px 0 8px 34px;position:relative;color:#ccc;font-size:0.9em;line-height:1.5}
+.install-steps li:before{content:counter(step);position:absolute;left:0;top:6px;width:24px;height:24px;border-radius:50%;background:#00d4ff20;color:#00d4ff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.78em}
+.install-steps code{background:#0a0a0f;padding:1px 6px;border-radius:4px;font-size:0.9em;color:#00d4ff}
+.warning{background:#ffaa0015;border:1px solid #ffaa0040;color:#ffaa00;padding:10px 14px;border-radius:8px;font-size:0.85em;margin-bottom:14px;line-height:1.5}
+</style>
+</head>
+<body>
+
+<a class="back-link" href="index.html">← Back to dashboard</a>
+
+<div class="header">
+  <h1>🔐 Autofill Vault</h1>
+  <p>Encrypted personal info for contest entry assistance</p>
+</div>
+
+<!-- STATE: first-time setup -->
+<div id="setupScreen" class="card hidden">
+  <h2>Create your vault</h2>
+  <p>Your info is encrypted with AES-GCM and stored only on this device. Pick a strong password — you'll need it every time you use the autofill bookmarklet. <strong>There is no recovery if you forget it.</strong></p>
+  <div class="field">
+    <label>New vault password (8+ chars)</label>
+    <input type="password" id="newPass" autocomplete="new-password" placeholder="Choose a strong password">
+  </div>
+  <div class="field">
+    <label>Confirm password</label>
+    <input type="password" id="newPassConfirm" autocomplete="new-password" placeholder="Repeat the password">
+  </div>
+  <button onclick="createVault()">Create Vault</button>
+  <div class="msg" id="setupMsg" style="display:none"></div>
+</div>
+
+<!-- STATE: unlock existing vault -->
+<div id="unlockScreen" class="card hidden">
+  <h2>Unlock your vault</h2>
+  <div class="field">
+    <label>Vault password</label>
+    <input type="password" id="unlockPass" autocomplete="current-password" placeholder="Enter your vault password">
+  </div>
+  <button onclick="unlockVault()">Unlock</button>
+  <div class="msg" id="unlockMsg" style="display:none"></div>
+  <div style="margin-top:14px;text-align:center">
+    <button class="danger" onclick="resetVault()">Reset vault (delete & start over)</button>
+  </div>
+</div>
+
+<!-- STATE: vault editor -->
+<div id="editor" class="hidden">
+  <div class="card">
+    <h2>Your info</h2>
+    <p>iOS Safari autofills most of these already. The bookmarklet fills in the fields iOS misses (DOB, province dropdowns, age confirmation) and backs up the rest.</p>
+
+    <div class="row">
+      <div class="field">
+        <label>First name</label>
+        <input type="text" id="firstName" autocomplete="given-name">
+      </div>
+      <div class="field">
+        <label>Last name</label>
+        <input type="text" id="lastName" autocomplete="family-name">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="email" autocomplete="email">
+    </div>
+
+    <div class="field">
+      <label>Phone (10 digits, no spaces)</label>
+      <input type="tel" id="phone" autocomplete="tel" placeholder="5551234567">
+    </div>
+
+    <div class="field">
+      <label>Street address</label>
+      <input type="text" id="address1" autocomplete="address-line1">
+    </div>
+
+    <div class="field">
+      <label>Apt / suite (optional)</label>
+      <input type="text" id="address2" autocomplete="address-line2">
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>City</label>
+        <input type="text" id="city" autocomplete="address-level2">
+      </div>
+      <div class="field">
+        <label>Postal code (A1A 1A1)</label>
+        <input type="text" id="postal" autocomplete="postal-code">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Province</label>
+        <select id="province" autocomplete="address-level1">
+          <option value="">-- Select --</option>
+          <option value="ON">Ontario</option>
+          <option value="AB">Alberta</option>
+          <option value="BC">British Columbia</option>
+          <option value="MB">Manitoba</option>
+          <option value="NB">New Brunswick</option>
+          <option value="NL">Newfoundland and Labrador</option>
+          <option value="NS">Nova Scotia</option>
+          <option value="NT">Northwest Territories</option>
+          <option value="NU">Nunavut</option>
+          <option value="PE">Prince Edward Island</option>
+          <option value="QC">Quebec</option>
+          <option value="SK">Saskatchewan</option>
+          <option value="YT">Yukon</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Country</label>
+        <input type="text" id="country" value="Canada" autocomplete="country-name">
+      </div>
+    </div>
+
+    <h2 style="margin-top:18px">Date of birth</h2>
+    <div class="row-3">
+      <div class="field">
+        <label>Month (1-12)</label>
+        <input type="number" id="dobMonth" min="1" max="12" placeholder="MM">
+      </div>
+      <div class="field">
+        <label>Day (1-31)</label>
+        <input type="number" id="dobDay" min="1" max="31" placeholder="DD">
+      </div>
+      <div class="field">
+        <label>Year</label>
+        <input type="number" id="dobYear" min="1900" max="2020" placeholder="YYYY">
+      </div>
+    </div>
+
+    <div class="field">
+      <label>Gender (optional, some forms ask)</label>
+      <select id="gender">
+        <option value="">-- Not specified --</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other / prefer not to say</option>
+      </select>
+    </div>
+
+    <button onclick="saveVault()">💾 Save vault</button>
+    <div class="msg" id="saveMsg" style="display:none"></div>
+  </div>
+
+  <div class="card">
+    <h2>Your autofill bookmarklet</h2>
+    <p>After saving your info above, tap the button below to regenerate your personalized bookmarklet. Install it once in Safari (instructions below), then tap it on any contest page to fill the form.</p>
+    <div class="warning">⚠ Regenerate this whenever you change your vault info — the old bookmarklet has the old data baked in.</div>
+    <button onclick="generateBookmarklet()">⚡ Generate bookmarklet</button>
+    <div id="bookmarkletOutput" class="hidden" style="margin-top:14px">
+      <div class="msg info" style="display:block">Bookmarklet generated. Copy it and follow the install steps below.</div>
+      <div class="field" style="margin-top:12px">
+        <label>Bookmarklet code</label>
+        <div class="code-block" id="bookmarkletCode"></div>
+        <button class="secondary" onclick="copyBookmarklet()">📋 Copy bookmarklet</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Install on iPhone Safari (one-time)</h2>
+    <ol class="install-steps">
+      <li>Open Safari → any webpage (this page works). Tap the <strong>share icon</strong> (square with arrow up) at the bottom.</li>
+      <li>Tap <strong>Add Bookmark</strong>. Name it <code>Fill Contest</code>. Save.</li>
+      <li>Tap the <strong>bookmarks icon</strong> (open book) at the bottom → <strong>Edit</strong> (bottom right) → tap your new <em>Fill Contest</em> bookmark to edit it.</li>
+      <li>Tap the long URL in the second field. Clear it. <strong>Paste the copied bookmarklet</strong> from the button above. Tap Done.</li>
+      <li>Test it: open a contest page → tap bookmarks → tap <em>Fill Contest</em>. Enter your vault password. Fields fill in. Review, tick terms, solve any CAPTCHA / skill-test, tap submit.</li>
+    </ol>
+    <div class="warning" style="margin-top:14px">DuckDuckGo browser on iOS doesn't reliably run bookmarklets — use Safari for contest entry. You can still browse contests in DDG and tap the URL to open in Safari.</div>
+  </div>
+
+  <div class="card">
+    <h2>Privacy</h2>
+    <p>Your vault data never leaves this device. The encrypted blob lives in Safari's localStorage for this site; the same blob is also baked into the bookmarklet URL you save as a Safari bookmark. Both are encrypted with the password you set — without that password, the data is useless. Nothing is committed to the public ContestBot repo.</p>
+    <div style="margin-top:14px">
+      <button class="danger" onclick="resetVault()">🗑 Delete vault from this device</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const VAULT_KEY = 'cb_vault_v1';
+let sessionKey = null;     // derived key held in memory for this session
+let sessionPassword = null; // password held for bookmarklet regeneration
+let currentVault = null;
+
+const $ = id => document.getElementById(id);
+const show = (id, msg, cls) => {
+  const el = $(id);
+  el.textContent = msg;
+  el.className = 'msg ' + (cls || 'info');
+  el.style.display = 'block';
+};
+const hide = id => { $(id).style.display = 'none'; };
+
+// --- Crypto helpers ---
+function b64enc(buf) {
+  return btoa(String.fromCharCode(...new Uint8Array(buf)));
+}
+function b64dec(str) {
+  return Uint8Array.from(atob(str), c => c.charCodeAt(0));
+}
+async function deriveKey(password, salt) {
+  const material = await crypto.subtle.importKey(
+    'raw', new TextEncoder().encode(password),
+    'PBKDF2', false, ['deriveKey']
+  );
+  return crypto.subtle.deriveKey(
+    { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+    material,
+    { name: 'AES-GCM', length: 256 },
+    false, ['encrypt', 'decrypt']
+  );
+}
+async function encryptVault(vault, password) {
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const key = await deriveKey(password, salt);
+  const ct = await crypto.subtle.encrypt(
+    { name: 'AES-GCM', iv }, key,
+    new TextEncoder().encode(JSON.stringify(vault))
+  );
+  return { v: 1, salt: b64enc(salt), iv: b64enc(iv), ct: b64enc(ct) };
+}
+async function decryptVault(blob, password) {
+  const salt = b64dec(blob.salt);
+  const iv = b64dec(blob.iv);
+  const ct = b64dec(blob.ct);
+  const key = await deriveKey(password, salt);
+  const pt = await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ct);
+  return { vault: JSON.parse(new TextDecoder().decode(pt)), key };
+}
+
+// --- Screen routing ---
+function showScreen(which) {
+  ['setupScreen','unlockScreen','editor'].forEach(s => $(s).classList.add('hidden'));
+  $(which).classList.remove('hidden');
+}
+function init() {
+  const existing = localStorage.getItem(VAULT_KEY);
+  showScreen(existing ? 'unlockScreen' : 'setupScreen');
+}
+
+// --- First-time setup ---
+async function createVault() {
+  hide('setupMsg');
+  const p1 = $('newPass').value;
+  const p2 = $('newPassConfirm').value;
+  if (p1.length < 8) { show('setupMsg', 'Password must be at least 8 characters.', 'error'); return; }
+  if (p1 !== p2) { show('setupMsg', 'Passwords do not match.', 'error'); return; }
+  const empty = { firstName:'', lastName:'', email:'', phone:'',
+                  address1:'', address2:'', city:'', postal:'', province:'', country:'Canada',
+                  dobMonth:'', dobDay:'', dobYear:'', gender:'' };
+  const blob = await encryptVault(empty, p1);
+  localStorage.setItem(VAULT_KEY, JSON.stringify(blob));
+  sessionPassword = p1;
+  currentVault = empty;
+  showScreen('editor');
+  fillEditor(empty);
+  show('saveMsg', 'Vault created. Fill in your info and save.', 'ok');
+}
+
+// --- Unlock ---
+async function unlockVault() {
+  hide('unlockMsg');
+  const pw = $('unlockPass').value;
+  if (!pw) return;
+  const raw = localStorage.getItem(VAULT_KEY);
+  if (!raw) { showScreen('setupScreen'); return; }
+  try {
+    const blob = JSON.parse(raw);
+    const { vault } = await decryptVault(blob, pw);
+    sessionPassword = pw;
+    currentVault = vault;
+    showScreen('editor');
+    fillEditor(vault);
+  } catch (e) {
+    show('unlockMsg', 'Wrong password. Try again.', 'error');
+  }
+}
+
+// --- Editor ---
+const FIELDS = ['firstName','lastName','email','phone','address1','address2',
+                'city','postal','province','country','dobMonth','dobDay','dobYear','gender'];
+
+function fillEditor(v) {
+  FIELDS.forEach(f => { if (v[f] !== undefined) $(f).value = v[f]; });
+}
+function readEditor() {
+  const v = {};
+  FIELDS.forEach(f => { v[f] = $(f).value.trim(); });
+  // Normalize postal: uppercase, single space
+  if (v.postal) {
+    v.postal = v.postal.toUpperCase().replace(/\s+/g,'');
+    if (v.postal.length === 6) v.postal = v.postal.slice(0,3) + ' ' + v.postal.slice(3);
+  }
+  return v;
+}
+async function saveVault() {
+  hide('saveMsg');
+  if (!sessionPassword) { show('saveMsg', 'Session expired — reload and unlock.', 'error'); return; }
+  const v = readEditor();
+  const blob = await encryptVault(v, sessionPassword);
+  localStorage.setItem(VAULT_KEY, JSON.stringify(blob));
+  currentVault = v;
+  show('saveMsg', '✓ Saved. Regenerate your bookmarklet below to pick up the new info.', 'ok');
+}
+
+// --- Bookmarklet generation ---
+async function generateBookmarklet() {
+  if (!sessionPassword || !currentVault) return;
+  const v = readEditor();
+  // Re-encrypt with a compact binary format so the bookmarklet URL stays small.
+  // Format: [16 salt][12 iv][ct...] base64-encoded as one blob.
+  const salt = crypto.getRandomValues(new Uint8Array(16));
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const key = await deriveKey(sessionPassword, salt);
+  const ct = new Uint8Array(await crypto.subtle.encrypt(
+    { name: 'AES-GCM', iv }, key,
+    new TextEncoder().encode(JSON.stringify(v))
+  ));
+  const combined = new Uint8Array(salt.length + iv.length + ct.length);
+  combined.set(salt, 0);
+  combined.set(iv, 16);
+  combined.set(ct, 28);
+  const encoded = b64enc(combined);
+
+  const code = buildBookmarklet(encoded);
+  $('bookmarkletCode').textContent = code;
+  $('bookmarkletOutput').classList.remove('hidden');
+}
+
+function buildBookmarklet(encVault) {
+  // Single-line javascript: URL. Keep readable here — Safari tolerates long URLs.
+  return `javascript:(async()=>{try{const V='${encVault}';const u=Uint8Array.from(atob(V),c=>c.charCodeAt(0));const s=u.slice(0,16),i=u.slice(16,28),c=u.slice(28);const p=prompt('Vault password:');if(!p)return;const m=await crypto.subtle.importKey('raw',new TextEncoder().encode(p),'PBKDF2',false,['deriveKey']);const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:s,iterations:100000,hash:'SHA-256'},m,{name:'AES-GCM',length:256},false,['decrypt']);let v;try{const d=await crypto.subtle.decrypt({name:'AES-GCM',iv:i},k,c);v=JSON.parse(new TextDecoder().decode(d));}catch(e){alert('Wrong password');return;}let n=0;const setVal=(el,val)=>{if(!val||el.disabled||el.readOnly)return;if(el.value&&el.value.trim())return;el.focus();el.value=val;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));el.style.outline='2px solid #00d4ff';n++;};const sel=q=>document.querySelectorAll(q);const f=(q,val)=>sel(q).forEach(e=>setVal(e,val));const byLabel=(keywords,val)=>{if(!val)return;document.querySelectorAll('input,select').forEach(el=>{if(el.value&&el.value.trim())return;const id=(el.id||'').toLowerCase();const name=(el.name||'').toLowerCase();const ph=(el.placeholder||'').toLowerCase();const ac=(el.autocomplete||'').toLowerCase();const lbl=el.labels&&el.labels[0]?el.labels[0].textContent.toLowerCase():'';const hay=id+' '+name+' '+ph+' '+ac+' '+lbl;if(keywords.some(k=>hay.includes(k))){if(el.tagName==='SELECT'){for(const o of el.options){if(o.value===val||o.text.toLowerCase().includes(val.toLowerCase())){el.value=o.value;el.dispatchEvent(new Event('change',{bubbles:true}));n++;break;}}}else{setVal(el,val);}}});};byLabel(['first','given','fname','firstname'],v.firstName);byLabel(['last','family','lname','lastname','surname'],v.lastName);byLabel(['email','e-mail'],v.email);byLabel(['phone','tel','mobile','cell'],v.phone);byLabel(['address1','street','addr1','address-line1','line1'],v.address1);byLabel(['address2','addr2','address-line2','line2','apt','suite','unit'],v.address2);byLabel(['city','town','municipality','address-level2'],v.city);byLabel(['postal','zip','address-level1'],v.postal);byLabel(['country'],v.country);byLabel(['province','state','region','address-level1'],v.province);byLabel(['gender','sex'],v.gender);if(v.dobMonth)byLabel(['birthmonth','dobmonth','bday-month','bmonth'],v.dobMonth);if(v.dobDay)byLabel(['birthday','dobday','bday-day','bday','bdayday'],v.dobDay);if(v.dobYear)byLabel(['birthyear','dobyear','bday-year','byear'],v.dobYear);if(v.dobYear&&v.dobMonth&&v.dobDay){const iso=v.dobYear+'-'+String(v.dobMonth).padStart(2,'0')+'-'+String(v.dobDay).padStart(2,'0');document.querySelectorAll('input[type=date]').forEach(el=>setVal(el,iso));f('input[autocomplete=bday]',iso);}alert('Filled '+n+' fields. Review terms, solve any skill-test, then submit.');}catch(e){alert('Autofill error: '+e.message);}})();`;
+}
+
+async function copyBookmarklet() {
+  const code = $('bookmarkletCode').textContent;
+  try {
+    await navigator.clipboard.writeText(code);
+    show('saveMsg', '✓ Bookmarklet copied to clipboard.', 'ok');
+  } catch (e) {
+    // Fallback for older browsers
+    const ta = document.createElement('textarea');
+    ta.value = code;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    show('saveMsg', '✓ Bookmarklet copied.', 'ok');
+  }
+}
+
+async function resetVault() {
+  if (!confirm('Delete your vault from this device? This cannot be undone.')) return;
+  localStorage.removeItem(VAULT_KEY);
+  sessionPassword = null;
+  currentVault = null;
+  FIELDS.forEach(f => $(f).value = f === 'country' ? 'Canada' : '');
+  showScreen('setupScreen');
+}
+
+// Enter-key submit support
+document.addEventListener('DOMContentLoaded', () => {
+  $('newPassConfirm').addEventListener('keydown', e => { if (e.key === 'Enter') createVault(); });
+  $('unlockPass').addEventListener('keydown', e => { if (e.key === 'Enter') unlockVault(); });
+  init();
+});
+</script>
+</body>
+</html>
