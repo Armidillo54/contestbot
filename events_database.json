@@ -466,21 +466,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260419-orillia-crystals-calm-vibes-holistic-hea",
-      "name": "ORILLIA  - CRYSTALS & CALM VIBES HOLISTIC HEALING FAIR\u2122",
-      "date": "2026-04-19",
-      "end_date": "2026-04-19",
-      "time": "",
-      "venue": "ODAS Park, Orillia, ON",
-      "category": "festival",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/orillia-crystals-calm-vibes-holistic-healing-fairtm-tickets-1754110183779",
-      "description": "Crystals, calm vibes, and all things wellness await at the Orillia Crystals & Calm Vibes Holistic Healing Fair\u2122",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260420-meditation-monday",
       "name": "MEDITATION MONDAY",
       "date": "2026-04-20",
@@ -1006,6 +991,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-04-19",
-  "total_events": 67
+  "last_updated": "2026-04-20",
+  "total_events": 66
 }
