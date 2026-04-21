@@ -466,21 +466,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260420-meditation-monday",
-      "name": "MEDITATION MONDAY",
-      "date": "2026-04-20",
-      "end_date": "2026-04-20",
-      "time": "",
-      "venue": "4807 Line 11 N, Coldwater, ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/meditation-monday-tickets-1984915512731",
-      "description": "We invite you to join a circle of like-minded women who enjoy deepening their spiritual side of Life with Meditations for their Soul",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260423-safe-5-1-popm-2-days-classroom-training-",
       "name": "SAFe\u00ae 5.1 POPM 2 Days   Classroom Training in  Orillia, ON",
       "date": "2026-04-23",
@@ -991,6 +976,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-04-20",
-  "total_events": 66
+  "last_updated": "2026-04-21",
+  "total_events": 65
 }

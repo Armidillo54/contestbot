@@ -464,7 +464,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-04-18",
+      "link_checked": "2026-04-21",
       "url_resolved": true
     },
     {
@@ -484,8 +484,44 @@
       "link_checked": "2026-04-20",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-method-dis",
+      "name": "Butterly Canada Free Opportunities- FREE Method Dish Soap /Daiya Pizza /L\u2019Occitane Almond Shower Oil /Otelia Protein Pasta",
+      "description": "Butterly Canada Free Opportunities- FREE Method Dish Soap /Daiya Pizza /L\u2019Occitane Almond Shower Oil /Otelia Protein Pasta",
+      "url": "https://butterly.com/en/methodcanada/survey/NU10a7",
+      "category": "food",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-21",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-21",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-veseys-canada-free-spring-fall-and-seed-catalogues",
+      "name": "Veseys Canada \u2013 Free Spring, Fall and Seed Catalogues -Mailed!!",
+      "description": "Veseys Canada \u2013 Free Spring, Fall and Seed Catalogues -Mailed!!",
+      "url": "https://www.veseys.com/ca/request-catalogue",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-04-21",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-04-21",
+      "source_url": "https://www.canadianfreestuff.com/veseys-canada-free-sample/",
+      "url_resolved": true
     }
   ],
-  "last_updated": "2026-04-20",
-  "total_freebies": 24
+  "last_updated": "2026-04-21",
+  "total_freebies": 26
 }
