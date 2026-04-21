@@ -29,11 +29,11 @@ jobs:
             exit 0
           fi
           HOUR=$(TZ=America/Toronto date +%H)
-          if [ "$HOUR" = "05" ]; then
-            echo "Toronto time is 5 AM — proceeding with daily scan."
+          if [ "$HOUR" = "05" ] || [ "$HOUR" = "06" ]; then
+            echo "Toronto time is ${HOUR}:xx — within the 5 AM run window, proceeding."
             echo "should_run=true" >> "$GITHUB_OUTPUT"
           else
-            echo "Toronto hour is $HOUR, not 05 — skipping this DST-shifted cron."
+            echo "Toronto hour is $HOUR, not 05 or 06 — skipping this DST-shifted cron."
             echo "should_run=false" >> "$GITHUB_OUTPUT"
           fi
 
