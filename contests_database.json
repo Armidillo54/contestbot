@@ -7042,9 +7042,105 @@
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/ikea-canada-contest/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-l-oreal-canada-contest-win-1-of-3-prizes-of-cerave",
+      "name": "L`Oreal Canada Contest: Win 1 of 3 prizes of CeraVe products, valued at $150 CAD",
+      "url": "https://www.canadianfreestuff.com/loreal-canada-contests/",
+      "prize": "L`Oreal Canada Contest: Win 1 of 3 prizes of CeraVe products, valued at $150 CAD",
+      "prize_value": 150,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-22",
+      "link_valid": true,
+      "link_checked": "2026-04-22",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/loreal-canada-contests/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-elle-canada-contest-win-a-kerastase-bundle-worth-o",
+      "name": "ELLE Canada Contest \u2013 Win a Kerastase Bundle worth over $650",
+      "url": "https://www.ellecanada.com/contests/your-chance-to-win-an-exclusive-kerastase-experience",
+      "prize": "ELLE Canada Contest \u2013 Win a Kerastase Bundle worth over $650",
+      "prize_value": 650,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-22",
+      "link_valid": true,
+      "link_checked": "2026-04-22",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/elle-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-sobeys-contest-win-a-10-000-vip-experience-to-the-",
+      "name": "Sobeys Contest \u2013 Win a $10,000 VIP Experience to the FIFA World Cup \u201926",
+      "url": "https://www.sobeys.com/coca-cola-world-cup-contest",
+      "prize": "Sobeys Contest \u2013 Win a $10,000 VIP Experience to the FIFA World Cup \u201926",
+      "prize_value": 10000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-22",
+      "link_valid": true,
+      "link_checked": "2026-04-22",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/sobeys-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-ocean-spray-canada-mothers-day-contest-win-a-100-o",
+      "name": "Ocean Spray Canada Mothers Day Contest: Win a $100 Ocean Spray Prize!",
+      "url": "https://www.oceanspray.com/Our-Story",
+      "prize": "Ocean Spray Canada Mothers Day Contest: Win a $100 Ocean Spray Prize!",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-22",
+      "link_valid": true,
+      "link_checked": "2026-04-22",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/ocean-spray-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-04-22",
-  "total_active": 275,
-  "total_prize_value": 637882
+  "total_active": 278,
+  "total_prize_value": 648782
 }
