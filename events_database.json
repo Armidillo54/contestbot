@@ -961,21 +961,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260422-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-04-22",
-      "end_date": "2026-04-22",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987229989393",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-22",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260526-pmp-certification-4-days-classroom-train",
       "name": "PMP Certification 4 Days Classroom Training in Orillia, ON",
       "date": "2026-05-26",
@@ -1036,6 +1021,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-04-22",
-  "total_events": 69
+  "last_updated": "2026-04-23",
+  "total_events": 68
 }
