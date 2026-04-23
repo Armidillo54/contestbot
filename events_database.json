@@ -1019,8 +1019,53 @@
       "source": "eventbrite.ca",
       "scraped_date": "2026-04-22",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260509-orillia-music-centre-celebration",
+      "name": "Orillia Music Centre  Celebration",
+      "date": "2026-05-09",
+      "end_date": "2026-05-09",
+      "time": "",
+      "venue": "62 Peter St N, Orillia, ON",
+      "category": "music",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/orillia-music-centre-celebration-tickets-1988088172241",
+      "description": "Get ready to vibe with some fresh spring tunes and good company at the Orillia Music Centre!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-04-23",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260423-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-04-23",
+      "end_date": "2026-04-23",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987229995411",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-04-23",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260528-safe-5-1-lpm-2-days-classroom-training-i",
+      "name": "SAFe\u00ae 5.1 (LPM)2 Days Classroom Training in  Orillia, ON",
+      "date": "2026-05-28",
+      "end_date": "2026-05-29",
+      "time": "",
+      "venue": "Regus Business Centre, Orillia, ON, ON",
+      "category": "other",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/safe-51-lpm2-days-classroom-training-in-orillia-on-tickets-468612932897",
+      "description": "Welcome to Educera!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-04-23",
+      "status": "active"
     }
   ],
   "last_updated": "2026-04-23",
-  "total_events": 68
+  "total_events": 71
 }
