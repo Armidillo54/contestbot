@@ -8002,9 +8002,81 @@
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/04/23/win-a-nespresso-vertuo-machine-valued-at-229/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-walmart-contest-canada-win-a-300-walmart-gift-card",
+      "name": "Walmart Contest Canada ~ Win a $300 Walmart Gift Card + Kendamil Formula",
+      "url": "https://www.canadianfreestuff.com/walmart-canada-contest/",
+      "prize": "Walmart Contest Canada ~ Win a $300 Walmart Gift Card + Kendamil Formula",
+      "prize_value": 300,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-24",
+      "link_valid": true,
+      "link_checked": "2026-04-24",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/walmart-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-linen-chest-canada-contest-win-a-smeg-retro-style-",
+      "name": "Linen Chest Canada Contest: Win a SMEG Retro Style Kettle or $1000 Gift Card",
+      "url": "https://www.canadianfreestuff.com/linen-chest-canada-contest/",
+      "prize": "Linen Chest Canada Contest: Win a SMEG Retro Style Kettle or $1000 Gift Card",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-24",
+      "link_valid": true,
+      "link_checked": "2026-04-24",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/linen-chest-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-chapmans-ice-cream-contest-win-1-of-5-250-chapman-",
+      "name": "Chapmans Ice Cream Contest: Win 1 of 5 $250 Chapman`s Prize Bundles",
+      "url": "https://www.canadianfreestuff.com/chapmans-canada-contest/",
+      "prize": "Chapmans Ice Cream Contest: Win 1 of 5 $250 Chapman`s Prize Bundles",
+      "prize_value": 250,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-24",
+      "link_valid": true,
+      "link_checked": "2026-04-24",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/chapmans-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-04-24",
-  "total_active": 302,
-  "total_prize_value": 703297
+  "total_active": 305,
+  "total_prize_value": 704847
 }

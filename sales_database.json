@@ -133,7 +133,7 @@
     {
       "id": "rwandco-sale-0",
       "store": "RW&CO",
-      "description": "Up to 50% Off",
+      "description": "$50 Off a purchase of $150 or more with code ST",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -143,7 +143,7 @@
     {
       "id": "rwandco-sale-1",
       "store": "RW&CO",
-      "description": "Sale: Up to 50% Off",
+      "description": "25% Off Women's Bottoms & Blazers",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -153,7 +153,7 @@
     {
       "id": "rwandco-sale-2",
       "store": "RW&CO",
-      "description": "Sale Up to 50% Off Shop Now",
+      "description": "Up to 50% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -163,7 +163,7 @@
     {
       "id": "rwandco-sale-3",
       "store": "RW&CO",
-      "description": "Up to 50% Off Shop Now",
+      "description": "Sale: Up to 50% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -173,7 +173,7 @@
     {
       "id": "rwandco-sale-4",
       "store": "RW&CO",
-      "description": "25% off applied",
+      "description": "25% Off Women's Bottoms & Blazers Offer valid in-store and online at rw-co.com from Apri",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -183,7 +183,7 @@
     {
       "id": "rwandco-sale-5",
       "store": "RW&CO",
-      "description": "Home / Sale Sale Up to 50% Off Women's Sale Men's Sale Sale Sale: Up t",
+      "description": "25% Off Women's Bottoms & Blazers Offer valid i",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -286,57 +286,57 @@
       "description": "Bundle & Save up to 20%",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/category-sales-and-offers",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-24",
       "status": "active"
     },
     {
       "id": "knix-sale-1",
       "store": "Knix",
-      "description": "15% off Founder's Pick",
+      "description": "Save up to 60% off our best-sellers! Snag your favorites b",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/category-sales-and-offers",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-24",
       "status": "active"
     },
     {
       "id": "knix-sale-2",
       "store": "Knix",
-      "description": "Get 15% off when you buy 3+ pairs, or 20% off when you buy 5+. Mix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorit",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/category-sales-and-offers",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-24",
       "status": "active"
     },
     {
       "id": "knix-sale-3",
       "store": "Knix",
-      "description": "ou buy 3+ pairs, or 20% off when you buy 5+. Mix and match colors, absorbencies, a",
+      "description": "Save up to 60% off our best-sellers! Snag your favorites before the",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/category-sales-and-offers",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-24",
       "status": "active"
     },
     {
       "id": "knix-sale-4",
       "store": "Knix",
-      "description": "Get 15% off when you buy 3+ pairs, or 20% off when",
+      "description": "ge of life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/category-sales-and-offers",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-24",
       "status": "active"
     },
     {
       "id": "knix-sale-5",
       "store": "Knix",
-      "description": "ou buy 3+ pairs, or 20% off when you buy 5+. Mix and match colors,",
+      "description": "life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/category-sales-and-offers",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-24",
       "status": "active"
     },
