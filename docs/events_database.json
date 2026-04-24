@@ -1034,8 +1034,23 @@
       "source": "eventbrite.ca",
       "scraped_date": "2026-04-24",
       "status": "active"
+    },
+    {
+      "id": "quayle-20260424-karaoke-quayle-s-brewery",
+      "name": "Karaoke @ Quayle's Brewery",
+      "date": "2026-04-24",
+      "end_date": "2026-04-24",
+      "time": "",
+      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
+      "category": "music",
+      "price": "See event",
+      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/karaoke-quayles-brewery-2/",
+      "description": "Warm up those vocal cords and get ready to sing the night away at Quayle\u2019s! \\nJoin us for an unforgettable evening of big laughs\\, great beers\\, and delicious food in our cozy Loft. Whether you\u2019re a shower singer\\, a stage star\\, or just here to cheer on your friends\\, this is your night to shine. \\",
+      "source": "quaylesbrewery.com",
+      "scraped_date": "2026-04-24",
+      "status": "active"
     }
   ],
   "last_updated": "2026-04-24",
-  "total_events": 69
+  "total_events": 70
 }

@@ -8074,9 +8074,105 @@
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/chapmans-canada-contest/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-zoomer-radio-contest-win-a-7-day-canadian-storyboo",
+      "name": "Zoomer Radio Contest: Win a\u00a07-day Canadian Storybook Road Trip / Ultimate Spring Getaway /15-Day Caribbean Cruise!",
+      "url": "https://www.canadianfreestuff.com/zoomer-canada-contest/",
+      "prize": "Zoomer Radio Contest: Win a\u00a07-day Canadian Storybook Road Trip / Ultimate Spring Getaway /15-Day Caribbean Cruise!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-24",
+      "link_valid": true,
+      "link_checked": "2026-04-24",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/zoomer-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-ctv-contest-win-a-15-00-backyard-refresh-made4-rid",
+      "name": "CTV Contest: Win a $15,00 Backyard Refresh, MADE4 Riding Mower OR $20,000 to Pay your Bills!",
+      "url": "https://www.ctvnews.ca/windsor/contests/newbackyardrefresh/",
+      "prize": "CTV Contest: Win a $15,00 Backyard Refresh, MADE4 Riding Mower OR $20,000 to Pay your Bills!",
+      "prize_value": 1500,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-24",
+      "link_valid": true,
+      "link_checked": "2026-04-24",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/ctv-contests/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-haleon-canada-contest-win-over-8000-in-canada-socc",
+      "name": "Haleon Canada Contest: WIn over $8000 in Canada Soccer Prizes",
+      "url": "https://www.getwellstaywell.ca/fortheassist",
+      "prize": "Haleon Canada Contest: WIn over $8000 in Canada Soccer Prizes",
+      "prize_value": 8000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-24",
+      "link_valid": true,
+      "link_checked": "2026-04-24",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/haleon-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-royal-caribbean-canada-contest-win-a-7-night-alask",
+      "name": "Royal Caribbean Canada Contest: Win a 7-Night Alaskan Cruise",
+      "url": "https://www.royalcaribbean.com/ultimate-destinations",
+      "prize": "Royal Caribbean Canada Contest: Win a 7-Night Alaskan Cruise",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-24",
+      "link_valid": true,
+      "link_checked": "2026-04-24",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/royal-caribbean-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-04-24",
-  "total_active": 305,
-  "total_prize_value": 704847
+  "total_active": 309,
+  "total_prize_value": 714347
 }
