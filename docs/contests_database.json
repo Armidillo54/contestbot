@@ -8593,9 +8593,57 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/04/24/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-spf-suncare-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-cineplex-canada-contest-win-a-set-of-michael-tradi",
+      "name": "Cineplex Canada Contest: Win a Set of \u2018Michael\u2019 trading cards and a Great Escape Pass for 2",
+      "url": "https://www.canadianfreestuff.com/cineplex-canada-contest/",
+      "prize": "Cineplex Canada Contest: Win a Set of \u2018Michael\u2019 trading cards and a Great Escape Pass for 2",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-25",
+      "link_valid": true,
+      "link_checked": "2026-04-25",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/cineplex-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-global-pet-foods-contest-win-6months-of-free-pet-f",
+      "name": "Global Pet Foods Contest \u2013 Win 6months of FREE Pet Food + a Custom Pet Portrait",
+      "url": "https://www.canadianfreestuff.com/global-pet-foods-canada-contest/",
+      "prize": "Global Pet Foods Contest \u2013 Win 6months of FREE Pet Food + a Custom Pet Portrait",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-25",
+      "link_valid": true,
+      "link_checked": "2026-04-25",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/global-pet-foods-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-04-25",
-  "total_active": 325,
+  "total_active": 327,
   "total_prize_value": 722822
 }

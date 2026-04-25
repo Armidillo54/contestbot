@@ -266,27 +266,57 @@
       "description": "Bundle & Save up to 20%",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-25",
       "status": "active"
     },
     {
       "id": "knix-sale-1",
       "store": "Knix",
-      "description": "ge of life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
+      "description": "Save up to 60% off our best-sellers! Snag your favorites b",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-25",
       "status": "active"
     },
     {
       "id": "knix-sale-2",
       "store": "Knix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorit",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-25",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorites before the",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-25",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
+      "store": "Knix",
+      "description": "ge of life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-25",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-5",
+      "store": "Knix",
       "description": "life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-04-25",
       "status": "active"
     },
@@ -312,7 +342,7 @@
     }
   ],
   "last_updated": "2026-04-25",
-  "total_sales": 31,
+  "total_sales": 34,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
