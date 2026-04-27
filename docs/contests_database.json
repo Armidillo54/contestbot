@@ -4643,7 +4643,7 @@
     {
       "id": "cacc-costco-giftcard-giveaway",
       "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COSTCO #GIFTCARD #GIVEAWAY",
-      "url": "https://curiousaboutcanadiancontests.com/2026/04/17/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-costco-giftcard-giveaway/ ",
+      "url": "https://steamykitchen.com/255206-10-costco-gift-cards-instant-win.html",
       "prize": "Daily Entry / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COSTCO #GIFTCARD #GIVEAWAY - April 17, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COSTCO #GIFTCARD #GIVEAWAY https://steamykitchen.com/255206-10-costco-",
       "prize_value": 0,
       "entry_method": "online_form",
@@ -4662,7 +4662,7 @@
       "link_checked": "2026-04-27",
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/04/17/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-costco-giftcard-giveaway/ ",
-      "url_resolved": false
+      "url_resolved": true
     },
     {
       "id": "ccan-goldfish-win-1-of-2-prizes-of-5-000",
@@ -9725,9 +9725,57 @@
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/04/26/win-1-of-5-tree-camping-chairs-valued-at-200/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-global-news-contest-win-a-golf-swingcation-in-kaml",
+      "name": "Global News Contest: Win a Golf Swingcation in Kamloops + Daily Prizes in TODAY`S CONTEST!",
+      "url": "https://globalnews.ca/bc/contest/11753763/730-cknw-swingcation-contest-with-golf-kamloops",
+      "prize": "Global News Contest: Win a Golf Swingcation in Kamloops + Daily Prizes in TODAY`S CONTEST!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-27",
+      "link_valid": true,
+      "link_checked": "2026-04-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/global-news-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-lg-canada-contest-win-an-lg-oled-65-tv-or-signed-r",
+      "name": "LG Canada Contest: WIN an LG OLED 65\u201d TV or Signed Raptors Jerseys!",
+      "url": "http://Canadianfreestuff",
+      "prize": "LG Canada Contest: WIN an LG OLED 65\u201d TV or Signed Raptors Jerseys!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "dead_link",
+      "added_date": "2026-04-27",
+      "link_valid": false,
+      "link_checked": "2026-04-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/lg-electronics-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-04-27",
-  "total_active": 361,
+  "total_active": 363,
   "total_prize_value": 765637
 }
