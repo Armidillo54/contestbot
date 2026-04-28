@@ -293,7 +293,7 @@
     {
       "id": "knix-sale-1",
       "store": "Knix",
-      "description": "ge of life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
+      "description": "Buy 3+, save 15%. Buy 5+, save 20%.",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://knix.ca/",
@@ -302,6 +302,26 @@
     },
     {
       "id": "knix-sale-2",
+      "store": "Knix",
+      "description": ", save 15%. Buy 5+, save 20%.",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-04-28",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": "ge of life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-04-28",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
       "store": "Knix",
       "description": "life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
@@ -332,7 +352,7 @@
     }
   ],
   "last_updated": "2026-04-28",
-  "total_sales": 33,
+  "total_sales": 35,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
