@@ -1199,8 +1199,23 @@
       "source": "quaylesbrewery.com",
       "scraped_date": "2026-04-28",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260818-family-paint-party",
+      "name": "Family Paint Party",
+      "date": "2026-08-18",
+      "end_date": "2026-08-18",
+      "time": "",
+      "venue": "Kelseys Orillia, Orillia, ON",
+      "category": "kids",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/family-paint-party-tickets-1976007925899",
+      "description": "Paint Nite -- Families and All Ages (10361980)",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-04-28",
+      "status": "active"
     }
   ],
   "last_updated": "2026-04-28",
-  "total_events": 80
+  "total_events": 81
 }
