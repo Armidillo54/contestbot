@@ -271,12 +271,72 @@
       "status": "active"
     },
     {
+      "id": "knix-sale-0",
+      "store": "Knix",
+      "description": "Early Access! Up to 40% off All Leakproof",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-29",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-1",
+      "store": "Knix",
+      "description": "Today Only! 25% off Dream Short",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-29",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-2",
+      "store": "Knix",
+      "description": "Today Only! 25% off Revolution V-Neck Bra",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-29",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorites b",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-29",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
+      "store": "Knix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorit",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-29",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-5",
+      "store": "Knix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorites before the",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-04-29",
+      "status": "active"
+    },
+    {
       "id": "callitspring-sale-general",
       "store": "Call It Spring",
       "description": "Sale on now at Call It Spring",
       "detail": "",
       "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/women-final-sale",
+      "url": "https://www.callitspring.com/collections/sale",
       "scraped_date": "2026-04-29",
       "status": "active"
     },
@@ -292,7 +352,7 @@
     }
   ],
   "last_updated": "2026-04-29",
-  "total_sales": 29,
+  "total_sales": 35,
   "stores": [
     "Tip Top Tailor",
     "Mark's",

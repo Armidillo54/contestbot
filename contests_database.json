@@ -10951,9 +10951,82 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/04/28/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-ninja-blender-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-rogers-contests-win-curry-x-under-armour-sneakers-",
+      "name": "Rogers Contests \u2013 Win Curry x Under Armour sneakers /Trip to the Stanley Cup Final / $50 NHL Gift Cards",
+      "url": "https://www.canadianfreestuff.com/rogers-canada-contest/",
+      "prize": "Rogers Contests \u2013 Win Curry x Under Armour sneakers /Trip to the Stanley Cup Final / $50 NHL Gift Cards",
+      "prize_value": 50,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-29",
+      "link_valid": true,
+      "link_checked": "2026-04-29",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/rogers-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-dairy-farmers-of-canada-contest-win-tickets-to-an-",
+      "name": "Dairy Farmers of Canada Contest: Win Tickets to an OHL Championship series game",
+      "url": "https://www.canadianfreestuff.com/dairy-farmers-contest/",
+      "prize": "Dairy Farmers of Canada Contest: Win Tickets to an OHL Championship series game",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-04-29",
+      "link_valid": true,
+      "link_checked": "2026-04-29",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/dairy-farmers-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cacc-cookie-giveaway",
+      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COOKIE #GIVEAWAY",
+      "sponsor": "",
+      "url": "https://curiousaboutcanadiancontests.com/2026/04/29/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-cookie-giveaway/ ",
+      "prize": "Instagram Contests / USA Friendly \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COOKIE #GIVEAWAY - April 29, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #COOKIE #GIVEAWAY https://www.instagram.com/reel/DXr3614EWrc/?igsh=MWpndmJydTYwNm1nMw== \u2b06\ufe0f\u2b06\ufe0f\u2b06",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-04-29",
+      "link_valid": true,
+      "link_checked": "2026-04-29",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/04/29/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-cookie-giveaway/ ",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-04-29",
-  "total_active": 396,
+  "total_active": 398,
   "total_prize_value": 836498
 }
