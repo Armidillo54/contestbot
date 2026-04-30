@@ -1006,21 +1006,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260429-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-04-29",
-      "end_date": "2026-04-29",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230019483",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-29",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260613-acoustics-for-green-haven",
       "name": "Acoustics for Green Haven",
       "date": "2026-06-13",
@@ -1199,8 +1184,23 @@
       "source": "curated",
       "scraped_date": "2026-04-29",
       "status": "active"
+    },
+    {
+      "id": "quayle-20260614-stretch-sip-yoga",
+      "name": "Stretch & Sip Yoga",
+      "date": "2026-06-14",
+      "end_date": "2026-06-14",
+      "time": "",
+      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
+      "category": "sports",
+      "price": "See event",
+      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/stretch-sip-yoga-2/",
+      "description": "June 14\\, 2026\\, 10:30 \u2013 11:30 am\\nGet Tickets",
+      "source": "quaylesbrewery.com",
+      "scraped_date": "2026-04-30",
+      "status": "active"
     }
   ],
-  "last_updated": "2026-04-29",
+  "last_updated": "2026-04-30",
   "total_events": 80
 }
