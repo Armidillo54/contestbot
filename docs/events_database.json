@@ -151,21 +151,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260501-sin-bin-comedy-show-with-chris-robinson-",
-      "name": "Sin Bin Comedy Show with Chris Robinson at Brewery Bay",
-      "date": "2026-05-01",
-      "end_date": "2026-05-01",
-      "time": "",
-      "venue": "Couchiching Craft Brewing Co, Orillia, ON",
-      "category": "theatre",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/sin-bin-comedy-show-with-chris-robinson-at-brewery-bay-tickets-1984623026898",
-      "description": "Join us for a night full of laughs, delicious craft beer and food at Brewery Bay Friday May 1st with Chris Robinson (Just For Laughs)",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260505-constable-information-session-orillia",
       "name": "Constable Information Session - Orillia",
       "date": "2026-05-05",
@@ -357,21 +342,6 @@
       "url": "https://www.eventbrite.com/e/simcoe-county-golf-scramble-series-league-tickets-1984507071071",
       "description": "2-person scramble league in Simcoe County: 6 charity events, season standings, playoffs & championship. Limited to 16 teams.",
       "source": "eventbrite.ca",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260501-live-music-events-marlon-gibbons",
-      "name": "Live Music Events: Marlon Gibbons",
-      "date": "2026-05-01",
-      "end_date": "2026-05-01",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-marlon-gibbons/",
-      "description": "Fri May 1\\n5-8\\nMarlon Gibbons",
-      "source": "quaylesbrewery.com",
       "scraped_date": "2026-04-19",
       "status": "active"
     },
@@ -991,21 +961,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260501-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-05-01",
-      "end_date": "2026-05-01",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230031519",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-01",
-      "status": "active"
-    },
-    {
       "id": "orilli-20260502-mariposa-mornings",
       "name": "Mariposa Mornings",
       "date": "2026-05-02",
@@ -1469,8 +1424,38 @@
       "source": "curated",
       "scraped_date": "2026-05-01",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260502-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-05-02",
+      "end_date": "2026-05-02",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230037537",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-02",
+      "status": "active"
+    },
+    {
+      "id": "quayle-20260816-stretch-sip-yoga",
+      "name": "Stretch & Sip Yoga",
+      "date": "2026-08-16",
+      "end_date": "2026-08-16",
+      "time": "",
+      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
+      "category": "sports",
+      "price": "See event",
+      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/stretch-sip-yoga-4/",
+      "description": "August 16\\, 2026\\, 10:30 \u2013 11:30 am\\nGet Tickets",
+      "source": "quaylesbrewery.com",
+      "scraped_date": "2026-05-02",
+      "status": "active"
     }
   ],
-  "last_updated": "2026-05-01",
-  "total_events": 98
+  "last_updated": "2026-05-02",
+  "total_events": 97
 }
