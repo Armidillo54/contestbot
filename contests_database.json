@@ -12431,9 +12431,57 @@
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/05/01/win-an-office-makeover-package-valued-at-10000/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-dairy-farmers-of-canada-contest-win-a-500-visa-plu",
+      "name": "Dairy Farmers of Canada Contest: Win a $500 Visa plus a $500 Donation",
+      "url": "https://www.canadianfreestuff.com/dairy-farmers-contest/",
+      "prize": "Dairy Farmers of Canada Contest: Win a $500 Visa plus a $500 Donation",
+      "prize_value": 500,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-02",
+      "link_valid": true,
+      "link_checked": "2026-05-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/dairy-farmers-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-sobeys-canada-contest-win-a-100-sobeys-gift-card",
+      "name": "Sobeys Canada Contest \u2013 Win a $100 Sobeys Gift Card!",
+      "url": "https://www.flyers-on-line.com/web-contests/174-win-a-100-sobeys-gift-card-contest",
+      "prize": "Sobeys Canada Contest \u2013 Win a $100 Sobeys Gift Card!",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-02",
+      "link_valid": true,
+      "link_checked": "2026-05-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/sobeys-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-05-02",
-  "total_active": 428,
-  "total_prize_value": 849404
+  "total_active": 430,
+  "total_prize_value": 850004
 }
