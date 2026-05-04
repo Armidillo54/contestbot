@@ -13557,9 +13557,129 @@
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/rogers-canada-contest/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-indigo-canada-contest-win-a-lego-star-wars-prize-b",
+      "name": "Indigo Canada Contest: Win a Lego Star Wars Prize Bundle!",
+      "url": "https://www.canadianfreestuff.com/chapters-indigo-contests/",
+      "prize": "Indigo Canada Contest: Win a Lego Star Wars Prize Bundle!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-04",
+      "link_valid": true,
+      "link_checked": "2026-05-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/chapters-indigo-contests/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-van-houtte-coffee-contest-win-a-keurig-k-crema-cof",
+      "name": "Van Houtte Coffee Contest: Win a Keurig K-Crema coffee maker & Van Houtte Pods",
+      "url": "https://www.canadianfreestuff.com/van-houtte-canada-contest/",
+      "prize": "Van Houtte Coffee Contest: Win a Keurig K-Crema coffee maker & Van Houtte Pods",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-04",
+      "link_valid": true,
+      "link_checked": "2026-05-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/van-houtte-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-chapmans-ice-cream-contest-win-free-ice-cream-coup",
+      "name": "Chapmans Ice Cream Contest: Win FREE Ice Cream Coupons!",
+      "url": "https://www.canadianfreestuff.com/chapmans-canada-contest/",
+      "prize": "Chapmans Ice Cream Contest: Win FREE Ice Cream Coupons!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-04",
+      "link_valid": true,
+      "link_checked": "2026-05-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/chapmans-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-flipp-spring-into-summer-giveaway-win-a-450-canadi",
+      "name": "Flipp Spring into Summer Giveaway -Win a $450 Canadian Tire Gift Card!",
+      "url": "https://www.canadianfreestuff.com/flipp-contest/",
+      "prize": "Flipp Spring into Summer Giveaway -Win a $450 Canadian Tire Gift Card!",
+      "prize_value": 450,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-04",
+      "link_valid": true,
+      "link_checked": "2026-05-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/flipp-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-kent-building-supplies-contests-win-a-250-gift-car",
+      "name": "Kent Building Supplies Contests:- Win a $250 Gift Card for MOM + a $20,000 Dream Backyard & More!!",
+      "url": "https://www.kentwin.ca/",
+      "prize": "Kent Building Supplies Contests:- Win a $250 Gift Card for MOM + a $20,000 Dream Backyard & More!!",
+      "prize_value": 250,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-04",
+      "link_valid": true,
+      "link_checked": "2026-05-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/kent-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-05-04",
-  "total_active": 463,
-  "total_prize_value": 865035
+  "total_active": 468,
+  "total_prize_value": 865735
 }
