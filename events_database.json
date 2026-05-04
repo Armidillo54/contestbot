@@ -1319,8 +1319,23 @@
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-03",
       "status": "active"
+    },
+    {
+      "id": "curated-20260502-orillia-farmers-market-saturdays",
+      "name": "Orillia Farmers' Market (Saturdays)",
+      "date": "2026-05-04",
+      "end_date": "2026-10-31",
+      "time": "",
+      "venue": "Orillia City Centre Parking Lot, Orillia ON",
+      "category": "market",
+      "price": "Free",
+      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
+      "description": "Orillia Farmers' Market (Saturdays)",
+      "source": "curated",
+      "scraped_date": "2026-05-04",
+      "status": "active"
     }
   ],
   "last_updated": "2026-05-04",
-  "total_events": 88
+  "total_events": 89
 }
