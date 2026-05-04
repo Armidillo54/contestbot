@@ -61,21 +61,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-02",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://orilliafarmersmarket.ca/",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-04-18",
-      "status": "active"
-    },
-    {
       "id": "curated-20260701-canada-day-celebrations-orillia",
       "name": "Canada Day Celebrations - Orillia",
       "date": "2026-07-01",
@@ -331,36 +316,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260502-spring-market-quayle-s-brewery",
-      "name": "Spring Market @ Quayle's Brewery",
-      "date": "2026-05-02",
-      "end_date": "2026-05-03",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "food",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/spring-market-quayles-brewery/",
-      "description": "Spring Market: May 2 & 3rd and May 9 & 10th\\, 11 am \u2013 5 pm. Ideal for Mother\u2019s Day gifts\\, end-of-year\\nTeacher\u2019s Gifts\\, or items for cottagers.",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260503-live-music-events-kat-chabot",
-      "name": "Live Music Events: Kat Chabot",
-      "date": "2026-05-03",
-      "end_date": "2026-05-03",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-kat-chabot/",
-      "description": "Sun May 3\\n2-5\\nKat Chabot",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260509-spring-market-quayle-s-brewery",
       "name": "Spring Market @ Quayle's Brewery",
       "date": "2026-05-09",
@@ -521,36 +476,6 @@
       "price": "See event",
       "url": "https://www.eventbrite.com/e/rack-rainbows-tickets-1987995658530",
       "description": "Rack & Rainbows Pride Drag Show",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-26",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260503-awakening-into-stillness-a-spring-forest",
-      "name": "Awakening Into Stillness: A Spring Forest and Sound Retreat",
-      "date": "2026-05-03",
-      "end_date": "2026-05-03",
-      "time": "",
-      "venue": "St Thomas Anglican Church, Shanty Bay, ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/awakening-into-stillness-a-spring-forest-and-sound-retreat-tickets-1982389343892",
-      "description": "As spring unfolds, pause and be held by nature and sound in this gentle afternoon of Forest Bathing and Sound Bathing.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-26",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260503-reconnect-retreats",
-      "name": "RECONNECT Retreats",
-      "date": "2026-05-03",
-      "end_date": "2026-05-03",
-      "time": "",
-      "venue": "Vicki Tree Yoga + Wellness, Coldwater, ON",
-      "category": "sports",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/reconnect-retreats-tickets-1975646756632",
-      "description": "A serene 1 day Retreat to pause, breathe + release stress via yoga, breathwork, meditation + nature. A full reset for body, mind + heart.",
       "source": "eventbrite.ca",
       "scraped_date": "2026-04-26",
       "status": "active"
@@ -1201,21 +1126,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260501-roots-north-music-festival",
-      "name": "Roots North Music Festival",
-      "date": "2026-05-03",
-      "end_date": "2026-05-03",
-      "time": "",
-      "venue": "Downtown Orillia, ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://www.rootsnorth.com/",
-      "description": "Roots North Music Festival",
-      "source": "curated",
-      "scraped_date": "2026-05-03",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-perch-festival",
       "name": "Orillia Perch Festival",
       "date": "2026-05-03",
@@ -1411,6 +1321,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-05-03",
-  "total_events": 94
+  "last_updated": "2026-05-04",
+  "total_events": 88
 }
