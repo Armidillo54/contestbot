@@ -3,21 +3,21 @@
     {
       "id": "tiptop-sale-0",
       "store": "Tip Top Tailor",
-      "description": "40% Off",
+      "description": "50% Off",
       "detail": "",
       "category": "Menswear",
       "url": "https://www.tiptop.ca/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "tiptop-sale-1",
       "store": "Tip Top Tailor",
-      "description": "30% Off",
+      "description": "40% Off",
       "detail": "",
       "category": "Menswear",
       "url": "https://www.tiptop.ca/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -27,7 +27,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -37,7 +37,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -47,7 +47,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -57,7 +57,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -67,7 +67,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -77,67 +77,67 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "reitmans-sale-0",
       "store": "Reitmans",
-      "description": "25% off Dresses",
+      "description": "30% off Everything (Almost)",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "reitmans-sale-1",
       "store": "Reitmans",
-      "description": "BUY ONE, GET ONE AT 50% OFF",
+      "description": "Up to 70% off sale + Extra 20%",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "reitmans-sale-2",
       "store": "Reitmans",
-      "description": "Up to 70% off sale + Extra 20%",
+      "description": "30% off Everything (Almost) Offer valid in-store and online",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "reitmans-sale-3",
       "store": "Reitmans",
-      "description": "25% off Dresses Offer valid in-store and online at Reitmans.com online",
+      "description": "30% off Everything (Almost) Offer valid in-stor",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "reitmans-sale-4",
       "store": "Reitmans",
-      "description": "25% off Dresses Offer valid in-store and online",
+      "description": "Extra 20% off applied",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "reitmans-sale-5",
       "store": "Reitmans",
-      "description": "BUY ONE, GET ONE AT 50% OFF Offer valid in-store and online at Reitmans.com online",
+      "description": "30% off applied",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -147,7 +147,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -157,7 +157,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -167,7 +167,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -177,7 +177,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -187,7 +187,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -197,37 +197,87 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "threeships-sale-0",
       "store": "Three Ships Beauty",
-      "description": "SAVE 20% on Best Selling Bundles",
+      "description": "Save 20% on clean, vegan skincare in the Three S",
       "detail": "",
       "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/discounts-allowed",
-      "scraped_date": "2026-05-04",
+      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "threeships-sale-1",
       "store": "Three Ships Beauty",
-      "description": "SAVE 20%",
+      "description": "20% Off Sitewide",
       "detail": "",
       "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/discounts-allowed",
-      "scraped_date": "2026-05-04",
+      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "threeships-sale-2",
       "store": "Three Ships Beauty",
+      "description": "20% Off",
+      "detail": "",
+      "category": "Beauty",
+      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "threeships-sale-3",
+      "store": "Three Ships Beauty",
+      "description": "20% Off \u2014 Just What You Need",
+      "detail": "",
+      "category": "Beauty",
+      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "threeships-sale-4",
+      "store": "Three Ships Beauty",
       "description": "clusive perks + get 15% off your next order.",
       "detail": "",
       "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/discounts-allowed",
-      "scraped_date": "2026-05-04",
+      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "thrive-sale-0",
+      "store": "Thrive Causemetics",
+      "description": "Save Up To 30% OFF Select Products",
+      "detail": "",
+      "category": "Beauty",
+      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "thrive-sale-1",
+      "store": "Thrive Causemetics",
+      "description": "Promotional Terms *20% off is only valid on first purchases. Code must be entered at checkout. Not",
+      "detail": "",
+      "category": "Beauty",
+      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "thrive-sale-2",
+      "store": "Thrive Causemetics",
+      "description": "Promotional Terms *20% off is only valid on first purchases. Code",
+      "detail": "",
+      "category": "Beauty",
+      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -237,7 +287,67 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-0",
+      "store": "Knix",
+      "description": "Anniversary Sale - Up to 40% off Leakproof \u2013 Knix Canada",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-1",
+      "store": "Knix",
+      "description": "ersary Sale - Up to 40% off Leakproof \u2013 Knix Canada",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-2",
+      "store": "Knix",
+      "description": "Ends Tonight! Up to 40% off All Leakproof",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": "Ends Tonight! 15% off The Dream Boxer",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
+      "store": "Knix",
+      "description": "Ends Tonight! 25% off All Bras",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-05-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-5",
+      "store": "Knix",
+      "description": "Up to 40% off Anniversary Sale! Shop Now",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -247,7 +357,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
@@ -257,12 +367,12 @@
       "detail": "",
       "category": "Menswear",
       "url": "https://www.mooresclothing.ca/c/sale/all-clearance",
-      "scraped_date": "2026-05-04",
+      "scraped_date": "2026-05-05",
       "status": "active"
     }
   ],
-  "last_updated": "2026-05-04",
-  "total_sales": 26,
+  "last_updated": "2026-05-05",
+  "total_sales": 37,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
