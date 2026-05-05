@@ -143,7 +143,7 @@
     {
       "id": "rwandco-sale-0",
       "store": "RW&CO",
-      "description": "Sale: Up to 50% Off",
+      "description": "Up to 50% Off + Extra 20% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -153,7 +153,7 @@
     {
       "id": "rwandco-sale-1",
       "store": "RW&CO",
-      "description": "$100 Off Men's Suits",
+      "description": "to 50% Off + Extra 20% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -163,7 +163,7 @@
     {
       "id": "rwandco-sale-2",
       "store": "RW&CO",
-      "description": "Up to 50% Off",
+      "description": "Sale: Up to 50% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -173,7 +173,7 @@
     {
       "id": "rwandco-sale-3",
       "store": "RW&CO",
-      "description": "Sale: Up to 50% Off Offer valid online at rw-co.com for a l",
+      "description": "Additional 20% Off Clearance",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -183,7 +183,7 @@
     {
       "id": "rwandco-sale-4",
       "store": "RW&CO",
-      "description": "ited time only. Get up to 50% off the regular price of select merchandise",
+      "description": "Extra 20% Off Sale Styles",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -193,7 +193,7 @@
     {
       "id": "rwandco-sale-5",
       "store": "RW&CO",
-      "description": "Sale: Up to 50% Off Offer valid online at rw-co.com for a limited time only. Get up",
+      "description": "Sale Up to 50% Off + Extra 20% Off Shop Now",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -293,60 +293,50 @@
     {
       "id": "knix-sale-0",
       "store": "Knix",
-      "description": "Anniversary Sale - Up to 40% off Leakproof \u2013 Knix Canada",
+      "description": "Bundle & Save up to 20%",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "knix-sale-1",
       "store": "Knix",
-      "description": "ersary Sale - Up to 40% off Leakproof \u2013 Knix Canada",
+      "description": "Buy 3+, save 15%. Buy 5+, save 20%.",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "knix-sale-2",
       "store": "Knix",
-      "description": "Ends Tonight! Up to 40% off All Leakproof",
+      "description": ", save 15%. Buy 5+, save 20%.",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "knix-sale-3",
       "store": "Knix",
-      "description": "Ends Tonight! 15% off The Dream Boxer",
+      "description": "ge of life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-05",
       "status": "active"
     },
     {
       "id": "knix-sale-4",
       "store": "Knix",
-      "description": "Ends Tonight! 25% off All Bras",
+      "description": "life Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
-      "scraped_date": "2026-05-05",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-5",
-      "store": "Knix",
-      "description": "Up to 40% off Anniversary Sale! Shop Now",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-05",
       "status": "active"
     },
@@ -372,7 +362,7 @@
     }
   ],
   "last_updated": "2026-05-05",
-  "total_sales": 37,
+  "total_sales": 36,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
