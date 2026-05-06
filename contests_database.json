@@ -14459,9 +14459,81 @@
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/montanas-bbq-canada-contest/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-colgate-toothpaste-contest-win-a-200-colgate-prize",
+      "name": "Colgate Toothpaste Contest: Win a $200 Colgate Prize Pack!",
+      "url": "https://www.colgate.com/en-za/sensitive-pro-relief",
+      "prize": "Colgate Toothpaste Contest: Win a $200 Colgate Prize Pack!",
+      "prize_value": 200,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-06",
+      "link_valid": true,
+      "link_checked": "2026-05-06",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/colgate-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-lavazza-coffee-contest-win-a-lavazza-x-keurig-priz",
+      "name": "Lavazza Coffee Contest -Win a Lavazza x Keurig Prize for Mom",
+      "url": "https://amzn.to/4uReXXY",
+      "prize": "Lavazza Coffee Contest -Win a Lavazza x Keurig Prize for Mom",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-06",
+      "link_valid": true,
+      "link_checked": "2026-05-06",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/lavazza-canada-coupons/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-avon-canada-contest-win-a-864-summer-beauty-prize",
+      "name": "Avon Canada Contest ~ Win a $864 Summer Beauty Prize!",
+      "url": "https://www.canadianfreestuff.com/avon-canada-contest/",
+      "prize": "Avon Canada Contest ~ Win a $864 Summer Beauty Prize!",
+      "prize_value": 864,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-06",
+      "link_valid": true,
+      "link_checked": "2026-05-06",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/avon-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-05-06",
-  "total_active": 491,
-  "total_prize_value": 944272
+  "total_active": 494,
+  "total_prize_value": 945336
 }
