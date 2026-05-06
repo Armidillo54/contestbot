@@ -121,21 +121,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260505-constable-information-session-orillia",
-      "name": "Constable Information Session - Orillia",
-      "date": "2026-05-05",
-      "end_date": "2026-05-05",
-      "time": "",
-      "venue": "Ontario Provincial Police General Headquarters, Orillia",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/constable-information-session-orillia-tickets-1987020269114",
-      "description": "OPP Information Session to provide information on our hiring process for Constable Positions",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260513-the-orillia-705-contractors-social",
       "name": "The Orillia 705 Contractors Social",
       "date": "2026-05-13",
@@ -811,21 +796,6 @@
       "status": "active"
     },
     {
-      "id": "orilli-20260505-art-101",
-      "name": "Art 101",
-      "date": "2026-05-05",
-      "end_date": "2026-05-05",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "arts",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/art-101-2/2026-05-05/",
-      "description": "Icons & Alter Egos: Heroes\\, Villains\\, and Everything In-Between\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-05-01",
-      "status": "active"
-    },
-    {
       "id": "orilli-20260507-mariposa-mornings",
       "name": "Mariposa Mornings",
       "date": "2026-05-07",
@@ -1111,21 +1081,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260505-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-05-05",
-      "end_date": "2026-05-05",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230043555",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-03",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260511-meditation-monday",
       "name": "MEDITATION MONDAY",
       "date": "2026-05-11",
@@ -1138,21 +1093,6 @@
       "description": "We invite you to join a circle of like-minded women who enjoy deepening their spiritual side of Life with Meditations for their Soul",
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-03",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-04",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-05-04",
       "status": "active"
     },
     {
@@ -1321,6 +1261,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-05-05",
-  "total_events": 88
+  "last_updated": "2026-05-06",
+  "total_events": 84
 }
