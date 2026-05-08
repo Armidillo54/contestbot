@@ -163,7 +163,7 @@
     {
       "id": "rwandco-sale-2",
       "store": "RW&CO",
-      "description": "Up to 50% Off + Extra 20% Off",
+      "description": "Up to 50% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -173,7 +173,7 @@
     {
       "id": "rwandco-sale-3",
       "store": "RW&CO",
-      "description": "to 50% Off + Extra 20% Off",
+      "description": "Sale: Up to 50% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -183,7 +183,7 @@
     {
       "id": "rwandco-sale-4",
       "store": "RW&CO",
-      "description": "Sale: Up to 50% Off",
+      "description": "25% Off Men's Tops & Accessories Offer valid in-store and online at rw-co.com from May",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -193,7 +193,7 @@
     {
       "id": "rwandco-sale-5",
       "store": "RW&CO",
-      "description": "Additional 20% Off Clearance",
+      "description": "25% Off Men's Tops & Accessories Offer valid in",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -303,26 +303,6 @@
     {
       "id": "knix-sale-1",
       "store": "Knix",
-      "description": "Buy 3+, save 15%. Buy 5+, save 20%.",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-05-08",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-2",
-      "store": "Knix",
-      "description": ", save 15%. Buy 5+, save 20%.",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-05-08",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-3",
-      "store": "Knix",
       "description": "pend $175+ Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
       "category": "Women's Clothing",
@@ -331,7 +311,7 @@
       "status": "active"
     },
     {
-      "id": "knix-sale-4",
+      "id": "knix-sale-2",
       "store": "Knix",
       "description": "$175+ Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
@@ -343,7 +323,7 @@
     {
       "id": "callitspring-sale-0",
       "store": "Call It Spring",
-      "description": "R! Buy One, Get One 40% Off Everything* For a limited time, Call It Spring is",
+      "description": "R! BUY ONE, GET ONE 40% OFF EVERYTHING* For a limited time, Call It Spring is",
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
@@ -353,7 +333,7 @@
     {
       "id": "callitspring-sale-1",
       "store": "Call It Spring",
-      "description": "R! Buy One, Get One 40% Off Everything* For a limited time, Call It",
+      "description": "R! BUY ONE, GET ONE 40% OFF EVERYTHING* For a limited time, Call It",
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
@@ -373,7 +353,7 @@
     {
       "id": "callitspring-sale-3",
       "store": "Call It Spring",
-      "description": "Buy One, Get One 40% Off Everything*",
+      "description": "BUY ONE, GET ONE 40% OFF EVERYTHING*",
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
@@ -392,7 +372,7 @@
     }
   ],
   "last_updated": "2026-05-08",
-  "total_sales": 39,
+  "total_sales": 37,
   "stores": [
     "Tip Top Tailor",
     "Mark's",

@@ -15350,9 +15350,107 @@
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/waypoint-convenience-store-contest/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-swiss-chalet-x-pepsi-nhl-contest-win-nhl-tickets",
+      "name": "Swiss Chalet x Pepsi NHL Contest -Win NHL Tickets!!",
+      "url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
+      "prize": "Swiss Chalet x Pepsi NHL Contest -Win NHL Tickets!!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-08",
+      "link_valid": true,
+      "link_checked": "2026-05-08",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-dairy-queen-contest-win-free-dq-for-a-year-instant",
+      "name": "Dairy Queen Contest \u2013 Win FREE DQ for a Year + Instant Win Prizes!",
+      "url": "https://www.canadianfreestuff.com/dairy-queen-canada-contest/",
+      "prize": "Dairy Queen Contest \u2013 Win FREE DQ for a Year + Instant Win Prizes!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-08",
+      "link_valid": true,
+      "link_checked": "2026-05-08",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/dairy-queen-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cacc-book-mug-tote-giveaway",
+      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #BOOK #MUG #TOTE #GIVEAWAY",
+      "sponsor": "",
+      "url": "https://curiousaboutcanadiancontests.com/2026/05/08/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-book-mug-tote-giveaway/ ",
+      "prize": "Instagram Contests / USA Friendly \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #BOOK #MUG #TOTE #GIVEAWAY - May 8, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #BOOK #MUG #TOTE #GIVEAWAY https://www.instagram.com/p/DYAMzpiFzCF/?igsh=ejJsbXhwd3F1NT",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-05-08",
+      "link_valid": true,
+      "link_checked": "2026-05-08",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/05/08/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-book-mug-tote-giveaway/ ",
+      "url_resolved": false
+    },
+    {
+      "id": "cacc-win-plush-toy-dog",
+      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #PLUSH #TOY #DOG",
+      "sponsor": "",
+      "url": "https://curiousaboutcanadiancontests.com/2026/05/07/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-plush-toy-dog/ ",
+      "prize": "Instagram Contests / International / USA Friendly \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #PLUSH #TOY #DOG - May 7, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #PLUSH #TOY #DOG https://www.instagram.com/p/DX__at0nPX-/?igsh=M3RxNj",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-05-08",
+      "link_valid": true,
+      "link_checked": "2026-05-08",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/05/07/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-plush-toy-dog/ ",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-05-08",
-  "total_active": 515,
+  "total_active": 519,
   "total_prize_value": 1196977
 }
