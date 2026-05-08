@@ -296,57 +296,47 @@
       "description": "Bundle & Save up to 20%",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-08",
       "status": "active"
     },
     {
       "id": "knix-sale-1",
       "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorites b",
+      "description": "Buy 3+, save 15%. Buy 5+, save 20%.",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-08",
       "status": "active"
     },
     {
       "id": "knix-sale-2",
       "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorit",
+      "description": ", save 15%. Buy 5+, save 20%.",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-08",
       "status": "active"
     },
     {
       "id": "knix-sale-3",
       "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorites before the",
+      "description": "pend $175+ Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-08",
       "status": "active"
     },
     {
       "id": "knix-sale-4",
       "store": "Knix",
-      "description": "pend $175+ Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-05-08",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-5",
-      "store": "Knix",
       "description": "$175+ Bundle & Save up to 20% Try Your First Pair Risk Free for 30 Da",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-08",
       "status": "active"
     },
@@ -402,7 +392,7 @@
     }
   ],
   "last_updated": "2026-05-08",
-  "total_sales": 40,
+  "total_sales": 39,
   "stores": [
     "Tip Top Tailor",
     "Mark's",

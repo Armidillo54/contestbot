@@ -1259,8 +1259,38 @@
       "source": "curated",
       "scraped_date": "2026-05-07",
       "status": "active"
+    },
+    {
+      "id": "curated-20260502-orillia-farmers-market-saturdays",
+      "name": "Orillia Farmers' Market (Saturdays)",
+      "date": "2026-05-08",
+      "end_date": "2026-10-31",
+      "time": "",
+      "venue": "Orillia City Centre Parking Lot, Orillia ON",
+      "category": "market",
+      "price": "Free",
+      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
+      "description": "Orillia Farmers' Market (Saturdays)",
+      "source": "curated",
+      "scraped_date": "2026-05-08",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260508-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-05-08",
+      "end_date": "2026-05-08",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230061609",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-08",
+      "status": "active"
     }
   ],
   "last_updated": "2026-05-08",
-  "total_events": 84
+  "total_events": 86
 }
