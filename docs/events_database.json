@@ -391,21 +391,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260509-orillia-music-centre-celebration",
-      "name": "Orillia Music Centre  Celebration",
-      "date": "2026-05-09",
-      "end_date": "2026-05-09",
-      "time": "",
-      "venue": "62 Peter St N, Orillia, ON",
-      "category": "music",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/orillia-music-centre-celebration-tickets-1988088172241",
-      "description": "Get ready to vibe with some fresh spring tunes and good company at the Orillia Music Centre!",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-23",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260528-safe-5-1-lpm-2-days-classroom-training-i",
       "name": "SAFe\u00ae 5.1 (LPM)2 Days Classroom Training in  Orillia, ON",
       "date": "2026-05-28",
@@ -463,21 +448,6 @@
       "description": "Rack & Rainbows Pride Drag Show",
       "source": "eventbrite.ca",
       "scraped_date": "2026-04-26",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260509-live-music-events-chris-lemay",
-      "name": "Live Music Events: Chris Lemay",
-      "date": "2026-05-09",
-      "end_date": "2026-05-09",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-chris-lemay/",
-      "description": "Sat May 9\\n5-8\\nChris Lemay",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-04-27",
       "status": "active"
     },
     {
@@ -766,36 +736,6 @@
       "status": "active"
     },
     {
-      "id": "orilli-20260509-mariposa-mornings",
-      "name": "Mariposa Mornings",
-      "date": "2026-05-09",
-      "end_date": "2026-05-09",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "music",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/mariposa-mornings/2026-05-09/",
-      "description": "A Morning Designed for Young Explorers\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tBeginning on Saturday\\, March 28 with a special opening celebration! \\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tMariposa Mornings is a weekly toddler play program at the Orillia Museum of Art & History\\, inviting families with children",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-05-01",
-      "status": "active"
-    },
-    {
-      "id": "orilli-20260509-the-human-form-adult-life-drawing-classe",
-      "name": "The Human Form: Adult Life Drawing Classes",
-      "date": "2026-05-09",
-      "end_date": "2026-05-09",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/the-human-form-adult-life-drawing-classes/2026-05-09/",
-      "description": "Icons & Alter Egos: Heroes\\, Villains\\, and Everything In-Between\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tThe Human Form\\n6 \u2013 Week Session. \\nSaturday\\, M",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-05-01",
-      "status": "active"
-    },
-    {
       "id": "orilli-20260512-art-101",
       "name": "Art 101",
       "date": "2026-05-12",
@@ -1081,36 +1021,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-08",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-05-08",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260509-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-05-09",
-      "end_date": "2026-05-09",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230067627",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-09",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-perch-festival",
       "name": "Orillia Perch Festival",
       "date": "2026-05-09",
@@ -1274,8 +1184,68 @@
       "source": "curated",
       "scraped_date": "2026-05-09",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260528-safe-5-1-lpm-2-days-online-classroom-tra",
+      "name": "SAFe\u00ae 5.1 (LPM)2 Days  Online Classroom Training in  Orillia, ON",
+      "date": "2026-05-28",
+      "end_date": "2026-05-29",
+      "time": "",
+      "venue": "Regus Business Centre, Orillia, ON, ON",
+      "category": "other",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/safe-51-lpm2-days-online-classroom-training-in-orillia-on-tickets-470147532927",
+      "description": "Welcome to Educera!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-10",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260512-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-05-12",
+      "end_date": "2026-05-12",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230073645",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-10",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260605-june-sibshops",
+      "name": "June Sibshops",
+      "date": "2026-06-05",
+      "end_date": "2026-06-05",
+      "time": "",
+      "venue": "Regent Park Public School, Orillia, ON",
+      "category": "other",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/june-sibshops-tickets-1635739072599",
+      "description": "Join us for a fun-filled day of activities and bonding for siblings with support needs on June 5th in Orillia!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-10",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260518-meditation-monday",
+      "name": "MEDITATION MONDAY",
+      "date": "2026-05-18",
+      "end_date": "2026-05-18",
+      "time": "",
+      "venue": "4807 Line 11 N, Coldwater, ON",
+      "category": "other",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/meditation-monday-tickets-1984915516743",
+      "description": "We invite you to join a circle of like-minded women who enjoy deepening their spiritual side of Life with Meditations for their Soul",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-10",
+      "status": "active"
     }
   ],
-  "last_updated": "2026-05-09",
-  "total_events": 85
+  "last_updated": "2026-05-10",
+  "total_events": 83
 }
