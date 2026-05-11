@@ -16827,9 +16827,57 @@
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/05/10/win-1-of-10-pairs-of-toronto-tempo-wnba-tickets-in-toronto-valued-at-300/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-mary-browns-contest-win-a-250-mary-browns-gift-car",
+      "name": "Mary Browns Contest: Win a $250 Mary Browns Gift Card -Tell Mary Survey",
+      "url": "https://www.canadianfreestuff.com/mary-browns-contest/",
+      "prize": "Mary Browns Contest: Win a $250 Mary Browns Gift Card -Tell Mary Survey",
+      "prize_value": 250,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-11",
+      "link_valid": true,
+      "link_checked": "2026-05-11",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/mary-browns-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-w-network-outlander-scotland-contest-win-a-trip-fo",
+      "name": "W Network Outlander Scotland Contest \u2013 Win a Trip for 2 to Scotland!",
+      "url": "https://www.canadianfreestuff.com/w-network-canada-contest/",
+      "prize": "W Network Outlander Scotland Contest \u2013 Win a Trip for 2 to Scotland!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-11",
+      "link_valid": true,
+      "link_checked": "2026-05-11",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/w-network-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-05-11",
-  "total_active": 549,
-  "total_prize_value": 1258537
+  "total_active": 551,
+  "total_prize_value": 1258787
 }

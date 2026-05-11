@@ -291,12 +291,32 @@
       "status": "active"
     },
     {
-      "id": "knix-sale-general",
+      "id": "knix-sale-0",
       "store": "Knix",
-      "description": "Sale on now at Knix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorites b",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-1",
+      "store": "Knix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorit",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-2",
+      "store": "Knix",
+      "description": "Save up to 60% off our best-sellers! Snag your favorites before the",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
       "scraped_date": "2026-05-11",
       "status": "active"
     },
@@ -352,7 +372,7 @@
     }
   ],
   "last_updated": "2026-05-11",
-  "total_sales": 35,
+  "total_sales": 37,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
