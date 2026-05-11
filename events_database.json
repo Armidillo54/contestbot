@@ -1199,8 +1199,53 @@
       "source": "curated",
       "scraped_date": "2026-05-11",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260528-orillia-opp-women-s-focused-shuttle-run",
+      "name": "ORILLIA - OPP Women's Focused Shuttle Run",
+      "date": "2026-05-28",
+      "end_date": "2026-05-28",
+      "time": "",
+      "venue": "Ontario Provincial Police - General Headquarters, Orillia, ON",
+      "category": "sports",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/orillia-opp-womens-focused-shuttle-run-tickets-1985390666930",
+      "description": "The OPP is pleased to invite you to attend and try the 20m Leger Shuttle Run! We will also be hosting a panel discussion to highlight women.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260528-safe-5-1-popm-2-days-classroom-training-",
+      "name": "SAFe\u00ae 5.1 POPM 2 Days   Classroom Training in  Orillia, ON",
+      "date": "2026-05-28",
+      "end_date": "2026-05-29",
+      "time": "",
+      "venue": "Orillia, ON, Orillia, ON, ON",
+      "category": "arts",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/safe-51-popm-2-days-classroom-training-in-orillia-on-tickets-481749113567",
+      "description": "Welcome to Simplykart!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260520-spring-planter-workshop",
+      "name": "Spring Planter Workshop",
+      "date": "2026-05-20",
+      "end_date": "2026-05-20",
+      "time": "",
+      "venue": "7531 E River Rd, Washago, ON",
+      "category": "community",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/spring-planter-workshop-tickets-1989228431788",
+      "description": "Get your hands dirty and create your own spring planter in this fun, hands-on workshop!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-11",
+      "status": "active"
     }
   ],
   "last_updated": "2026-05-11",
-  "total_events": 80
+  "total_events": 83
 }

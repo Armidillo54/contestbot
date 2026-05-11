@@ -201,6 +201,66 @@
       "status": "active"
     },
     {
+      "id": "carters-sale-0",
+      "store": "Carter's",
+      "description": "Up to 40% OFF* Summer",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/deals",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-1",
+      "store": "Carter's",
+      "description": "Up to 40% OFF* Summer Staples",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/deals",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-2",
+      "store": "Carter's",
+      "description": "Up to 40% OFF* Red, White & Blue",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/deals",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-3",
+      "store": "Carter's",
+      "description": "UP TO 70% OFF* Clearance",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/deals",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-4",
+      "store": "Carter's",
+      "description": "20% Off Code: SUMMER20",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/deals",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-5",
+      "store": "Carter's",
+      "description": "*UP TO 40% OFF: Savings based on MSRP or original tick",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/deals",
+      "scraped_date": "2026-05-11",
+      "status": "active"
+    },
+    {
       "id": "threeships-sale-0",
       "store": "Three Ships Beauty",
       "description": "Save 20% on clean, vegan skincare in the Three S",
@@ -291,32 +351,12 @@
       "status": "active"
     },
     {
-      "id": "knix-sale-0",
+      "id": "knix-sale-general",
       "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorites b",
+      "description": "Sale on now at Knix",
       "detail": "",
       "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-05-11",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-1",
-      "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorit",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
-      "scraped_date": "2026-05-11",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-2",
-      "store": "Knix",
-      "description": "Save up to 60% off our best-sellers! Snag your favorites before the",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/last-call",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-11",
       "status": "active"
     },
@@ -372,7 +412,7 @@
     }
   ],
   "last_updated": "2026-05-11",
-  "total_sales": 37,
+  "total_sales": 41,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
