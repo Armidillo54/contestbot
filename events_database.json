@@ -106,21 +106,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260513-the-orillia-705-contractors-social",
-      "name": "The Orillia 705 Contractors Social",
-      "date": "2026-05-13",
-      "end_date": "2026-05-13",
-      "time": "",
-      "venue": "Wooden Hearts, Orillia, ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/the-orillia-705-contractors-social-tickets-1986894972348",
-      "description": "Orillia Contractor Social: gather, share the struggle, and help each other build better businesses. Presented by 705 Contractors and WBC",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260516-dead-root-revival-live-in-orillia",
       "name": "Dead Root Revival Live in Orillia!!",
       "date": "2026-05-16",
@@ -991,51 +976,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-12",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-05-12",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-05-12",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-05-12",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260513-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-05-13",
-      "end_date": "2026-05-13",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230079663",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-13",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-opera-house-season-schedule",
       "name": "Orillia Opera House \u2014 Season Schedule",
       "date": "2026-05-13",
@@ -1184,8 +1124,23 @@
       "source": "curated",
       "scraped_date": "2026-05-13",
       "status": "active"
+    },
+    {
+      "id": "curated-20260911-osmh-foundation-couchiching-classic-golf",
+      "name": "OSMH Foundation Couchiching Classic Golf Tournament",
+      "date": "2026-09-11",
+      "end_date": "2026-09-11",
+      "time": "",
+      "venue": "Hawk Ridge Golf Club, Orillia ON",
+      "category": "community",
+      "price": "Ticketed",
+      "url": "https://osmhfoundation.ca/events/",
+      "description": "OSMH Foundation Couchiching Classic Golf Tournament",
+      "source": "curated",
+      "scraped_date": "2026-05-14",
+      "status": "active"
     }
   ],
-  "last_updated": "2026-05-13",
-  "total_events": 79
+  "last_updated": "2026-05-14",
+  "total_events": 76
 }
