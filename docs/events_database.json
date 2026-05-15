@@ -1169,8 +1169,23 @@
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-15",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260528-adult-craft-club",
+      "name": "Adult Craft Club",
+      "date": "2026-05-28",
+      "end_date": "2026-05-28",
+      "time": "",
+      "venue": "Ramara Centre, Ramara, ON",
+      "category": "music",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/adult-craft-club-tickets-1978423787807",
+      "description": "Enjoy an evening out socializing with crafty folks!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-15",
+      "status": "active"
     }
   ],
   "last_updated": "2026-05-15",
-  "total_events": 78
+  "total_events": 79
 }
