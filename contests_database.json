@@ -20253,9 +20253,129 @@
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/05/15/win-a-pair-of-2026-fifa-tickets-in-vancouver-valued-at-3000/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-cineplex-canada-contest-win-a-top-gun-prize-pack-c",
+      "name": "Cineplex Canada Contest: Win a Top Gun Prize Pack /CineClub membership /FREE Movies for a Year!",
+      "url": "https://www.canadianfreestuff.com/cineplex-canada-contest/",
+      "prize": "Cineplex Canada Contest: Win a Top Gun Prize Pack /CineClub membership /FREE Movies for a Year!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-16",
+      "link_valid": true,
+      "link_checked": "2026-05-16",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/cineplex-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-p-g-brandsaver-old-spice-super-mario-contest-win-a",
+      "name": "P&G Brandsaver Old Spice Super Mario Contest: WIN a Trip for 2 to Japan!",
+      "url": "https://www.canadianfreestuff.com/pg-canada-contest/",
+      "prize": "P&G Brandsaver Old Spice Super Mario Contest: WIN a Trip for 2 to Japan!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-16",
+      "link_valid": true,
+      "link_checked": "2026-05-16",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/pg-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-kruger-contest-win-a-one-year-supply-of-kruger-pro",
+      "name": "Kruger Contest: WIN a one-year supply of Kruger Products",
+      "url": "https://mykrugerproducts.ca/en-ca/campaigns/find-and-win",
+      "prize": "Kruger Contest: WIN a one-year supply of Kruger Products",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-16",
+      "link_valid": true,
+      "link_checked": "2026-05-16",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/kruger-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-home-depot-survey-contest-win-a-3000-gift-card",
+      "name": "Home Depot Survey Contest: Win a $3000 Gift Card!",
+      "url": "https://survey.medallia.com/?thehomedepot",
+      "prize": "Home Depot Survey Contest: Win a $3000 Gift Card!",
+      "prize_value": 3000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-16",
+      "link_valid": true,
+      "link_checked": "2026-05-16",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/home-depot-survey-canada-sweepstakes/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-linen-chest-canada-contest-win-a-1000-gift-card-go",
+      "name": "Linen Chest Canada Contest: Win a $1000 Gift Card-GO!",
+      "url": "https://www.canadianfreestuff.com/linen-chest-canada-contest/",
+      "prize": "Linen Chest Canada Contest: Win a $1000 Gift Card-GO!",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-16",
+      "link_valid": true,
+      "link_checked": "2026-05-16",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/linen-chest-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-05-16",
-  "total_active": 659,
-  "total_prize_value": 1459311
+  "total_active": 664,
+  "total_prize_value": 1463311
 }
