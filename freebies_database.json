@@ -440,13 +440,13 @@
       "category": "food",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-04-16",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-05-13",
+      "link_checked": "2026-05-16",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -684,6 +684,6 @@
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-05-15",
+  "last_updated": "2026-05-16",
   "total_freebies": 14
 }

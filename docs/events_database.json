@@ -361,21 +361,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260515-live-music-events-jaclyn-kenyon",
-      "name": "Live Music Events: Jaclyn Kenyon",
-      "date": "2026-05-15",
-      "end_date": "2026-05-15",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-jaclyn-kenyon/",
-      "description": "Fri May 15\\n5-8\\nJaclyn Kenyon",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-04-27",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260516-live-music-events-david-shaw",
       "name": "Live Music Events: David Shaw",
       "date": "2026-05-16",
@@ -946,36 +931,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-14",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-05-14",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-05-14",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-05-14",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-opera-house-season-schedule",
       "name": "Orillia Opera House \u2014 Season Schedule",
       "date": "2026-05-15",
@@ -1156,21 +1111,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260515-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-05-15",
-      "end_date": "2026-05-15",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230091699",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-15",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260528-adult-craft-club",
       "name": "Adult Craft Club",
       "date": "2026-05-28",
@@ -1184,8 +1124,23 @@
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-15",
       "status": "active"
+    },
+    {
+      "id": "quayle-20260913-stretch-sip-yoga",
+      "name": "Stretch & Sip Yoga",
+      "date": "2026-09-13",
+      "end_date": "2026-09-13",
+      "time": "",
+      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
+      "category": "sports",
+      "price": "See event",
+      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/stretch-sip-yoga-5/",
+      "description": "September 13\\, 2026\\, 10:30 \u2013 11:30 am\\nGet Tickets",
+      "source": "quaylesbrewery.com",
+      "scraped_date": "2026-05-16",
+      "status": "active"
     }
   ],
-  "last_updated": "2026-05-15",
-  "total_events": 79
+  "last_updated": "2026-05-16",
+  "total_events": 76
 }
