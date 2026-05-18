@@ -1034,8 +1034,38 @@
       "source": "curated",
       "scraped_date": "2026-05-18",
       "status": "active"
+    },
+    {
+      "id": "curated-20260502-orillia-farmers-market-saturdays",
+      "name": "Orillia Farmers' Market (Saturdays)",
+      "date": "2026-05-18",
+      "end_date": "2026-10-31",
+      "time": "",
+      "venue": "Orillia City Centre Parking Lot, Orillia ON",
+      "category": "market",
+      "price": "Free",
+      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
+      "description": "Orillia Farmers' Market (Saturdays)",
+      "source": "curated",
+      "scraped_date": "2026-05-18",
+      "status": "active"
+    },
+    {
+      "id": "curated-20260510-orillia-kings-oba-baseball-season",
+      "name": "Orillia Kings OBA Baseball Season",
+      "date": "2026-05-18",
+      "end_date": "2026-08-31",
+      "time": "",
+      "venue": "Tudhope Park, Orillia ON",
+      "category": "sports",
+      "price": "Free",
+      "url": "https://orilliakings.ca/",
+      "description": "Orillia Kings OBA Baseball Season",
+      "source": "curated",
+      "scraped_date": "2026-05-18",
+      "status": "active"
     }
   ],
   "last_updated": "2026-05-18",
-  "total_events": 69
+  "total_events": 71
 }
