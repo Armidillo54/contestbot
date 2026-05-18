@@ -1064,8 +1064,53 @@
       "source": "curated",
       "scraped_date": "2026-05-18",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260519-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-05-19",
+      "end_date": "2026-05-19",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230103735",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-18",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260525-spring-planter-workshop",
+      "name": "Spring Planter Workshop",
+      "date": "2026-05-25",
+      "end_date": "2026-05-25",
+      "time": "",
+      "venue": "7531 E River Rd, Washago, ON",
+      "category": "community",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/spring-planter-workshop-tickets-1989228431788",
+      "description": "Create a Living Log Planter filled with Succulents, Mosses & Colourful Annuals, that will last for years to come",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-18",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260529-healing-school-orillia-on",
+      "name": "HEALING SCHOOL - ORILLIA, ON",
+      "date": "2026-05-29",
+      "end_date": "2026-05-31",
+      "time": "",
+      "venue": "Calvary Pentecostal Tabernacle, Orillia, ON",
+      "category": "arts",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/healing-school-orillia-on-tickets-1989767307580",
+      "description": "Come join us at HEALING SCHOOL - Experience the Supernatural and witness miracles and divine healing in person!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-18",
+      "status": "active"
     }
   ],
   "last_updated": "2026-05-18",
-  "total_events": 71
+  "total_events": 74
 }
