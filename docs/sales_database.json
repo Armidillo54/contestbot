@@ -253,20 +253,30 @@
     {
       "id": "thrive-sale-0",
       "store": "Thrive Causemetics",
-      "description": "Promotional Terms *20% off is only valid on first purchases. Code must be entered at checkout. Not",
+      "description": "Save Up To 30% OFF Select Products",
       "detail": "",
       "category": "Beauty",
-      "url": "https://thrivecausemetics.ca/collections/sets-price-drop",
+      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
       "scraped_date": "2026-05-19",
       "status": "active"
     },
     {
       "id": "thrive-sale-1",
       "store": "Thrive Causemetics",
+      "description": "Promotional Terms *20% off is only valid on first purchases. Code must be entered at checkout. Not",
+      "detail": "",
+      "category": "Beauty",
+      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
+      "scraped_date": "2026-05-19",
+      "status": "active"
+    },
+    {
+      "id": "thrive-sale-2",
+      "store": "Thrive Causemetics",
       "description": "Promotional Terms *20% off is only valid on first purchases. Code",
       "detail": "",
       "category": "Beauty",
-      "url": "https://thrivecausemetics.ca/collections/sets-price-drop",
+      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
       "scraped_date": "2026-05-19",
       "status": "active"
     },
@@ -277,6 +287,56 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-05-19",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-0",
+      "store": "Knix",
+      "description": "Up to 60% Off Last Call - 100 New Styles Added",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-19",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-1",
+      "store": "Knix",
+      "description": "hen you spend $175+ Up to 60% Off Last Call - 100 New Styles Added Try Yo",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-19",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-2",
+      "store": "Knix",
+      "description": "u spend $175+ Up to 60% Off Last Call - 100 New Styles Added Try Your First Pa",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-19",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": "hen you spend $175+ Up to 60% Off Last Call - 100 New Styles Added Tr",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-19",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
+      "store": "Knix",
+      "description": "u spend $175+ Up to 60% Off Last Call - 100 New Styles Added Try Yo",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
       "scraped_date": "2026-05-19",
       "status": "active"
     },
@@ -342,7 +402,7 @@
     }
   ],
   "last_updated": "2026-05-19",
-  "total_sales": 34,
+  "total_sales": 40,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
