@@ -22666,9 +22666,34 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "kool-new-netflix-docuseries-revisits-michael-jackson-co",
+      "name": "New Netflix Docuseries Revisits Michael Jackson Courtroom DramaOpens in new window",
+      "sponsor": "",
+      "url": "https://www.iheartradio.ca/en/music-news/new-netflix-docuseries-revisits-michael-jackson-courtroom-drama/",
+      "prize": "Opens in new window New Netflix Docuseries Revisits Michael Jackson Courtroom Drama Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-05-21",
+      "link_valid": true,
+      "link_checked": "2026-05-21",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-05-21",
-  "total_active": 719,
+  "total_active": 720,
   "total_prize_value": 1535351
 }
