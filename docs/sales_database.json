@@ -163,7 +163,7 @@
     {
       "id": "rwandco-sale-2",
       "store": "RW&CO",
-      "description": "Extra 10% Off Sale with code: Extra",
+      "description": "Up to 50% Off Sale + Extra 10% Off with Code: EXTRA",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -173,7 +173,7 @@
     {
       "id": "rwandco-sale-3",
       "store": "RW&CO",
-      "description": "Sale: Up to 50% Off",
+      "description": "0% Off Sale + Extra 10% Off with Code: EXTRA",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -183,7 +183,7 @@
     {
       "id": "rwandco-sale-4",
       "store": "RW&CO",
-      "description": "Additional 10% Off Clearance",
+      "description": "Up to 50% Off Sale + Extra 10% Off with Code: EXT",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -193,7 +193,7 @@
     {
       "id": "rwandco-sale-5",
       "store": "RW&CO",
-      "description": "40% Off Select Men's Casual Pants Offer valid in-store and online at rw-co.com from May",
+      "description": "Up to 50% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -271,6 +271,66 @@
       "status": "active"
     },
     {
+      "id": "knix-sale-0",
+      "store": "Knix",
+      "description": "Up to 60% Off Last Call - 100 New Styles Added",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-22",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-1",
+      "store": "Knix",
+      "description": "Up to 60% off Last Call",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-22",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-2",
+      "store": "Knix",
+      "description": "Buy 3+, save 15%. Buy 5+, save 20%.",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-22",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": ", save 15%. Buy 5+, save 20%.",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-22",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
+      "store": "Knix",
+      "description": "hen you spend $150+ Up to 60% Off Last Call - 100 New Styles Added Try Yo",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-22",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-5",
+      "store": "Knix",
+      "description": "u spend $150+ Up to 60% Off Last Call - 100 New Styles Added Try Your First Pa",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-05-22",
+      "status": "active"
+    },
+    {
       "id": "callitspring-sale-general",
       "store": "Call It Spring",
       "description": "Sale on now at Call It Spring",
@@ -292,7 +352,7 @@
     }
   ],
   "last_updated": "2026-05-22",
-  "total_sales": 29,
+  "total_sales": 35,
   "stores": [
     "Tip Top Tailor",
     "Mark's",

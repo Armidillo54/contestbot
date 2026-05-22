@@ -23182,9 +23182,34 @@
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/05/21/win-1-of-4-pairs-of-fifa-tickets-in-vancouver-valued-at-1500/",
       "url_resolved": true
+    },
+    {
+      "id": "kool-dashcam-footage-shows-britney-spears-was-nonsensic",
+      "name": "Dashcam Footage Shows Britney Spears Was \u2018Nonsensical\u2019 During DUI ArrestOpens in new window",
+      "sponsor": "",
+      "url": "https://www.iheartradio.ca/en/music-news/dashcam-footage-shows-britney-spears-was-nonsensical-during-dui-arrest/",
+      "prize": "Opens in new window Dashcam Footage Shows Britney Spears Was \u2018Nonsensical\u2019 During DUI Arrest Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-05-22",
+      "link_valid": true,
+      "link_checked": "2026-05-22",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-05-22",
-  "total_active": 739,
+  "total_active": 740,
   "total_prize_value": 1572865
 }
