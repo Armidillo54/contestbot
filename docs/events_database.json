@@ -316,21 +316,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260523-live-music-events-michael-martyn",
-      "name": "Live Music Events: Michael Martyn",
-      "date": "2026-05-23",
-      "end_date": "2026-05-23",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-michael-martyn/",
-      "description": "Sat May 23\\n5-8\\nMichael Martyn\\n\\n\\n\\n",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-04-28",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260524-live-music-events-darcy-windover",
       "name": "Live Music Events: Darcy Windover",
       "date": "2026-05-24",
@@ -448,36 +433,6 @@
       "description": "June 14\\, 2026\\, 10:30 \u2013 11:30 am\\nGet Tickets",
       "source": "quaylesbrewery.com",
       "scraped_date": "2026-04-30",
-      "status": "active"
-    },
-    {
-      "id": "orilli-20260523-mariposa-mornings",
-      "name": "Mariposa Mornings",
-      "date": "2026-05-23",
-      "end_date": "2026-05-23",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "music",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/mariposa-mornings/2026-05-23/",
-      "description": "A Morning Designed for Young Explorers\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tBeginning on Saturday\\, March 28 with a special opening celebration! \\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tMariposa Mornings is a weekly toddler play program at the Orillia Museum of Art & History\\, inviting families with children",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-05-01",
-      "status": "active"
-    },
-    {
-      "id": "orilli-20260523-the-human-form-adult-life-drawing-classe",
-      "name": "The Human Form: Adult Life Drawing Classes",
-      "date": "2026-05-23",
-      "end_date": "2026-05-23",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/the-human-form-adult-life-drawing-classes/2026-05-23/",
-      "description": "Icons & Alter Egos: Heroes\\, Villains\\, and Everything In-Between\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tThe Human Form\\n6 \u2013 Week Session. \\nSaturday\\, M",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-05-01",
       "status": "active"
     },
     {
@@ -796,51 +751,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-22",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-05-22",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-05-22",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-05-22",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-05-22",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-05-22",
-      "status": "active"
-    },
-    {
       "id": "curated-20260920-terry-fox-run-orillia",
       "name": "Terry Fox Run - Orillia",
       "date": "2026-09-20",
@@ -1006,6 +916,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-05-23",
-  "total_events": 67
+  "last_updated": "2026-05-24",
+  "total_events": 61
 }
