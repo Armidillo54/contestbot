@@ -24469,9 +24469,33 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-brilliant-earth-giveaway-get-1-4-carat-lab-diamond",
+      "name": "Brilliant Earth Giveaway + Get 1/4 Carat Lab Diamond Stud Earrings FREE (w/purchase)",
+      "url": "https://www.brilliantearth.com/en-ca/promo-codes-and-offers/",
+      "prize": "Brilliant Earth Giveaway + Get 1/4 Carat Lab Diamond Stud Earrings FREE (w/purchase)",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-25",
+      "link_valid": true,
+      "link_checked": "2026-05-25",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/brilliant-earth-free-sample/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-05-25",
-  "total_active": 777,
+  "total_active": 778,
   "total_prize_value": 1737411
 }
