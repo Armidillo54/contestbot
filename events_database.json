@@ -706,21 +706,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260525-spring-planter-workshop",
-      "name": "Spring Planter Workshop",
-      "date": "2026-05-25",
-      "end_date": "2026-05-25",
-      "time": "",
-      "venue": "7531 E River Rd, Washago, ON",
-      "category": "community",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/spring-planter-workshop-tickets-1989228431788",
-      "description": "Create a Living Log Planter filled with Succulents, Mosses & Colourful Annuals, that will last for years to come",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-18",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260529-healing-school-orillia-on",
       "name": "HEALING SCHOOL - ORILLIA, ON",
       "date": "2026-05-29",
@@ -748,51 +733,6 @@
       "description": "Terry Fox Run - Orillia",
       "source": "curated",
       "scraped_date": "2026-05-23",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-24",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-05-24",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-05-24",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-05-24",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-05-24",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-05-24",
       "status": "active"
     },
     {
@@ -1021,6 +961,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-05-25",
-  "total_events": 68
+  "last_updated": "2026-05-26",
+  "total_events": 64
 }
