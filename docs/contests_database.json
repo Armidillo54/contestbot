@@ -23212,7 +23212,7 @@
       "id": "cacc-watch-giveaway",
       "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WATCH #GIVEAWAY",
       "sponsor": "",
-      "url": "https://curiousaboutcanadiancontests.com/2026/05/22/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-watch-giveaway/ ",
+      "url": "https://gleam.io/2DRQf/-win-the-olivia-burton-illustrated-floral-watch-",
       "prize": "International / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WATCH #GIVEAWAY - May 22, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WATCH #GIVEAWAY https://gleam.io/2DRQf/-win-the-olivia-burton-illustrated-flora",
       "prize_value": 0,
       "entry_method": "online_form",
@@ -23231,7 +23231,7 @@
       "link_checked": "2026-05-25",
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/05/22/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-watch-giveaway/ ",
-      "url_resolved": false
+      "url_resolved": true
     },
     {
       "id": "cacc-starbucks-giftcard-giveaway",
@@ -24815,9 +24815,83 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-cineplex-canada-contest-win-a-cineclub-membership-",
+      "name": "Cineplex Canada Contest: Win a CineClub membership or FREE Movies for a Year!",
+      "url": "https://www.canadianfreestuff.com/cineplex-canada-contest/",
+      "prize": "Cineplex Canada Contest: Win a CineClub membership or FREE Movies for a Year!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-26",
+      "link_valid": true,
+      "link_checked": "2026-05-26",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/cineplex-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "kool-bts-team-up-with-oreo-for-limited-edition-hotteok-",
+      "name": "BTS Team Up With Oreo for Limited Edition Hotteok-Flavoured CookieOpens in new window",
+      "sponsor": "",
+      "url": "https://www.iheartradio.ca/en/music-news/bts-team-up-with-oreo-for-limited-edition-hotteok-flavoured-cookie/",
+      "prize": "Opens in new window BTS Team Up With Oreo for Limited Edition Hotteok-Flavoured Cookie Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-05-26",
+      "link_valid": true,
+      "link_checked": "2026-05-26",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
+    },
+    {
+      "id": "kool-weezer-s-rivers-cuomo-uploaded-covers-of-outkast-r",
+      "name": "Weezer\u2019s Rivers Cuomo Uploaded Covers of OutKast, Radiohead, Post Malone, Nirvana & More To His YouTube ChannelOpens in new window",
+      "sponsor": "",
+      "url": "https://www.iheartradio.ca/en/music-news/weezers-rivers-cuomo-uploaded-covers-of-outkast-radiohead-post-malone-nirvana-more-to-his-youtube-channel/",
+      "prize": "Opens in new window Weezer\u2019s Rivers Cuomo Uploaded Covers of OutKast, Radiohead, Post Malone, Nirvana & More To His YouTube Channel Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-05-26",
+      "link_valid": true,
+      "link_checked": "2026-05-26",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-05-26",
-  "total_active": 784,
+  "total_active": 787,
   "total_prize_value": 1771128
 }
