@@ -1469,8 +1469,23 @@
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-27",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260527-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-05-27",
+      "end_date": "2026-05-27",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230139843",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-05-27",
+      "status": "active"
     }
   ],
   "last_updated": "2026-05-27",
-  "total_events": 98
+  "total_events": 99
 }

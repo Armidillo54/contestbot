@@ -25455,9 +25455,105 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-nerds-gummy-clusters-contest-win-a-vip-soccer-expe",
+      "name": "Nerds Gummy Clusters Contest -Win a VIP Soccer Experience + Canada Soccer Prizes!",
+      "url": "https://nerdssoccercontest.com/",
+      "prize": "Nerds Gummy Clusters Contest -Win a VIP Soccer Experience + Canada Soccer Prizes!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-27",
+      "link_valid": true,
+      "link_checked": "2026-05-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/nerds-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-keurig-canada-contest-win-a-keurig-k-express-coffe",
+      "name": "Keurig Canada Contest -Win a Keurig K-Express Coffee Maker",
+      "url": "https://www.canadianfreestuff.com/keurig-canada-contest/",
+      "prize": "Keurig Canada Contest -Win a Keurig K-Express Coffee Maker",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-27",
+      "link_valid": true,
+      "link_checked": "2026-05-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/keurig-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-kitchenaid-canada-contest-win-a-kitchenaid-artisan",
+      "name": "KitchenAid Canada Contest: Win a KitchenAid Artisan Plus Tilt-Head Stand Mixer or 5-Speed Hand Mixer!",
+      "url": "https://www.canadianfreestuff.com/kitchenaid-canada-contests/",
+      "prize": "KitchenAid Canada Contest: Win a KitchenAid Artisan Plus Tilt-Head Stand Mixer or 5-Speed Hand Mixer!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-27",
+      "link_valid": true,
+      "link_checked": "2026-05-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/kitchenaid-canada-contests/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-bath-body-works-contest-win-bath-body-works-gift-c",
+      "name": "Bath & Body Works Contest- Win Bath & Body Works Gift Cards -Instant Win!",
+      "url": "https://steamykitchen.com/255237-bath-body-works-instant-win-2.html",
+      "prize": "Bath & Body Works Contest- Win Bath & Body Works Gift Cards -Instant Win!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-27",
+      "link_valid": true,
+      "link_checked": "2026-05-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/bath-and-body-works-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-05-27",
-  "total_active": 806,
+  "total_active": 810,
   "total_prize_value": 1784580
 }
