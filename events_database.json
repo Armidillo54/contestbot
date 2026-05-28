@@ -256,21 +256,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260526-pmp-certification-4-days-classroom-train",
-      "name": "PMP Certification 4 Days Classroom Training in Orillia, ON",
-      "date": "2026-05-26",
-      "end_date": "2026-05-29",
-      "time": "",
-      "venue": "Orillia, ON, Orillia, ON, ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/pmp-certification-4-days-classroom-training-in-orillia-on-tickets-603579882677",
-      "description": "PMP Certification 4 Days Classroom Training",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-22",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260528-safe-5-1-lpm-2-days-classroom-training-i",
       "name": "SAFe\u00ae 5.1 (LPM)2 Days Classroom Training in  Orillia, ON",
       "date": "2026-05-28",
@@ -763,51 +748,6 @@
       "description": "Holistic healing pop-up with energy sessions, meditation, workshops, creative experiences & retreat options at Oro Acres Farmhouse.",
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-25",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-26",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-05-26",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-05-26",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-05-26",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-05-26",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-05-26",
       "status": "active"
     },
     {
@@ -1469,23 +1409,8 @@
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-27",
       "status": "active"
-    },
-    {
-      "id": "eventbrite-20260527-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-05-27",
-      "end_date": "2026-05-27",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230139843",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-27",
-      "status": "active"
     }
   ],
-  "last_updated": "2026-05-27",
-  "total_events": 99
+  "last_updated": "2026-05-28",
+  "total_events": 94
 }
