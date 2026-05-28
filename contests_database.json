@@ -22596,7 +22596,7 @@
       "id": "cacc-rodan-fields-skincare-giveaway",
       "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #RODAN + #FIELDS #SKINCARE #GIVEAWAY",
       "sponsor": "",
-      "url": "https://curiousaboutcanadiancontests.com/2026/05/20/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-rodan-fields-skincare-giveaway/ ",
+      "url": "https://gleam.io/TvZ3o/-win-the-rodan-fields-active-hydration-bright-eye-complex-?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
       "prize": "International / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #RODAN + #FIELDS #SKINCARE #GIVEAWAY - May 20, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #RODAN + #FIELDS #SKINCARE #GIVEAWAY https://gleam.io/TvZ3o/",
       "prize_value": 0,
       "entry_method": "online_form",
@@ -22615,7 +22615,7 @@
       "link_checked": "2026-05-27",
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/05/20/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-rodan-fields-skincare-giveaway/ ",
-      "url_resolved": false
+      "url_resolved": true
     },
     {
       "id": "cacc-win-plush-pig-toy",
@@ -25919,9 +25919,81 @@
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/05/27/win-an-atlas-steak-fish-gift-card-valued-at-250-3/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-nhl-contest-canada-win-limited-edition-nhl-cup-cha",
+      "name": "NHL Contest Canada -Win Limited Edition NHL Cup Chaser Shoes (16 Winners)",
+      "url": "https://www.canadianfreestuff.com/nhl-canada-contest/",
+      "prize": "NHL Contest Canada -Win Limited Edition NHL Cup Chaser Shoes (16 Winners)",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-28",
+      "link_valid": true,
+      "link_checked": "2026-05-28",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/nhl-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-wheel-of-fortune-sweepstakes-win-1-of-5-carnival-c",
+      "name": "Wheel of Fortune Sweepstakes -Win 1 of 5 Carnival Cruises!",
+      "url": "https://www.wheeloffortune.com/win/spin-sail",
+      "prize": "Wheel of Fortune Sweepstakes -Win 1 of 5 Carnival Cruises!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-28",
+      "link_valid": true,
+      "link_checked": "2026-05-28",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/wheel-of-fortune-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-home-depot-canada-contest-win-a-100-gift-card-fath",
+      "name": "Home Depot Canada Contest -Win a $100 Gift Card -Father`s Day Giveaway!",
+      "url": "https://www.canadianfreestuff.com/home-depot-canada-contest/",
+      "prize": "Home Depot Canada Contest -Win a $100 Gift Card -Father`s Day Giveaway!",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-28",
+      "link_valid": true,
+      "link_checked": "2026-05-28",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/home-depot-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-05-28",
-  "total_active": 822,
-  "total_prize_value": 1802251
+  "total_active": 825,
+  "total_prize_value": 1802351
 }
