@@ -26682,9 +26682,34 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/05/28/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-puzzle-giveaway-2/ ",
       "url_resolved": false
+    },
+    {
+      "id": "ccan-win-a-3-night-all-inclusive-trip-for-2-to-arowhon-",
+      "name": "Win a 3-night all-inclusive trip for 2 to Arowhon Pines Resort in Algonquin Park (valued up to $10,000)",
+      "sponsor": "",
+      "url": "https://pureescapecontest.ca/",
+      "prize": "Win a 3-night all-inclusive trip for 2 to Arowhon Pines Resort in Algonquin Park (valued up to $10,000) You can win a relaxing Ontario nature resort getaway that includes a 3-night all-inclusive stay ",
+      "prize_value": 10000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestcanada.net",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "2026-06-30",
+      "source": "contestcanada.net",
+      "status": "active",
+      "added_date": "2026-05-29",
+      "link_valid": true,
+      "link_checked": "2026-05-29",
+      "last_entered": null,
+      "source_url": "https://www.contestcanada.net/2026/05/29/win-a-3-night-all-inclusive-trip-for-2-to-arowhon-pines-resort-in-algonquin-park-valued-up-to-10000/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-05-29",
-  "total_active": 850,
-  "total_prize_value": 1981083
+  "total_active": 851,
+  "total_prize_value": 1991083
 }
