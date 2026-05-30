@@ -27082,9 +27082,82 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/05/29/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-win-vip-golf-tournament-getaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-sealy-canada-contest-win-a-queen-size-sealy-postur",
+      "name": "Sealy Canada Contest: Win a Queen Size Sealy Posturepedic Mattress for Dad",
+      "url": "https://www.canadianfreestuff.com/sealy-canada-contest/",
+      "prize": "Sealy Canada Contest: Win a Queen Size Sealy Posturepedic Mattress for Dad",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-30",
+      "link_valid": true,
+      "link_checked": "2026-05-30",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/sealy-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-rona-canada-contest-win-a-250-gift-card-new",
+      "name": "Rona Canada Contest \u2013 Win a $250 Gift Card (NEW)",
+      "url": "https://www.canadianfreestuff.com/rona-canada-contests/",
+      "prize": "Rona Canada Contest \u2013 Win a $250 Gift Card (NEW)",
+      "prize_value": 250,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-30",
+      "link_valid": true,
+      "link_checked": "2026-05-30",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/rona-canada-contests/",
+      "url_resolved": false
+    },
+    {
+      "id": "cacc-paypal-cash-giveaway",
+      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #PAYPAL #CASH #GIVEAWAY",
+      "sponsor": "",
+      "url": "https://curiousaboutcanadiancontests.com/2026/05/30/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-paypal-cash-giveaway/ ",
+      "prize": "Daily Entry / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #PAYPAL #CASH #GIVEAWAY - May 30, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #PAYPAL #CASH #GIVEAWAY https://steamykitchen.com/255326-cupboard-cash-instan",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-05-30",
+      "link_valid": true,
+      "link_checked": "2026-05-30",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/05/30/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-paypal-cash-giveaway/ ",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-05-30",
-  "total_active": 861,
-  "total_prize_value": 1984651
+  "total_active": 864,
+  "total_prize_value": 1984901
 }
