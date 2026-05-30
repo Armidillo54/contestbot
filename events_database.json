@@ -256,21 +256,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260528-safe-5-1-lpm-2-days-classroom-training-i",
-      "name": "SAFe\u00ae 5.1 (LPM)2 Days Classroom Training in  Orillia, ON",
-      "date": "2026-05-28",
-      "end_date": "2026-05-29",
-      "time": "",
-      "venue": "Regus Business Centre, Orillia, ON, ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/safe-51-lpm2-days-classroom-training-in-orillia-on-tickets-468612932897",
-      "description": "Welcome to Educera!",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-23",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260612-rack-rainbows",
       "name": "Rack & Rainbows",
       "date": "2026-06-12",
@@ -283,21 +268,6 @@
       "description": "Rack & Rainbows Pride Drag Show",
       "source": "eventbrite.ca",
       "scraped_date": "2026-04-26",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260529-live-music-events-chris-staig",
-      "name": "Live Music Events: Chris Staig",
-      "date": "2026-05-29",
-      "end_date": "2026-05-29",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-chris-staig/",
-      "description": "Fri May 29\\n5-8\\nChris Staig",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-04-28",
       "status": "active"
     },
     {
@@ -481,21 +451,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260528-safe-5-1-lpm-2-days-online-classroom-tra",
-      "name": "SAFe\u00ae 5.1 (LPM)2 Days  Online Classroom Training in  Orillia, ON",
-      "date": "2026-05-28",
-      "end_date": "2026-05-29",
-      "time": "",
-      "venue": "Regus Business Centre, Orillia, ON, ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/safe-51-lpm2-days-online-classroom-training-in-orillia-on-tickets-470147532927",
-      "description": "Welcome to Educera!",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-10",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260605-june-sibshops",
       "name": "June Sibshops",
       "date": "2026-06-05",
@@ -508,21 +463,6 @@
       "description": "Join us for a fun-filled day of activities and bonding for siblings with support needs on June 5th in Orillia!",
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-10",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260528-safe-5-1-popm-2-days-classroom-training-",
-      "name": "SAFe\u00ae 5.1 POPM 2 Days   Classroom Training in  Orillia, ON",
-      "date": "2026-05-28",
-      "end_date": "2026-05-29",
-      "time": "",
-      "venue": "Orillia, ON, Orillia, ON, ON",
-      "category": "arts",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/safe-51-popm-2-days-classroom-training-in-orillia-on-tickets-481749113567",
-      "description": "Welcome to Simplykart!",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-11",
       "status": "active"
     },
     {
@@ -1201,51 +1141,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-05-28",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-05-28",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-05-28",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-05-28",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-05-28",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-05-28",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-opera-house-season-schedule",
       "name": "Orillia Opera House \u2014 Season Schedule",
       "date": "2026-05-29",
@@ -1396,21 +1291,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260529-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-05-29",
-      "end_date": "2026-05-29",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230151879",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-29",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260601-information-session-biggest-sale-of-the-",
       "name": "Information Session - Biggest Sale of the year with Princess Cruises",
       "date": "2026-06-01",
@@ -1441,6 +1321,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-05-29",
-  "total_events": 96
+  "last_updated": "2026-05-30",
+  "total_events": 88
 }
