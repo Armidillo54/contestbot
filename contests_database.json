@@ -27622,9 +27622,105 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/05/30/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-book-prize-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-ctv-contests-enter-your-child-to-become-a-weather-",
+      "name": "CTV Contests: Enter your Child to become a Weather Star On-Air!",
+      "url": "https://www.ctvnews.ca/vancouver/contests/weather-star/",
+      "prize": "CTV Contests: Enter your Child to become a Weather Star On-Air!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-31",
+      "link_valid": true,
+      "link_checked": "2026-05-31",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/ctv-contests/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-brilliant-earth-giveaway-get-a-free-lab-diamond-ne",
+      "name": "Brilliant Earth Giveaway + Get a FREE Lab Diamond Necklace! (w/purchase)",
+      "url": "https://www.brilliantearth.com/en-ca/promo-codes-and-offers/",
+      "prize": "Brilliant Earth Giveaway + Get a FREE Lab Diamond Necklace! (w/purchase)",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-31",
+      "link_valid": true,
+      "link_checked": "2026-05-31",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/brilliant-earth-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-wheel-of-fortune-sweepstakes-win-1-of-3-dream-vaca",
+      "name": "Wheel of Fortune Sweepstakes -Win 1 of 3 Dream Vacations!",
+      "url": "https://www.wheeloffortune.com/win/yaamava",
+      "prize": "Wheel of Fortune Sweepstakes -Win 1 of 3 Dream Vacations!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-31",
+      "link_valid": true,
+      "link_checked": "2026-05-31",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/wheel-of-fortune-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-tim-hortons-contests-nhl-hockey-challenge-is-back-",
+      "name": "Tim Hortons Contests \u2013 NHL Hockey Challenge is back! Win $5000 CASH!",
+      "url": "https://www.canadianfreestuff.com/tim-hortons-canada-contest/",
+      "prize": "Tim Hortons Contests \u2013 NHL Hockey Challenge is back! Win $5000 CASH!",
+      "prize_value": 5000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-05-31",
+      "link_valid": true,
+      "link_checked": "2026-05-31",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/tim-hortons-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-05-31",
-  "total_active": 874,
-  "total_prize_value": 1931413
+  "total_active": 878,
+  "total_prize_value": 1936413
 }
