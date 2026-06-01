@@ -28438,9 +28438,34 @@
       "last_entered": null,
       "source_url": "https://www.contestcanada.net/2026/06/01/win-1-of-40-prizes-of-1-million-pc-optimum-points-valued-at-1000/",
       "url_resolved": true
+    },
+    {
+      "id": "cacc-instantpot-giveaway",
+      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #InstantPot #GIVEAWAY",
+      "sponsor": "",
+      "url": "https://curiousaboutcanadiancontests.com/2026/06/01/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-instantpot-giveaway/ ",
+      "prize": "USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #InstantPot #GIVEAWAY - June 1, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #InstantPot #GIVEAWAY https://steamykitchen.com/255336-instant-pot-duo-7-in-1-mini-electric-p",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-06-01",
+      "link_valid": true,
+      "link_checked": "2026-06-01",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/06/01/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-instantpot-giveaway/ ",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-06-01",
-  "total_active": 866,
+  "total_active": 867,
   "total_prize_value": 1782689
 }
