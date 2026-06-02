@@ -28658,9 +28658,106 @@
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/ctv-contests/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-swiss-chalet-contest-win-free-chicken-for-a-year-a",
+      "name": "Swiss Chalet Contest -Win FREE Chicken for a Year / a Trip for 2 / NHL Tickets!",
+      "url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
+      "prize": "Swiss Chalet Contest -Win FREE Chicken for a Year / a Trip for 2 / NHL Tickets!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-02",
+      "link_valid": true,
+      "link_checked": "2026-06-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-mary-browns-jose-s-double-deal-contest-win-100-200",
+      "name": "Mary Browns Jose\u2019s Double Deal Contest: Win $100- $200 Mary Browns Gift Cards",
+      "url": "https://www.canadianfreestuff.com/mary-browns-contest/",
+      "prize": "Mary Browns Jose\u2019s Double Deal Contest: Win $100- $200 Mary Browns Gift Cards",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-02",
+      "link_valid": true,
+      "link_checked": "2026-06-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/mary-browns-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-nintendo-switch-giveaway-win-a-nintendo-switch-2-f",
+      "name": "Nintendo Switch Giveaway: Win a Nintendo Switch 2 + Final Fantasy VII Rebirth",
+      "url": "https://www.canadianfreestuff.com/nintendo-canada-contest/",
+      "prize": "Nintendo Switch Giveaway: Win a Nintendo Switch 2 + Final Fantasy VII Rebirth",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-02",
+      "link_valid": true,
+      "link_checked": "2026-06-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/nintendo-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "ccan-win-2-tickets-to-see-canada-s-soccer-squad-take-th",
+      "name": "Win 2 Tickets to See Canada\u2019s Soccer Squad Take the Field in Toronto, valued at $4,400",
+      "sponsor": "",
+      "url": "https://shnfoundation.akaraisin.com/ui/soccersweepstakes?utm_source=canadacontests&utm_medium=contestlisting&utm_campaign=soccer_sweepstakes_2026",
+      "prize": "June 2nd, 2026 Win 2 Tickets to See Canada\u2019s Soccer Squad Take the Field in Toronto, valued at $4,400 Ontarians, the world is coming to Toronto, and you could be there when Canada takes the field. Ent",
+      "prize_value": 4400,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestcanada.net",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "2026-06-08",
+      "source": "contestcanada.net",
+      "status": "active",
+      "added_date": "2026-06-02",
+      "link_valid": true,
+      "link_checked": "2026-06-02",
+      "last_entered": null,
+      "source_url": "https://www.contestcanada.net/2026/06/02/win-2-tickets-to-see-canadas-soccer-squad-take-the-field-in-toronto-valued-at-4400/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-02",
-  "total_active": 870,
-  "total_prize_value": 1760489
+  "total_active": 874,
+  "total_prize_value": 1764989
 }
