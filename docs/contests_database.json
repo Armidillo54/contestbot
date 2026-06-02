@@ -28562,9 +28562,105 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-homesense-canada-contest-win-a-2-500-home-refresh",
+      "name": "HomeSense Canada Contest: Win a $2,500 home refresh!",
+      "url": "https://www.homesense.ca/en/25years",
+      "prize": "HomeSense Canada Contest: Win a $2,500 home refresh!",
+      "prize_value": 2500,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-02",
+      "link_valid": true,
+      "link_checked": "2026-06-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/homesense-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-metro-quebec-i-go-contest-win-one-of-3-prizes-of-a",
+      "name": "Metro Quebec i\u00d6GO Contest: Win one of 3 prizes of a $500 Metro Gift Card!",
+      "url": "https://www.canadianfreestuff.com/metro-quebec-contests/",
+      "prize": "Metro Quebec i\u00d6GO Contest: Win one of 3 prizes of a $500 Metro Gift Card!",
+      "prize_value": 500,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-02",
+      "link_valid": true,
+      "link_checked": "2026-06-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/metro-quebec-contests/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-telus-canada-contest-win-the-ultimate-fan-upgrade-",
+      "name": "Telus Canada Contest \u2013 Win the Ultimate Fan Upgrade worth over $6000!",
+      "url": "https://www.telus.com/en/social-impact/sports-sponsorships/canadasoccer-contest",
+      "prize": "Telus Canada Contest \u2013 Win the Ultimate Fan Upgrade worth over $6000!",
+      "prize_value": 6000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-02",
+      "link_valid": true,
+      "link_checked": "2026-06-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/telus-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-ctv-contests-win-a-cavendish-beach-music-festival-",
+      "name": "CTV Contests: Win a Cavendish Beach Music Festival Experience!",
+      "url": "https://www.ctvnews.ca/atlantic/contest-one/",
+      "prize": "CTV Contests: Win a Cavendish Beach Music Festival Experience!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-02",
+      "link_valid": true,
+      "link_checked": "2026-06-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/ctv-contests/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-02",
-  "total_active": 866,
-  "total_prize_value": 1751489
+  "total_active": 870,
+  "total_prize_value": 1760489
 }
