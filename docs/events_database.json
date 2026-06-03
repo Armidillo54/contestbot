@@ -76,21 +76,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-06-01",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260612-orillia-in-water-boat-show",
       "name": "Orillia In-Water Boat Show",
       "date": "2026-06-12",
@@ -1036,21 +1021,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260602-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-06-02",
-      "end_date": "2026-06-02",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230163915",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-31",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260608-meditation-monday",
       "name": "MEDITATION MONDAY",
       "date": "2026-06-08",
@@ -1063,21 +1033,6 @@
       "description": "We invite you to join a circle of like-minded women who enjoy deepening their spiritual side of Life with Meditations for their Soul",
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-31",
-      "status": "active"
-    },
-    {
-      "id": "orilli-20260602-art-101",
-      "name": "Art 101",
-      "date": "2026-06-02",
-      "end_date": "2026-06-02",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "arts",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/art-101-2/2026-06-02/",
-      "description": "2026 OMAH Annual General Meeting\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-06-01",
       "status": "active"
     },
     {
@@ -1366,51 +1321,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-06-01",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-06-01",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-06-01",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-06-01",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-06-01",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-06-01",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260805-copy-of-caregiver-support-group-orillia-",
       "name": "Copy of Caregiver Support Group - Orillia test 2",
       "date": "2026-08-05",
@@ -1576,6 +1486,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-06-02",
-  "total_events": 105
+  "last_updated": "2026-06-03",
+  "total_events": 99
 }
