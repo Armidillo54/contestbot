@@ -29368,9 +29368,59 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/02/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-win-cruise/ ",
       "url_resolved": false
+    },
+    {
+      "id": "ccan-icash-s-dad-s-dish-duel-giveaway-win-1-of-5-100-gi",
+      "name": "iCash\u2019s Dad\u2019s Dish Duel Giveaway: Win 1 of 5 $100 gift cards",
+      "sponsor": "",
+      "url": "https://contest.icash.ca/",
+      "prize": "iCash\u2019s Dad\u2019s Dish Duel Giveaway: Win 1 of 5 $100 gift cards Does your dad make the world\u2019s best BBQ? A legendary lasagna? The ultimate Sunday breakfast? Let us know for your chance to win 1 of 5 $100",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestcanada.net",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "2026-06-10",
+      "source": "contestcanada.net",
+      "status": "active",
+      "added_date": "2026-06-03",
+      "link_valid": true,
+      "link_checked": "2026-06-03",
+      "last_entered": null,
+      "source_url": "https://www.contestcanada.net/2026/06/03/icashs-dads-dish-duel-giveaway-win-1-of-5-100-gift-cards/",
+      "url_resolved": true
+    },
+    {
+      "id": "kool-fifa-unveils-official-fifa-world-cup-2026-album-op",
+      "name": "FIFA Unveils \u2018Official FIFA World Cup 2026\u2122 Album\u2019Opens in new window",
+      "sponsor": "",
+      "url": "https://www.iheartradio.ca/en/music-news/fifa-unveils-official-fifa-world-cup-2026-album/",
+      "prize": "Opens in new window FIFA Unveils \u2018Official FIFA World Cup 2026\u2122 Album\u2019 Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-06-03",
+      "link_valid": true,
+      "link_checked": "2026-06-03",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-03",
-  "total_active": 897,
-  "total_prize_value": 1800657
+  "total_active": 899,
+  "total_prize_value": 1800757
 }
