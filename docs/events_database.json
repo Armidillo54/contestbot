@@ -1544,8 +1544,53 @@
       "source": "curated",
       "scraped_date": "2026-06-03",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260618-orillia-opp-women-s-focused-shuttle-run",
+      "name": "ORILLIA - OPP Women's Focused Shuttle Run",
+      "date": "2026-06-18",
+      "end_date": "2026-06-18",
+      "time": "",
+      "venue": "Ontario Provincial Police - General Headquarters, Orillia, ON",
+      "category": "sports",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/orillia-opp-womens-focused-shuttle-run-tickets-1990426653702",
+      "description": "The OPP is pleased to invite you to attend and try the 20m Leger Shuttle Run! We will also be hosting a panel discussion to highlight women.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-03",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260603-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-06-03",
+      "end_date": "2026-06-03",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230172942",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-03",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260929-family-paint-party",
+      "name": "Family Paint Party",
+      "date": "2026-09-29",
+      "end_date": "2026-09-29",
+      "time": "",
+      "venue": "Kelseys Orillia, Orillia, ON",
+      "category": "kids",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/family-paint-party-tickets-1976007968025",
+      "description": "Paint Nite -- Families and All Ages (10361982)",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-03",
+      "status": "active"
     }
   ],
   "last_updated": "2026-06-03",
-  "total_events": 103
+  "total_events": 106
 }
