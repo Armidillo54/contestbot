@@ -29765,9 +29765,83 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-janes-foods-contest-win-a-1-year-supply-of-halifax",
+      "name": "Janes Foods Contest: Win a 1-YEAR supply of Halifax Honey + a $150 JANES Prize Pack!",
+      "url": "http://janesfoods.com",
+      "prize": "Janes Foods Contest: Win a 1-YEAR supply of Halifax Honey + a $150 JANES Prize Pack!",
+      "prize_value": 150,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-04",
+      "link_valid": true,
+      "link_checked": "2026-06-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/janes-foods-contest-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "kool-iheart-that-digital-take-with-torri-websteropens-i",
+      "name": "Iheart: That Digital Take with Torri WebsterOpens in new window",
+      "sponsor": "Iheart",
+      "url": "https://www.iheart.com/podcast/1323-that-digital-take-with-to-228857491",
+      "prize": "Opens in new window That Digital Take with Torri Webster Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-06-04",
+      "link_valid": true,
+      "link_checked": "2026-06-04",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
+    },
+    {
+      "id": "kool-iheart-bestie-listenopens-in-new-window",
+      "name": "Iheart: Bestie, ListenOpens in new window",
+      "sponsor": "Iheart",
+      "url": "https://www.iheart.com/podcast/1300-bestie-listen-334511659",
+      "prize": "Opens in new window Bestie, Listen Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-06-04",
+      "link_valid": true,
+      "link_checked": "2026-06-04",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-04",
-  "total_active": 907,
-  "total_prize_value": 1834194
+  "total_active": 910,
+  "total_prize_value": 1834344
 }
