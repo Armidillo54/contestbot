@@ -601,13 +601,13 @@
       "category": "food",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-05-05",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-01",
+      "link_checked": "2026-06-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -625,7 +625,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-01",
+      "link_checked": "2026-06-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -661,7 +661,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-01",
+      "link_checked": "2026-06-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -679,7 +679,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-01",
+      "link_checked": "2026-06-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -715,7 +715,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-01",
+      "link_checked": "2026-06-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -751,7 +751,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-01",
+      "link_checked": "2026-06-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -774,6 +774,6 @@
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-06-03",
+  "last_updated": "2026-06-04",
   "total_freebies": 10
 }
