@@ -30239,9 +30239,33 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/04/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-mug-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-cricut-contest-win-a-cricut-maker-4-vinyl-cutting-",
+      "name": "Cricut Contest- Win a Cricut Maker 4 Vinyl Cutting Bundle",
+      "url": "https://jennifermaker.com/cricut-giveaway-enter-to-win/",
+      "prize": "Cricut Contest- Win a Cricut Maker 4 Vinyl Cutting Bundle",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-05",
+      "link_valid": true,
+      "link_checked": "2026-06-05",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/cricut-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-05",
-  "total_active": 911,
+  "total_active": 912,
   "total_prize_value": 1814970
 }
