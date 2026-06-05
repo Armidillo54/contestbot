@@ -676,21 +676,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260604-live-music-events-burke-erwin",
-      "name": "Live Music Events: Burke Erwin",
-      "date": "2026-06-04",
-      "end_date": "2026-06-04",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-burke-erwin/",
-      "description": "Thu June 4\\n5-8\\nBurke Erwin",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-05-27",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260605-live-music-events-francesca-panetta",
       "name": "Live Music Events: Francesca Panetta",
       "date": "2026-06-05",
@@ -931,36 +916,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260604-constable-information-session-orillia",
-      "name": "Constable Information Session - Orillia",
-      "date": "2026-06-04",
-      "end_date": "2026-06-04",
-      "time": "",
-      "venue": "Ontario Provincial Police General Headquarters, Orillia",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/constable-information-session-orillia-tickets-1988991694701",
-      "description": "OPP Information Session to provide information on our hiring process for Constable Positions",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-27",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260604-marks-supply-x-tml-supply-customer-appre",
-      "name": "MARKS SUPPLY X TML SUPPLY CUSTOMER APPRECIATION EVENTS",
-      "date": "2026-06-04",
-      "end_date": "2026-06-04",
-      "time": "",
-      "venue": "TML Supply Company - Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/marks-supply-x-tml-supply-customer-appreciation-events-tickets-1989035614065",
-      "description": "A day dedicated to our customers featuring vendors, product demos, networking, giveaways, food, and industry connections.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-27",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260623-pmp-certification-4-days-classroom-train",
       "name": "PMP Certification 4 Days Classroom Training in Orillia, ON",
       "date": "2026-06-23",
@@ -1018,21 +973,6 @@
       "description": "We invite you to join a circle of like-minded women who enjoy deepening their spiritual side of Life with Meditations for their Soul",
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-31",
-      "status": "active"
-    },
-    {
-      "id": "orilli-20260604-mariposa-mornings",
-      "name": "Mariposa Mornings",
-      "date": "2026-06-04",
-      "end_date": "2026-06-04",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "music",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/mariposa-mornings/2026-06-04/",
-      "description": "A Morning Designed for Young Explorers\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tBeginning on Saturday\\, March 28 with a special opening celebration! \\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tMariposa Mornings is a weekly toddler play program at the Orillia Museum of Art & History\\, inviting families with children",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-06-01",
       "status": "active"
     },
     {
@@ -1306,66 +1246,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-06-03",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-06-03",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-06-03",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-06-03",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-06-03",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-06-03",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-06-03",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-06-03",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260618-orillia-opp-women-s-focused-shuttle-run",
       "name": "ORILLIA - OPP Women's Focused Shuttle Run",
       "date": "2026-06-18",
@@ -1393,21 +1273,6 @@
       "description": "Paint Nite -- Families and All Ages (10361982)",
       "source": "eventbrite.ca",
       "scraped_date": "2026-06-03",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260604-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-06-04",
-      "end_date": "2026-06-04",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230175951",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-06-04",
       "status": "active"
     },
     {
@@ -1574,8 +1439,38 @@
       "source": "curated",
       "scraped_date": "2026-06-04",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260605-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-06-05",
+      "end_date": "2026-06-05",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230181969",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-05",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260625-safe-5-1-lpm-2-days-classroom-training-i",
+      "name": "SAFe\u00ae 5.1 (LPM)2 Days Classroom Training in  Orillia, ON",
+      "date": "2026-06-25",
+      "end_date": "2026-06-26",
+      "time": "",
+      "venue": "Regus Business Centre, Orillia, ON, ON",
+      "category": "other",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/safe-51-lpm2-days-classroom-training-in-orillia-on-tickets-468612942927",
+      "description": "Welcome to Educera!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-05",
+      "status": "active"
     }
   ],
-  "last_updated": "2026-06-04",
-  "total_events": 105
+  "last_updated": "2026-06-05",
+  "total_events": 98
 }
