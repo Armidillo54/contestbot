@@ -201,66 +201,6 @@
       "status": "active"
     },
     {
-      "id": "carters-sale-0",
-      "store": "Carter's",
-      "description": "Includes x40% Off",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-1",
-      "store": "Carter's",
-      "description": "Includes x20% Off",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-2",
-      "store": "Carter's",
-      "description": "*UP TO 50% OFF: Savings based on MSRP or original tick",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-3",
-      "store": "Carter's",
-      "description": "*UP TO 50% OFF: Savings based on MSRP or original",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-4",
-      "store": "Carter's",
-      "description": "*40% OFF SWIM: Savings based on MSRP or original tick",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-5",
-      "store": "Carter's",
-      "description": "*40% OFF SWIM: Savings based on MSRP or original",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
       "id": "threeships-sale-0",
       "store": "Three Ships Beauty",
       "description": "Save 20% on clean, vegan skincare in the Three S",
@@ -432,7 +372,7 @@
     }
   ],
   "last_updated": "2026-06-05",
-  "total_sales": 43,
+  "total_sales": 37,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
