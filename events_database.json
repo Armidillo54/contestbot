@@ -646,21 +646,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260606-live-music-events-kyle-wauchope",
-      "name": "Live Music Events: Kyle Wauchope",
-      "date": "2026-06-06",
-      "end_date": "2026-06-06",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-kyle-wauchope/",
-      "description": "Sat June 6\\n5-8\\nKyle Wauchope",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-05-27",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260607-live-music-events-steve-charlebois",
       "name": "Live Music Events: Steve Charlebois",
       "date": "2026-06-07",
@@ -928,36 +913,6 @@
       "description": "We invite you to join a circle of like-minded women who enjoy deepening their spiritual side of Life with Meditations for their Soul",
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-31",
-      "status": "active"
-    },
-    {
-      "id": "orilli-20260606-mariposa-mornings",
-      "name": "Mariposa Mornings",
-      "date": "2026-06-06",
-      "end_date": "2026-06-06",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "music",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/mariposa-mornings/2026-06-06/",
-      "description": "A Morning Designed for Young Explorers\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tBeginning on Saturday\\, March 28 with a special opening celebration! \\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tMariposa Mornings is a weekly toddler play program at the Orillia Museum of Art & History\\, inviting families with children",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-06-01",
-      "status": "active"
-    },
-    {
-      "id": "orilli-20260606-the-human-form-adult-life-drawing-classe",
-      "name": "The Human Form: Adult Life Drawing Classes",
-      "date": "2026-06-06",
-      "end_date": "2026-06-06",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/the-human-form-adult-life-drawing-classes/2026-06-06/",
-      "description": "2026 OMAH Annual General Meeting\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tThe Human Form\\n6 \u2013 Week Session. \\nSaturday\\, March 28 \u2013 Saturday\\, May 2\\n10:30",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-06-01",
       "status": "active"
     },
     {
@@ -1246,66 +1201,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-06-05",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-06-05",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-06-05",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-06-05",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-06-05",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260806-quayle-s-brewery-ahead-by-a-century",
       "name": "QUAYLE'S BREWERY - Ahead By A Century",
       "date": "2026-08-06",
@@ -1471,6 +1366,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-06-06",
-  "total_events": 98
+  "last_updated": "2026-06-07",
+  "total_events": 91
 }

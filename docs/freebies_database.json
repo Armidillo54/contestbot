@@ -619,13 +619,13 @@
       "category": "food",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-05-08",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-04",
+      "link_checked": "2026-06-07",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -661,7 +661,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-04",
+      "link_checked": "2026-06-07",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -679,7 +679,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-04",
+      "link_checked": "2026-06-07",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -715,7 +715,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-04",
+      "link_checked": "2026-06-07",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -751,7 +751,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-04",
+      "link_checked": "2026-06-07",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -787,7 +787,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-04",
+      "link_checked": "2026-06-07",
       "source_url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
       "url_resolved": false
     },
@@ -810,6 +810,6 @@
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-06-06",
+  "last_updated": "2026-06-07",
   "total_freebies": 11
 }
