@@ -1409,8 +1409,68 @@
       "source": "curated",
       "scraped_date": "2026-06-08",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260625-safe-5-1-lpm-2-days-online-classroom-tra",
+      "name": "SAFe\u00ae 5.1 (LPM)2 Days  Online Classroom Training in  Orillia, ON",
+      "date": "2026-06-25",
+      "end_date": "2026-06-26",
+      "time": "",
+      "venue": "Regus Business Centre, Orillia, ON, ON",
+      "category": "other",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/safe-51-lpm2-days-online-classroom-training-in-orillia-on-tickets-470147542957",
+      "description": "Welcome to Educera!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-08",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260612-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-06-12",
+      "end_date": "2026-06-12",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230215068",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-08",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260609-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-06-09",
+      "end_date": "2026-06-09",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230194005",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-08",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260616-paint-sip-boat-on-the-shore-severn-bridg",
+      "name": "Paint & Sip \"Boat on the Shore\" Severn Bridge",
+      "date": "2026-06-16",
+      "end_date": "2026-06-16",
+      "time": "",
+      "venue": "3239 S Sparrow Lake Rd, Washago, ON",
+      "category": "theatre",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/paint-sip-boat-on-the-shore-severn-bridge-tickets-1990609155570",
+      "description": "Unwind, Sip & Paint \"Boat on the Shore\" at Lake St. George Community Centre! Step-By-Step guidance & all supplies included.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-08",
+      "status": "active"
     }
   ],
   "last_updated": "2026-06-08",
-  "total_events": 94
+  "total_events": 98
 }
