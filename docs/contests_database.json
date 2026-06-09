@@ -30710,7 +30710,7 @@
       "id": "cacc-win-shampoo",
       "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #SHAMPOO",
       "sponsor": "",
-      "url": "https://curiousaboutcanadiancontests.com/2026/06/05/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-shampoo-2/ ",
+      "url": "https://gleam.io/9FP3i/-win-the-terrevera-avocado-shampoo-?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
       "prize": "International / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #SHAMPOO - June 5, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #SHAMPOO https://gleam.io/9FP3i/-win-the-terrevera-avocado-shampoo-?utm_source",
       "prize_value": 0,
       "entry_method": "online_form",
@@ -30729,7 +30729,7 @@
       "link_checked": "2026-06-08",
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/05/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-shampoo-2/ ",
-      "url_resolved": false
+      "url_resolved": true
     },
     {
       "id": "cacc-fashion-giveaway",
@@ -32284,9 +32284,130 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/08/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-grill-giveaway-2/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-cineplex-canada-contest-win-a-scary-movie-prize-pa",
+      "name": "Cineplex Canada Contest: Win a \u2018Scary Movie\u201d Prize Pack or FREE Movies for a Year!",
+      "url": "https://www.canadianfreestuff.com/cineplex-canada-contest/",
+      "prize": "Cineplex Canada Contest: Win a \u2018Scary Movie\u201d Prize Pack or FREE Movies for a Year!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-09",
+      "link_valid": true,
+      "link_checked": "2026-06-09",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/cineplex-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-marcangelo-contest-win-100-in-free-coupons-5-winne",
+      "name": "Marcangelo Contest: Win $100 in Free Coupons \u2013 5 Winners!",
+      "url": "https://www.canadianfreestuff.com/marcangelo-canada-contest/",
+      "prize": "Marcangelo Contest: Win $100 in Free Coupons \u2013 5 Winners!",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-09",
+      "link_valid": true,
+      "link_checked": "2026-06-09",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/marcangelo-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-batiste-contest-canada-win-a-1000-amazon-shopping-",
+      "name": "Batiste Contest Canada \u2013 Win a $1000 Amazon Shopping Spree!",
+      "url": "https://amzn.to/4xgD1EH",
+      "prize": "Batiste Contest Canada \u2013 Win a $1000 Amazon Shopping Spree!",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-09",
+      "link_valid": true,
+      "link_checked": "2026-06-09",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/batiste-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-zoomer-radio-contest-win-passes-to-santa-s-village",
+      "name": "Zoomer Radio Contest: Win Passes to Santa\u2019s Village in Bracebridge / 2-Night Stay at Quality Inn Riverside Bracebridge",
+      "url": "https://www.canadianfreestuff.com/zoomer-canada-contest/",
+      "prize": "Zoomer Radio Contest: Win Passes to Santa\u2019s Village in Bracebridge / 2-Night Stay at Quality Inn Riverside Bracebridge",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-09",
+      "link_valid": true,
+      "link_checked": "2026-06-09",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/zoomer-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "kool-ariana-grande-and-ethan-slater-split-quietly-ended",
+      "name": "Ariana Grande and Ethan Slater Split, Quietly Ended Things \u2018Several Months\u2019 AgoOpens in new window",
+      "sponsor": "",
+      "url": "https://www.iheartradio.ca/en/music-news/ariana-grande-and-ethan-slater-split-quietly-broke-up-several-months-ago/",
+      "prize": "Opens in new window Ariana Grande and Ethan Slater Split, Quietly Ended Things \u2018Several Months\u2019 Ago Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-06-09",
+      "link_valid": true,
+      "link_checked": "2026-06-09",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-09",
-  "total_active": 967,
-  "total_prize_value": 2588717
+  "total_active": 972,
+  "total_prize_value": 2589817
 }
