@@ -21,66 +21,6 @@
       "status": "active"
     },
     {
-      "id": "joefresh-sale-0",
-      "store": "Joe Fresh",
-      "description": "d kids\u2019 styles with up to 50% off.",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-06-09",
-      "status": "active"
-    },
-    {
-      "id": "joefresh-sale-1",
-      "store": "Joe Fresh",
-      "description": "\u2019 styles with up to 50% off.",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-06-09",
-      "status": "active"
-    },
-    {
-      "id": "joefresh-sale-2",
-      "store": "Joe Fresh",
-      "description": "20% Off Adult FIFA World Cup 2026\u2122Styles \u26bd\ufe0f",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-06-09",
-      "status": "active"
-    },
-    {
-      "id": "joefresh-sale-3",
-      "store": "Joe Fresh",
-      "description": "ewsletter and enjoy 20% off your next online purchase (regular-priced items only).",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-06-09",
-      "status": "active"
-    },
-    {
-      "id": "joefresh-sale-4",
-      "store": "Joe Fresh",
-      "description": "ewsletter and enjoy 20% off your next online purchase (regular-pric",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-06-09",
-      "status": "active"
-    },
-    {
-      "id": "joefresh-sale-5",
-      "store": "Joe Fresh",
-      "description": "promotions and get 20% off your next online purchase (regular priced only). You may unsubscri",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.joefresh.com/ca/collections/c/clearance",
-      "scraped_date": "2026-06-09",
-      "status": "active"
-    },
-    {
       "id": "reitmans-sale-0",
       "store": "Reitmans",
       "description": "Get 15% off Hyba Essentials.",
@@ -343,7 +283,7 @@
     {
       "id": "knix-sale-5",
       "store": "Knix",
-      "description": "get a FREE Knix Cap Up to 60% Off Last Call - 100 New Styles Added Shop n",
+      "description": "get a FREE Knix Hat Up to 60% Off Last Call - 100 New Styles Added Shop n",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://knix.ca/",
@@ -372,7 +312,7 @@
     }
   ],
   "last_updated": "2026-06-09",
-  "total_sales": 37,
+  "total_sales": 31,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
