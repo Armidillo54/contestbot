@@ -32405,9 +32405,82 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-weber-grills-contest-win-a-weber-griddle",
+      "name": "Weber Grills Contest: Win a Weber Griddle!",
+      "url": "https://www.canadianfreestuff.com/weber-grills-canada-contest/",
+      "prize": "Weber Grills Contest: Win a Weber Griddle!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-09",
+      "link_valid": true,
+      "link_checked": "2026-06-09",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/weber-grills-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-canadian-beef-contest-win-the-ultimate-bbq-prize-p",
+      "name": "Canadian Beef Contest -Win the Ultimate BBQ prize pack!",
+      "url": "https://www.canadianfreestuff.com/canadian-beef-contest/",
+      "prize": "Canadian Beef Contest -Win the Ultimate BBQ prize pack!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-09",
+      "link_valid": true,
+      "link_checked": "2026-06-09",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/canadian-beef-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "ccan-win-1-of-20-father-s-day-prizes-of-outdoor-gear-to",
+      "name": "Win 1 of 20 Father\u2019s day prizes of outdoor gear, total prizes valued at $2,600",
+      "sponsor": "",
+      "url": "https://gleam.io/bO9Nj/2600-fathers-day-giveaway-gear-up-for-dad",
+      "prize": "Win 1 of 20 Father\u2019s day prizes of outdoor gear, total prizes valued at $2,600 Father\u2019s Day is coming, and we\u2019re dropping an epic gear haul curated just for Dad. Here is your chance to win the ultimat",
+      "prize_value": 2600,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestcanada.net",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "2026-06-17",
+      "source": "contestcanada.net",
+      "status": "active",
+      "added_date": "2026-06-09",
+      "link_valid": true,
+      "link_checked": "2026-06-09",
+      "last_entered": null,
+      "source_url": "https://www.contestcanada.net/2026/06/09/win-1-of-20-fathers-day-prizes-of-outdoor-gear-total-prizes-valued-at-2600/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-09",
-  "total_active": 972,
-  "total_prize_value": 2589817
+  "total_active": 975,
+  "total_prize_value": 2592417
 }
