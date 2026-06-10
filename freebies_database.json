@@ -655,13 +655,13 @@
       "category": "food",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-05-11",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-07",
+      "link_checked": "2026-06-10",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -679,7 +679,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-07",
+      "link_checked": "2026-06-10",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -715,7 +715,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-07",
+      "link_checked": "2026-06-10",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -751,7 +751,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-07",
+      "link_checked": "2026-06-10",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -787,7 +787,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-07",
+      "link_checked": "2026-06-10",
       "source_url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
       "url_resolved": false
     },
@@ -823,11 +823,29 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-07",
+      "link_checked": "2026-06-10",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-mad-moose-",
+      "name": "Butterly Canada Free Opportunities- FREE Mad Moose Alcohol-Free Whiskey  /Patio Furniture / Spin Master Toys /Otelia Pasta",
+      "description": "Butterly Canada Free Opportunities- FREE Mad Moose Alcohol-Free Whiskey  /Patio Furniture / Spin Master Toys /Otelia Pasta",
+      "url": "https://butterly.com/en/madmoose/survey/wXzcN4",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-06-10",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-06-10",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-06-09",
-  "total_freebies": 10
+  "last_updated": "2026-06-10",
+  "total_freebies": 11
 }
