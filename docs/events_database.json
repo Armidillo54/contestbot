@@ -1364,8 +1364,38 @@
       "source": "curated",
       "scraped_date": "2026-06-11",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260619-orillia-comedy-night",
+      "name": "Orillia Comedy Night",
+      "date": "2026-06-19",
+      "end_date": "2026-06-19",
+      "time": "",
+      "venue": "Lake Country Grill, Orillia, ON",
+      "category": "music",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/orillia-comedy-night-tickets-1991422848347",
+      "description": "Come on out to Lake Country Grill for a night of comedy! Full bar and food menu. Organized by Michael Eddy 8-10PM!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-11",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260611-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-06-11",
+      "end_date": "2026-06-11",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230206041",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-11",
+      "status": "active"
     }
   ],
   "last_updated": "2026-06-11",
-  "total_events": 91
+  "total_events": 93
 }
