@@ -1319,8 +1319,53 @@
       "source": "curated",
       "scraped_date": "2026-06-12",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260625-safe-5-1-popm-2-days-classroom-training-",
+      "name": "SAFe\u00ae 5.1 POPM 2 Days   Classroom Training in  Orillia, ON",
+      "date": "2026-06-25",
+      "end_date": "2026-06-26",
+      "time": "",
+      "venue": "Orillia, ON, Orillia, ON, ON",
+      "category": "arts",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/safe-51-popm-2-days-classroom-training-in-orillia-on-tickets-481749123597",
+      "description": "Welcome to Simplykart!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-12",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260927-an-unforgettable-night-of-classical-musi",
+      "name": "An Unforgettable Night of Classical Music",
+      "date": "2026-09-27",
+      "end_date": "2026-09-27",
+      "time": "",
+      "venue": "St Paul's Centre, Orillia, ON",
+      "category": "music",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/an-unforgettable-night-of-classical-music-tickets-1988033433516",
+      "description": "Ukrainian singer who has conquered some of the best stages in the world and performed alongside great artists such as Pl\u00e1cido Domingo and...",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-12",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260615-meditation-monday",
+      "name": "MEDITATION MONDAY",
+      "date": "2026-06-15",
+      "end_date": "2026-06-15",
+      "time": "",
+      "venue": "4807 Line 11 N, Coldwater, ON",
+      "category": "other",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/meditation-monday-tickets-1984915520755",
+      "description": "We invite you to join a circle of like-minded women who enjoy deepening their spiritual side of Life with Meditations for their Soul",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-12",
+      "status": "active"
     }
   ],
   "last_updated": "2026-06-12",
-  "total_events": 88
+  "total_events": 91
 }
