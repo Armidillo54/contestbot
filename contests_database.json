@@ -30735,7 +30735,7 @@
       "id": "cacc-fashion-giveaway",
       "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #FASHION #GIVEAWAY",
       "sponsor": "",
-      "url": "https://curiousaboutcanadiancontests.com/2026/06/05/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-fashion-giveaway/ ",
+      "url": "https://signup.mpgsport.ca/l/TnquTt?utm_source=ig&utm_medium=social&utm_content=link_in_bio",
       "prize": "USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #FASHION #GIVEAWAY - June 5, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #FASHION #GIVEAWAY https://signup.mpgsport.ca/l/TnquTt?utm_source=ig&utm_medium=social&utm_conte",
       "prize_value": 0,
       "entry_method": "online_form",
@@ -30754,7 +30754,7 @@
       "link_checked": "2026-06-11",
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/05/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-fashion-giveaway/ ",
-      "url_resolved": false
+      "url_resolved": true
     },
     {
       "id": "kool-taylor-swift-is-officially-the-richest-female-musi",
@@ -34476,9 +34476,82 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/12/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-plush-dino-toy/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-nestea-contest-win-the-ultimate-refresh-prize-bund",
+      "name": "Nestea Contest: Win the Ultimate Refresh Prize Bundle worth over $500",
+      "url": "https://www.nestea.ca/en/",
+      "prize": "Nestea Contest: Win the Ultimate Refresh Prize Bundle worth over $500",
+      "prize_value": 500,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-13",
+      "link_valid": true,
+      "link_checked": "2026-06-13",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/nestea-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-molson-canadian-contest-win-weekly-sporting-goods-",
+      "name": "Molson Canadian Contest \u2013 Win Weekly Sporting Goods gift cards / Molson Fridge",
+      "url": "https://www.canadianfreestuff.com/molson-canadian-contest/",
+      "prize": "Molson Canadian Contest \u2013 Win Weekly Sporting Goods gift cards / Molson Fridge",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-13",
+      "link_valid": true,
+      "link_checked": "2026-06-13",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/molson-canadian-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cacc-nintendo-switch-mariokart-giveaway",
+      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #NINTENDO #SWITCH #MarioKart #GIVEAWAY",
+      "sponsor": "",
+      "url": "https://curiousaboutcanadiancontests.com/2026/06/13/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-nintendo-switch-mariokart-giveaway/ ",
+      "prize": "USA Friendly / X (twitter)! \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #NINTENDO #SWITCH #MarioKart #GIVEAWAY - June 13, 2026 | June 12, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8 #NINTENDO #SWITCH #MarioKart #GIVEAWAY httpshttps://x.com/mysho",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-06-13",
+      "link_valid": true,
+      "link_checked": "2026-06-13",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/06/13/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-nintendo-switch-mariokart-giveaway/ ",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-06-13",
-  "total_active": 1039,
-  "total_prize_value": 2731494
+  "total_active": 1042,
+  "total_prize_value": 2731994
 }
