@@ -196,21 +196,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260612-rack-rainbows",
-      "name": "Rack & Rainbows",
-      "date": "2026-06-12",
-      "end_date": "2026-06-12",
-      "time": "",
-      "venue": "Brewery Bay Food Co, Orillia, ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/rack-rainbows-tickets-1987995658530",
-      "description": "Rack & Rainbows Pride Drag Show",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-04-26",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260818-family-paint-party",
       "name": "Family Paint Party",
       "date": "2026-08-18",
@@ -553,21 +538,6 @@
       "description": "Get ready to toss some bags and soak up summer nights at Quayle\u2019s Brewery! Our Wednesday Night Cornhole League is the perfect mix of friendly competition and laid-back vibes. \\nWe\u2019re running two 6-week sessions:\\n\u2022 June 3 \u2013 July 15\\n\u2022 July 22 \u2013 August 26 \\nWhether you join one session or both\\, all ",
       "source": "quaylesbrewery.com",
       "scraped_date": "2026-05-26",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260612-live-music-events-sydney-riley",
-      "name": "Live Music Events: Sydney Riley",
-      "date": "2026-06-12",
-      "end_date": "2026-06-12",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-sydney-riley/",
-      "description": "Fri June 12\\n5-8\\nSydney Riley\\n\\n\\n\\n",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-05-27",
       "status": "active"
     },
     {
@@ -1066,21 +1036,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260612-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-06-12",
-      "end_date": "2026-06-12",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230215068",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-06-08",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260616-paint-sip-boat-on-the-shore-severn-bridg",
       "name": "Paint & Sip \"Boat on the Shore\" Severn Bridge",
       "date": "2026-06-16",
@@ -1093,66 +1048,6 @@
       "description": "Unwind, Sip & Paint \"Boat on the Shore\" at Lake St. George Community Centre! Step-By-Step guidance & all supplies included.",
       "source": "eventbrite.ca",
       "scraped_date": "2026-06-08",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-06-11",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-06-11",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-06-11",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-06-11",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-06-11",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-06-11",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-06-11",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-06-11",
       "status": "active"
     },
     {
@@ -1366,6 +1261,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-06-12",
-  "total_events": 91
+  "last_updated": "2026-06-13",
+  "total_events": 84
 }
