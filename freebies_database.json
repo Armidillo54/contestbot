@@ -697,7 +697,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-12",
+      "link_checked": "2026-06-15",
       "source_url": "https://www.canadianfreestuff.com/wonder-bread-canada-contest/",
       "url_resolved": false
     },
@@ -859,11 +859,29 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-12",
+      "link_checked": "2026-06-15",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-kfi-butter",
+      "name": "Butterly Canada Free Opportunities- FREE KFI Butter Chicken Sauces /Buff Bison Buckaroos / OXY Acne Care /Mad Moose Whiskey",
+      "description": "Butterly Canada Free Opportunities- FREE KFI Butter Chicken Sauces /Buff Bison Buckaroos / OXY Acne Care /Mad Moose Whiskey",
+      "url": "https://butterly.com/en/kfisauces/survey/MzCRfL",
+      "category": "food",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-06-15",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-06-15",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-06-14",
-  "total_freebies": 10
+  "last_updated": "2026-06-15",
+  "total_freebies": 11
 }

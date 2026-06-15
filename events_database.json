@@ -196,21 +196,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260614-stretch-sip-yoga",
-      "name": "Stretch & Sip Yoga",
-      "date": "2026-06-14",
-      "end_date": "2026-06-14",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "sports",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/stretch-sip-yoga-2/",
-      "description": "June 14\\, 2026\\, 10:30 \u2013 11:30 am\\nGet Tickets",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-04-30",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260726-stretch-sip-yoga",
       "name": "Stretch & Sip Yoga",
       "date": "2026-07-26",
@@ -253,21 +238,6 @@
       "description": "Big News!\\nOrillia has been selected for Nashville Takeover\\nAugust 28-30\\, 2026 \\nIntimate Stages\\, Breakthrough Artists\\, Songwriter Haven \\nGet passes",
       "source": "quaylesbrewery.com",
       "scraped_date": "2026-05-03",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260614-an-unforgettable-night-of-classical-musi",
-      "name": "An Unforgettable Night of Classical Music",
-      "date": "2026-06-14",
-      "end_date": "2026-06-14",
-      "time": "",
-      "venue": "St Paul's Centre, Orillia, ON",
-      "category": "music",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/an-unforgettable-night-of-classical-music-tickets-1988033433516",
-      "description": "Ukrainian singer who has conquered some of the best stages in the world and performed alongside great artists such as Pl\u00e1cido Domingo and...",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-07",
       "status": "active"
     },
     {
@@ -508,21 +478,6 @@
       "description": "Get ready to toss some bags and soak up summer nights at Quayle\u2019s Brewery! Our Wednesday Night Cornhole League is the perfect mix of friendly competition and laid-back vibes. \\nWe\u2019re running two 6-week sessions:\\n\u2022 June 3 \u2013 July 15\\n\u2022 July 22 \u2013 August 26 \\nWhether you join one session or both\\, all ",
       "source": "quaylesbrewery.com",
       "scraped_date": "2026-05-26",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260614-live-music-events-darcy-windover",
-      "name": "Live Music Events: Darcy Windover",
-      "date": "2026-06-14",
-      "end_date": "2026-06-14",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-darcy-windover-2/",
-      "description": "Sun June 14\\n3-6\\nDarcy Windover",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-05-27",
       "status": "active"
     },
     {
@@ -1036,66 +991,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-06-13",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-06-13",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-06-13",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-06-13",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-06-13",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-06-13",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-06-13",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-06-13",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-opera-house-season-schedule",
       "name": "Orillia Opera House \u2014 Season Schedule",
       "date": "2026-06-14",
@@ -1321,6 +1216,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-06-14",
-  "total_events": 88
+  "last_updated": "2026-06-15",
+  "total_events": 81
 }
