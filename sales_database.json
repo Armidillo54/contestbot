@@ -153,7 +153,7 @@
     {
       "id": "threeships-sale-1",
       "store": "Three Ships Beauty",
-      "description": "20% Off Sitewide",
+      "description": "or toner) to unlock 20% off",
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
@@ -163,7 +163,7 @@
     {
       "id": "threeships-sale-2",
       "store": "Three Ships Beauty",
-      "description": "20% Off",
+      "description": "20% Off Sitewide",
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
@@ -173,7 +173,7 @@
     {
       "id": "threeships-sale-3",
       "store": "Three Ships Beauty",
-      "description": "20% Off \u2014 Just What You Need",
+      "description": "20% Off",
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
@@ -182,6 +182,16 @@
     },
     {
       "id": "threeships-sale-4",
+      "store": "Three Ships Beauty",
+      "description": "20% Off \u2014 Just What You Need",
+      "detail": "",
+      "category": "Beauty",
+      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
+      "scraped_date": "2026-06-16",
+      "status": "active"
+    },
+    {
+      "id": "threeships-sale-5",
       "store": "Three Ships Beauty",
       "description": "xclusive perks, and 15% off your first order.",
       "detail": "",
@@ -312,7 +322,7 @@
     }
   ],
   "last_updated": "2026-06-16",
-  "total_sales": 31,
+  "total_sales": 32,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
