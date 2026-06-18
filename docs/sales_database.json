@@ -6,17 +6,7 @@
       "description": "40% Off",
       "detail": "",
       "category": "Menswear",
-      "url": "https://www.tiptop.ca/collections/mid-season-sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "tiptop-sale-1",
-      "store": "Tip Top Tailor",
-      "description": "50% Off",
-      "detail": "",
-      "category": "Menswear",
-      "url": "https://www.tiptop.ca/collections/mid-season-sale",
+      "url": "https://www.tiptop.ca/collections/sale",
       "scraped_date": "2026-06-18",
       "status": "active"
     },
@@ -241,12 +231,72 @@
       "status": "active"
     },
     {
+      "id": "knix-sale-0",
+      "store": "Knix",
+      "description": "Bundle Up and Save 20% on Underwear",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-06-18",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-1",
+      "store": "Knix",
+      "description": "Up to 60% Off Last Call - 100 New Styles Added",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-06-18",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-2",
+      "store": "Knix",
+      "description": "Up to 60% off Last Call",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-06-18",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": "get a FREE Knix Hat Up to 60% Off Last Call - 100 New Styles Added Try Yo",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-06-18",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
+      "store": "Knix",
+      "description": "FREE Knix Hat Up to 60% Off Last Call - 100 New Styles Added Try Your First Pa",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-06-18",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-5",
+      "store": "Knix",
+      "description": "Bundle Up and Save 20% on Underwear Spend $150+ get a FREE Kni",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/",
+      "scraped_date": "2026-06-18",
+      "status": "active"
+    },
+    {
       "id": "callitspring-sale-general",
       "store": "Call It Spring",
       "description": "Sale on now at Call It Spring",
       "detail": "",
       "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/women-final-sale",
+      "url": "https://www.callitspring.com/collections/sale",
       "scraped_date": "2026-06-18",
       "status": "active"
     },
@@ -262,7 +312,7 @@
     }
   ],
   "last_updated": "2026-06-18",
-  "total_sales": 26,
+  "total_sales": 31,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
