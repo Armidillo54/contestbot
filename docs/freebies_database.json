@@ -691,13 +691,13 @@
       "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-05-19",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-15",
+      "link_checked": "2026-06-18",
       "source_url": "https://www.canadianfreestuff.com/wonder-bread-canada-contest/",
       "url_resolved": false
     },
@@ -859,7 +859,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-15",
+      "link_checked": "2026-06-18",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -877,11 +877,11 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-15",
+      "link_checked": "2026-06-18",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-18",
   "total_freebies": 11
 }
