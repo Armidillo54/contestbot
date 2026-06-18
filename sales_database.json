@@ -71,152 +71,22 @@
       "status": "active"
     },
     {
-      "id": "rwandco-sale-0",
-      "store": "RW&CO",
-      "description": "Sale: Up to 50% Off + Extra 20% Off",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "rwandco-sale-1",
-      "store": "RW&CO",
-      "description": "to 50% Off + Extra 20% Off",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "rwandco-sale-2",
-      "store": "RW&CO",
-      "description": "Additional 20% Off Clearance",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "rwandco-sale-3",
-      "store": "RW&CO",
-      "description": "Up to 40% Off Select Men's & Women's Styles",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "rwandco-sale-4",
-      "store": "RW&CO",
-      "description": "$100 Off Men's Suits",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "rwandco-sale-5",
-      "store": "RW&CO",
-      "description": "Up to 50% Off + Extra 20% Off",
-      "detail": "",
-      "category": "Clothing",
-      "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-0",
-      "store": "Three Ships Beauty",
-      "description": "Save 20% on clean, vegan skincare in the Three S",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-1",
-      "store": "Three Ships Beauty",
-      "description": "or toner) to unlock 20% off",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-2",
-      "store": "Three Ships Beauty",
-      "description": "20% Off Sitewide",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-3",
-      "store": "Three Ships Beauty",
-      "description": "20% Off",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-4",
-      "store": "Three Ships Beauty",
-      "description": "20% Off \u2014 Just What You Need",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-5",
-      "store": "Three Ships Beauty",
-      "description": "xclusive perks, and 15% off your first order.",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
       "id": "thrive-sale-0",
       "store": "Thrive Causemetics",
-      "description": "Save Up To 30% OFF Select Products",
+      "description": "Promotional Terms *20% off is only valid on first purchases. Code must be entered at checkout. Not",
       "detail": "",
       "category": "Beauty",
-      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
+      "url": "https://thrivecausemetics.ca/collections/sets-price-drop",
       "scraped_date": "2026-06-18",
       "status": "active"
     },
     {
       "id": "thrive-sale-1",
       "store": "Thrive Causemetics",
-      "description": "Promotional Terms *20% off is only valid on first purchases. Code must be entered at checkout. Not",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "thrive-sale-2",
-      "store": "Thrive Causemetics",
       "description": "Promotional Terms *20% off is only valid on first purchases. Code",
       "detail": "",
       "category": "Beauty",
-      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
+      "url": "https://thrivecausemetics.ca/collections/sets-price-drop",
       "scraped_date": "2026-06-18",
       "status": "active"
     },
@@ -227,76 +97,6 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-0",
-      "store": "Knix",
-      "description": "Bundle Up and Save 20% on Underwear",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-1",
-      "store": "Knix",
-      "description": "Up to 60% Off Last Call - 100 New Styles Added",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-2",
-      "store": "Knix",
-      "description": "Up to 60% off Last Call",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-3",
-      "store": "Knix",
-      "description": "get a FREE Knix Hat Up to 60% Off Last Call - 100 New Styles Added Try Yo",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-4",
-      "store": "Knix",
-      "description": "FREE Knix Hat Up to 60% Off Last Call - 100 New Styles Added Try Your First Pa",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-5",
-      "store": "Knix",
-      "description": "Bundle Up and Save 20% on Underwear Spend $150+ get a FREE Kni",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-18",
-      "status": "active"
-    },
-    {
-      "id": "callitspring-sale-general",
-      "store": "Call It Spring",
-      "description": "Sale on now at Call It Spring",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
       "scraped_date": "2026-06-18",
       "status": "active"
     },
@@ -312,7 +112,7 @@
     }
   ],
   "last_updated": "2026-06-18",
-  "total_sales": 31,
+  "total_sales": 11,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
