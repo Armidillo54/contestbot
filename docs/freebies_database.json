@@ -733,7 +733,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-17",
+      "link_checked": "2026-06-20",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -769,7 +769,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-17",
+      "link_checked": "2026-06-20",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -805,7 +805,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-06-17",
+      "link_checked": "2026-06-20",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -880,8 +880,26 @@
       "link_checked": "2026-06-18",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-conair-9x-",
+      "name": "Butterly Canada Free Opportunities- FREE Conair 9X Rotary Head Shaver/ Sorbet Bars/ KFI Butter Chicken Sauces /Buff Bison Buckaroos / OXY Acne Care",
+      "description": "Butterly Canada Free Opportunities- FREE Conair 9X Rotary Head Shaver/ Sorbet Bars/ KFI Butter Chicken Sauces /Buff Bison Buckaroos / OXY Acne Care",
+      "url": "https://butterly.com/en/conaircanada/survey/IQbWuA",
+      "category": "food",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-06-20",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-06-20",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
     }
   ],
-  "last_updated": "2026-06-19",
-  "total_freebies": 10
+  "last_updated": "2026-06-20",
+  "total_freebies": 11
 }
