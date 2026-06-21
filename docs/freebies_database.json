@@ -898,8 +898,26 @@
       "link_checked": "2026-06-20",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-home-tester-club-apply-for-free-tweezers-mens-groo",
+      "name": "Home Tester Club: Apply for FREE Tweezers, Mens Grooming Products, Nail & Lash Products!",
+      "description": "Home Tester Club: Apply for FREE Tweezers, Mens Grooming Products, Nail & Lash Products!",
+      "url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
+      "category": "beauty",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-06-21",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-06-21",
+      "source_url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-06-21",
-  "total_freebies": 11
+  "total_freebies": 12
 }
