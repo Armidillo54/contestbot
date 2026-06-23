@@ -38823,9 +38823,105 @@
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-egg-farmers-contest-win-a-get-cracking-summer-priz",
+      "name": "Egg Farmers Contest: Win a Get Cracking summer prize pack!",
+      "url": "https://www.canadianfreestuff.com/egg-farmers-of-canada-contests/",
+      "prize": "Egg Farmers Contest: Win a Get Cracking summer prize pack!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-23",
+      "link_valid": true,
+      "link_checked": "2026-06-23",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/egg-farmers-of-canada-contests/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-circle-k-canada-mountain-dew-baja-beach-club-conte",
+      "name": "Circle K Canada Mountain Dew Baja Beach Club Contest: Win a Baja Beach Club Prize worth $3000 or FREE Fuel for the Summer",
+      "url": "https://games.circlek.com/ca/dew-baja",
+      "prize": "Circle K Canada Mountain Dew Baja Beach Club Contest: Win a Baja Beach Club Prize worth $3000 or FREE Fuel for the Summer",
+      "prize_value": 3000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-23",
+      "link_valid": true,
+      "link_checked": "2026-06-23",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/circle-k-contest-all-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-global-news-contest-win-an-8-day-danube-explorer-r",
+      "name": "Global News Contest: Win an 8-day Danube Explorer River Cruise!",
+      "url": "https://promos.globalnews.ca/the-morning-show-emerald-cruises-contest/index.html",
+      "prize": "Global News Contest: Win an 8-day Danube Explorer River Cruise!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-23",
+      "link_valid": true,
+      "link_checked": "2026-06-23",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/global-news-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-home-depot-x-behr-contest-win-a-1000-home-depot-gi",
+      "name": "Home Depot x Behr Contest -Win a $1000 Home Depot Gift Card!",
+      "url": "https://www.canadianfreestuff.com/home-depot-canada-contest/",
+      "prize": "Home Depot x Behr Contest -Win a $1000 Home Depot Gift Card!",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-23",
+      "link_valid": true,
+      "link_checked": "2026-06-23",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/home-depot-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-06-23",
-  "total_active": 1129,
-  "total_prize_value": 3011558
+  "total_active": 1133,
+  "total_prize_value": 3015558
 }
