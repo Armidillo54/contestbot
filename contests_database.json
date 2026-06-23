@@ -38799,9 +38799,33 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/23/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-jellycat-toy-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-swiss-chalet-contest-win-a-trip-to-disney-world",
+      "name": "Swiss Chalet Contest -Win a Trip to Disney World!",
+      "url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
+      "prize": "Swiss Chalet Contest -Win a Trip to Disney World!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-23",
+      "link_valid": true,
+      "link_checked": "2026-06-23",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-06-23",
-  "total_active": 1128,
+  "total_active": 1129,
   "total_prize_value": 3011558
 }
