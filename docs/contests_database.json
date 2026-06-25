@@ -40424,9 +40424,106 @@
       "last_entered": null,
       "source_url": "https://www.contestscoop.com/genuine-health-canada-contest/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-canadian-beef-contest-win-a-200-visa-gift-card-mon",
+      "name": "Canadian Beef Contest -Win a $200 VISA gift card! (Monthly)",
+      "url": "https://www.canadianfreestuff.com/canadian-beef-contest/",
+      "prize": "Canadian Beef Contest -Win a $200 VISA gift card! (Monthly)",
+      "prize_value": 200,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-25",
+      "link_valid": true,
+      "link_checked": "2026-06-25",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/canadian-beef-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-shoppers-drug-mart-contest-win-a-1000-gift-card-or",
+      "name": "Shoppers Drug Mart Contest: Win a $1000 Gift Card or 1 Million PC Points!",
+      "url": "http://www.surveysdm.com",
+      "prize": "Shoppers Drug Mart Contest: Win a $1000 Gift Card or 1 Million PC Points!",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-25",
+      "link_valid": true,
+      "link_checked": "2026-06-25",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/shoppers-drug-mart-survey/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-tribute-contest-canada-win-the-super-mario-galaxy-",
+      "name": "Tribute Contest Canada \u2013 Win \u2018The Super Mario Galaxy\u2019 on Blu-ray (10 Winners)",
+      "url": "https://www.canadianfreestuff.com/tribute-contest-canada/",
+      "prize": "Tribute Contest Canada \u2013 Win \u2018The Super Mario Galaxy\u2019 on Blu-ray (10 Winners)",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-25",
+      "link_valid": true,
+      "link_checked": "2026-06-25",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/tribute-contest-canada/",
+      "url_resolved": false
+    },
+    {
+      "id": "cscoop-freshco-spin-to-win-contest-win-scene-points-ice",
+      "name": "Freshco Spin To Win Contest: Win Scene+ Points, Ice\u2026",
+      "sponsor": "",
+      "url": "https://www.freshco.com/spin-to-win-2026",
+      "prize": "Freshco Spin To Win Contest: Win Scene+ Points, Ice\u2026 Prize: 100, 250, 500 or 750 Scene+ points, Compliments BBQ Sauce (425 mL) or Compliments Ice Cream Tub (1.5 L) Ends: Jul 1/26 Who: AB, BC, MB, SK, ",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-06-25",
+      "link_valid": true,
+      "link_checked": "2026-06-25",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/freshco-com-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-25",
-  "total_active": 1181,
-  "total_prize_value": 3254589
+  "total_active": 1185,
+  "total_prize_value": 3255789
 }
