@@ -1064,8 +1064,53 @@
       "source": "curated",
       "scraped_date": "2026-06-25",
       "status": "active"
+    },
+    {
+      "id": "eventbrite-20260625-how-to-market-your-brand-new-dental-prac",
+      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
+      "date": "2026-06-25",
+      "end_date": "2026-06-25",
+      "time": "",
+      "venue": "Orillia, Orillia, ON",
+      "category": "food",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230266221",
+      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-25",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260723-safe-5-1-lpm-2-days-classroom-training-i",
+      "name": "SAFe\u00ae 5.1 (LPM) 2 Days   Classroom Training in  Orillia, ON",
+      "date": "2026-07-23",
+      "end_date": "2026-07-24",
+      "time": "",
+      "venue": "Orillia, ON, Orillia, ON, ON",
+      "category": "arts",
+      "price": "See event",
+      "url": "https://www.eventbrite.com/e/safe-51-lpm-2-days-classroom-training-in-orillia-on-tickets-471399106417",
+      "description": "Welcome to Simplykart!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-25",
+      "status": "active"
+    },
+    {
+      "id": "eventbrite-20260709-opp-women-s-symposium",
+      "name": "OPP Women's Symposium",
+      "date": "2026-07-09",
+      "end_date": "2026-07-09",
+      "time": "",
+      "venue": "Ontario Provincial Police - General Headquarters, Orillia, ON",
+      "category": "other",
+      "price": "See event",
+      "url": "https://www.eventbrite.ca/e/opp-womens-symposium-tickets-1992585200975",
+      "description": "The OPP is pleased to invite you to attend a 1 day event providing you with in depth information before applying to our service!",
+      "source": "eventbrite.ca",
+      "scraped_date": "2026-06-25",
+      "status": "active"
     }
   ],
   "last_updated": "2026-06-25",
-  "total_events": 71
+  "total_events": 74
 }
