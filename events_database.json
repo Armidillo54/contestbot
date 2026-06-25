@@ -286,21 +286,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260624-cornhole-quayle-s-brewery",
-      "name": "Cornhole @ Quayle\u2019s Brewery",
-      "date": "2026-06-24",
-      "end_date": "2026-06-24",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "sports",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/cornhole-quayles-brewery/2026-06-24/",
-      "description": "Get ready to toss some bags and soak up summer nights at Quayle\u2019s Brewery! Our Wednesday Night Cornhole League is the perfect mix of friendly competition and laid-back vibes. \\nWe\u2019re running two 6-week sessions:\\n\u2022 June 3 \u2013 July 15\\n\u2022 July 22 \u2013 August 26 \\nWhether you join one session or both\\, all ",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-05-26",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260708-cornhole-quayle-s-brewery",
       "name": "Cornhole @ Quayle\u2019s Brewery",
       "date": "2026-07-08",
@@ -496,21 +481,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260623-pmp-certification-4-days-classroom-train",
-      "name": "PMP Certification 4 Days Classroom Training in Orillia, ON",
-      "date": "2026-06-23",
-      "end_date": "2026-06-26",
-      "time": "",
-      "venue": "Orillia, ON, Orillia, ON, ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/pmp-certification-4-days-classroom-training-in-orillia-on-tickets-603580063217",
-      "description": "PMP Certification 4 Days Classroom Training",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-05-27",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260915-family-paint-party",
       "name": "Family Paint Party",
       "date": "2026-09-15",
@@ -538,21 +508,6 @@
       "description": "Join us at Orillia Hyundai for Community Fun Fest\u2014good vibes, great people, and awesome fun await!",
       "source": "eventbrite.ca",
       "scraped_date": "2026-05-29",
-      "status": "active"
-    },
-    {
-      "id": "orilli-20260624-2026-omah-annual-general-meeting",
-      "name": "2026 OMAH Annual General Meeting",
-      "date": "2026-06-24",
-      "end_date": "2026-06-24",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/2026-omah-annual-general-meeting/",
-      "description": "2026 OMAH Annual General Meeting\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tPlease note that you MUST be a member in good standing to attend the AGM\\, you will not be able to register using this link without signing in. Your membership ID is your email address. If you have any trouble with the registration p",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-06-01",
       "status": "active"
     },
     {
@@ -781,21 +736,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260624-fairy-frolic-in-the-forest",
-      "name": "Fairy Frolic in the Forest",
-      "date": "2026-06-24",
-      "end_date": "2026-06-24",
-      "time": "",
-      "venue": "Simcoe County Administration Centre, Midhurst, ON",
-      "category": "festival",
-      "price": "See event",
-      "url": "https://www.eventbrite.ca/e/fairy-frolic-in-the-forest-tickets-1990229838021",
-      "description": "Celebrate International Fairy Day with a light-hearted guided Forest Bathing walk filled with whimsy, wonder, and woodland enchantment.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-06-14",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260807-orillia-waterfront-festival",
       "name": "Orillia Waterfront Festival",
       "date": "2026-08-07",
@@ -901,66 +841,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-06-23",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-06-23",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-06-23",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-06-23",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-06-23",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-06-23",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-06-23",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-06-23",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20261013-family-paint-party",
       "name": "Family Paint Party",
       "date": "2026-10-13",
@@ -973,21 +853,6 @@
       "description": "Paint Nite -- Families and All Ages (10361957)",
       "source": "eventbrite.ca",
       "scraped_date": "2026-06-23",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260624-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-06-24",
-      "end_date": "2026-06-24",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230260203",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-06-24",
       "status": "active"
     },
     {
@@ -1141,6 +1006,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-06-24",
-  "total_events": 76
+  "last_updated": "2026-06-25",
+  "total_events": 67
 }
