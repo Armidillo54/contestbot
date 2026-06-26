@@ -40994,7 +40994,7 @@
       "id": "cscoop-pharmasave-contest-win-5-000-perks-rewards-over-1-",
       "name": "Pharmasave Contest: Win 5,000 Perks Rewards, Over $1,500",
       "sponsor": "",
-      "url": "https://www.contestscoop.com/pharmasave-canada-giveaway/",
+      "url": "https://www.pharmachoice.com/contest/",
       "prize": "Pharmasave Contest: Win 5,000 Perks Rewards, Over $1,500 Prize: 1 winner: 5,000 Perks Rewards (over $1,500) Ends: Jul 31/26, 11:59 PM EST Who: Canada, 18+ How: Complete the online entry form; share fo",
       "prize_value": 1500,
       "entry_method": "online_form",
@@ -41013,7 +41013,7 @@
       "link_checked": "2026-06-26",
       "last_entered": null,
       "source_url": "https://www.contestscoop.com/pharmasave-canada-giveaway/",
-      "url_resolved": false
+      "url_resolved": true
     },
     {
       "id": "cscoop-medieval-times-contest-win-vacation-dinner-show-ti",
@@ -41189,9 +41189,34 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/25/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-lancome-skincare/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cscoop-hawaii-giveaway-eatable-win-a-trip-to-hawaii",
+      "name": "Hawaii Giveaway: Eatable Win a Trip to Hawaii &\u2026",
+      "sponsor": "",
+      "url": "https://eatable.com/pages/moana",
+      "prize": "Hawaii Giveaway: Eatable Win a Trip to Hawaii &\u2026 Prize: 3-night Hawaii trip for 2 incl. flights, hotel, select meals, transfers, tours & activities; 4 movie tickets (10 winners); $100 EATABLE gift car",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-06-26",
+      "link_valid": true,
+      "link_checked": "2026-06-26",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/hawaii-vacation-sweepstakes/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-26",
-  "total_active": 1211,
-  "total_prize_value": 3317289
+  "total_active": 1212,
+  "total_prize_value": 3317389
 }
