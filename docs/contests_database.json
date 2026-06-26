@@ -41214,9 +41214,59 @@
       "last_entered": null,
       "source_url": "https://www.contestscoop.com/hawaii-vacation-sweepstakes/",
       "url_resolved": true
+    },
+    {
+      "id": "cscoop-aperol-spritz-contest-win-vip-trip-to-osheaga-2026",
+      "name": "Aperol Spritz Contest: Win VIP Trip to Osheaga 2026,\u2026",
+      "sponsor": "",
+      "url": "https://www.aperol.com/en-ca/contest/osheaga-2026/",
+      "prize": "Aperol Spritz Contest: Win VIP Trip to Osheaga 2026,\u2026 Prize: Trip for 2 to Montreal, round-trip flights, 4-night hotel, 2 Osheaga Gold Passes, $1,000 spending money, airport transportation (approx. $1",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-06-26",
+      "link_valid": true,
+      "link_checked": "2026-06-26",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/aperol-spritz-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cscoop-7-eleven-coca-cola-fifa-contest-win-1-000-cash",
+      "name": "7 Eleven Coca Cola FIFA Contest: Win $1,000 Cash\u2026",
+      "sponsor": "",
+      "url": "https://www.7-eleven.ca/lp/7rewards-coke-cash-contest",
+      "prize": "7 Eleven Coca Cola FIFA Contest: Win $1,000 Cash\u2026 Prize: 1 x $1,000 cash; 2 x $500 cash; 50 x FIFA World Cup 26\u2122 Swag Bags (water bottle, sport bag & cooler box) Ends: Jul 21/26 Who: BC, AB, SK, MB, O",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-06-26",
+      "link_valid": true,
+      "link_checked": "2026-06-26",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/7rewards-ca-coca-cola-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-26",
-  "total_active": 1212,
-  "total_prize_value": 3317389
+  "total_active": 1214,
+  "total_prize_value": 3319389
 }
