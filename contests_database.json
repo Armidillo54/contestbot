@@ -41144,7 +41144,7 @@
       "id": "cacc-win-milesdavis-music-prize",
       "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #MilesDavis #MUSIC #PRIZE",
       "sponsor": "",
-      "url": "https://curiousaboutcanadiancontests.com/2026/06/26/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-milesdavis-music-prize/ ",
+      "url": "https://milesdavisstore.com/pages/sweepstakes",
       "prize": "International / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #MilesDavis #MUSIC #PRIZE - June 26, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #WIN #MilesDavis #MUSIC #PRIZE https://milesdavisstore.com/pages/",
       "prize_value": 0,
       "entry_method": "online_form",
@@ -41163,7 +41163,7 @@
       "link_checked": "2026-06-26",
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/26/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-milesdavis-music-prize/ ",
-      "url_resolved": false
+      "url_resolved": true
     },
     {
       "id": "cacc-win-lancome-skincare",
@@ -41760,9 +41760,81 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/26/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-comic-book-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-st-hubert-contests-win-a-race-experience-with-alex",
+      "name": "St. Hubert Contests: Win a Race Experience with Alex Tagliani or a $10,000 Backyard Refresh Prize!",
+      "url": "https://www.st-hubert.com/en/contests/nascar-canada-series.html",
+      "prize": "St. Hubert Contests: Win a Race Experience with Alex Tagliani or a $10,000 Backyard Refresh Prize!",
+      "prize_value": 10000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-27",
+      "link_valid": true,
+      "link_checked": "2026-06-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/st-hubert-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-scene-contest-spin-to-win-free-scene-points-or-fre",
+      "name": "Scene Contest: Spin to Win FREE Scene+ Points or FREE Items!",
+      "url": "https://www.canadianfreestuff.com/scene-canada-contest/",
+      "prize": "Scene Contest: Spin to Win FREE Scene+ Points or FREE Items!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-27",
+      "link_valid": true,
+      "link_checked": "2026-06-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/scene-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-aosom-giveaway-contest-win-a-wood-fired-pizza-oven",
+      "name": "Aosom Giveaway Contest: Win a Wood-Fired Pizza Oven and a Smokeless Fire Pit",
+      "url": "https://wn.nr/MnBN7h7",
+      "prize": "Aosom Giveaway Contest: Win a Wood-Fired Pizza Oven and a Smokeless Fire Pit",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-27",
+      "link_valid": true,
+      "link_checked": "2026-06-27",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/aosom-giveaway/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-06-27",
-  "total_active": 1220,
-  "total_prize_value": 3273829
+  "total_active": 1223,
+  "total_prize_value": 3283829
 }
