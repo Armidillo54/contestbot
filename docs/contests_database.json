@@ -42032,9 +42032,82 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/06/27/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-win-sheets/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-nba-canada-contest-win-1-of-5-wnba-x-endy-prize-pa",
+      "name": "NBA Canada Contest: Win 1 of 5 WNBA x Endy prize packs!",
+      "url": "https://nbarepresent.ca/contest/",
+      "prize": "NBA Canada Contest: Win 1 of 5 WNBA x Endy prize packs!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-28",
+      "link_valid": true,
+      "link_checked": "2026-06-28",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/nba-contests/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-ctv-contests-win-a-telescope-worth-400",
+      "name": "CTV Contests:  Win a Telescope worth $400!",
+      "url": "https://www.ctvnews.ca/calgary/ask-an-astronomer/",
+      "prize": "CTV Contests:  Win a Telescope worth $400!",
+      "prize_value": 400,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-06-28",
+      "link_valid": true,
+      "link_checked": "2026-06-28",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/ctv-contests/",
+      "url_resolved": true
+    },
+    {
+      "id": "cacc-hempz-skincare-giveaway",
+      "name": "\ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #HEMPZ #SKINCARE #GIVEAWAY",
+      "sponsor": "",
+      "url": "https://curiousaboutcanadiancontests.com/2026/06/28/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-hempz-skincare-giveaway/ ",
+      "prize": "International / USA Friendly / Website Contests \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #HEMPZ #SKINCARE #GIVEAWAY - June 28, 2026 - contestcurious comment on \ud83c\udde8\ud83c\udde6\ud83c\uddfa\ud83c\uddf8\ud83c\udf0e #HEMPZ #SKINCARE #GIVEAWAY https://gleam.io/mbbJh/-hempz-whipped-vani",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From curiousaboutcanadiancontests.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "curiousaboutcanadiancontests.com",
+      "status": "active",
+      "added_date": "2026-06-28",
+      "link_valid": true,
+      "link_checked": "2026-06-28",
+      "last_entered": null,
+      "source_url": "https://curiousaboutcanadiancontests.com/2026/06/28/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-hempz-skincare-giveaway/ ",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-06-28",
-  "total_active": 1227,
-  "total_prize_value": 3286778
+  "total_active": 1230,
+  "total_prize_value": 3287178
 }
