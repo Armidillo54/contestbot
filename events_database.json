@@ -406,21 +406,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260628-live-music-events-ian-chaplin",
-      "name": "Live Music Events: Ian Chaplin",
-      "date": "2026-06-28",
-      "end_date": "2026-06-28",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-ian-chaplin/",
-      "description": "Sun June 28\\n3-6\\nIan Chaplin",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-05-27",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260704-quayle-s-6th-birthday-bash",
       "name": "Quayle\u2019s 6th Birthday Bash",
       "date": "2026-07-04",
@@ -628,21 +613,6 @@
       "description": "Join Mediums Barbara Quinton and Kayleigh Voyde for a beautiful evening of live audience mediumship readings in Orillia July 17th, 7:30-9:30",
       "source": "eventbrite.ca",
       "scraped_date": "2026-06-19",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260628-move-with-the-crowd-promotions",
-      "name": "Move With The Crowd Promotions",
-      "date": "2026-06-28",
-      "end_date": "2026-06-28",
-      "time": "",
-      "venue": "4500 Fairgrounds Rd, Severn, ON",
-      "category": "other",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/move-with-the-crowd-promotions-tickets-1989631113219",
-      "description": "Get ready to vibe and move together with the crowd\u2014live beats, good energy, and nonstop fun!",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-06-21",
       "status": "active"
     },
     {
@@ -856,66 +826,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-06-27",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-06-27",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-06-27",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-06-27",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-06-27",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-06-27",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-06-27",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-06-27",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-opera-house-season-schedule",
       "name": "Orillia Opera House \u2014 Season Schedule",
       "date": "2026-06-28",
@@ -1066,6 +976,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-06-28",
-  "total_events": 71
+  "last_updated": "2026-06-29",
+  "total_events": 65
 }
