@@ -33,7 +33,7 @@
     {
       "id": "reitmans-sale-2",
       "store": "Reitmans",
-      "description": "R BIG SUMMER SALE - UP TO 70% OFF + EXTRA 20%",
+      "description": "R BIG SUMMER SALE - UP TO 70% OFF",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -43,7 +43,7 @@
     {
       "id": "reitmans-sale-3",
       "store": "Reitmans",
-      "description": "SUMMER SALE - UP TO 70% OFF + EXTRA 20%",
+      "description": "SUMMER SALE - UP TO 70% OFF",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -73,7 +73,7 @@
     {
       "id": "rwandco-sale-0",
       "store": "RW&CO",
-      "description": "Summer Sale: Up to 60% Off",
+      "description": "Up to 60% Off the regular price",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -113,7 +113,7 @@
     {
       "id": "rwandco-sale-4",
       "store": "RW&CO",
-      "description": "Summer Sale: Up to 60% Off Offer valid online at rw-co.com for a l",
+      "description": "Up to 60% Off the regular price Offer valid online at",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
