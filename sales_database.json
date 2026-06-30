@@ -23,7 +23,7 @@
     {
       "id": "reitmans-sale-1",
       "store": "Reitmans",
-      "description": "Up to 70% off sale + Extra 20%",
+      "description": "Up to 70% off sale",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -63,7 +63,7 @@
     {
       "id": "reitmans-sale-5",
       "store": "Reitmans",
-      "description": "END OF SEASON SALE Up to 70% off sale + Extra 20% SHOP BY SIZE XXS XS S",
+      "description": "END OF SEASON SALE Up to 70% off sale SHOP BY SIZE XXS XS S M L XL XXL 2",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -231,66 +231,6 @@
       "status": "active"
     },
     {
-      "id": "knix-sale-0",
-      "store": "Knix",
-      "description": "Bundle Up and Save 20% on Underwear",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-30",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-1",
-      "store": "Knix",
-      "description": "Up to 60% Off Last Call - 100 New Styles Added",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-30",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-2",
-      "store": "Knix",
-      "description": "Up to 60% off Last Call",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-30",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-3",
-      "store": "Knix",
-      "description": "Rib\u2122 Cotton T-Shirt Up to 60% Off Last Call - 100 New Styles Added Free S",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-30",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-4",
-      "store": "Knix",
-      "description": "otton T-Shirt Up to 60% Off Last Call - 100 New Styles Added Free Shipping on",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-30",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-5",
-      "store": "Knix",
-      "description": "Bundle Up and Save 20% on Underwear Spend $150+ get a FREE Scu",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/",
-      "scraped_date": "2026-06-30",
-      "status": "active"
-    },
-    {
       "id": "callitspring-sale-0",
       "store": "Call It Spring",
       "description": "UP TO 50% OFF",
@@ -342,7 +282,7 @@
     }
   ],
   "last_updated": "2026-06-30",
-  "total_sales": 34,
+  "total_sales": 28,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
