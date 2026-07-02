@@ -43714,9 +43714,129 @@
       "last_entered": null,
       "source_url": "https://www.canadianfreestuff.com/scotties-canada-contest/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-home-hardware-canada-contest-win-a-250-home-gift-c",
+      "name": "Home Hardware Canada Contest: Win a $250 HOME Gift Card!",
+      "url": "https://www.canadianfreestuff.com/home-hardware-contest/",
+      "prize": "Home Hardware Canada Contest: Win a $250 HOME Gift Card!",
+      "prize_value": 250,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-02",
+      "link_valid": true,
+      "link_checked": "2026-07-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/home-hardware-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-avon-canada-summer-beach-time-contest-win-a-885-su",
+      "name": "Avon Canada Summer Beach Time Contest ~ Win a $885 Summer Beauty Prize!",
+      "url": "https://www.canadianfreestuff.com/avon-canada-contest/",
+      "prize": "Avon Canada Summer Beach Time Contest ~ Win a $885 Summer Beauty Prize!",
+      "prize_value": 885,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-02",
+      "link_valid": true,
+      "link_checked": "2026-07-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/avon-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-fishing-hole-contest-win-a-lowrance-eagle-eye-with",
+      "name": "Fishing Hole Contest: Win a Lowrance Eagle Eye with Live Sonar!",
+      "url": "https://thefishinhole.com/monthly-fishing-contest/",
+      "prize": "Fishing Hole Contest: Win a Lowrance Eagle Eye with Live Sonar!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-02",
+      "link_valid": true,
+      "link_checked": "2026-07-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/the-fishing-hole-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-ryobi-contest-win-a-ryobi-18v-one-hp-brushless-2-t",
+      "name": "Ryobi Contest: Win a RYOBI 18V ONE+ HP Brushless 2-Tool Combo Kit",
+      "url": "https://housecallsdiy.com/sweepstakes",
+      "prize": "Ryobi Contest: Win a RYOBI 18V ONE+ HP Brushless 2-Tool Combo Kit",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-02",
+      "link_valid": true,
+      "link_checked": "2026-07-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/ryobi-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-la-z-boy-contest-win-a-1000-shopping-spree-new-mon",
+      "name": "La-Z-Boy Contest ~ Win a $1000 Shopping Spree -New Month!",
+      "url": "https://www.canadianfreestuff.com/la-z-boy-canada-contest/",
+      "prize": "La-Z-Boy Contest ~ Win a $1000 Shopping Spree -New Month!",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-02",
+      "link_valid": true,
+      "link_checked": "2026-07-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/la-z-boy-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-07-02",
-  "total_active": 1221,
-  "total_prize_value": 2581212
+  "total_active": 1226,
+  "total_prize_value": 2583347
 }
