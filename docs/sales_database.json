@@ -293,27 +293,7 @@
     {
       "id": "callitspring-sale-3",
       "store": "Call It Spring",
-      "description": "TODAY ONLY EXTRA 20% OFF SALE STYLES Use code EXTRA20 at checkout. For one day only, Call It Spring is of",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-02",
-      "status": "active"
-    },
-    {
-      "id": "callitspring-sale-4",
-      "store": "Call It Spring",
-      "description": "s offering an Extra 20% off Sale Styles. Offer is valid online and in-store wit",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-02",
-      "status": "active"
-    },
-    {
-      "id": "callitspring-sale-5",
-      "store": "Call It Spring",
-      "description": "TODAY ONLY EXTRA 20% OFF SALE STYLES Use code EXTRA20 at checkou",
+      "description": "SUMMER SALE UP TO 50% OFF SHOP WOMEN'S SHOP MEN'S",
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
@@ -332,7 +312,7 @@
     }
   ],
   "last_updated": "2026-07-02",
-  "total_sales": 33,
+  "total_sales": 31,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
