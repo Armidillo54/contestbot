@@ -952,8 +952,44 @@
       "link_checked": "2026-07-03",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-poptastic-",
+      "name": "Butterly Canada Free Opportunities- FREE Poptastic / Eatable Popcorn / Conair Ultimate Waver /Hada Labo Tokyo Skincare",
+      "description": "Butterly Canada Free Opportunities- FREE Poptastic / Eatable Popcorn / Conair Ultimate Waver /Hada Labo Tokyo Skincare",
+      "url": "https://butterly.com/en/eatablepopcorn/survey/BJ6Vkv",
+      "category": "beauty",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-07-03",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-07-03",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-maple-lodge-farms-contest-win-a-canada-day-starter",
+      "name": "Maple Lodge Farms Contest: WIN a Canada Day Starter Kit or 1 of 6 Napoleon BBQ`s",
+      "description": "Maple Lodge Farms Contest: WIN a Canada Day Starter Kit or 1 of 6 Napoleon BBQ`s",
+      "url": "https://www.canadianfreestuff.com/maple-lodge-farms-canada-contest/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-07-03",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-07-03",
+      "source_url": "https://www.canadianfreestuff.com/maple-lodge-farms-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-07-03",
-  "total_freebies": 10
+  "total_freebies": 12
 }
