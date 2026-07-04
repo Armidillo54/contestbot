@@ -44770,9 +44770,106 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/07/03/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-win-shoes/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-no-frills-giveaway-win-1000-in-free-groceries-or-a",
+      "name": "No Frills Giveaway -Win $1000 in FREE Groceries OR a $100 Gift Card!",
+      "url": "https://www.canadianfreestuff.com/no-frills-contest/",
+      "prize": "No Frills Giveaway -Win $1000 in FREE Groceries OR a $100 Gift Card!",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-04",
+      "link_valid": true,
+      "link_checked": "2026-07-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/no-frills-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-bath-body-works-contest-win-1-of-8-bath-body-works",
+      "name": "Bath & Body Works Contest- Win 1 of 8 Bath & Body Works Gift Cards!",
+      "url": "https://steamykitchen.com/255237-bath-body-works-instant-win-2.html",
+      "prize": "Bath & Body Works Contest- Win 1 of 8 Bath & Body Works Gift Cards!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-04",
+      "link_valid": true,
+      "link_checked": "2026-07-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/bath-and-body-works-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-reitmans-contest-win-a-trip-for-2-to-paris-1000-sh",
+      "name": "Reitmans Contest \u2013 Win a Trip for 2 to Paris, $1000 Shopping Spree, Dinner at the Eiffel Tower & More!",
+      "url": "https://www.canadianfreestuff.com/reitmans-contest/",
+      "prize": "Reitmans Contest \u2013 Win a Trip for 2 to Paris, $1000 Shopping Spree, Dinner at the Eiffel Tower & More!",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-04",
+      "link_valid": true,
+      "link_checked": "2026-07-04",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/reitmans-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cscoop-edmonton-airports-contest-win-yegplus-20-000-takeo",
+      "name": "Edmonton Airports Contest: Win YEGplus $20,000 Takeoff Travel Voucher",
+      "sponsor": "",
+      "url": "https://yegplus.com/",
+      "prize": "Edmonton Airports Contest: Win YEGplus $20,000 Takeoff Travel Voucher Prize: 1 x $20,000 Paull Travel voucher for flights departing Edmonton, accommodations, tours & cruises (single itinerary) Ends: S",
+      "prize_value": 20000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-07-04",
+      "link_valid": true,
+      "link_checked": "2026-07-04",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/edmonton-airports-flyyeg-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-07-04",
-  "total_active": 1250,
-  "total_prize_value": 2563169
+  "total_active": 1254,
+  "total_prize_value": 2585169
 }
