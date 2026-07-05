@@ -799,13 +799,13 @@
       "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-06-05",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-02",
+      "link_checked": "2026-07-05",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -895,7 +895,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-02",
+      "link_checked": "2026-07-05",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1008,6 +1008,6 @@
       "url_resolved": false
     }
   ],
-  "last_updated": "2026-07-04",
+  "last_updated": "2026-07-05",
   "total_freebies": 12
 }
