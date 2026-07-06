@@ -83,7 +83,7 @@
     {
       "id": "rwandco-sale-1",
       "store": "RW&CO",
-      "description": "Up to 60% Off",
+      "description": "Up to 60% Off + Extra 20%",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -93,7 +93,7 @@
     {
       "id": "rwandco-sale-2",
       "store": "RW&CO",
-      "description": "Sale: Up to 60% Off",
+      "description": "Up to 60% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -103,7 +103,7 @@
     {
       "id": "rwandco-sale-3",
       "store": "RW&CO",
-      "description": "Additional 20% Off Clearance",
+      "description": "Sale: Up to 60% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -113,7 +113,7 @@
     {
       "id": "rwandco-sale-4",
       "store": "RW&CO",
-      "description": "Up to 60% Off the regular price Offer valid online at",
+      "description": "Additional 20% Off Clearance",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -123,7 +123,7 @@
     {
       "id": "rwandco-sale-5",
       "store": "RW&CO",
-      "description": "ited time only. Get up to 60% off the regular price of select merchandise",
+      "description": "Up to 60% Off the regular price Offer valid online at",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -263,27 +263,7 @@
     {
       "id": "callitspring-sale-3",
       "store": "Call It Spring",
-      "description": "UP TO 50% OFF For a limited time only, Call It Spring",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-06",
-      "status": "active"
-    },
-    {
-      "id": "callitspring-sale-4",
-      "store": "Call It Spring",
-      "description": "Spring is offering up to 50% off sale styles. Offer valid as of June 22n",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-06",
-      "status": "active"
-    },
-    {
-      "id": "callitspring-sale-5",
-      "store": "Call It Spring",
-      "description": "UP TO 50% OFF For a limited time only, Call It Spring is offering up to 50% o",
+      "description": "SUMMER SALE UP TO 50% OFF SHOP WOMEN'S SHOP MEN'S",
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
@@ -302,7 +282,7 @@
     }
   ],
   "last_updated": "2026-07-06",
-  "total_sales": 30,
+  "total_sales": 28,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
