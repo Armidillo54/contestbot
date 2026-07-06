@@ -231,6 +231,56 @@
       "status": "active"
     },
     {
+      "id": "softmoc-sale-1",
+      "store": "SoftMoc",
+      "description": "ow Warehouse Sale - Up to 60% Off | Shop Now Canada's largest selection",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-07-06",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-2",
+      "store": "SoftMoc",
+      "description": "ehouse Sale - Up to 60% Off | Shop Now Canada's largest selection o",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-07-06",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-3",
+      "store": "SoftMoc",
+      "description": "ow Warehouse Sale - Up to 60% Off | Shop Now Canada's largest selec",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-07-06",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-4",
+      "store": "SoftMoc",
+      "description": "ehouse Sale - Up to 60% Off | Shop Now Canada's largest selection",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-07-06",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-5",
+      "store": "SoftMoc",
+      "description": "Warehouse Sale - Up to 60% Off | Shop Now",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-07-06",
+      "status": "active"
+    },
+    {
       "id": "callitspring-sale-0",
       "store": "Call It Spring",
       "description": "UP TO 50% OFF",
@@ -282,7 +332,7 @@
     }
   ],
   "last_updated": "2026-07-06",
-  "total_sales": 28,
+  "total_sales": 33,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
