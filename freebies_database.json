@@ -817,13 +817,13 @@
       "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-06-07",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-04",
+      "link_checked": "2026-07-07",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -841,7 +841,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-04",
+      "link_checked": "2026-07-07",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -931,7 +931,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-04",
+      "link_checked": "2026-07-07",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1003,11 +1003,29 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-04",
+      "link_checked": "2026-07-07",
       "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-noma-desk-",
+      "name": "Butterly Canada Free Opportunities- FREE NOMA Desk Lighting /Poptastic / Eatable Popcorn /Hada Labo Tokyo Skincare",
+      "description": "Butterly Canada Free Opportunities- FREE NOMA Desk Lighting /Poptastic / Eatable Popcorn /Hada Labo Tokyo Skincare",
+      "url": "https://butterly.com/en/canadiantire/survey/rA3QlL",
+      "category": "beauty",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-07-07",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-07-07",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
     }
   ],
-  "last_updated": "2026-07-06",
-  "total_freebies": 11
+  "last_updated": "2026-07-07",
+  "total_freebies": 12
 }
