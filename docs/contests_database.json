@@ -47945,9 +47945,129 @@
       "last_entered": null,
       "source_url": "https://www.contestscoop.com/ctv-atlantic-contests/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-nestle-canada-contests-win-an-ice-cream-celebratio",
+      "name": "Nestle Canada Contests \u2013 Win an Ice Cream Celebration Party OR FREE Coupon Prizes /$100 PrePaid GC /Drumstick Stranger Things Mystery Flavour Contest!",
+      "url": "https://www.canadianfreestuff.com/nestle-canada-contest/",
+      "prize": "Nestle Canada Contests \u2013 Win an Ice Cream Celebration Party OR FREE Coupon Prizes /$100 PrePaid GC /Drumstick Stranger Things Mystery Flavour Contest!",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-10",
+      "link_valid": true,
+      "link_checked": "2026-07-10",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/nestle-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-linen-chest-canada-contest-win-a-tramontina-stainl",
+      "name": "Linen Chest Canada Contest: Win a Tramontina Stainless Steel BBQ Tool Set",
+      "url": "https://www.canadianfreestuff.com/linen-chest-canada-contest/",
+      "prize": "Linen Chest Canada Contest: Win a Tramontina Stainless Steel BBQ Tool Set",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-10",
+      "link_valid": true,
+      "link_checked": "2026-07-10",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/linen-chest-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-tribute-contest-canada-win-free-passes-to-see-supe",
+      "name": "Tribute Contest Canada \u2013 Win Free Passes to see Superman: Brand New Day",
+      "url": "https://www.canadianfreestuff.com/tribute-contest-canada/",
+      "prize": "Tribute Contest Canada \u2013 Win Free Passes to see Superman: Brand New Day",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-10",
+      "link_valid": true,
+      "link_checked": "2026-07-10",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/tribute-contest-canada/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-apple-contest-canada-win-a-apple-macbook-neo",
+      "name": "Apple Contest Canada: Win a Apple MacBook Neo!",
+      "url": "https://www.canadianfreestuff.com/apple-canada-contest/",
+      "prize": "Apple Contest Canada: Win a Apple MacBook Neo!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-10",
+      "link_valid": true,
+      "link_checked": "2026-07-10",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/apple-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-maple-lodge-farms-contest-win-a-new-napoleon-bbq-c",
+      "name": "Maple Lodge Farms Contest: WIN a New Napoleon BBQ + Canada Soccer Swag!",
+      "url": "https://www.canadianfreestuff.com/maple-lodge-farms-canada-contest/",
+      "prize": "Maple Lodge Farms Contest: WIN a New Napoleon BBQ + Canada Soccer Swag!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-10",
+      "link_valid": true,
+      "link_checked": "2026-07-10",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/maple-lodge-farms-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-07-10",
-  "total_active": 1334,
-  "total_prize_value": 2905712
+  "total_active": 1338,
+  "total_prize_value": 2905812
 }
