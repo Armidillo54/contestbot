@@ -281,6 +281,66 @@
       "status": "active"
     },
     {
+      "id": "knix-sale-0",
+      "store": "Knix",
+      "description": "Bundle Up and Save 20% on Underwear",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-07-11",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-1",
+      "store": "Knix",
+      "description": "Summer Sale up to 50% off",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-07-11",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-2",
+      "store": "Knix",
+      "description": "Uo to 60% off",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-07-11",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": "Up to 60% off Underwear",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-07-11",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
+      "store": "Knix",
+      "description": "25% off Swim",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-07-11",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-5",
+      "store": "Knix",
+      "description": "50% off Active",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/shop-all-sale",
+      "scraped_date": "2026-07-11",
+      "status": "active"
+    },
+    {
       "id": "callitspring-sale-0",
       "store": "Call It Spring",
       "description": "UP TO 50% OFF",
@@ -332,7 +392,7 @@
     }
   ],
   "last_updated": "2026-07-11",
-  "total_sales": 33,
+  "total_sales": 39,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
