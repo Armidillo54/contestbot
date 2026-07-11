@@ -571,21 +571,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260710-live-music-events-vince-therrien",
-      "name": "Live Music Events: Vince Therrien",
-      "date": "2026-07-10",
-      "end_date": "2026-07-10",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-vince-therrien/",
-      "description": "Fri July 10\\n5-8\\nVince Therrien",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-06-30",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260711-live-music-events-rogan-mei",
       "name": "Live Music Events: Rogan Mei",
       "date": "2026-07-11",
@@ -1006,81 +991,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-07-09",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-07-09",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-07-09",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-07-09",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-07-09",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-07-09",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-07-09",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-07-09",
-      "status": "active"
-    },
-    {
-      "id": "eventbrite-20260710-how-to-market-your-brand-new-dental-prac",
-      "name": "How to Market Your BRAND NEW Dental Practice (Limited Access)",
-      "date": "2026-07-10",
-      "end_date": "2026-07-10",
-      "time": "",
-      "venue": "Orillia, Orillia, ON",
-      "category": "food",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/how-to-market-your-brand-new-dental-practice-limited-access-tickets-1987230332419",
-      "description": "Learn how to attract high-value patients, dominate Google & AI search, and build a premium dental brand that drives growth.",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-07-10",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-opera-house-season-schedule",
       "name": "Orillia Opera House \u2014 Season Schedule",
       "date": "2026-07-10",
@@ -1231,6 +1141,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-07-10",
-  "total_events": 82
+  "last_updated": "2026-07-11",
+  "total_events": 76
 }
