@@ -341,46 +341,6 @@
       "status": "active"
     },
     {
-      "id": "callitspring-sale-0",
-      "store": "Call It Spring",
-      "description": "UP TO 50% OFF",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-12",
-      "status": "active"
-    },
-    {
-      "id": "callitspring-sale-1",
-      "store": "Call It Spring",
-      "description": "End of Season Sale UP TO 50% OFF",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-12",
-      "status": "active"
-    },
-    {
-      "id": "callitspring-sale-2",
-      "store": "Call It Spring",
-      "description": "f Season Sale UP TO 50% OFF",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-12",
-      "status": "active"
-    },
-    {
-      "id": "callitspring-sale-3",
-      "store": "Call It Spring",
-      "description": "SUMMER SALE UP TO 50% OFF SHOP WOMEN'S SHOP MEN'S",
-      "detail": "",
-      "category": "Footwear",
-      "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-12",
-      "status": "active"
-    },
-    {
       "id": "moores-sale-general",
       "store": "Moores Clothing",
       "description": "Sale on now at Moores Clothing",
@@ -392,7 +352,7 @@
     }
   ],
   "last_updated": "2026-07-12",
-  "total_sales": 39,
+  "total_sales": 35,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
