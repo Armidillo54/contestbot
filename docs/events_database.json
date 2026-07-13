@@ -61,21 +61,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260711-summer-market-quayle-s-brewery",
-      "name": "Summer Market @ Quayle's Brewery",
-      "date": "2026-07-11",
-      "end_date": "2026-07-12",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "food",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/summer-market-quayles-brewery/",
-      "description": "Summer Market: July 11 & 12th and July 18 & 19th\\, 12 pm \u2013 8pm Ideal for weekenders\\, cottagers and pet lovers!",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-04-19",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260718-summer-market-quayle-s-brewery",
       "name": "Summer Market @ Quayle's Brewery",
       "date": "2026-07-18",
@@ -436,21 +421,6 @@
       "status": "active"
     },
     {
-      "id": "eventbrite-20260712-intuitive-psychic-mediumship-development",
-      "name": "Intuitive, Psychic & Mediumship Development Workshop, ORILLIA",
-      "date": "2026-07-12",
-      "end_date": "2026-07-12",
-      "time": "",
-      "venue": "52 Mississaga St E, Orillia, ON",
-      "category": "community",
-      "price": "See event",
-      "url": "https://www.eventbrite.com/e/intuitive-psychic-mediumship-development-workshop-orillia-tickets-1991828054329",
-      "description": "Join Medium & Teacher Barbara Quinton for an educational and experiential day of psychic and mediumship development in Orillia",
-      "source": "eventbrite.ca",
-      "scraped_date": "2026-06-14",
-      "status": "active"
-    },
-    {
       "id": "eventbrite-20260904-orillia-pirate-party",
       "name": "Orillia Pirate Party",
       "date": "2026-09-04",
@@ -553,21 +523,6 @@
       "description": "The OPP is pleased to invite you to attend and try the 20m Leger Shuttle Run!",
       "source": "eventbrite.ca",
       "scraped_date": "2026-06-27",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260712-live-music-events-david-shaw",
-      "name": "Live Music Events: David Shaw",
-      "date": "2026-07-12",
-      "end_date": "2026-07-12",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-david-shaw-2/",
-      "description": "Sun July 12\\n4-7\\nDavid Shaw",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-06-30",
       "status": "active"
     },
     {
@@ -946,66 +901,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-07-11",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-07-11",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-07-11",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-07-11",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-07-11",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-07-11",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-07-11",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-07-11",
-      "status": "active"
-    },
-    {
       "id": "quayle-20261107-christmas-market-quayle-s-brewery",
       "name": "Christmas Market @ Quayle's Brewery",
       "date": "2026-11-07",
@@ -1017,21 +912,6 @@
       "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/christmas-market-quayles-brewery/",
       "description": "Christmas Market (Save the Dates): November 7 & 8th and November 14 & 15th\\, 11am \u2013 4 pm.| Ideal for\\nChristmas gifts\\, stocking stuffers and hostess gifts.",
       "source": "quaylesbrewery.com",
-      "scraped_date": "2026-07-12",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260710-mariposa-folk-festival",
-      "name": "Mariposa Folk Festival",
-      "date": "2026-07-12",
-      "end_date": "2026-07-12",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://mariposafolk.com/",
-      "description": "Mariposa Folk Festival",
-      "source": "curated",
       "scraped_date": "2026-07-12",
       "status": "active"
     },
@@ -1186,6 +1066,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-07-12",
-  "total_events": 79
+  "last_updated": "2026-07-13",
+  "total_events": 71
 }
