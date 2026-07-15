@@ -131,56 +131,6 @@
       "status": "active"
     },
     {
-      "id": "carters-sale-0",
-      "store": "Carter's",
-      "description": "Includes x20% Off",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-1",
-      "store": "Carter's",
-      "description": "Includes x40% Off",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-2",
-      "store": "Carter's",
-      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or ori",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-3",
-      "store": "Carter's",
-      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or original tick",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-4",
-      "store": "Carter's",
-      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
       "id": "threeships-sale-0",
       "store": "Three Ships Beauty",
       "description": "Save 20% on clean, vegan skincare in the Three S",
@@ -331,66 +281,6 @@
       "status": "active"
     },
     {
-      "id": "knix-sale-0",
-      "store": "Knix",
-      "description": "Bundle Up and Save 20% on Underwear",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-1",
-      "store": "Knix",
-      "description": "Up to 60% Off Last Call",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-2",
-      "store": "Knix",
-      "description": "Uo to 60% off",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-3",
-      "store": "Knix",
-      "description": "Up to 60% off Underwear",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-4",
-      "store": "Knix",
-      "description": "25% off Swim",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
-      "id": "knix-sale-5",
-      "store": "Knix",
-      "description": "50% off Active",
-      "detail": "",
-      "category": "Women's Clothing",
-      "url": "https://knix.ca/pages/shop-all-sale",
-      "scraped_date": "2026-07-15",
-      "status": "active"
-    },
-    {
       "id": "callitspring-sale-0",
       "store": "Call It Spring",
       "description": "UP TO 50% OFF",
@@ -442,7 +332,7 @@
     }
   ],
   "last_updated": "2026-07-15",
-  "total_sales": 44,
+  "total_sales": 33,
   "stores": [
     "Tip Top Tailor",
     "Mark's",

@@ -50590,9 +50590,105 @@
       "last_entered": null,
       "source_url": "https://www.contestscoop.com/hyundai-canada-contest/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-dyson-canada-contest-win-a-dyson-supersonic-hair-d",
+      "name": "Dyson Canada Contest: Win a Dyson Supersonic Hair Dryer",
+      "url": "https://www.canadianfreestuff.com/dyson-canada-contest/",
+      "prize": "Dyson Canada Contest: Win a Dyson Supersonic Hair Dryer",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-15",
+      "link_valid": true,
+      "link_checked": "2026-07-15",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/dyson-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-mondelez-snacktime-friends-contest-win-25-000-for-",
+      "name": "Mondelez Snacktime Friends Contest: Win $25,000 for a Vacation + Daily Toy Story Prizes!",
+      "url": "https://www.snackworks.ca/en/snack-time-friends/",
+      "prize": "Mondelez Snacktime Friends Contest: Win $25,000 for a Vacation + Daily Toy Story Prizes!",
+      "prize_value": 25000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-15",
+      "link_valid": true,
+      "link_checked": "2026-07-15",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/mondelez-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-zwilling-contest-win-a-zwilling-5-piece-grill-tool",
+      "name": "Zwilling Contest: Win a ZWILLING + 5-Piece Grill Tool Set",
+      "url": "https://www.canadianfreestuff.com/zwilling-canada-contest/",
+      "prize": "Zwilling Contest: Win a ZWILLING + 5-Piece Grill Tool Set",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-15",
+      "link_valid": true,
+      "link_checked": "2026-07-15",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/zwilling-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-coca-cola-contests-win-a-fuze-branded-foosball-tab",
+      "name": "Coca-Cola Contests: Win a FUZE branded foosball table/ Flight to Europe for a Soccer VIP Experience / $100 INSTANT WIN Prizes!",
+      "url": "https://www.coca-cola.com/ca/en/offerings/fifa-world-cup-26/for-every-fan",
+      "prize": "Coca-Cola Contests: Win a FUZE branded foosball table/ Flight to Europe for a Soccer VIP Experience / $100 INSTANT WIN Prizes!",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-15",
+      "link_valid": true,
+      "link_checked": "2026-07-15",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/coca-cola-contest-canada/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-07-15",
-  "total_active": 1412,
-  "total_prize_value": 3154230
+  "total_active": 1415,
+  "total_prize_value": 3179330
 }
