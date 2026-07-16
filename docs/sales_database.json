@@ -103,7 +103,7 @@
     {
       "id": "rwandco-sale-3",
       "store": "RW&CO",
-      "description": "Up to 60% Off",
+      "description": "Up to 60% Off + Additional 20% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -113,7 +113,7 @@
     {
       "id": "rwandco-sale-4",
       "store": "RW&CO",
-      "description": "Sale: Up to 60% Off the Regular Price",
+      "description": "0% Off + Additional 20% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -123,7 +123,7 @@
     {
       "id": "rwandco-sale-5",
       "store": "RW&CO",
-      "description": "Up to 50% Off regular-priced items Offer valid in-sto",
+      "description": "UP TO 50% OFF THE REGULAR PRICE",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
@@ -313,7 +313,27 @@
     {
       "id": "callitspring-sale-3",
       "store": "Call It Spring",
-      "description": "SUMMER SALE UP TO 50% OFF SHOP WOMEN'S SHOP MEN'S",
+      "description": "FLASH PROMO EXTRA 25% OFF SALE STYLES USE CODE EXTRA25 AT CHECKOUT For a limited time, Call It Spring is offering an extra 25",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.callitspring.com/collections/sale",
+      "scraped_date": "2026-07-16",
+      "status": "active"
+    },
+    {
+      "id": "callitspring-sale-4",
+      "store": "Call It Spring",
+      "description": "s offering an extra 25% off sale styles. Offer valid online and in store. Use c",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.callitspring.com/collections/sale",
+      "scraped_date": "2026-07-16",
+      "status": "active"
+    },
+    {
+      "id": "callitspring-sale-5",
+      "store": "Call It Spring",
+      "description": "FLASH PROMO EXTRA 25% OFF SALE STYLES USE CODE EXTRA25 AT CHECKOU",
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
@@ -332,7 +352,7 @@
     }
   ],
   "last_updated": "2026-07-16",
-  "total_sales": 33,
+  "total_sales": 35,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
