@@ -51746,9 +51746,57 @@
       "last_entered": null,
       "source_url": "https://www.contestscoop.com/wholelattelove-com-giveaway/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-staples-canada-contest-win-a-fujifilm-instax-mini-",
+      "name": "Staples Canada Contest -Win a FUJIFILM Instax Mini 13 in Purple!",
+      "url": "https://www.canadianfreestuff.com/staples-canada-contest/",
+      "prize": "Staples Canada Contest -Win a FUJIFILM Instax Mini 13 in Purple!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-17",
+      "link_valid": true,
+      "link_checked": "2026-07-17",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/staples-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-amazon-contest-canada-win-1-of-3-100-amazon-gift-c",
+      "name": "Amazon Contest Canada -Win 1 of 3 $100 Amazon Gift Cards!",
+      "url": "https://www.canadianfreestuff.com/amazon-canada-contest/",
+      "prize": "Amazon Contest Canada -Win 1 of 3 $100 Amazon Gift Cards!",
+      "prize_value": 100,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-17",
+      "link_valid": true,
+      "link_checked": "2026-07-17",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/amazon-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-07-17",
-  "total_active": 1446,
-  "total_prize_value": 3308385
+  "total_active": 1448,
+  "total_prize_value": 3308485
 }
