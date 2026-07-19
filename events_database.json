@@ -481,21 +481,6 @@
       "status": "active"
     },
     {
-      "id": "orilli-20260718-the-human-form-adult-life-drawing-classe",
-      "name": "The Human Form: Adult Life Drawing Classes",
-      "date": "2026-07-18",
-      "end_date": "2026-07-18",
-      "time": "",
-      "venue": "Orillia Museum of Art & History (OMAH), 30 Peter St S, Orillia ON",
-      "category": "arts",
-      "price": "See event",
-      "url": "https://www.orilliamuseum.org/event/the-human-form-adult-life-drawing-classes/2026-07-18/",
-      "description": "Healing Circle with Paul Shilling Dazaungee \u2013 Skybuffalo\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\tThe Human Form\\n6 \u2013 Week Session. \\nSaturday\\, March 28 \u2013",
-      "source": "orilliamuseum.org",
-      "scraped_date": "2026-07-01",
-      "status": "active"
-    },
-    {
       "id": "orilli-20260721-art-101",
       "name": "Art 101",
       "date": "2026-07-21",
@@ -537,21 +522,6 @@
       "url": "https://www.orilliamuseum.org/event/art-101-2/2026-07-28/",
       "description": "Healing Circle with Paul Shilling Dazaungee \u2013 Skybuffalo\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t\t\t\\n\t\t\t",
       "source": "orilliamuseum.org",
-      "scraped_date": "2026-07-01",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260718-live-music-events-upbeat-groove",
-      "name": "Live Music Events: Upbeat Groove",
-      "date": "2026-07-18",
-      "end_date": "2026-07-18",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-upbeat-groove/",
-      "description": "Sat July 18\\n5-8\\nUpbeat Groove",
-      "source": "quaylesbrewery.com",
       "scraped_date": "2026-07-01",
       "status": "active"
     },
@@ -901,66 +871,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-07-17",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-07-17",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-07-17",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-07-17",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-07-17",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-07-17",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-07-17",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-07-17",
-      "status": "active"
-    },
-    {
       "id": "curated-20260425-orillia-opera-house-season-schedule",
       "name": "Orillia Opera House \u2014 Season Schedule",
       "date": "2026-07-18",
@@ -1111,6 +1021,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-07-18",
-  "total_events": 74
+  "last_updated": "2026-07-19",
+  "total_events": 68
 }
