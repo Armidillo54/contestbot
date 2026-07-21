@@ -7,7 +7,7 @@
       "detail": "",
       "category": "Menswear",
       "url": "https://www.tiptop.ca/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -17,7 +17,7 @@
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -27,7 +27,7 @@
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -37,7 +37,7 @@
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -47,7 +47,7 @@
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -57,7 +57,7 @@
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -67,37 +67,37 @@
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
       "id": "rwandco-sale-0",
       "store": "RW&CO",
-      "description": "Up to 50% Off regular-priced items",
+      "description": "Sale: Up to 60% Off + Take an Additional 20% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
       "id": "rwandco-sale-1",
       "store": "RW&CO",
-      "description": "Sale: Up to 60% Off + Additional 20% Off Clearance",
+      "description": "Take an Additional 20% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
       "id": "rwandco-sale-2",
       "store": "RW&CO",
-      "description": "0% Off + Additional 20% Off Clearance",
+      "description": "Up to 40% Off Select Men's & Women's Styles",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -107,7 +107,7 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -117,17 +117,57 @@
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
       "id": "rwandco-sale-5",
       "store": "RW&CO",
-      "description": "UP TO 50% OFF THE REGULAR PRICE",
+      "description": "Up to 60% Off + Extra 20% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-0",
+      "store": "Carter's",
+      "description": "Includes x20% Off",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/clearance",
+      "scraped_date": "2026-07-21",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-1",
+      "store": "Carter's",
+      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or ori",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/clearance",
+      "scraped_date": "2026-07-21",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-2",
+      "store": "Carter's",
+      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or original tick",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/clearance",
+      "scraped_date": "2026-07-21",
+      "status": "active"
+    },
+    {
+      "id": "carters-sale-3",
+      "store": "Carter's",
+      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or",
+      "detail": "",
+      "category": "Kids' Clothing",
+      "url": "https://www.carters.com/c/clearance",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -137,7 +177,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -147,7 +187,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -157,7 +197,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -167,7 +207,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -177,7 +217,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -187,7 +227,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -197,7 +237,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -207,7 +247,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -217,7 +257,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -227,7 +267,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -237,7 +277,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -247,7 +287,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -257,7 +297,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -267,7 +307,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -277,7 +317,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -287,7 +327,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -297,7 +337,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -307,7 +347,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -317,7 +357,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -327,7 +367,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -337,7 +377,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     },
     {
@@ -347,12 +387,12 @@
       "detail": "",
       "category": "Menswear",
       "url": "https://www.mooresclothing.ca/c/sale/all-clearance",
-      "scraped_date": "2026-07-20",
+      "scraped_date": "2026-07-21",
       "status": "active"
     }
   ],
-  "last_updated": "2026-07-20",
-  "total_sales": 35,
+  "last_updated": "2026-07-21",
+  "total_sales": 39,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
