@@ -131,46 +131,6 @@
       "status": "active"
     },
     {
-      "id": "carters-sale-0",
-      "store": "Carter's",
-      "description": "Includes x20% Off",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-21",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-1",
-      "store": "Carter's",
-      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or ori",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-21",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-2",
-      "store": "Carter's",
-      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or original tick",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-21",
-      "status": "active"
-    },
-    {
-      "id": "carters-sale-3",
-      "store": "Carter's",
-      "description": "*UP TO 70% OFF CLEARANCE: Savings based on MSRP or",
-      "detail": "",
-      "category": "Kids' Clothing",
-      "url": "https://www.carters.com/c/clearance",
-      "scraped_date": "2026-07-21",
-      "status": "active"
-    },
-    {
       "id": "threeships-sale-0",
       "store": "Three Ships Beauty",
       "description": "Save 20% on clean, vegan skincare in the Three S",
@@ -392,7 +352,7 @@
     }
   ],
   "last_updated": "2026-07-21",
-  "total_sales": 39,
+  "total_sales": 35,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
