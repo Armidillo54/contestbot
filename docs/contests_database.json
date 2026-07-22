@@ -54218,9 +54218,106 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-swiss-chalet-contest-win-tickets-to-the-national-b",
+      "name": "Swiss Chalet Contest -Win Tickets to the National Bank Open / Trip to Disney World!",
+      "url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
+      "prize": "Swiss Chalet Contest -Win Tickets to the National Bank Open / Trip to Disney World!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-22",
+      "link_valid": true,
+      "link_checked": "2026-07-22",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/swiss-chalet-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-pepsi-win-summer-contest-win-a-trip-to-any-nfl-gam",
+      "name": "Pepsi Win Summer Contest  -Win a Trip to any NFL Game + Weekly NFL Shop Gift Cards!",
+      "url": "https://www.canadianfreestuff.com/pepsi-contest-canada/",
+      "prize": "Pepsi Win Summer Contest  -Win a Trip to any NFL Game + Weekly NFL Shop Gift Cards!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-22",
+      "link_valid": true,
+      "link_checked": "2026-07-22",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/pepsi-contest-canada/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-redtag-contest-win-a-trip-to-the-cebl-finals",
+      "name": "Redtag Contest \u2013 Win a Trip to the CEBL Finals!",
+      "url": "https://www.canadianfreestuff.com/redtag-canada-contest/",
+      "prize": "Redtag Contest \u2013 Win a Trip to the CEBL Finals!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-07-22",
+      "link_valid": true,
+      "link_checked": "2026-07-22",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/redtag-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "kool-heated-rivalry-is-the-first-soundtrack-in-over-a-d",
+      "name": "\u2018Heated Rivalry\u2019 Is The First Soundtrack In Over A Decade To Reach Top 10 Of Billboard Album ChartsOpens in new window",
+      "sponsor": "",
+      "url": "https://www.iheartradio.ca/en/music-news/heated-rivalry-is-the-first-soundtrack-in-over-a-decade-to-reach-top-10-of-billboard-album-charts/",
+      "prize": "Opens in new window \u2018Heated Rivalry\u2019 Is The First Soundtrack In Over A Decade To Reach Top 10 Of Billboard Album Charts Opens in new window",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "Local contest from Kool FM (Barrie)",
+      "restrictions": "",
+      "provinces": [
+        "Ontario"
+      ],
+      "end_date": "",
+      "source": "Kool FM (Barrie)",
+      "status": "active",
+      "added_date": "2026-07-22",
+      "link_valid": true,
+      "link_checked": "2026-07-22",
+      "last_entered": null,
+      "local_area": "Simcoe/Muskoka",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-07-22",
-  "total_active": 1495,
+  "total_active": 1499,
   "total_prize_value": 4426113
 }
