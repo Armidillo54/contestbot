@@ -181,21 +181,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260722-cornhole-quayle-s-brewery",
-      "name": "Cornhole @ Quayle\u2019s Brewery",
-      "date": "2026-07-22",
-      "end_date": "2026-07-22",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "sports",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/cornhole-quayles-brewery-2/2026-07-22/",
-      "description": "Get ready to toss some bags and soak up summer nights at Quayle\u2019s Brewery! Our Wednesday Night Cornhole League is the perfect mix of friendly competition and laid-back vibes. \\nWe\u2019re running two 6-week sessions:\\n\u2022 June 3 \u2013 July 15\\n\u2022 July 22 \u2013 August 26 \\nWhether you join one session or both\\, all ",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-05-26",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260729-cornhole-quayle-s-brewery",
       "name": "Cornhole @ Quayle\u2019s Brewery",
       "date": "2026-07-29",
@@ -781,66 +766,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-07-21",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-07-21",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-07-21",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-07-21",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-07-21",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-07-21",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-07-21",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-07-21",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260806-live-music-events-barry-mulcahy",
       "name": "Live Music Events: Barry Mulcahy",
       "date": "2026-08-06",
@@ -1154,8 +1079,23 @@
       "source": "curated",
       "scraped_date": "2026-07-22",
       "status": "active"
+    },
+    {
+      "id": "quayle-20260822-live-music-events-sydney-riley",
+      "name": "Live Music Events: Sydney Riley",
+      "date": "2026-08-22",
+      "end_date": "2026-08-22",
+      "time": "",
+      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
+      "category": "music",
+      "price": "See event",
+      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-sydney-riley-2/",
+      "description": "Sat August 22\\n5-8\\nSydney Riley",
+      "source": "quaylesbrewery.com",
+      "scraped_date": "2026-07-23",
+      "status": "active"
     }
   ],
-  "last_updated": "2026-07-22",
-  "total_events": 77
+  "last_updated": "2026-07-23",
+  "total_events": 73
 }
