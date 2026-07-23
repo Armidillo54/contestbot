@@ -193,30 +193,20 @@
     {
       "id": "thrive-sale-0",
       "store": "Thrive Causemetics",
-      "description": "Save Up To 30% OFF Select Products",
+      "description": "Promotional Terms *20% off is only valid on first purchases. Code must be entered at checkout. Not",
       "detail": "",
       "category": "Beauty",
-      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
+      "url": "https://thrivecausemetics.ca/collections/sets-price-drop",
       "scraped_date": "2026-07-23",
       "status": "active"
     },
     {
       "id": "thrive-sale-1",
       "store": "Thrive Causemetics",
-      "description": "Promotional Terms *20% off is only valid on first purchases. Code must be entered at checkout. Not",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
-      "scraped_date": "2026-07-23",
-      "status": "active"
-    },
-    {
-      "id": "thrive-sale-2",
-      "store": "Thrive Causemetics",
       "description": "Promotional Terms *20% off is only valid on first purchases. Code",
       "detail": "",
       "category": "Beauty",
-      "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
+      "url": "https://thrivecausemetics.ca/collections/sets-price-drop",
       "scraped_date": "2026-07-23",
       "status": "active"
     },
@@ -352,7 +342,7 @@
     }
   ],
   "last_updated": "2026-07-23",
-  "total_sales": 35,
+  "total_sales": 34,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
