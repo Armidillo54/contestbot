@@ -55432,9 +55432,84 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/07/25/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-visa-giftcard-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cscoop-miller-lite-ca-contest-win-miller-lite-blackstone-",
+      "name": "Miller Lite Ca Contest: Win Miller Lite Blackstone Grill\u2026",
+      "sponsor": "",
+      "url": "https://www.millerlite.ca/en-CA/blackstonegrill",
+      "prize": "Miller Lite Ca Contest: Win Miller Lite Blackstone Grill\u2026 Prize: 119 prizes including Blackstone grills, portable grills, grilling tools & apron sets, and Bluetooth speakers. Ends: Sep 6/26. Who Can E",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-07-26",
+      "link_valid": true,
+      "link_checked": "2026-07-26",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/miller-lite-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cscoop-simons-canada-contest-win-vip-toronto-concert-pack",
+      "name": "Simons Canada Contest: Win VIP Toronto concert package",
+      "sponsor": "",
+      "url": "https://www.simons.ca/en/loyalty-program/strong-the-simons-strong-contests--a46079",
+      "prize": "Simons Canada Contest: Win VIP Toronto concert package Eligibility: Age of majority, Canada, The Simons loyalty program members only. Contest Period: Jul 2/26 \u2013 Jul 30/26. Prize: 1 winner receives a V",
+      "prize_value": 3150,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-07-26",
+      "link_valid": true,
+      "link_checked": "2026-07-26",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/simons-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cscoop-rogers-canada-contest-win-toronto-blue-jays-merch",
+      "name": "Rogers Canada Contest: Win Toronto Blue Jays Merch &\u2026",
+      "sponsor": "",
+      "url": "https://www.rogersbluejaysbts.com/files/FR-Rogers_BTS_Ticket_Contest_Rules_v2.pdf",
+      "prize": "Rogers Canada Contest: Win Toronto Blue Jays Merch &\u2026 Prize: 500 Blue Jays 50th Season collectibles ($25\u2013$100), 10 autographed George Springer jerseys, 69 pairs of Blue Jays home game tickets, 4 Toron",
+      "prize_value": 25,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-07-26",
+      "link_valid": true,
+      "link_checked": "2026-07-26",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/rogers-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-07-26",
-  "total_active": 1530,
-  "total_prize_value": 4515458
+  "total_active": 1533,
+  "total_prize_value": 4518633
 }
