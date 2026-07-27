@@ -55732,9 +55732,59 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/07/26/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-sleep-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "ccan-wanted-social-media-wizard-meme-lord-digital-gobli",
+      "name": "WANTED: Social Media Wizard, Meme Lord, Digital Goblin, or Other Internet Creature",
+      "sponsor": "",
+      "url": "https://www.contestcanada.net/2026/07/27/wanted-social-media-wizard-meme-lord-digital-goblin-or-other-internet-creature/",
+      "prize": "July 27th, 2026 WANTED: Social Media Wizard, Meme Lord, Digital Goblin, or Other Internet Creature Friends, we\u2019re too busy digging up contests, chasing Apple support (iOS app coming \u2026soon?), and watch",
+      "prize_value": 200,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestcanada.net",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "2026-09-03",
+      "source": "contestcanada.net",
+      "status": "active",
+      "added_date": "2026-07-27",
+      "link_valid": true,
+      "link_checked": "2026-07-27",
+      "last_entered": null,
+      "source_url": "https://www.contestcanada.net/2026/07/27/wanted-social-media-wizard-meme-lord-digital-goblin-or-other-internet-creature/",
+      "url_resolved": false
+    },
+    {
+      "id": "cscoop-lg-canada-contest-win-lg-laptop-gaming-monitor",
+      "name": "LG Canada Contest: Win LG Laptop, Gaming Monitor &\u2026",
+      "sponsor": "",
+      "url": "https://www.lg.com/ca_en/shop/all-promotions/back-to-school-contest-terms-and-conditions-20260619/",
+      "prize": "LG Canada Contest: Win LG Laptop, Gaming Monitor &\u2026 Prize: LG gram Pro Dual AI Laptop; LG UltraGear WQHD Gaming Monitor; LG UltraGear QHD Gaming Monitor Ends: Sep 3/26 Who: Canada, age of majority, co",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-07-27",
+      "link_valid": true,
+      "link_checked": "2026-07-27",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/lg-canada-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-07-27",
-  "total_active": 1524,
-  "total_prize_value": 4546828
+  "total_active": 1526,
+  "total_prize_value": 4547028
 }
