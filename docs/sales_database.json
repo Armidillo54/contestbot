@@ -281,6 +281,66 @@
       "status": "active"
     },
     {
+      "id": "callitspring-sale-0",
+      "store": "Call It Spring",
+      "description": "Up to 50% off select styles",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.callitspring.com/collections/sale",
+      "scraped_date": "2026-07-29",
+      "status": "active"
+    },
+    {
+      "id": "callitspring-sale-1",
+      "store": "Call It Spring",
+      "description": "UP TO 50% OFF SALE STYLES",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.callitspring.com/collections/sale",
+      "scraped_date": "2026-07-29",
+      "status": "active"
+    },
+    {
+      "id": "callitspring-sale-2",
+      "store": "Call It Spring",
+      "description": "Summer Sale Up to 50% off select styles",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.callitspring.com/collections/sale",
+      "scraped_date": "2026-07-29",
+      "status": "active"
+    },
+    {
+      "id": "callitspring-sale-3",
+      "store": "Call It Spring",
+      "description": "UP TO 50% OFF SALE STYLES For a limited time only, Ca",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.callitspring.com/collections/sale",
+      "scraped_date": "2026-07-29",
+      "status": "active"
+    },
+    {
+      "id": "callitspring-sale-4",
+      "store": "Call It Spring",
+      "description": "Spring is offering up to 50% off sale styles. Offer valid as of June 22n",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.callitspring.com/collections/sale",
+      "scraped_date": "2026-07-29",
+      "status": "active"
+    },
+    {
+      "id": "callitspring-sale-5",
+      "store": "Call It Spring",
+      "description": "UP TO 50% OFF SALE STYLES For a limited time only, Call It Spring is offering up to 50% o",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.callitspring.com/collections/sale",
+      "scraped_date": "2026-07-29",
+      "status": "active"
+    },
+    {
       "id": "moores-sale-general",
       "store": "Moores Clothing",
       "description": "Sale on now at Moores Clothing",
@@ -292,7 +352,7 @@
     }
   ],
   "last_updated": "2026-07-29",
-  "total_sales": 29,
+  "total_sales": 35,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
