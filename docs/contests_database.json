@@ -58678,9 +58678,129 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/08/01/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8-win-rain-boots/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-chevrolet-contest-win-60-000-towards-a-new-chevrol",
+      "name": "Chevrolet Contest: Win $60,000 towards a new Chevrolet vehicle OR a 2027 Bolt RS",
+      "url": "https://www.canadianfreestuff.com/chevrolet-canada-contest/",
+      "prize": "Chevrolet Contest: Win $60,000 towards a new Chevrolet vehicle OR a 2027 Bolt RS",
+      "prize_value": 60000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-01",
+      "link_valid": true,
+      "link_checked": "2026-08-01",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/chevrolet-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-air-miles-canada-contest-win-a-breville-dream-swee",
+      "name": "Air Miles Canada Contest: Win a Breville Dream Sweeepstakes, valued over $10,000!",
+      "url": "https://www.canadianfreestuff.com/air-miles-canada-contest/",
+      "prize": "Air Miles Canada Contest: Win a Breville Dream Sweeepstakes, valued over $10,000!",
+      "prize_value": 10000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-01",
+      "link_valid": true,
+      "link_checked": "2026-08-01",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/air-miles-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-catit-canada-contest-win-a-pixi-smart-feeder-and-4",
+      "name": "Catit Canada Contest \u2013 Win a Pixi Smart feeder and 4 bags of dry food!",
+      "url": "https://www.catit.com/my-cat/catit-magazine/my-cat-exclusive-august-2026/#subscribe",
+      "prize": "Catit Canada Contest \u2013 Win a Pixi Smart feeder and 4 bags of dry food!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-01",
+      "link_valid": true,
+      "link_checked": "2026-08-01",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/catit-canada-free-sample/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-fishing-hole-contest-win-a-1000-shimano-prize-bund",
+      "name": "Fishing Hole Contest: Win a $1000 Shimano Prize Bundle!",
+      "url": "https://thefishinhole.com/monthly-fishing-contest/",
+      "prize": "Fishing Hole Contest: Win a $1000 Shimano Prize Bundle!",
+      "prize_value": 1000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-01",
+      "link_valid": true,
+      "link_checked": "2026-08-01",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/the-fishing-hole-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-ryobi-contest-win-a-ryobi-18v-one-hp-brushless-com",
+      "name": "Ryobi Contest: Win a RYOBI 18V ONE+ HP Brushless Combo Kit in August",
+      "url": "https://housecallsdiy.com/sweepstakes",
+      "prize": "Ryobi Contest: Win a RYOBI 18V ONE+ HP Brushless Combo Kit in August",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-01",
+      "link_valid": true,
+      "link_checked": "2026-08-01",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/ryobi-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-08-01",
-  "total_active": 1571,
-  "total_prize_value": 4467551
+  "total_active": 1576,
+  "total_prize_value": 4538551
 }
