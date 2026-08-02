@@ -391,36 +391,6 @@
       "status": "active"
     },
     {
-      "id": "quayle-20260801-live-music-events-ron-whitman",
-      "name": "Live Music Events: Ron Whitman",
-      "date": "2026-08-01",
-      "end_date": "2026-08-01",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-ron-whitman-2/",
-      "description": "Sat August 1\\n1-4\\nRon Whitman",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-07-01",
-      "status": "active"
-    },
-    {
-      "id": "quayle-20260801-live-music-events-wesley-covey",
-      "name": "Live Music Events: Wesley Covey",
-      "date": "2026-08-01",
-      "end_date": "2026-08-01",
-      "time": "",
-      "venue": "Quayle\u2019s Brewery\\, 4567 12 Line N\\, Coldwater\\, Ontario\\, L0K 1E0\\, Canada",
-      "category": "music",
-      "price": "See event",
-      "url": "https://quaylesbrewery.ca/twzfxferj1zbaknspai3/live-music-events-wesley-covey/",
-      "description": "Sat August 1\\n5-8\\nWesley Covey",
-      "source": "quaylesbrewery.com",
-      "scraped_date": "2026-07-02",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260802-live-music-events-michael-martyn",
       "name": "Live Music Events: Michael Martyn",
       "date": "2026-08-02",
@@ -811,66 +781,6 @@
       "status": "active"
     },
     {
-      "id": "curated-20260502-orillia-farmers-market-saturdays",
-      "name": "Orillia Farmers' Market (Saturdays)",
-      "date": "2026-07-31",
-      "end_date": "2026-10-31",
-      "time": "",
-      "venue": "Orillia City Centre Parking Lot, Orillia ON",
-      "category": "market",
-      "price": "Free",
-      "url": "https://www.orillia.ca/en/things-to-do/orillia-farmers-market.aspx",
-      "description": "Orillia Farmers' Market (Saturdays)",
-      "source": "curated",
-      "scraped_date": "2026-07-31",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260510-orillia-kings-oba-baseball-season",
-      "name": "Orillia Kings OBA Baseball Season",
-      "date": "2026-07-31",
-      "end_date": "2026-08-31",
-      "time": "",
-      "venue": "Tudhope Park, Orillia ON",
-      "category": "sports",
-      "price": "Free",
-      "url": "https://orilliakings.ca/",
-      "description": "Orillia Kings OBA Baseball Season",
-      "source": "curated",
-      "scraped_date": "2026-07-31",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260520-port-of-orillia-summer-activities",
-      "name": "Port of Orillia \u2014 Summer Activities",
-      "date": "2026-07-31",
-      "end_date": "2026-10-15",
-      "time": "",
-      "venue": "Port of Orillia, 10 Front St S, Orillia ON",
-      "category": "outdoor",
-      "price": "See event",
-      "url": "https://www.orillia.ca/en/recreation/port-of-orillia.aspx",
-      "description": "Port of Orillia \u2014 Summer Activities",
-      "source": "curated",
-      "scraped_date": "2026-07-31",
-      "status": "active"
-    },
-    {
-      "id": "curated-20260601-burl-s-creek-event-grounds-summer-concer",
-      "name": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "date": "2026-07-31",
-      "end_date": "2026-09-30",
-      "time": "",
-      "venue": "Burl's Creek Event Grounds, Oro-Medonte ON",
-      "category": "music",
-      "price": "Ticketed",
-      "url": "https://burlscreek.com/events/",
-      "description": "Burl's Creek Event Grounds \u2014 Summer Concerts",
-      "source": "curated",
-      "scraped_date": "2026-07-31",
-      "status": "active"
-    },
-    {
       "id": "quayle-20260917-live-events-trivia-free-on-patio",
       "name": "Live Events: Trivia - Free on Patio",
       "date": "2026-09-17",
@@ -1051,6 +961,6 @@
       "status": "active"
     }
   ],
-  "last_updated": "2026-08-01",
-  "total_events": 70
+  "last_updated": "2026-08-02",
+  "total_events": 64
 }
