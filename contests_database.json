@@ -59048,9 +59048,129 @@
       "last_entered": null,
       "source_url": "https://www.contestscoop.com/circle-k-monster-energy-contest/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-tim-hortons-contests-scan-to-win-free-gas-for-a-ye",
+      "name": "Tim Hortons Contests \u2013 Scan to Win FREE Gas for a Year!",
+      "url": "https://www.canadianfreestuff.com/tim-hortons-canada-contest/",
+      "prize": "Tim Hortons Contests \u2013 Scan to Win FREE Gas for a Year!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-02",
+      "link_valid": true,
+      "link_checked": "2026-08-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/tim-hortons-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-conair-canada-contest-win-the-ultimate-conair-fest",
+      "name": "Conair Canada Contest: Win the Ultimate Conair Festival Glam Kit",
+      "url": "https://www.canadianfreestuff.com/conair-canada-contest/",
+      "prize": "Conair Canada Contest: Win the Ultimate Conair Festival Glam Kit",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-02",
+      "link_valid": true,
+      "link_checked": "2026-08-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/conair-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-leclerc-contest-win-a-12-000-quebec-city-experienc",
+      "name": "Leclerc Contest \u2013 Win a $12,000 Quebec City Experience for 4!",
+      "url": "https://www.canadianfreestuff.com/leclerc-canada-contest/",
+      "prize": "Leclerc Contest \u2013 Win a $12,000 Quebec City Experience for 4!",
+      "prize_value": 12000,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-02",
+      "link_valid": true,
+      "link_checked": "2026-08-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/leclerc-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-panasonic-canada-contest-win-a-panasonic-blender-a",
+      "name": "Panasonic Canada Contest: WIN a Panasonic Blender and Soup Maker!",
+      "url": "https://www.canadianfreestuff.com/panasonic-canada-contest/",
+      "prize": "Panasonic Canada Contest: WIN a Panasonic Blender and Soup Maker!",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-02",
+      "link_valid": true,
+      "link_checked": "2026-08-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/panasonic-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-air-canada-contest-win-a-500-air-canada-e-gift-car",
+      "name": "Air Canada Contest: WIN a $500 Air Canada E-Gift Card!",
+      "url": "https://www.canadianfreestuff.com/air-canada-contest/",
+      "prize": "Air Canada Contest: WIN a $500 Air Canada E-Gift Card!",
+      "prize_value": 500,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-02",
+      "link_valid": true,
+      "link_checked": "2026-08-02",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/air-canada-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-08-02",
-  "total_active": 1580,
-  "total_prize_value": 4534169
+  "total_active": 1585,
+  "total_prize_value": 4546669
 }
