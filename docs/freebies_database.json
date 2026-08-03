@@ -997,13 +997,13 @@
       "category": "beauty",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-07-04",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-31",
+      "link_checked": "2026-08-03",
       "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
       "url_resolved": false
     },
@@ -1021,7 +1021,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-31",
+      "link_checked": "2026-08-03",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1057,7 +1057,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-31",
+      "link_checked": "2026-08-03",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1075,7 +1075,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-31",
+      "link_checked": "2026-08-03",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1111,7 +1111,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-31",
+      "link_checked": "2026-08-03",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1129,7 +1129,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-31",
+      "link_checked": "2026-08-03",
       "source_url": "https://www.canadianfreestuff.com/free-samples-by-mail-canada/",
       "url_resolved": false
     },
@@ -1165,7 +1165,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-31",
+      "link_checked": "2026-08-03",
       "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
       "url_resolved": false
     },
@@ -1183,11 +1183,11 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-07-31",
+      "link_checked": "2026-08-03",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-08-02",
+  "last_updated": "2026-08-03",
   "total_freebies": 11
 }
