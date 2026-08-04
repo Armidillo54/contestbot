@@ -23,7 +23,7 @@
     {
       "id": "reitmans-sale-1",
       "store": "Reitmans",
-      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: UP TO",
+      "description": "UP TO 70% OFF SALE",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -33,7 +33,7 @@
     {
       "id": "reitmans-sale-2",
       "store": "Reitmans",
-      "description": "HING (ALMOST) SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST)",
+      "description": "Sale up to 70%",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -43,7 +43,7 @@
     {
       "id": "reitmans-sale-3",
       "store": "Reitmans",
-      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: UP TO 70",
+      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: UP TO",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -53,7 +53,7 @@
     {
       "id": "reitmans-sale-4",
       "store": "Reitmans",
-      "description": "ALMOST) SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST)",
+      "description": "HING (ALMOST) SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST)",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -63,7 +63,7 @@
     {
       "id": "reitmans-sale-5",
       "store": "Reitmans",
-      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: U",
+      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: UP TO 70",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -226,7 +226,7 @@
       "description": "Save up to 80% at the SoftMoc Warehouse Sale!",
       "detail": "",
       "category": "Footwear",
-      "url": "https://www.softmoc.com/ca/sale/womens/shoes",
+      "url": "https://www.softmoc.com/ca/clearance",
       "scraped_date": "2026-08-04",
       "status": "active"
     },
@@ -236,7 +236,7 @@
       "description": "ow Warehouse Sale - Up to 60% Off | Shop Now Canada's largest Birkenstoc",
       "detail": "",
       "category": "Footwear",
-      "url": "https://www.softmoc.com/ca/sale/womens/shoes",
+      "url": "https://www.softmoc.com/ca/clearance",
       "scraped_date": "2026-08-04",
       "status": "active"
     },
@@ -246,7 +246,7 @@
       "description": "ehouse Sale - Up to 60% Off | Shop Now Canada's largest Birkenstock",
       "detail": "",
       "category": "Footwear",
-      "url": "https://www.softmoc.com/ca/sale/womens/shoes",
+      "url": "https://www.softmoc.com/ca/clearance",
       "scraped_date": "2026-08-04",
       "status": "active"
     },
@@ -256,7 +256,7 @@
       "description": "ow Warehouse Sale - Up to 60% Off | Shop Now Canada's largest Birken",
       "detail": "",
       "category": "Footwear",
-      "url": "https://www.softmoc.com/ca/sale/womens/shoes",
+      "url": "https://www.softmoc.com/ca/clearance",
       "scraped_date": "2026-08-04",
       "status": "active"
     },
@@ -266,7 +266,7 @@
       "description": "ehouse Sale - Up to 60% Off | Shop Now Canada's largest Birkenstoc",
       "detail": "",
       "category": "Footwear",
-      "url": "https://www.softmoc.com/ca/sale/womens/shoes",
+      "url": "https://www.softmoc.com/ca/clearance",
       "scraped_date": "2026-08-04",
       "status": "active"
     },
@@ -276,7 +276,7 @@
       "description": "Warehouse Sale - Up to 60% Off | Shop Now",
       "detail": "",
       "category": "Footwear",
-      "url": "https://www.softmoc.com/ca/sale/womens/shoes",
+      "url": "https://www.softmoc.com/ca/clearance",
       "scraped_date": "2026-08-04",
       "status": "active"
     },
