@@ -60064,9 +60064,84 @@
       "last_entered": null,
       "local_area": "Simcoe/Muskoka",
       "url_resolved": true
+    },
+    {
+      "id": "cscoop-sobeys-scene-contest-win-tickets-to-the-national",
+      "name": "Sobeys Scene + Contest: Win tickets to the National\u2026",
+      "sponsor": "",
+      "url": "https://sobeys.formstack.com/forms/perfect_match_sobeys",
+      "prize": "Sobeys Scene + Contest: Win tickets to the National\u2026 Prize: 4 National Bank Open Finals tickets (Aug 13/26) + $500 Sobeys Gift Card (ARV $1,900) Ends: Aug 6/26 Who Can Enter: ON, age of majority Entry",
+      "prize_value": 500,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-08-04",
+      "link_valid": true,
+      "link_checked": "2026-08-04",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/sobeys-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cscoop-blue-jays-heinz-contest-win-tickets-to-blue-jays",
+      "name": "Blue Jays Heinz Contest: Win Tickets to Blue Jays\u2026",
+      "sponsor": "",
+      "url": "https://www.bluejays.com/HeinzGiveaway",
+      "prize": "Blue Jays Heinz Contest: Win Tickets to Blue Jays\u2026 Prize: 6 tickets for winner + 5 guests to 3 Toronto Blue Jays games (Sept 25-27/26), Heinz Club 328 access, 6 x $500 Blue Jays gift cards, 6 x $500 p",
+      "prize_value": 500,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-08-04",
+      "link_valid": true,
+      "link_checked": "2026-08-04",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/blue-jays-heinz-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cscoop-tom-lee-music-ca-contest-win-a-yamaha-acoustic",
+      "name": "Tom Lee Music CA Contest: Win a Yamaha Acoustic\u2026",
+      "sponsor": "",
+      "url": "https://www.tomleemusic.ca/event/enter-to-win/",
+      "prize": "Tom Lee Music CA Contest: Win a Yamaha Acoustic\u2026 Prize: Yamaha F310P Acoustic Guitar Package (1 winner) Ends: Aug 31/26 Who: Canada How: Submit form, complete bonus actions Entry Limit: 1 entry/day + ",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-08-04",
+      "link_valid": true,
+      "link_checked": "2026-08-04",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/tom-lee-music-ca-contest/",
+      "url_resolved": true
     }
   ],
   "last_updated": "2026-08-04",
-  "total_active": 1605,
-  "total_prize_value": 4613856
+  "total_active": 1608,
+  "total_prize_value": 4614856
 }
