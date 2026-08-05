@@ -50,5 +50,5 @@ jobs:
           git add -A
           git diff --staged --quiet && echo "No changes to commit." && exit 0
           git commit -m "Auto-update: $(date -u +%Y-%m-%d) contest scan"
-          git pull --rebase origin main
-          git push
+          git pull --no-rebase -X ours origin main
+          git push origin main
