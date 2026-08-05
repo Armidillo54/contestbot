@@ -23,7 +23,7 @@
     {
       "id": "reitmans-sale-1",
       "store": "Reitmans",
-      "description": "UP TO 70% OFF SALE",
+      "description": "Up to 70% off sale",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -33,7 +33,7 @@
     {
       "id": "reitmans-sale-2",
       "store": "Reitmans",
-      "description": "Sale up to 70%",
+      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: UP TO",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -43,7 +43,7 @@
     {
       "id": "reitmans-sale-3",
       "store": "Reitmans",
-      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: UP TO",
+      "description": "HING (ALMOST) SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST)",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -53,7 +53,7 @@
     {
       "id": "reitmans-sale-4",
       "store": "Reitmans",
-      "description": "HING (ALMOST) SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST)",
+      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: UP TO 70",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -63,7 +63,7 @@
     {
       "id": "reitmans-sale-5",
       "store": "Reitmans",
-      "description": "SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST) SALE: UP TO 70",
+      "description": "ALMOST) SALE: UP TO 70% OFF 20% OFF EVERYTHING (ALMOST)",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
@@ -281,6 +281,66 @@
       "status": "active"
     },
     {
+      "id": "knix-sale-0",
+      "store": "Knix",
+      "description": "Up to 60% Off Last Call",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-08-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-1",
+      "store": "Knix",
+      "description": "Founder's Pick: 15% Off Ultra Soft Modal",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-08-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-2",
+      "store": "Knix",
+      "description": "s added every week, up to 60% off, quantities limited",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-08-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-3",
+      "store": "Knix",
+      "description": "d every week, up to 60% off, quantities limited",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-08-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-4",
+      "store": "Knix",
+      "description": "oxer: BACK IN STOCK Up to 60% Off Last Call Founder's Pick: 15% Off Ultra",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-08-05",
+      "status": "active"
+    },
+    {
+      "id": "knix-sale-5",
+      "store": "Knix",
+      "description": "BACK IN STOCK Up to 60% Off Last Call Founder's Pick: 15% Off Ultra Soft Modal Contact Conta",
+      "detail": "",
+      "category": "Women's Clothing",
+      "url": "https://knix.ca/pages/last-call",
+      "scraped_date": "2026-08-05",
+      "status": "active"
+    },
+    {
       "id": "callitspring-sale-0",
       "store": "Call It Spring",
       "description": "Up to 50% off select styles",
@@ -352,7 +412,7 @@
     }
   ],
   "last_updated": "2026-08-05",
-  "total_sales": 35,
+  "total_sales": 41,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
