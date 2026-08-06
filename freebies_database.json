@@ -1015,13 +1015,13 @@
       "category": "beauty",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-07-07",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-03",
+      "link_checked": "2026-08-06",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1057,7 +1057,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-03",
+      "link_checked": "2026-08-06",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1075,7 +1075,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-03",
+      "link_checked": "2026-08-06",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1111,7 +1111,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-03",
+      "link_checked": "2026-08-06",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1129,7 +1129,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-03",
+      "link_checked": "2026-08-06",
       "source_url": "https://www.canadianfreestuff.com/free-samples-by-mail-canada/",
       "url_resolved": false
     },
@@ -1165,7 +1165,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-03",
+      "link_checked": "2026-08-06",
       "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
       "url_resolved": false
     },
@@ -1183,7 +1183,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-03",
+      "link_checked": "2026-08-06",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1206,6 +1206,6 @@
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-06",
   "total_freebies": 11
 }
