@@ -61677,9 +61677,82 @@
       "last_entered": null,
       "source_url": "https://curiousaboutcanadiancontests.com/2026/08/06/%f0%9f%87%a8%f0%9f%87%a6%f0%9f%87%ba%f0%9f%87%b8%f0%9f%8c%8e-dior-giveaway/ ",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-sealy-canada-win-a-bedroom-refresh-prize-bundle-se",
+      "name": "Sealy Canada: Win a Bedroom Refresh Prize Bundle \u2013 Sealy Posturepedic Mattress & Pillow",
+      "url": "https://www.canadianfreestuff.com/sealy-canada-contest/",
+      "prize": "Sealy Canada: Win a Bedroom Refresh Prize Bundle \u2013 Sealy Posturepedic Mattress & Pillow",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-07",
+      "link_valid": true,
+      "link_checked": "2026-08-07",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/sealy-canada-contest/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-hamilton-beach-contest-win-a-hamilton-beach-2-in-1",
+      "name": "Hamilton Beach Contest: Win a Hamilton Beach 2-in-1 Toaster Oven /Indoor Electric Grill",
+      "url": "https://steamykitchen.com/255451-hamilton-beach-2-in-1-toaster-oven-giveaway.html",
+      "prize": "Hamilton Beach Contest: Win a Hamilton Beach 2-in-1 Toaster Oven /Indoor Electric Grill",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From CanadianFreeStuff.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "canadianfreestuff.com",
+      "status": "active",
+      "added_date": "2026-08-07",
+      "link_valid": true,
+      "link_checked": "2026-08-07",
+      "last_entered": null,
+      "source_url": "https://www.canadianfreestuff.com/hamilton-beach-canada-contest/",
+      "url_resolved": true
+    },
+    {
+      "id": "cscoop-linen-chest-facebook-instagram-contest-win-sodastr",
+      "name": "Linen Chest Facebook, Instagram Contest: Win Sodastream Giveaway",
+      "sponsor": "",
+      "url": "https://www.contestscoop.com/linen-chest-social-media-giveaway-contest/",
+      "prize": "Linen Chest Facebook, Instagram Contest: Win Sodastream Giveaway Contest title: Linen Chest SodaStream Giveaway Prize: Brand-new SodaStream Ends: Aug 12/26 Who: Canada How: Follow, like, tag friends, ",
+      "prize_value": 0,
+      "entry_method": "online_form",
+      "entry_frequency": "single",
+      "npn": true,
+      "npn_note": "From contestscoop.com",
+      "restrictions": "",
+      "provinces": [
+        "All Canada"
+      ],
+      "end_date": "",
+      "source": "contestscoop.com",
+      "status": "active",
+      "added_date": "2026-08-07",
+      "link_valid": true,
+      "link_checked": "2026-08-07",
+      "last_entered": null,
+      "source_url": "https://www.contestscoop.com/linen-chest-social-media-giveaway-contest/",
+      "url_resolved": false
     }
   ],
   "last_updated": "2026-08-07",
-  "total_active": 1647,
+  "total_active": 1650,
   "total_prize_value": 4736057
 }
