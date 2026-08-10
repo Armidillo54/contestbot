@@ -2,14 +2,7 @@ name: ContestBot Daily Scraper
 
 on:
   schedule:
-    # Fire multiple times a day to survive GitHub Actions scheduled-cron
-    # flakiness. Off-the-hour (:23) to dodge peak-minute contention.
-    # If nothing has changed since the last run, the commit step is a no-op,
-    # so redundant runs are safe.
-    - cron: '23 9 * * *'   # 5:23 AM EDT (DST, Mar-Nov)
-    - cron: '23 10 * * *'  # 5:23 AM EST (standard, Nov-Mar)
-    - cron: '23 13 * * *'  # 9:23 AM EDT / 8:23 AM EST — morning safety net
-    - cron: '23 17 * * *'  # 1:23 PM EDT / 12:23 PM EST — midday safety net
+    - cron: '17 9 * * 0'   # Sunday 5:17 AM EDT — weekly run
   workflow_dispatch:
   push:
     paths:
@@ -36,6 +29,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
