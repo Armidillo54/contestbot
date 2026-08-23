@@ -7,7 +7,17 @@
       "detail": "",
       "category": "Menswear",
       "url": "https://www.tiptop.ca/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
+      "status": "active"
+    },
+    {
+      "id": "tiptop-sale-1",
+      "store": "Tip Top Tailor",
+      "description": "30% Off",
+      "detail": "",
+      "category": "Menswear",
+      "url": "https://www.tiptop.ca/collections/sale",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
@@ -17,177 +27,137 @@
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "reitmans-sale-1",
       "store": "Reitmans",
-      "description": "40% OFF SELECTED STYLES RCash Redemption Period is Now Open RCash Redemption Period Thank you for shopping with Reitmans! If you qualified during the earning pe",
+      "description": "40% OFF HYBA 25% OFF DRESSES BUY ONE, GET ONE AT 50% OF",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "reitmans-sale-2",
       "store": "Reitmans",
-      "description": "40% OFF SELECTED STYLES RCash Redemption Period",
+      "description": "BUY ONE, GET ONE AT 50% OFF 40% OFF HYBA 25% OFF DRESSES BUY ONE, GET",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "reitmans-sale-3",
       "store": "Reitmans",
-      "description": "40% OFF SELECTED STYLES",
+      "description": "0% OFF 40% OFF HYBA 25% OFF DRESSES BUY ONE, GET ONE AT 50% OFF",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "reitmans-sale-4",
       "store": "Reitmans",
-      "description": "40% off applied",
+      "description": "40% OFF HYBA 25% OFF DRESSES BUY ONE, GET ONE A",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "reitmans-sale-5",
       "store": "Reitmans",
-      "description": "20% off applied",
+      "description": "40% OFF HYBA 25% OFF DRESSES BUY ONE, GET ONE AT 50% OFF 40%",
       "detail": "",
       "category": "Women's Clothing",
       "url": "https://www.reitmans.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "rwandco-sale-0",
       "store": "RW&CO",
-      "description": "30% Off Men's & Women''s Tops",
+      "description": "30% Off regular-priced merchandise",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "rwandco-sale-1",
       "store": "RW&CO",
-      "description": "30% Off Dresses",
+      "description": "Extra 30% Off Select Sale Styles",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "rwandco-sale-2",
       "store": "RW&CO",
-      "description": "Extra 30% Off Select Sale Styles",
+      "description": "Up to 60% Off",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "rwandco-sale-3",
       "store": "RW&CO",
-      "description": "Up to 60% Off",
+      "description": "Sale: Up to 60% Off the Regular Price",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "rwandco-sale-4",
       "store": "RW&CO",
-      "description": "Sale: Up to 60% Off the Regular Price",
+      "description": "30% Off regular-priced merchandise Offer valid in-store",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "rwandco-sale-5",
       "store": "RW&CO",
-      "description": "30% Off Men's & Women''s Tops Offer valid in-store and online at rw-co.com from Augu",
+      "description": "30% Off regular-priced merchandise Offer valid",
       "detail": "",
       "category": "Clothing",
       "url": "https://www.rw-co.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "threeships-sale-0",
       "store": "Three Ships Beauty",
-      "description": "Save 20% on clean, vegan skincare in the Three S",
+      "description": "or toner) to unlock 20% off",
       "detail": "",
       "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-08-16",
+      "url": "https://www.threeshipsbeauty.com/products/first-light-vitamin-c-caffeine-eye-cream",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
       "id": "threeships-sale-1",
       "store": "Three Ships Beauty",
-      "description": "or toner) to unlock 20% off",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-08-16",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-2",
-      "store": "Three Ships Beauty",
-      "description": "20% Off Sitewide",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-08-16",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-3",
-      "store": "Three Ships Beauty",
-      "description": "20% Off",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-08-16",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-4",
-      "store": "Three Ships Beauty",
-      "description": "20% Off \u2014 Just What You Need",
-      "detail": "",
-      "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-08-16",
-      "status": "active"
-    },
-    {
-      "id": "threeships-sale-5",
-      "store": "Three Ships Beauty",
       "description": "xclusive perks, and 15% off your first order.",
       "detail": "",
       "category": "Beauty",
-      "url": "https://www.threeshipsbeauty.com/collections/shop-the-sale",
-      "scraped_date": "2026-08-16",
+      "url": "https://www.threeshipsbeauty.com/products/first-light-vitamin-c-caffeine-eye-cream",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
@@ -197,7 +167,7 @@
       "detail": "",
       "category": "Beauty",
       "url": "https://thrivecausemetics.ca/collections/save-on-select-products",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
@@ -207,7 +177,57 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.softmoc.com/ca/clearance",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-1",
+      "store": "SoftMoc",
+      "description": "Extra 10% Off Sandals on Sale | Shop Now The Fall Drop Is Here | Sh",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-08-23",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-2",
+      "store": "SoftMoc",
+      "description": "| Shop Now Extra 10% Off Sandals on Sale | Shop Now \u2715",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-08-23",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-3",
+      "store": "SoftMoc",
+      "description": "Extra 10% Off Sandals on Sale | Shop Now The Fall D",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-08-23",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-4",
+      "store": "SoftMoc",
+      "description": "| Shop Now Extra 10% Off Sandals on Sale | Shop Now",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-08-23",
+      "status": "active"
+    },
+    {
+      "id": "softmoc-sale-5",
+      "store": "SoftMoc",
+      "description": "Extra 10% Off Sandals on Sale | Shop Now",
+      "detail": "",
+      "category": "Footwear",
+      "url": "https://www.softmoc.com/ca/clearance",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
@@ -217,7 +237,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
@@ -227,7 +247,7 @@
       "detail": "",
       "category": "Footwear",
       "url": "https://www.callitspring.com/collections/sale",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     },
     {
@@ -237,12 +257,12 @@
       "detail": "",
       "category": "Menswear",
       "url": "https://www.mooresclothing.ca/c/sale/all-clearance",
-      "scraped_date": "2026-08-16",
+      "scraped_date": "2026-08-23",
       "status": "active"
     }
   ],
-  "last_updated": "2026-08-16",
-  "total_sales": 24,
+  "last_updated": "2026-08-23",
+  "total_sales": 26,
   "stores": [
     "Tip Top Tailor",
     "Mark's",
