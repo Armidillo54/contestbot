@@ -1123,13 +1123,13 @@
       "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-07-25",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-23",
+      "link_checked": "2026-08-30",
       "source_url": "https://www.canadianfreestuff.com/free-samples-by-mail-canada/",
       "url_resolved": false
     },
@@ -1141,13 +1141,13 @@
       "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-07-27",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-23",
+      "link_checked": "2026-08-30",
       "source_url": "https://www.canadianfreestuff.com/free-samples-by-mail-canada/",
       "url_resolved": false
     },
@@ -1159,13 +1159,13 @@
       "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-07-28",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-23",
+      "link_checked": "2026-08-30",
       "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
       "url_resolved": false
     },
@@ -1177,13 +1177,13 @@
       "category": "beauty",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-07-31",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-23",
+      "link_checked": "2026-08-30",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1201,7 +1201,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-23",
+      "link_checked": "2026-08-30",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1219,11 +1219,29 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-23",
+      "link_checked": "2026-08-30",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-panoxyl-pu",
+      "name": "Butterly Canada Free Opportunities- FREE PanOxyl Purifying Mist /Method Hand Soap /Hardbite Turkey Stuffing Chips /MotoMaster Home Garage Essentials",
+      "description": "Butterly Canada Free Opportunities- FREE PanOxyl Purifying Mist /Method Hand Soap /Hardbite Turkey Stuffing Chips /MotoMaster Home Garage Essentials",
+      "url": "https://butterly.com/en/crownlabscanada/survey/0s8jmF",
+      "category": "food",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-08-30",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-08-30",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-08-23",
-  "total_freebies": 8
+  "last_updated": "2026-08-30",
+  "total_freebies": 7
 }
