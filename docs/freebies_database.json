@@ -1195,13 +1195,13 @@
       "category": "food",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-08-05",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-30",
+      "link_checked": "2026-09-06",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1219,7 +1219,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-30",
+      "link_checked": "2026-09-06",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1237,11 +1237,65 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-08-30",
+      "link_checked": "2026-09-06",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-mrs-meyer-",
+      "name": "Butterly Canada Free Opportunities- FREE Mrs. Meyer\u2019s Premium Plug-In Scented Oils /Mastercraft Tools / Hada Skincare /Otelia Pasta",
+      "description": "Butterly Canada Free Opportunities- FREE Mrs. Meyer\u2019s Premium Plug-In Scented Oils /Mastercraft Tools / Hada Skincare /Otelia Pasta",
+      "url": "https://butterly.com/en/mrsmeyers/survey/5Ry2Cs",
+      "category": "beauty",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-09-06",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-09-06",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-free-sample-of-batiste-dry-shampoo-powder-dark-go",
+      "name": "Free Sample of Batiste Dry Shampoo Powder Dark -GO!!",
+      "description": "Free Sample of Batiste Dry Shampoo Powder Dark -GO!!",
+      "url": "https://www.canadianfreestuff.com/batiste-canada-free-sample/",
+      "category": "beauty",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-09-06",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-09-06",
+      "source_url": "https://www.canadianfreestuff.com/batiste-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-cerave-canada-free-sample-of-hydrating-or-foaming-",
+      "name": "CeraVe Canada Free Sample of Hydrating or Foaming Facial Cleanser \u2013 GO!!",
+      "description": "CeraVe Canada Free Sample of Hydrating or Foaming Facial Cleanser \u2013 GO!!",
+      "url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-09-06",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-09-06",
+      "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
+      "url_resolved": false
     }
   ],
-  "last_updated": "2026-08-30",
-  "total_freebies": 7
+  "last_updated": "2026-09-06",
+  "total_freebies": 6
 }
