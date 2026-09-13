@@ -1219,7 +1219,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-06",
+      "link_checked": "2026-09-13",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1237,7 +1237,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-06",
+      "link_checked": "2026-09-13",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1255,7 +1255,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-06",
+      "link_checked": "2026-09-13",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1273,7 +1273,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-06",
+      "link_checked": "2026-09-13",
       "source_url": "https://www.canadianfreestuff.com/batiste-canada-free-sample/",
       "url_resolved": false
     },
@@ -1291,11 +1291,47 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-06",
+      "link_checked": "2026-09-13",
       "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-goldy-s-in",
+      "name": "Butterly Canada Free Opportunities- FREE Goldy\u2019s Instant Superseed Oatmeal /Mrs. Meyer\u2019s Premium Plug-In Scented Oils /Mastercraft Tools / Hada Skincare",
+      "description": "Butterly Canada Free Opportunities- FREE Goldy\u2019s Instant Superseed Oatmeal /Mrs. Meyer\u2019s Premium Plug-In Scented Oils /Mastercraft Tools / Hada Skincare",
+      "url": "https://butterly.com/en/goldyscanada/survey/Vhr9Y3",
+      "category": "food",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-09-13",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-09-13",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-wowbutter-free-sample-go",
+      "name": "WowButter FREE Sample -GO!",
+      "description": "WowButter FREE Sample -GO!",
+      "url": "https://wowbutter.com/Consumer-Samples.htm",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-09-13",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-09-13",
+      "source_url": "https://www.canadianfreestuff.com/wowbutter-canada-free-sample/",
+      "url_resolved": true
     }
   ],
-  "last_updated": "2026-09-06",
-  "total_freebies": 6
+  "last_updated": "2026-09-13",
+  "total_freebies": 7
 }
