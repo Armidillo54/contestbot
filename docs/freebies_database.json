@@ -1231,13 +1231,13 @@
       "category": "food",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-08-30",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1255,7 +1255,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1273,7 +1273,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/batiste-canada-free-sample/",
       "url_resolved": false
     },
@@ -1291,7 +1291,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
       "url_resolved": false
     },
@@ -1309,7 +1309,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1327,7 +1327,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/wowbutter-canada-free-sample/",
       "url_resolved": true
     },
@@ -1345,7 +1345,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
       "url_resolved": false
     },
@@ -1363,7 +1363,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1381,7 +1381,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1399,11 +1399,47 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-09-27",
+      "link_checked": "2026-10-04",
       "source_url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-conair-rot",
+      "name": "Butterly Canada Free Opportunities- FREE Conair Rotating Curling Iron / Pure + Simple Skincare / Weliva Active Iron / Hada Labo Tokyo Skincare",
+      "description": "Butterly Canada Free Opportunities- FREE Conair Rotating Curling Iron / Pure + Simple Skincare / Weliva Active Iron / Hada Labo Tokyo Skincare",
+      "url": "https://butterly.com/en/conaircanada/survey/DCHtPy",
+      "category": "beauty",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-10-04",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-10-04",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-sample-source-fall-samples-2026-now-live",
+      "name": "Sample Source Fall Samples 2026 -NOW LIVE!!!",
+      "description": "Sample Source Fall Samples 2026 -NOW LIVE!!!",
+      "url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-10-04",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-10-04",
+      "source_url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
       "url_resolved": false
     }
   ],
-  "last_updated": "2026-09-27",
-  "total_freebies": 10
+  "last_updated": "2026-10-04",
+  "total_freebies": 12
 }
