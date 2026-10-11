@@ -1249,13 +1249,13 @@
       "category": "beauty",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-09-06",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1267,13 +1267,13 @@
       "category": "beauty",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-09-06",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/batiste-canada-free-sample/",
       "url_resolved": false
     },
@@ -1285,13 +1285,13 @@
       "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-09-06",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/cerave-canada-free-sample/",
       "url_resolved": false
     },
@@ -1309,7 +1309,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1327,7 +1327,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/wowbutter-canada-free-sample/",
       "url_resolved": true
     },
@@ -1345,7 +1345,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
       "url_resolved": false
     },
@@ -1363,7 +1363,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1381,7 +1381,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1399,7 +1399,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
       "url_resolved": false
     },
@@ -1417,7 +1417,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1435,11 +1435,47 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-04",
+      "link_checked": "2026-10-11",
       "source_url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
       "url_resolved": false
+    },
+    {
+      "id": "cfs-onetouch-canada-free-sample-get-your-free-blood-gl",
+      "name": "OneTouch Canada Free Sample \u2013 Get Your Free Blood Glucose Meter \u2013 GO!!",
+      "description": "OneTouch Canada Free Sample \u2013 Get Your Free Blood Glucose Meter \u2013 GO!!",
+      "url": "https://www.canadianfreestuff.com/onetouch-canada-free-sample/",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-10-11",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-10-11",
+      "source_url": "https://www.canadianfreestuff.com/onetouch-canada-free-sample/",
+      "url_resolved": false
+    },
+    {
+      "id": "cfs-social-nature-canada-contest-win-the-ultimate-snac",
+      "name": "Social Nature Canada Contest -Win the Ultimate Snacklebox Bundle!",
+      "description": "Social Nature Canada Contest -Win the Ultimate Snacklebox Bundle!",
+      "url": "https://www.socialnature.com/products?country=CA",
+      "category": "food",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-10-11",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-10-11",
+      "source_url": "https://www.canadianfreestuff.com/social-nature-canada-free-samples/",
+      "url_resolved": true
     }
   ],
-  "last_updated": "2026-10-04",
-  "total_freebies": 12
+  "last_updated": "2026-10-11",
+  "total_freebies": 13
 }
