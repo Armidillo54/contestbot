@@ -1303,13 +1303,13 @@
       "category": "food",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-09-13",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1321,13 +1321,13 @@
       "category": "other",
       "source": "canadianfreestuff.com",
       "expiry": "",
-      "status": "active",
+      "status": "expired",
       "added_date": "2026-09-13",
       "provinces": [
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/wowbutter-canada-free-sample/",
       "url_resolved": true
     },
@@ -1345,7 +1345,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
       "url_resolved": false
     },
@@ -1363,7 +1363,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1381,7 +1381,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1399,7 +1399,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/home-tester-club-free-samples/",
       "url_resolved": false
     },
@@ -1417,7 +1417,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     },
@@ -1435,7 +1435,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/samplesource-canada-free-sample/",
       "url_resolved": false
     },
@@ -1453,7 +1453,7 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/onetouch-canada-free-sample/",
       "url_resolved": false
     },
@@ -1471,11 +1471,29 @@
         "ALL"
       ],
       "link_valid": true,
-      "link_checked": "2026-10-11",
+      "link_checked": "2026-10-18",
       "source_url": "https://www.canadianfreestuff.com/social-nature-canada-free-samples/",
+      "url_resolved": true
+    },
+    {
+      "id": "cfs-butterly-canada-free-opportunities-free-naked-sauc",
+      "name": "Butterly Canada Free Opportunities- FREE Naked &  Saucy Peanut Satay /Oxy Acne Control /Mrs. Meyer\u2019s Plug-In Scented Oils / Roar Hydration: Powders / Spin Master Toys",
+      "description": "Butterly Canada Free Opportunities- FREE Naked &  Saucy Peanut Satay /Oxy Acne Control /Mrs. Meyer\u2019s Plug-In Scented Oils / Roar Hydration: Powders / Spin Master Toys",
+      "url": "https://butterly.com/en/nakedandsaucy/survey/ogn5U2",
+      "category": "other",
+      "source": "canadianfreestuff.com",
+      "expiry": "",
+      "status": "active",
+      "added_date": "2026-10-18",
+      "provinces": [
+        "ALL"
+      ],
+      "link_valid": true,
+      "link_checked": "2026-10-18",
+      "source_url": "https://www.canadianfreestuff.com/butterly-canada/",
       "url_resolved": true
     }
   ],
-  "last_updated": "2026-10-11",
-  "total_freebies": 13
+  "last_updated": "2026-10-18",
+  "total_freebies": 11
 }
